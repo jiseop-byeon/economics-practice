@@ -57,11 +57,11 @@ window.CHAPTERS = [
   { id: "realestate-6", part: "realestate", status: "ready", title: "사고, 보유하고, 파는 단계의 세금", dek: "취득세, 재산세와 종합부동산세, 양도소득세." },
   { id: "realestate-7", part: "realestate", status: "ready", title: "청약", dek: "청약통장, 가점과 추첨, 특별공급." },
 
-  { id: "crypto-1", part: "crypto", status: "planned", title: "가상자산 거래소의 구조", dek: "원화 마켓, 실명 계좌, 거래소가 가진 장부와 블록체인 위의 기록." },
-  { id: "crypto-2", part: "crypto", status: "planned", title: "이용자 보호 법제", dek: "가상자산이용자보호법이 보호하는 것과 보호하지 않는 것." },
-  { id: "crypto-3", part: "crypto", status: "planned", title: "지갑과 보관", dek: "거래소 보관과 개인 지갑, 개인 키를 잃으면 생기는 일." },
-  { id: "crypto-4", part: "crypto", status: "planned", title: "사라질 수 있는 위험", dek: "상장폐지, 해킹, 프로젝트 중단." },
-  { id: "crypto-5", part: "crypto", status: "planned", title: "가상자산의 세금", dek: "과세 제도의 현재 상태와 일정." },
+  { id: "crypto-1", part: "crypto", status: "ready", title: "가상자산 거래소의 구조", dek: "원화 마켓, 실명 계좌, 거래소가 가진 장부와 블록체인 위의 기록." },
+  { id: "crypto-2", part: "crypto", status: "ready", title: "이용자 보호 법제", dek: "가상자산이용자보호법이 보호하는 것과 보호하지 않는 것." },
+  { id: "crypto-3", part: "crypto", status: "ready", title: "지갑과 보관", dek: "거래소 보관과 개인 지갑, 개인 키를 잃으면 생기는 일." },
+  { id: "crypto-4", part: "crypto", status: "ready", title: "사라질 수 있는 위험", dek: "상장폐지, 해킹, 프로젝트 중단." },
+  { id: "crypto-5", part: "crypto", status: "ready", title: "가상자산의 세금", dek: "과세 제도의 현재 상태와 일정." },
 
   { id: "risk-1", part: "risk", status: "ready", title: "수익률을 제대로 재기", dek: "단순 수익률과 연환산, 복리, 세후, 물가를 뺀 실질 수익률." },
   { id: "risk-2", part: "risk", status: "ready", title: "변동성과 최대 낙폭", dek: "얼마나 흔들리는지, 최악에 얼마나 떨어졌는지." },

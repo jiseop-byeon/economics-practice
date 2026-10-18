@@ -3453,5 +3453,384 @@ window.GLOSSARY = [
   "hanja": "美國 相續稅",
   "en": "U.S. estate tax",
   "one": "사망한 사람이 남긴 미국 재산에 미국이 매기는 세금으로, 미국인이 아닌 사람이 가진 미국 회사 주식도 대상이다."
+ },
+ {
+  "id": "cx-cex",
+  "chapter": "crypto-1",
+  "title": "중앙화 거래소",
+  "hanja": "中央化去來所",
+  "en": "centralized exchange (CEX)",
+  "one": "한 회사가 이용자의 돈과 가상자산을 맡아 두고 자기 시스템 안에서 주문을 맞춰 주는 가상자산 거래소이다.",
+  "econ": "t008"
+ },
+ {
+  "id": "cx-ledger",
+  "chapter": "crypto-1",
+  "title": "거래소 장부",
+  "hanja": "去來所帳簿",
+  "en": "exchange ledger",
+  "one": "이용자별 원화와 가상자산 잔고를 거래소가 자기 전산에 적어 둔 기록으로, 거래소 안의 거래는 이 장부만 바꾼다.",
+  "econ": "t295"
+ },
+ {
+  "id": "cx-vasp-report",
+  "chapter": "crypto-1",
+  "title": "가상자산사업자 신고",
+  "hanja": "假想資産事業者申告",
+  "en": "virtual asset service provider (VASP) registration",
+  "one": "가상자산 매매 등을 영업으로 하려는 자가 특정금융정보법에 따라 금융정보분석원에 하는 신고이다."
+ },
+ {
+  "id": "cx-real-name-account",
+  "chapter": "crypto-1",
+  "title": "실명확인 입출금계정",
+  "hanja": "實名確認入出金計定",
+  "en": "real-name verified account",
+  "one": "거래소 계좌와 같은 은행에 있는 이용자 본인 계좌 사이에서만 원화가 오가도록 한 계정이다."
+ },
+ {
+  "id": "cx-krw-market",
+  "chapter": "crypto-1",
+  "title": "원화 마켓과 코인 마켓",
+  "hanja": "",
+  "en": "KRW market and coin market",
+  "one": "원화로 가상자산을 사고파는 시장과, 가상자산끼리 바꾸는 시장이다."
+ },
+ {
+  "id": "cx-fees",
+  "chapter": "crypto-1",
+  "title": "거래 수수료와 출금 수수료",
+  "hanja": "去來手數料 · 出金手數料",
+  "en": "trading fee and withdrawal fee",
+  "one": "거래 금액에 비율로 붙는 거래소 수수료와, 가상자산을 거래소 밖으로 보낼 때 붙는 수수료이다."
+ },
+ {
+  "id": "cx-kimchi",
+  "chapter": "crypto-1",
+  "title": "김치 프리미엄",
+  "hanja": "",
+  "en": "kimchi premium",
+  "one": "같은 가상자산이 국내 거래소에서 해외 거래소보다 비싸게 거래되는 현상, 또는 그 차이의 비율이다.",
+  "econ": "t507"
+ },
+ {
+  "id": "cx-dex",
+  "chapter": "crypto-1",
+  "title": "탈중앙화 거래소",
+  "hanja": "脫中央化去來所",
+  "en": "decentralized exchange (DEX)",
+  "one": "회사 대신 블록체인 위의 프로그램이 교환을 처리하고, 이용자가 자기 지갑에서 바로 거래하는 거래소이다.",
+  "econ": "t375"
+ },
+ {
+  "id": "cx-offshore",
+  "chapter": "crypto-1",
+  "title": "미신고 해외 거래소",
+  "hanja": "未申告海外去來所",
+  "en": "unregistered offshore exchange",
+  "one": "한국 이용자를 상대로 영업하면서 금융정보분석원에 신고하지 않은 해외 가상자산 거래소이다."
+ },
+ {
+  "id": "crypto-user-deposit",
+  "chapter": "crypto-2",
+  "title": "이용자 예치금",
+  "hanja": "利用者預置金",
+  "en": "user deposits (virtual asset)",
+  "one": "코인을 사려고 가상자산 거래소 계정에 넣어 둔 원화이다. 거래소는 이를 은행에 따로 맡겨야 한다."
+ },
+ {
+  "id": "crypto-cold-duty",
+  "chapter": "crypto-2",
+  "title": "콜드월렛 보관 의무",
+  "hanja": "콜드월렛保管義務",
+  "en": "cold storage requirement",
+  "one": "거래소가 이용자 코인의 일정 비율 이상을 인터넷과 끊긴 지갑에 두어야 하는 의무이다."
+ },
+ {
+  "id": "crypto-incident-cover",
+  "chapter": "crypto-2",
+  "title": "사고 보상 보험·준비금",
+  "hanja": "事故補償保險·準備金",
+  "en": "incident insurance and reserves",
+  "one": "해킹·전산장애로 생긴 이용자 손해를 배상하려고 거래소가 드는 보험이나 쌓아 두는 돈이다."
+ },
+ {
+  "id": "crypto-insider",
+  "chapter": "crypto-2",
+  "title": "미공개중요정보 이용",
+  "hanja": "未公開重要情報利用",
+  "en": "insider trading (virtual asset)",
+  "one": "공개되지 않은 중요한 정보를 알고 그 코인을 거래하거나 남에게 쓰게 하는 금지 행위이다.",
+  "econ": "t563"
+ },
+ {
+  "id": "crypto-manipulation",
+  "chapter": "crypto-2",
+  "title": "시세조종",
+  "hanja": "時勢操縱",
+  "en": "market manipulation",
+  "one": "거래가 활발해 보이게 하거나 가격을 일부러 움직여 남의 매매를 끌어들이는 금지 행위이다."
+ },
+ {
+  "id": "crypto-fraud",
+  "chapter": "crypto-2",
+  "title": "부정거래",
+  "hanja": "不正去來",
+  "en": "fraudulent trading",
+  "one": "거짓 자료나 속임수, 거짓 시세로 코인 거래에서 이익을 얻으려는 금지 행위이다."
+ },
+ {
+  "id": "crypto-surveillance",
+  "chapter": "crypto-2",
+  "title": "이상거래 감시",
+  "hanja": "異常去來監視",
+  "en": "abnormal trading surveillance",
+  "one": "거래소가 가격·거래량이 비정상적으로 움직이는 거래를 늘 지켜보고 의심되면 당국에 알리는 의무이다."
+ },
+ {
+  "id": "crypto-listing-bp",
+  "chapter": "crypto-2",
+  "title": "거래지원 모범사례",
+  "hanja": "去來支援模範事例",
+  "en": "listing best practices",
+  "one": "거래소들이 코인의 상장과 상장폐지를 정할 때 함께 따르는 자율규제 기준이다."
+ },
+ {
+  "id": "crypto-caution",
+  "chapter": "crypto-2",
+  "title": "유의종목",
+  "hanja": "留意種目",
+  "en": "caution-designated asset",
+  "one": "거래지원을 계속할지 다시 따져 보겠다고 거래소가 경고하며 지정한 코인이다."
+ },
+ {
+  "id": "private-key",
+  "chapter": "crypto-3",
+  "title": "개인 키",
+  "hanja": "個人 키",
+  "en": "private key",
+  "one": "블록체인 위 코인을 옮길 권한을 증명하는 비밀 숫자로, 이것으로 거래에 전자서명을 한다.",
+  "econ": "t555"
+ },
+ {
+  "id": "wallet-address",
+  "chapter": "crypto-3",
+  "title": "지갑 주소",
+  "hanja": "紙匣 住所",
+  "en": "wallet address",
+  "one": "공개 키에서 한 방향으로 계산해 만든, 코인을 받을 때 알려 주는 공개 식별 문자열이다.",
+  "econ": "t295"
+ },
+ {
+  "id": "seed-phrase",
+  "chapter": "crypto-3",
+  "title": "시드 문구",
+  "hanja": "시드 文句",
+  "en": "seed phrase, recovery phrase",
+  "one": "지갑의 모든 개인 키를 다시 만들어 낼 수 있는 단어 12개나 24개의 목록이다."
+ },
+ {
+  "id": "custodial",
+  "chapter": "crypto-3",
+  "title": "수탁 보관",
+  "hanja": "受託保管",
+  "en": "custodial storage",
+  "one": "거래소 같은 가상자산사업자가 개인 키를 쥐고 이용자의 코인을 대신 보관하는 방식이다."
+ },
+ {
+  "id": "self-custody",
+  "chapter": "crypto-3",
+  "title": "비수탁 지갑",
+  "hanja": "非受託 紙匣",
+  "en": "self-custody wallet, non-custodial wallet",
+  "one": "이용자 본인이 개인 키와 시드 문구를 직접 쥐는 지갑이다. 개인 지갑이라고도 한다."
+ },
+ {
+  "id": "cold-wallet",
+  "chapter": "crypto-3",
+  "title": "콜드월렛",
+  "hanja": "",
+  "en": "cold wallet",
+  "one": "개인 키를 인터넷과 떨어진 곳에 두는 가상자산 보관 방식이다."
+ },
+ {
+  "id": "hot-wallet",
+  "chapter": "crypto-3",
+  "title": "핫월렛",
+  "hanja": "",
+  "en": "hot wallet",
+  "one": "개인 키를 인터넷에 연결된 기기나 서버에 두어 바로 보낼 수 있게 한 보관 방식이다."
+ },
+ {
+  "id": "hw-wallet",
+  "chapter": "crypto-3",
+  "title": "하드웨어 지갑",
+  "hanja": "하드웨어 紙匣",
+  "en": "hardware wallet",
+  "one": "개인 키를 전용 기기 안에만 두고 서명도 그 안에서 하는 콜드월렛이다."
+ },
+ {
+  "id": "travel-rule",
+  "chapter": "crypto-3",
+  "title": "트래블룰",
+  "hanja": "",
+  "en": "travel rule",
+  "one": "가상자산사업자가 다른 사업자에게 코인을 보낼 때 보내는 사람과 받는 사람의 정보를 함께 넘기게 하는 규칙이다.",
+  "econ": "t040"
+ },
+ {
+  "id": "mis-send",
+  "chapter": "crypto-3",
+  "title": "오송금",
+  "hanja": "誤送金",
+  "en": "mistaken transfer",
+  "one": "코인을 엉뚱한 주소나 맞지 않는 네트워크로 보내는 일로, 블록체인에서는 되돌릴 수 없다."
+ },
+ {
+  "id": "wallet-phishing",
+  "chapter": "crypto-3",
+  "title": "지갑 피싱",
+  "hanja": "紙匣 피싱",
+  "en": "wallet phishing",
+  "one": "가짜 앱·사이트·상담원을 내세워 시드 문구를 빼내거나 원치 않는 서명을 받아 내는 사기이다."
+ },
+ {
+  "id": "key-loss",
+  "chapter": "crypto-3",
+  "title": "키 분실과 상속",
+  "hanja": "키 紛失과 相續",
+  "en": "key loss and inheritance",
+  "one": "개인 키나 시드 문구를 잃거나 가진 사람이 세상을 떠나 코인을 옮길 수 없게 되는 일이다."
+ },
+ {
+  "id": "crypto-delist",
+  "chapter": "crypto-4",
+  "title": "거래지원 종료",
+  "hanja": "去來支援 終了",
+  "en": "delisting",
+  "one": "거래소가 어떤 가상자산의 매매를 더는 받지 않기로 하는 일이다. 종료 뒤에는 정해진 기간 안에 출금만 할 수 있다."
+ },
+ {
+  "id": "exchange-bankruptcy",
+  "chapter": "crypto-4",
+  "title": "거래소 파산",
+  "hanja": "去來所 破産",
+  "en": "exchange bankruptcy",
+  "one": "거래소가 빚을 갚지 못해 문을 닫는 일이다. 이용자는 코인의 주인이 아니라 돌려받을 권리를 가진 채권자가 된다."
+ },
+ {
+  "id": "exchange-hack",
+  "chapter": "crypto-4",
+  "title": "거래소 해킹",
+  "hanja": "去來所 해킹",
+  "en": "exchange hack",
+  "one": "외부 공격자가 거래소 지갑의 열쇠를 얻어 코인을 빼 가는 일이다. 블록체인 송금은 되돌릴 수 없다."
+ },
+ {
+  "id": "algo-stablecoin",
+  "chapter": "crypto-4",
+  "title": "알고리즘 스테이블코인",
+  "hanja": "",
+  "en": "algorithmic stablecoin",
+  "one": "준비자산 대신 다른 코인과의 교환 규칙으로 1달러 가치를 지키려는 스테이블코인이다.",
+  "econ": "t375"
+ },
+ {
+  "id": "rug-pull",
+  "chapter": "crypto-4",
+  "title": "러그풀",
+  "hanja": "",
+  "en": "rug pull",
+  "one": "프로젝트를 만든 쪽이 투자금을 모은 뒤 코인을 팔아 치우거나 유동성을 빼고 사라지는 일이다."
+ },
+ {
+  "id": "contract-bug",
+  "chapter": "crypto-4",
+  "title": "스마트계약 버그",
+  "hanja": "스마트契約 버그",
+  "en": "smart contract bug",
+  "one": "블록체인 위에서 자동으로 돌아가는 프로그램의 오류이다. 공격자가 쓰면 코드가 허락한 대로 돈이 빠져나간다."
+ },
+ {
+  "id": "crypto-volatility",
+  "chapter": "crypto-4",
+  "title": "가상자산의 변동성",
+  "hanja": "假想資産의 變動性",
+  "en": "crypto volatility",
+  "one": "가상자산 가격이 얼마나 크게, 자주 움직이는지이다. 하루 가격 한도가 없고 시장이 24시간 열린다."
+ },
+ {
+  "id": "perpetual-futures",
+  "chapter": "crypto-4",
+  "title": "무기한 선물",
+  "hanja": "無期限 先物",
+  "en": "perpetual futures",
+  "one": "만기가 없는 가상자산 선물이다. 펀딩비를 주고받아 선물 가격을 현물 쪽으로 당긴다."
+ },
+ {
+  "id": "crypto-liquidation",
+  "chapter": "crypto-4",
+  "title": "강제 청산",
+  "hanja": "強制 淸算",
+  "en": "forced liquidation",
+  "one": "증거금이 정해진 선 아래로 줄면 거래소가 포지션을 자동으로 정리하는 일이다.",
+  "econ": "t594"
+ },
+ {
+  "id": "crypto-income",
+  "chapter": "crypto-5",
+  "title": "가상자산소득",
+  "hanja": "假想資産所得",
+  "en": "virtual asset income",
+  "one": "가상자산을 팔거나 빌려주어 생긴 소득으로, 소득세법은 이를 기타소득으로 분류해 따로 세금을 매긴다.",
+  "econ": "t008"
+ },
+ {
+  "id": "crypto-tax-deferral",
+  "chapter": "crypto-5",
+  "title": "과세 유예",
+  "hanja": "課稅猶豫",
+  "en": "tax deferral",
+  "one": "법에 정한 세금의 시행일을 법을 고쳐 뒤로 미루는 것이다."
+ },
+ {
+  "id": "crypto-tax-deduct",
+  "chapter": "crypto-5",
+  "title": "가상자산 기본공제",
+  "hanja": "假想資産基本控除",
+  "en": "basic deduction for virtual asset income",
+  "one": "한 해의 가상자산소득에서 세금을 매기기 전에 빼 주는 일정 금액이다."
+ },
+ {
+  "id": "crypto-total-avg",
+  "chapter": "crypto-5",
+  "title": "총평균법",
+  "hanja": "總平均法",
+  "en": "total average method",
+  "one": "한 해 동안 가진 같은 자산의 취득가액 합계를 전체 수량으로 나눈 평균을 한 개의 취득가액으로 보는 계산 방법이다."
+ },
+ {
+  "id": "crypto-deemed-cost",
+  "chapter": "crypto-5",
+  "title": "의제취득가액",
+  "hanja": "擬制取得價額",
+  "en": "deemed acquisition cost",
+  "one": "실제로 산 값 대신 법이 정한 날의 시가를 취득가액으로 봐 주는 값이다."
+ },
+ {
+  "id": "vasp-tax-report",
+  "chapter": "crypto-5",
+  "title": "가상자산 거래내역 제출",
+  "hanja": "假想資産去來內譯提出",
+  "en": "submission of virtual asset transaction records",
+  "one": "국내 가상자산 거래소가 이용자의 거래 기록을 정해진 기한까지 국세청에 내는 의무이다."
+ },
+ {
+  "id": "foreign-account-report",
+  "chapter": "crypto-5",
+  "title": "해외금융계좌 신고",
+  "hanja": "海外金融計座申告",
+  "en": "foreign financial account reporting",
+  "one": "해외 금융회사나 해외 가상자산 거래소에 둔 계좌 잔액이 기준을 넘는 거주자가 계좌 정보를 세무서에 알리는 의무이다."
  }
 ];
