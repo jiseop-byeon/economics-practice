@@ -348,7 +348,7 @@ function setTheme(light) {
 // 머리줄의 갱신 시각. js/updated.js는 커밋할 때 pre-commit 훅이 다시 쓴다.
 if (window.SITE_UPDATED) {
   const [d, t] = window.SITE_UPDATED.split("T");
-  document.getElementById("asof").textContent = `갱신 ${fmtDate(d)} ${t.slice(0, 5)}`;
+  document.getElementById("asof").textContent = `갱신 ${fmtDate(d)} ${t.slice(0, 5)} KST`;
 }
 setTheme(document.documentElement.dataset.theme === "light");
 document.getElementById("theme").addEventListener("click", () => setTheme(document.documentElement.dataset.theme !== "light"));
