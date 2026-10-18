@@ -2173,5 +2173,517 @@ window.GLOSSARY = [
   "hanja": "移動相關係數",
   "en": "rolling correlation",
   "one": "일정한 길이의 기간을 한 칸씩 옮겨 가며 다시 계산한 상관계수이다."
+ },
+ {
+  "id": "re-registry",
+  "chapter": "realestate-1",
+  "title": "등기사항전부증명서",
+  "hanja": "登記事項全部證明書",
+  "en": "certified copy of the real estate register",
+  "one": "부동산 하나에 대해 등기된 내용을 모두 담아 법원이 발급하는 증명서이다. 흔히 등기부등본이라 부르고, 인터넷등기소에서 누구나 볼 수 있다."
+ },
+ {
+  "id": "re-title-part",
+  "chapter": "realestate-1",
+  "title": "표제부",
+  "hanja": "表題部",
+  "en": "property description section",
+  "one": "등기부의 첫 칸으로, 주소와 구조, 면적처럼 부동산 자체가 무엇인지를 적는 부분이다."
+ },
+ {
+  "id": "re-co-share",
+  "chapter": "realestate-1",
+  "title": "소유권과 공유지분",
+  "hanja": "所有權 · 共有持分",
+  "en": "ownership and co-ownership shares",
+  "one": "갑구에 적히는 소유자와, 여러 사람이 한 부동산을 나눠 가질 때 각자의 몫이다. 공유자가 여럿이면 계약 상대도 여럿이 된다."
+ },
+ {
+  "id": "re-seizure-mark",
+  "chapter": "realestate-1",
+  "title": "압류·가압류·가처분",
+  "hanja": "押留 · 假押留 · 假處分",
+  "en": "seizure, provisional attachment, and injunction",
+  "one": "소유자가 부동산을 마음대로 처분하지 못하게 묶는 갑구의 등기들이다. 확정된 채권, 확정 전의 금전 채권, 금전이 아닌 권리를 각각 지키려고 건다."
+ },
+ {
+  "id": "re-trust-reg",
+  "chapter": "realestate-1",
+  "title": "신탁등기",
+  "hanja": "信託登記",
+  "en": "trust registration",
+  "one": "소유자가 소유권을 신탁회사에 넘겼다는 등기이다. 구체적인 조건은 등기부가 아니라 신탁원부에 적힌다."
+ },
+ {
+  "id": "re-mortgage",
+  "chapter": "realestate-1",
+  "title": "근저당권과 채권최고액",
+  "hanja": "根抵當權 · 債權最高額",
+  "en": "revolving mortgage and maximum secured amount",
+  "one": "앞으로 생길 빚까지 한도 안에서 부동산으로 담보하는 권리와 그 한도이다. 을구에는 실제 빚이 아니라 한도가 적힌다.",
+  "econ": "t236"
+ },
+ {
+  "id": "re-jeonse-right",
+  "chapter": "realestate-1",
+  "title": "전세권",
+  "hanja": "傳貰權",
+  "en": "registered jeonse right",
+  "one": "보증금을 내고 남의 부동산을 쓰다가 돌려받을 권리를 을구에 등기한 물권이다. 흔한 전세 계약은 대개 이 등기 없이 임대차로 맺는다."
+ },
+ {
+  "id": "re-rank",
+  "chapter": "realestate-1",
+  "title": "순위번호와 접수번호",
+  "hanja": "順位番號 · 接受番號",
+  "en": "rank number and filing number",
+  "one": "등기된 권리의 순서를 정하는 번호이다. 같은 구 안에서는 순위번호로, 갑구와 을구 사이에서는 접수번호로 앞뒤를 가린다."
+ },
+ {
+  "id": "re-off-registry",
+  "chapter": "realestate-1",
+  "title": "등기부 밖의 위험",
+  "hanja": "登記簿 밖의 危險",
+  "en": "risks not shown on the register",
+  "one": "체납 세금이나 먼저 들어온 임차인의 보증금처럼 등기부에 나타나지 않지만 같은 집의 돈을 먼저 가져갈 수 있는 권리이다."
+ },
+ {
+  "id": "bldg-register",
+  "chapter": "realestate-2",
+  "title": "건축물대장",
+  "hanja": "建築物臺帳",
+  "en": "building register",
+  "one": "건물의 위치, 면적, 구조, 용도, 층수 같은 현황을 적은 공적 장부이다. 권리는 등기부, 건물 현황은 건축물대장이 기준이다."
+ },
+ {
+  "id": "illegal-bldg",
+  "chapter": "realestate-2",
+  "title": "위반건축물",
+  "hanja": "違反建築物",
+  "en": "unauthorized building",
+  "one": "허가·신고 없이 짓거나 고친 부분이 있거나 건폐율·용적률을 넘겨 시정명령을 받은 건물이다. 건축물대장에 표시되고 이행강제금이 나올 수 있다."
+ },
+ {
+  "id": "land-use-plan",
+  "chapter": "realestate-2",
+  "title": "토지이용계획확인서",
+  "hanja": "土地利用計劃確認書",
+  "en": "land use plan confirmation",
+  "one": "한 필지에 걸린 용도지역·지구·구역과 각종 법령의 규제를 모아 보여 주는 서류이다."
+ },
+ {
+  "id": "zoning",
+  "chapter": "realestate-2",
+  "title": "용도지역",
+  "hanja": "用途地域",
+  "en": "zoning district",
+  "one": "땅마다 쓰임새와 개발 강도를 정해 둔 구분이다. 도시·관리·농림·자연환경보전지역으로 나뉘고 도시지역은 다시 주거·상업·공업·녹지로 나뉜다."
+ },
+ {
+  "id": "bcr",
+  "chapter": "realestate-2",
+  "title": "건폐율",
+  "hanja": "建蔽率",
+  "en": "building coverage ratio, BCR",
+  "one": "대지면적에 대한 건축면적의 비율이다. 건물이 땅을 얼마나 넓게 덮을 수 있는지를 정한다."
+ },
+ {
+  "id": "far",
+  "chapter": "realestate-2",
+  "title": "용적률",
+  "hanja": "容積率",
+  "en": "floor area ratio, FAR",
+  "one": "대지면적에 대한 연면적의 비율이다. 지하층 등을 뺀 건물의 총량, 곧 얼마나 높게 지을 수 있는지를 정한다."
+ },
+ {
+  "id": "district-unit-plan",
+  "chapter": "realestate-2",
+  "title": "지구단위계획",
+  "hanja": "地區單位計劃",
+  "en": "district unit plan",
+  "one": "도시의 일부 구역에 대해 건물 용도, 건폐율, 용적률, 높이 등을 따로 정하는 도시·군관리계획이다."
+ },
+ {
+  "id": "rebuild",
+  "chapter": "realestate-2",
+  "title": "재건축",
+  "hanja": "再建築",
+  "en": "reconstruction",
+  "one": "낡은 공동주택을 허물고 같은 땅에 새로 짓는 사업이다. 늘어나는 연면적, 곧 용적률 차이가 사업성의 첫 숫자이다."
+ },
+ {
+  "id": "multi-housing",
+  "chapter": "realestate-2",
+  "title": "다세대·다가구",
+  "hanja": "多世帶·多家口",
+  "en": "multiplex housing / multi-household house",
+  "one": "다세대는 호별로 등기되는 공동주택이고, 다가구는 한 사람이 통째로 소유하는 단독주택이다."
+ },
+ {
+  "id": "re-provisional-deposit",
+  "chapter": "realestate-3",
+  "title": "가계약금",
+  "hanja": "假契約金",
+  "en": "provisional deposit",
+  "one": "정식 계약서를 쓰기 전에 집을 잡아 두려고 먼저 보내는 돈이다. 법적 성격은 당사자가 무엇에 합의했는지로 판단한다."
+ },
+ {
+  "id": "re-down-payment",
+  "chapter": "realestate-3",
+  "title": "계약금",
+  "hanja": "契約金",
+  "en": "down payment, earnest money",
+  "one": "계약을 맺을 때 매수인이 매도인에게 건네는 돈이다. 따로 정하지 않으면 이행 착수 전까지 포기하거나 배액을 돌려주고 계약을 풀 수 있는 해약금으로 추정된다."
+ },
+ {
+  "id": "re-interim-payment",
+  "chapter": "realestate-3",
+  "title": "중도금",
+  "hanja": "中渡金",
+  "en": "interim payment",
+  "one": "계약금과 잔금 사이에 나눠 내는 매매대금이다. 이를 내면 대개 이행에 착수한 것으로 보아 계약금만으로는 해제할 수 없게 된다."
+ },
+ {
+  "id": "re-title-registration",
+  "chapter": "realestate-3",
+  "title": "소유권이전등기",
+  "hanja": "所有權移轉登記",
+  "en": "registration of ownership transfer",
+  "one": "등기부의 소유자를 매도인에서 매수인으로 바꾸는 절차이다. 이 등기를 마쳐야 소유권이 넘어간다."
+ },
+ {
+  "id": "re-deal-report",
+  "chapter": "realestate-3",
+  "title": "부동산 거래신고",
+  "hanja": "不動産去來申告",
+  "en": "real estate transaction report",
+  "one": "매매계약의 실제 가격과 조건을 기한 안에 시·군·구청에 알리는 것이다. 일정한 거래는 자금조달계획서를 함께 낸다."
+ },
+ {
+  "id": "re-land-permit-zone",
+  "chapter": "realestate-3",
+  "title": "토지거래허가구역",
+  "hanja": "土地去來許可區域",
+  "en": "land transaction permit zone",
+  "one": "계약 전에 관청의 허가를 받아야 하는 지역이다. 허가 없이 맺은 계약은 효력이 없다."
+ },
+ {
+  "id": "re-brokerage-fee",
+  "chapter": "realestate-3",
+  "title": "중개보수",
+  "hanja": "仲介報酬",
+  "en": "brokerage fee",
+  "one": "거래를 성사시킨 개업공인중개사에게 내는 돈이다. 법령과 조례가 정한 상한 안에서 협의한다."
+ },
+ {
+  "id": "re-disclosure-statement",
+  "chapter": "realestate-3",
+  "title": "중개대상물 확인·설명서",
+  "hanja": "仲介對象物確認說明書",
+  "en": "property disclosure statement",
+  "one": "개업공인중개사가 물건의 권리관계와 상태를 확인해 적고 거래당사자에게 내주는 서면이다.",
+  "econ": "t563"
+ },
+ {
+  "id": "re-special-terms",
+  "chapter": "realestate-3",
+  "title": "특약",
+  "hanja": "特約",
+  "en": "special terms",
+  "one": "표준 계약서의 인쇄된 조항 말고 당사자가 따로 덧붙이는 약속이다."
+ },
+ {
+  "id": "lease-opposability",
+  "chapter": "realestate-4",
+  "title": "대항력",
+  "hanja": "對抗力",
+  "en": "opposability of a lease",
+  "one": "집주인이 바뀌어도 새 주인에게 임대차를 주장할 수 있는 힘이다. 집에 들어가 살고 전입신고를 마친 다음 날 생긴다."
+ },
+ {
+  "id": "lease-fixed-date",
+  "chapter": "realestate-4",
+  "title": "확정일자",
+  "hanja": "確定日字",
+  "en": "fixed date stamp",
+  "one": "공공기관이 임대차계약서에 그 날짜를 찍어 주는 것이다. 대항력과 함께 갖추면 경매 대금에서 순위대로 보증금을 받을 우선변제권이 생긴다."
+ },
+ {
+  "id": "lease-top-priority",
+  "chapter": "realestate-4",
+  "title": "최우선변제",
+  "hanja": "最優先辨濟",
+  "en": "top-priority repayment for small-deposit tenants",
+  "one": "보증금이 기준 이하인 임차인이 근저당보다 늦게 들어왔어도 보증금 중 일정액을 가장 먼저 받는 제도이다."
+ },
+ {
+  "id": "lease-report",
+  "chapter": "realestate-4",
+  "title": "임대차 신고",
+  "hanja": "賃貸借申告",
+  "en": "housing lease reporting",
+  "one": "일정 금액을 넘는 주택 전월세 계약의 보증금·월세·기간을 계약 후 30일 안에 시·군·구에 알리는 제도이다."
+ },
+ {
+  "id": "lease-renewal-right",
+  "chapter": "realestate-4",
+  "title": "계약갱신요구권",
+  "hanja": "契約更新要求權",
+  "en": "tenant's right to request renewal",
+  "one": "임차인이 한 번 계약 연장을 요구하면 집주인이 정당한 사유 없이 거절하지 못하게 하는 권리이다. 갱신 때 증액은 5% 안으로 묶인다."
+ },
+ {
+  "id": "kkangtong-jeonse",
+  "chapter": "realestate-4",
+  "title": "깡통전세",
+  "hanja": "깡통傳貰",
+  "en": "underwater jeonse",
+  "one": "보증금과 집주인의 빚을 합한 금액이 집값에 가깝거나 넘어서, 집을 팔아도 보증금을 다 돌려주기 어려운 전세이다.",
+  "econ": "t549"
+ },
+ {
+  "id": "jeonse-guarantee",
+  "chapter": "realestate-4",
+  "title": "전세보증금 반환보증",
+  "hanja": "傳貰保證金返還保證",
+  "en": "jeonse deposit return guarantee",
+  "one": "집주인이 보증금을 돌려주지 않으면 보증기관이 먼저 임차인에게 지급하고 나중에 집주인에게 받아 내는 상품이다."
+ },
+ {
+  "id": "lease-reg-order",
+  "chapter": "realestate-4",
+  "title": "임차권등기명령",
+  "hanja": "賃借權登記命令",
+  "en": "court order for registration of lease",
+  "one": "보증금을 받지 못한 임차인이 법원에 신청해 임차권을 등기부에 올리는 절차이다. 등기 뒤에는 이사해도 대항력과 우선변제권이 남는다."
+ },
+ {
+  "id": "jeonse-fraud-act",
+  "chapter": "realestate-4",
+  "title": "전세사기피해자 특별법",
+  "hanja": "傳貰詐欺被害者特別法",
+  "en": "Special Act on Support for Jeonse Fraud Victims",
+  "one": "전세사기로 보증금을 잃은 임차인을 국토교통부가 피해자로 결정해 주거·금융·경매 절차를 지원하는 한시법이다."
+ },
+ {
+  "id": "ltv",
+  "chapter": "realestate-5",
+  "title": "담보인정비율",
+  "hanja": "擔保認定比率",
+  "en": "loan-to-value ratio, LTV",
+  "one": "집값에 견줘 주택담보대출을 얼마까지 해 줄 수 있는지 정한 비율이다.",
+  "econ": "t182"
+ },
+ {
+  "id": "mortgage-cap",
+  "chapter": "realestate-5",
+  "title": "주담대 금액 상한",
+  "hanja": "住擔貸 金額 上限",
+  "en": "mortgage amount cap",
+  "one": "비율과 별도로 집을 사려고 받는 주택담보대출 금액 자체에 정한 천장이다."
+ },
+ {
+  "id": "loan-reg-zone",
+  "chapter": "realestate-5",
+  "title": "규제지역",
+  "hanja": "規制地域",
+  "en": "regulated area",
+  "one": "국토교통부가 집값 과열을 이유로 지정한 투기과열지구와 조정대상지역을 통틀어 부르는 말이다."
+ },
+ {
+  "id": "dti",
+  "chapter": "realestate-5",
+  "title": "총부채상환비율",
+  "hanja": "總負債償還比率",
+  "en": "debt-to-income ratio, DTI",
+  "one": "한 해 소득에서 새 주담대 원리금과 다른 대출 이자가 차지하는 비율이다.",
+  "econ": "t635"
+ },
+ {
+  "id": "dsr",
+  "chapter": "realestate-5",
+  "title": "총부채원리금상환비율",
+  "hanja": "總負債元利金償還比率",
+  "en": "debt service ratio, DSR",
+  "one": "한 해 소득에서 모든 대출의 원금과 이자를 갚는 데 드는 돈이 차지하는 비율이다.",
+  "econ": "t636"
+ },
+ {
+  "id": "stress-dsr",
+  "chapter": "realestate-5",
+  "title": "스트레스 DSR",
+  "hanja": "",
+  "en": "stress DSR",
+  "one": "DSR을 계산할 때 실제 금리 위에 가상의 가산금리를 더해 대출 한도를 줄이는 방식이다.",
+  "econ": "t377"
+ },
+ {
+  "id": "multihome-loan",
+  "chapter": "realestate-5",
+  "title": "다주택자 대출 제한",
+  "hanja": "多住宅者 貸出 制限",
+  "en": "multi-home owner loan restrictions",
+  "one": "이미 집을 가진 사람이 집을 더 사거나 대출을 늘리는 것을 막는 규칙들이다."
+ },
+ {
+  "id": "jeonse-loan",
+  "chapter": "realestate-5",
+  "title": "전세대출",
+  "hanja": "傳貰貸出",
+  "en": "jeonse deposit loan",
+  "one": "전세보증금을 내려고 받는 대출로, 집이 아니라 보증금을 돌려받을 권리가 담보이다."
+ },
+ {
+  "id": "policy-mortgage",
+  "chapter": "realestate-5",
+  "title": "정책 주택담보대출",
+  "hanja": "政策 住宅擔保貸出",
+  "en": "policy mortgage",
+  "one": "정부 기금이나 공기업 재원으로 요건을 맞춘 사람에게 낮은 고정금리로 빌려주는 주담대이다.",
+  "econ": "t566"
+ },
+ {
+  "id": "acq-tax",
+  "chapter": "realestate-6",
+  "title": "취득세",
+  "hanja": "取得稅",
+  "en": "acquisition tax",
+  "one": "부동산을 사거나 물려받아 소유권을 얻을 때 내는 지방세이다. 주택은 산 값과 세대의 주택 수에 따라 세율이 달라진다."
+ },
+ {
+  "id": "property-tax",
+  "chapter": "realestate-6",
+  "title": "재산세",
+  "hanja": "財産稅",
+  "en": "property tax",
+  "one": "매년 6월 1일에 주택·토지·건축물을 가진 사람에게 시·군·구가 매기는 보유세이다."
+ },
+ {
+  "id": "fmv-ratio",
+  "chapter": "realestate-6",
+  "title": "공정시장가액비율",
+  "hanja": "公正市場價額比率",
+  "en": "fair market value ratio",
+  "one": "공시가격 가운데 몇 퍼센트를 보유세 과세표준으로 삼을지 정부가 시행령으로 정하는 비율이다."
+ },
+ {
+  "id": "comp-re-tax",
+  "chapter": "realestate-6",
+  "title": "종합부동산세",
+  "hanja": "綜合不動産稅",
+  "en": "comprehensive real estate holding tax",
+  "one": "한 사람이 가진 주택 공시가격 합계가 공제 금액을 넘을 때, 넘는 부분에 국가가 매기는 보유세이다."
+ },
+ {
+  "id": "one-house-exempt",
+  "chapter": "realestate-6",
+  "title": "1세대1주택 비과세",
+  "hanja": "一世帶一住宅非課稅",
+  "en": "one-house capital gains exemption",
+  "one": "국내에 집 한 채만 가진 세대가 요건을 갖춰 팔면 양도소득세를 매기지 않는 제도이다."
+ },
+ {
+  "id": "luxury-house",
+  "chapter": "realestate-6",
+  "title": "고가주택",
+  "hanja": "高價住宅",
+  "en": "high-priced house",
+  "one": "1세대1주택이라도 판 값이 기준 금액을 넘어, 그 넘는 비율만큼 양도차익에 세금이 붙는 주택이다."
+ },
+ {
+  "id": "ltcg-deduction",
+  "chapter": "realestate-6",
+  "title": "장기보유특별공제",
+  "hanja": "長期保有特別控除",
+  "en": "long-term holding special deduction",
+  "one": "부동산을 오래 보유하다 팔 때 보유·거주 기간에 따라 양도차익의 일정 비율을 빼 주는 제도이다."
+ },
+ {
+  "id": "temp-two-house",
+  "chapter": "realestate-6",
+  "title": "일시적 2주택",
+  "hanja": "一時的二住宅",
+  "en": "temporary two-house exception",
+  "one": "이사하려고 새집을 먼저 사서 잠시 두 채가 된 세대가 기한 안에 원래 집을 팔면 1주택으로 보아 주는 특례이다."
+ },
+ {
+  "id": "multi-house-surcharge",
+  "chapter": "realestate-6",
+  "title": "다주택 중과",
+  "hanja": "多住宅重課",
+  "en": "multi-home surcharge",
+  "one": "집을 여러 채 가진 세대가 조정대상지역 주택을 팔거나 살 때 기본보다 높은 세율을 매기는 제도이다."
+ },
+ {
+  "id": "sub-account",
+  "chapter": "realestate-7",
+  "title": "주택청약종합저축",
+  "hanja": "住宅請約綜合貯蓄",
+  "en": "housing subscription savings",
+  "one": "새 아파트 청약에 쓰는 하나뿐인 입주자저축으로, 한 사람에 한 계좌만 열 수 있는 저축이다."
+ },
+ {
+  "id": "sub-national-private",
+  "chapter": "realestate-7",
+  "title": "국민주택과 민영주택",
+  "hanja": "國民住宅 · 民營住宅",
+  "en": "public housing and private housing",
+  "one": "국가·공공기관이 짓거나 주택도시기금 지원을 받은 85㎡ 이하 주택이 국민주택이고, 그 밖의 주택이 민영주택이다."
+ },
+ {
+  "id": "sub-first-rank",
+  "chapter": "realestate-7",
+  "title": "청약 1순위",
+  "hanja": "請約 1順位",
+  "en": "first-priority eligibility",
+  "one": "청약통장 가입 기간과 납입 실적(민영주택은 예치금)이 기준을 채워 가장 먼저 신청·선정되는 순위이다."
+ },
+ {
+  "id": "sub-points",
+  "chapter": "realestate-7",
+  "title": "가점제",
+  "hanja": "加點制",
+  "en": "point-based selection",
+  "one": "무주택기간, 부양가족 수, 청약통장 가입기간을 점수로 매겨 높은 사람부터 당첨자로 뽑는 방식이다."
+ },
+ {
+  "id": "sub-lottery",
+  "chapter": "realestate-7",
+  "title": "추첨제",
+  "hanja": "抽籤制",
+  "en": "lottery selection",
+  "one": "1순위 신청자 가운데 무작위로 당첨자를 뽑는 방식이다."
+ },
+ {
+  "id": "sub-special",
+  "chapter": "realestate-7",
+  "title": "특별공급",
+  "hanja": "特別供給",
+  "en": "special supply",
+  "one": "신혼부부, 생애최초, 다자녀, 노부모 부양, 신생아 가구 등에게 일반공급과 따로 떼어 평생 한 번 공급하는 물량이다."
+ },
+ {
+  "id": "sub-installment",
+  "chapter": "realestate-7",
+  "title": "중도금 대출",
+  "hanja": "中渡金貸出",
+  "en": "interim payment loan",
+  "one": "분양 대금 가운데 공사 기간에 나눠 내는 중도금을 은행이 당첨자들에게 한꺼번에 빌려주는 집단대출이다."
+ },
+ {
+  "id": "sub-resale",
+  "chapter": "realestate-7",
+  "title": "전매제한",
+  "hanja": "轉賣制限",
+  "en": "resale restriction",
+  "one": "당첨된 주택이나 당첨자 지위를 정해진 기간 동안 남에게 팔거나 넘기지 못하게 하는 규제이다."
+ },
+ {
+  "id": "sub-rewin",
+  "chapter": "realestate-7",
+  "title": "재당첨 제한",
+  "hanja": "再當籤制限",
+  "en": "re-winning restriction",
+  "one": "특정 주택에 당첨된 세대가 정해진 기간 동안 다른 분양주택에 당첨될 수 없게 하는 규제이다."
  }
 ];

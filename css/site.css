@@ -429,3 +429,9 @@ h1 .title-gloss { display: block; margin-left: 0; margin-top: 4px; }
 .rules-table.cols-1 td { width: 100%; } .rules-table.cols-2 td { width: 50%; } .rules-table.cols-3 td { width: 33.3%; }
 .article .table-wrap th, .article .table-wrap td, .article table th, .article table td { white-space: normal; }
 .rules-table.cols-4 td { width: 25%; }
+
+/* 첫 화면 점검 표 */
+.review { margin-top: 8px; }
+.review-table td small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; white-space: normal; }
+.review-table td, .review-table th { white-space: normal; vertical-align: top; font-size: 14px; }
+.review-table td:first-child { min-width: 180px; }

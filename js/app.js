@@ -46,6 +46,55 @@ function setNav(name) {
   document.querySelectorAll(".nav a:not(.sibling)").forEach((a) => a.setAttribute("aria-current", a.getAttribute("href") === map[name] ? "page" : "false"));
 }
 
+// 점검: 규칙마다 묶음과 추천 주기를 정하고, 기한이 지났는지 본다.
+const GROUPS = window.REVIEW_GROUPS || [];
+function groupOf(id) {
+  const r = RULES[id];
+  return GROUPS.find((g) => (g.ids || []).includes(id))
+    || GROUPS.find((g) => g.pattern && new RegExp(g.pattern).test(id))
+    || GROUPS.find((g) => (g.topics || []).includes(r.topic))
+    || { id: "other", name: "기타", days: 365, why: "" };
+}
+function addDays(d, n) {
+  const t = new Date(d + "T00:00:00"); t.setDate(t.getDate() + n);
+  return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}`;
+}
+const dueOf = (id) => addDays(RULES[id].checked, groupOf(id).days);
+const isStale = (id) => dueOf(id) < today();
+const cycleName = (d) => d <= 90 ? "3개월" : d <= 180 ? "6개월" : "1년";
+
+function reviewTable() {
+  const ids = Object.keys(RULES);
+  const rows = GROUPS.concat([{ id: "other", name: "기타", days: 365, why: "" }]).map((g) => {
+    const mine = ids.filter((id) => groupOf(id).id === g.id);
+    if (!mine.length) return "";
+    const checks = mine.map((id) => RULES[id].checked).sort();
+    const oldest = checks[0], latest = checks[checks.length - 1];
+    const due = addDays(oldest, g.days);
+    const stale = mine.filter(isStale).length;
+    const lv = (l) => mine.filter((id) => RULES[id].level === l).length;
+    const soon = !stale && due <= addDays(today(), 30);
+    return `<tr>
+      <td><b>${esc(g.name)}</b><small>${esc(g.why)}</small></td>
+      <td>${mine.length}<small>공식 ${lv("official")} · 보도 ${lv("press")}${lv("pending") ? ` · 대조 전 ${lv("pending")}` : ""}</small></td>
+      <td>${cycleName(g.days)}</td>
+      <td>${fmtDate(latest)}${oldest !== latest ? `<small>가장 오래된 것 ${fmtDate(oldest)}</small>` : ""}</td>
+      <td>${fmtDate(due)}</td>
+      <td class="${stale ? "level-press" : ""}">${stale ? `점검 필요 ${stale}` : soon ? "곧 점검" : "정상"}</td>
+    </tr>`;
+  }).join("");
+  const all = ids.map((id) => RULES[id].checked).sort();
+  return `<section class="review">
+    <h2 class="home-h">숫자 점검 현황</h2>
+    <p class="meta">세율, 대출 규제, 거래 시간처럼 제도가 바뀌면 달라지는 숫자 ${ids.length}개를 묶음별로 다시 확인한다. 마지막 확인 ${fmtDate(all[all.length - 1])}. 지금 시장 숫자(금리, 가격)는 이 사이트에 싣지 않는다.</p>
+    <div class="table-wrap"><table class="review-table">
+      <thead><tr><th>점검 묶음</th><th>규칙</th><th>추천 주기</th><th>마지막 확인</th><th>다음 점검</th><th>상태</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <p class="meta">큰 대책이 발표되면 주기와 상관없이 그 묶음을 바로 다시 본다. 묶음별 규칙은 <a href="#/rules">규칙</a>에서 본다.</p>
+  </section>`;
+}
+
 function ruleDate(r) {
   return `${r.effective ? `시행 ${fmtDate(r.effective)} · ` : ""}확인 ${fmtDate(r.checked)}`;
 }
@@ -76,7 +125,7 @@ function usedBox(used) {
     const r = RULES[id];
     const src = (r.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(" · ");
     return `<li id="rule-${esc(id)}"><b>${i + 1}. ${esc(MARKET[r.market] || "")} ${esc(r.label)}</b>: ${esc(r.value)}<br>
-      <span class="meta">${esc(ruleDate(r))} · <span class="${r.level === "official" ? "" : "level-press"}">${esc(LEVEL[r.level] || "")}</span>${src ? ` · ${src}` : ""}</span></li>`;
+      <span class="meta">${esc(ruleDate(r))}${isStale(id) ? ` · <span class="level-press">다시 확인 필요</span>` : ""} · <span class="${r.level === "official" ? "" : "level-press"}">${esc(LEVEL[r.level] || "")}</span>${src ? ` · ${src}` : ""}</span></li>`;
   }).join("");
   return `<div class="note"><p class="note-kicker">이 장의 숫자</p><p class="meta">본문의 밑줄 친 숫자는 모두 아래 규칙에서 불러온다. 규칙이 바뀌면 이 목록과 <a href="#/rules">규칙 비교표</a>가 함께 바뀐다.</p><ul class="rules-used">${rows}</ul></div>`;
 }
@@ -118,6 +167,7 @@ function home() {
           </a>`;
         }).join("")}
       </div>
+      ${reviewTable()}
       <div class="note"><p class="note-kicker">경제학습과 함께</p><p>금리, 물가, 환율처럼 거래 뒤에 있는 경제 개념은 형제 사이트 <a href="${ECON}">경제학습</a>에서 다룬다. 이 사이트의 본문에서 ↗ 표시가 붙은 용어를 누르면 그 개념의 카드로 간다.</p></div>
     </section>`;
 }
@@ -207,7 +257,7 @@ function rulesView() {
     if (!id) return `<td class="meta">—</td>`;
     const r = RULES[id];
     const src = (r.sources || [])[0];
-    return `<td><b>${esc(r.value)}</b><small>${esc(r.label)}</small><small>${esc(ruleDate(r))} · <span class="${r.level === "official" ? "" : "level-press"}">${esc(LEVEL[r.level])}</span>${src ? ` · <a href="${esc(src.url)}" target="_blank" rel="noopener">출처</a>` : ""}</small>${r.note ? `<small>${esc(r.note)}</small>` : ""}</td>`;
+    return `<td><b>${esc(r.value)}</b><small>${esc(r.label)}</small><small>${esc(ruleDate(r))} · ${cycleName(groupOf(id).days)}마다 점검${isStale(id) ? ` · <span class="level-press">다시 확인 필요</span>` : ""} · <span class="${r.level === "official" ? "" : "level-press"}">${esc(LEVEL[r.level])}</span>${src ? ` · <a href="${esc(src.url)}" target="_blank" rel="noopener">출처</a>` : ""}</small>${r.note ? `<small>${esc(r.note)}</small>` : ""}</td>`;
   };
   const body = topics.map((t) => {
     const mine = ids.filter((id) => RULES[id].topic === t.id);
