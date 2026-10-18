@@ -4306,5 +4306,1241 @@ window.GLOSSARY = [
   "hanja": "少數株式強制買受",
   "en": "squeeze-out",
   "one": "발행주식의 95% 이상을 가진 지배주주가 남은 소수 주주에게 주식을 팔라고 요구할 수 있게 한 제도이다."
+ },
+ {
+  "id": "analysis-candle",
+  "chapter": "analysis-1",
+  "title": "캔들",
+  "hanja": "",
+  "en": "candlestick",
+  "one": "일정 기간의 시가·고가·저가·종가 네 숫자를 몸통과 꼬리로 이루어진 막대 하나로 그린 것이다."
+ },
+ {
+  "id": "analysis-timeframe",
+  "chapter": "analysis-1",
+  "title": "일봉·주봉·월봉",
+  "hanja": "日棒·週棒·月棒",
+  "en": "daily, weekly and monthly bars",
+  "one": "캔들 하나가 담는 기간이 하루, 한 주, 한 달인 것으로, 긴 막대는 짧은 막대의 첫 시가·최고가·최저가·마지막 종가를 모아 만든다."
+ },
+ {
+  "id": "analysis-gap",
+  "chapter": "analysis-1",
+  "title": "갭",
+  "hanja": "",
+  "en": "price gap",
+  "one": "오늘의 가격 범위가 어제의 가격 범위와 겹치지 않아 차트에 생긴 빈칸이다."
+ },
+ {
+  "id": "analysis-volume",
+  "chapter": "analysis-1",
+  "title": "거래량",
+  "hanja": "去來量",
+  "en": "trading volume",
+  "one": "일정 기간 동안 체결된 주식 수로, 1주를 사고판 거래는 1주로 센다.",
+  "econ": "t476"
+ },
+ {
+  "id": "analysis-sma",
+  "chapter": "analysis-1",
+  "title": "단순이동평균",
+  "hanja": "單純移動平均",
+  "en": "simple moving average, SMA",
+  "one": "최근 n개 종가를 같은 무게로 평균 낸 값을 날마다 다시 계산해 이은 선이다."
+ },
+ {
+  "id": "analysis-ema",
+  "chapter": "analysis-1",
+  "title": "지수이동평균",
+  "hanja": "指數移動平均",
+  "en": "exponential moving average, EMA",
+  "one": "최근 가격에 더 큰 무게를 주고 지난 가격의 무게를 점점 줄여 가는 이동평균이다."
+ },
+ {
+  "id": "analysis-adjusted-price",
+  "chapter": "analysis-1",
+  "title": "수정주가",
+  "hanja": "修正株價",
+  "en": "adjusted price",
+  "one": "분할·무상증자·권리락·감자처럼 주식 수가 바뀐 사건 이전의 가격을 지금 주식 수에 맞게 같은 비율로 고친 가격이다."
+ },
+ {
+  "id": "analysis-log-scale",
+  "chapter": "analysis-1",
+  "title": "로그 눈금",
+  "hanja": "",
+  "en": "logarithmic scale",
+  "one": "세로축에서 같은 거리가 같은 금액이 아니라 같은 비율을 나타내도록 그린 눈금이다.",
+  "econ": "t179"
+ },
+ {
+  "id": "an-rsi",
+  "chapter": "analysis-2",
+  "title": "RSI",
+  "hanja": "相對強度指數",
+  "en": "relative strength index",
+  "one": "일정 기간 오른 폭과 내린 폭을 견주어 0에서 100 사이로 나타낸 지표이다."
+ },
+ {
+  "id": "an-macd",
+  "chapter": "analysis-2",
+  "title": "MACD",
+  "hanja": "",
+  "en": "moving average convergence divergence",
+  "one": "짧은 지수이동평균에서 긴 지수이동평균을 뺀 값과, 그 값의 이동평균인 신호선으로 이루어진 지표이다."
+ },
+ {
+  "id": "an-bollinger",
+  "chapter": "analysis-2",
+  "title": "볼린저 밴드",
+  "hanja": "",
+  "en": "Bollinger Bands",
+  "one": "이동평균 위아래에 그 기간 가격의 표준편차 몇 배를 더하고 빼 그린 띠이다."
+ },
+ {
+  "id": "an-momentum",
+  "chapter": "analysis-2",
+  "title": "모멘텀 효과",
+  "hanja": "모멘텀效果",
+  "en": "momentum effect",
+  "one": "지난 몇 달 많이 오른 주식이 그 뒤 몇 달 동안에도 덜 오른 주식보다 수익률이 높았던 경향이다."
+ },
+ {
+  "id": "an-reversal",
+  "chapter": "analysis-2",
+  "title": "반전 효과",
+  "hanja": "反轉效果",
+  "en": "reversal effect",
+  "one": "많이 오른 주식이 그 뒤 덜 오르고 많이 내린 주식이 더 오르는 경향으로, 한 달 안팎과 3~5년 기간에서 보고되었다."
+ },
+ {
+  "id": "an-data-snooping",
+  "chapter": "analysis-2",
+  "title": "데이터 스누핑",
+  "hanja": "",
+  "en": "data snooping",
+  "one": "같은 자료로 많은 규칙을 시험한 뒤 잘 맞은 것만 골라 우연을 실력으로 착각하는 문제이다."
+ },
+ {
+  "id": "an-momentum-crash",
+  "chapter": "analysis-2",
+  "title": "모멘텀 붕괴",
+  "hanja": "모멘텀崩壞",
+  "en": "momentum crash",
+  "one": "모멘텀 묶음이 시장 급락 뒤 급반등하는 때처럼 짧은 기간에 크게 잃는 일이다."
+ },
+ {
+  "id": "analysis-screening",
+  "chapter": "analysis-3",
+  "title": "스크리닝",
+  "hanja": "",
+  "en": "stock screening",
+  "one": "정해 둔 숫자 조건에 맞는 종목만 남기고 나머지를 빼서 읽을 목록을 줄이는 일이다."
+ },
+ {
+  "id": "analysis-percentile-rank",
+  "chapter": "analysis-3",
+  "title": "백분위 순위",
+  "hanja": "百分位順位",
+  "en": "percentile rank",
+  "one": "한 종목이 비교 대상 가운데 어디쯤 서 있는지를 0에서 100 사이로 나타낸 값이다."
+ },
+ {
+  "id": "analysis-opendart",
+  "chapter": "analysis-3",
+  "title": "오픈DART",
+  "hanja": "",
+  "en": "OpenDART",
+  "one": "금융감독원이 전자공시시스템의 공시와 재무제표 숫자를 프로그램이 받아 갈 수 있게 내놓은 창구(API)이다."
+ },
+ {
+  "id": "analysis-ttm",
+  "chapter": "analysis-3",
+  "title": "최근 네 분기 합산",
+  "hanja": "",
+  "en": "trailing twelve months, TTM",
+  "one": "가장 최근에 발표된 네 분기의 실적을 더해 한 해 치로 만든 값이다."
+ },
+ {
+  "id": "analysis-filing-lag",
+  "chapter": "analysis-3",
+  "title": "공시 시차",
+  "hanja": "公示時差",
+  "en": "reporting lag",
+  "one": "한 기간이 끝난 날과 그 기간의 숫자가 공시되어 누구나 볼 수 있게 되는 날 사이의 간격이다."
+ },
+ {
+  "id": "analysis-value-trap",
+  "chapter": "analysis-3",
+  "title": "가치 함정",
+  "hanja": "價値陷穽",
+  "en": "value trap",
+  "one": "지표로는 싸 보이지만 이익이 줄어드는 탓에 실제로는 싸지 않았던 경우이다.",
+  "econ": "t577"
+ },
+ {
+  "id": "analysis-peer-group",
+  "chapter": "analysis-3",
+  "title": "비교 집단",
+  "hanja": "比較集團",
+  "en": "peer group",
+  "one": "지표를 견줄 때 함께 놓는 회사들의 범위로, 업종이 다르면 같은 지표의 보통 수준도 다르다."
+ },
+ {
+  "id": "analysis-denominator",
+  "chapter": "analysis-3",
+  "title": "분모 문제",
+  "hanja": "分母問題",
+  "en": "denominator problem",
+  "one": "비율 지표의 분모가 음수이거나 0에 가까워 지표가 뜻을 잃거나 엉뚱한 값을 내는 일이다."
+ },
+ {
+  "id": "analysis-factor",
+  "chapter": "analysis-4",
+  "title": "팩터",
+  "hanja": "",
+  "en": "factor",
+  "one": "여러 종목의 수익률을 함께 움직이게 하는 공통된 성질이다. 시장 전체, 가치, 규모, 모멘텀 등이 연구되었다."
+ },
+ {
+  "id": "analysis-long-short",
+  "chapter": "analysis-4",
+  "title": "롱숏 포트폴리오",
+  "hanja": "",
+  "en": "long-short portfolio",
+  "one": "어떤 성질이 강한 주식을 사고 약한 주식을 공매도해 둘의 수익률 차이만 남긴 가상의 바구니이다. 학계가 팩터 수익률을 잴 때 쓴다."
+ },
+ {
+  "id": "analysis-value",
+  "chapter": "analysis-4",
+  "title": "가치 팩터",
+  "hanja": "價値팩터",
+  "en": "value factor",
+  "one": "이익이나 장부가치에 비해 값이 싼 주식이 비싼 주식보다 긴 기간 평균 수익이 높았다는 관찰이다. 미국에서는 2007년 무렵부터 2020년까지 오래 부진했다."
+ },
+ {
+  "id": "analysis-size",
+  "chapter": "analysis-4",
+  "title": "규모 팩터",
+  "hanja": "規模팩터",
+  "en": "size factor",
+  "one": "시가총액이 작은 회사의 주식이 큰 회사보다 평균 수익이 높았다는 관찰이다. 1981년 처음 보고된 뒤 미국에서는 뚜렷하지 않아졌다는 연구가 많다."
+ },
+ {
+  "id": "analysis-momentum",
+  "chapter": "analysis-4",
+  "title": "모멘텀 팩터",
+  "hanja": "",
+  "en": "momentum factor",
+  "one": "지난 몇 달에서 1년 사이 많이 오른 주식이 그 뒤 몇 달 동안도 평균 수익이 높았다는 관찰이다. 시장이 급반등할 때 크게 무너진 적이 있다."
+ },
+ {
+  "id": "analysis-quality",
+  "chapter": "analysis-4",
+  "title": "퀄리티 팩터",
+  "hanja": "",
+  "en": "quality factor",
+  "one": "돈을 잘 벌고 재무가 탄탄한 회사의 주식이 평균 수익이 높았다는 관찰이다. 정의가 연구자와 지수 회사마다 다르다."
+ },
+ {
+  "id": "analysis-factor-zoo",
+  "chapter": "analysis-4",
+  "title": "팩터 동물원",
+  "hanja": "팩터 動物園",
+  "en": "factor zoo",
+  "one": "학계가 발표한 수익 예측 요인이 수백 개로 불어난 상황을 빗댄 말이다. 우연히 찾은 요인이 섞여 있고, 발표 뒤 평균 수익이 줄었다."
+ },
+ {
+  "id": "analysis-smart-beta",
+  "chapter": "analysis-4",
+  "title": "스마트 베타 ETF",
+  "hanja": "",
+  "en": "smart beta ETF, factor ETF",
+  "one": "시가총액 대신 정해 둔 팩터 기준으로 종목을 고르고 비중을 매기는 지수를 따라가는 ETF이다.",
+  "econ": "t316"
+ },
+ {
+  "id": "analysis-backtest",
+  "chapter": "analysis-5",
+  "title": "백테스트",
+  "hanja": "",
+  "en": "backtest",
+  "one": "정해 둔 매매 규칙을 지난 자료에 그대로 적용해 그 기간의 가상 성과를 계산하는 일이다. 규칙이 앞으로 어떻게 움직일지는 말해 주지 않는다."
+ },
+ {
+  "id": "analysis-survivorship",
+  "chapter": "analysis-5",
+  "title": "생존 편향",
+  "hanja": "生存偏向",
+  "en": "survivorship bias",
+  "one": "살아남은 대상만 모아 계산해서 중간에 사라진 대상의 나쁜 성과가 빠지는 문제이다. 상장폐지된 회사를 뺀 백테스트가 대표적이다."
+ },
+ {
+  "id": "analysis-lookahead",
+  "chapter": "analysis-5",
+  "title": "미래 정보 끌어 쓰기",
+  "hanja": "",
+  "en": "look-ahead bias",
+  "one": "어느 날의 판단에 그날에는 아직 알 수 없던 정보를 써 버리는 실수이다. 공시 전의 재무 숫자나 장이 끝나야 아는 종가를 미리 쓰는 경우가 있다."
+ },
+ {
+  "id": "analysis-overfitting",
+  "chapter": "analysis-5",
+  "title": "과최적화",
+  "hanja": "過最適化",
+  "en": "overfitting",
+  "one": "규칙의 설정값을 지난 자료에 너무 잘 맞도록 골라 자료에 섞인 우연까지 담아 버리는 것이다. 시험한 조합이 많을수록 생기기 쉽다."
+ },
+ {
+  "id": "analysis-oos",
+  "chapter": "analysis-5",
+  "title": "표본 외 검증",
+  "hanja": "標本外檢證",
+  "en": "out-of-sample test",
+  "one": "규칙을 만들 때 쓰지 않고 남겨 둔 기간의 자료로 그 규칙을 다시 시험하는 것이다."
+ },
+ {
+  "id": "analysis-market-impact",
+  "chapter": "analysis-5",
+  "title": "시장 충격",
+  "hanja": "市場衝擊",
+  "en": "market impact",
+  "one": "내 주문 자체가 가격을 움직여 주문 전보다 불리한 값에 체결되는 비용이다. 거래가 적은 종목에 큰 주문을 낼수록 커진다."
+ },
+ {
+  "id": "analysis-after-tax",
+  "chapter": "analysis-5",
+  "title": "세후 성과",
+  "hanja": "稅後成果",
+  "en": "after-tax performance",
+  "one": "백테스트의 수익에서 실제로 냈을 세금을 빼고 다시 계산한 성과이다. 어느 시장의 무엇을 얼마나 자주 사고파느냐에 따라 달라진다."
+ },
+ {
+  "id": "common5-fin-income",
+  "chapter": "common-5",
+  "title": "금융소득",
+  "hanja": "金融所得",
+  "en": "financial income",
+  "one": "한 해에 받은 이자소득과 배당소득을 합친 것이다. 상장주식 매매차익과 해외주식 양도소득은 들어가지 않는다."
+ },
+ {
+  "id": "common5-global-income",
+  "chapter": "common-5",
+  "title": "종합소득",
+  "hanja": "綜合所得",
+  "en": "global income",
+  "one": "이자·배당·사업·근로·연금·기타소득을 한데 합쳐 누진세율로 세금을 매기는 소득이다."
+ },
+ {
+  "id": "common5-compare-tax",
+  "chapter": "common-5",
+  "title": "비교과세",
+  "hanja": "比較課稅",
+  "en": "comparative taxation",
+  "one": "금융소득이 기준을 넘을 때 두 방법으로 세액을 계산해 큰 쪽을 내게 하는 방식이다."
+ },
+ {
+  "id": "common5-gross-up",
+  "chapter": "common-5",
+  "title": "배당가산",
+  "hanja": "配當加算",
+  "en": "dividend gross-up",
+  "one": "종합과세되는 국내 배당에 회사가 낸 법인세 몫을 더해 소득으로 잡고, 같은 금액을 세금에서 빼 주는 계산이다."
+ },
+ {
+  "id": "common5-pension-sep",
+  "chapter": "common-5",
+  "title": "사적연금 분리과세",
+  "hanja": "私的年金分離課稅",
+  "en": "separate taxation of private pensions",
+  "one": "연금계좌에서 받는 연금을 다른 소득과 합치지 않고 낮은 세율로 끝내는 방식이다."
+ },
+ {
+  "id": "common5-may-filing",
+  "chapter": "common-5",
+  "title": "종합소득세 확정신고",
+  "hanja": "綜合所得稅確定申告",
+  "en": "final income tax return",
+  "one": "한 해의 종합소득을 모아 다음 해 5월에 세금을 다시 계산해 신고하는 절차이다."
+ },
+ {
+  "id": "common5-nhi-extra",
+  "chapter": "common-5",
+  "title": "소득월액보험료",
+  "hanja": "所得月額保險料",
+  "en": "premium on non-wage income",
+  "one": "직장가입자가 월급 밖의 소득이 기준을 넘을 때 따로 더 내는 건강보험료이다.",
+  "econ": "t310"
+ },
+ {
+  "id": "common5-dependent",
+  "chapter": "common-5",
+  "title": "피부양자",
+  "hanja": "被扶養者",
+  "en": "dependent",
+  "one": "직장가입자에게 생계를 기대어 자기 보험료 없이 건강보험을 받는 가족이다. 소득과 재산 요건을 함께 맞춰야 한다."
+ },
+ {
+  "id": "cash-time-deposit",
+  "chapter": "common-6",
+  "title": "정기예금",
+  "hanja": "定期預金",
+  "en": "time deposit",
+  "one": "정해진 기간 동안 돈을 맡기고 만기에 원금과 약속한 이자를 받는 은행 예금이다. 중간에 해지하면 낮은 이율로 다시 계산한다."
+ },
+ {
+  "id": "cash-cma",
+  "chapter": "common-6",
+  "title": "CMA",
+  "hanja": "綜合資産管理計座",
+  "en": "cash management account",
+  "one": "넣은 돈을 RP, MMF, 발행어음 같은 단기 상품에 자동으로 넣었다 빼 주는 계좌이다. 보호 여부는 돈이 들어간 상품을 따른다.",
+  "econ": "t416"
+ },
+ {
+  "id": "cash-rp",
+  "chapter": "common-6",
+  "title": "환매조건부채권",
+  "hanja": "還買條件附債券",
+  "en": "repurchase agreement, RP",
+  "one": "금융회사가 채권을 팔면서 정한 날이나 고객이 원할 때 이자를 얹어 되사기로 한 거래이다. 채권을 담보로 돈을 빌리는 것과 같다.",
+  "econ": "t736"
+ },
+ {
+  "id": "cash-mmf",
+  "chapter": "common-6",
+  "title": "머니마켓펀드",
+  "hanja": "",
+  "en": "money market fund, MMF",
+  "one": "만기가 짧은 채권, 어음, 예금에만 투자하는 펀드이다. 법의 이름은 단기금융집합투자기구이고 원금을 약속하지 않는다.",
+  "econ": "t231"
+ },
+ {
+  "id": "cash-issued-note",
+  "chapter": "common-6",
+  "title": "발행어음",
+  "hanja": "發行어음",
+  "en": "issued note",
+  "one": "자기자본이 큰 증권회사가 자기 신용으로 발행해 파는 만기 1년 이내의 어음이다. 담보와 예금자보호가 없다.",
+  "econ": "t254"
+ },
+ {
+  "id": "cash-fx-deposit",
+  "chapter": "common-6",
+  "title": "외화예금",
+  "hanja": "外貨預金",
+  "en": "foreign currency deposit",
+  "one": "외국 돈으로 맡기는 은행 예금이다. 예금자보호를 받지만 환율 때문에 원화 값이 줄어든 몫은 보호하지 않는다."
+ },
+ {
+  "id": "cash-tt-rate",
+  "chapter": "common-6",
+  "title": "전신환율",
+  "hanja": "電信換率",
+  "en": "telegraphic transfer rate, TT rate",
+  "one": "지폐 없이 계좌끼리 외화를 옮길 때 쓰는 환율이다. 지폐를 주고받는 현찰 환율보다 기준환율과의 폭이 좁다.",
+  "econ": "t156"
+ },
+ {
+  "id": "estate-gift-tax",
+  "chapter": "estate-1",
+  "title": "증여세",
+  "hanja": "贈與稅",
+  "en": "gift tax",
+  "one": "재산이나 이익을 대가 없이 받은 사람에게 매기는 세금이다. 받은 사람이 신고하고 낸다.",
+  "econ": "t011"
+ },
+ {
+  "id": "estate-gift-deduction",
+  "chapter": "estate-1",
+  "title": "증여재산공제",
+  "hanja": "贈與財産控除",
+  "en": "deduction for gifts from relatives",
+  "one": "가족에게 받은 재산에서 세금을 매기기 전에 관계별로 정한 금액을 빼 주는 제도이다. 받는 사람 기준 10년 한도이다."
+ },
+ {
+  "id": "estate-gift-10yr",
+  "chapter": "estate-1",
+  "title": "10년 합산",
+  "hanja": "10年 合算",
+  "en": "10-year aggregation of prior gifts",
+  "one": "증여일 전 10년 안에 같은 사람에게 받은 증여를 합쳐 세금을 계산하고, 앞서 낸 세금은 빼 주는 규칙이다."
+ },
+ {
+  "id": "estate-gift-rate",
+  "chapter": "estate-1",
+  "title": "증여세율",
+  "hanja": "贈與稅率",
+  "en": "gift tax rates",
+  "one": "증여세 과세표준에 곱하는 다섯 단계의 초과누진 세율이다. 손자녀에게 바로 주면 할증이 붙는다."
+ },
+ {
+  "id": "estate-gift-filing",
+  "chapter": "estate-1",
+  "title": "증여세 신고와 납부",
+  "hanja": "贈與稅 申告 · 納付",
+  "en": "gift tax filing and payment",
+  "one": "증여받은 사람이 정해진 기한 안에 과세표준과 세액을 계산해 신고하고 내는 절차이다. 늦으면 가산세가 붙는다."
+ },
+ {
+  "id": "estate-family-loan",
+  "chapter": "estate-1",
+  "title": "금전 무상대출",
+  "hanja": "金錢 無償貸出",
+  "en": "interest-free or below-market loan",
+  "one": "남에게 돈을 이자 없이 또는 낮은 이자로 빌리는 것이다. 덜 낸 이자가 기준을 넘으면 증여로 본다."
+ },
+ {
+  "id": "estate-acq-fund",
+  "chapter": "estate-1",
+  "title": "재산 취득자금 증여추정",
+  "hanja": "財産 取得資金 贈與推定",
+  "en": "presumed gift of acquisition funds",
+  "one": "소득과 재산으로 보아 스스로 마련하기 어려운 재산을 샀을 때, 출처를 보이지 못한 자금을 증여받은 것으로 추정하는 제도이다."
+ },
+ {
+  "id": "estate-low-price",
+  "chapter": "estate-1",
+  "title": "저가 양수·고가 양도",
+  "hanja": "低價讓受 · 高價讓渡",
+  "en": "transfer at below- or above-market price",
+  "one": "시가보다 싸게 사거나 비싸게 팔아 한쪽에 이익을 넘기는 거래이다. 차이가 기준을 넘으면 증여로 본다."
+ },
+ {
+  "id": "estate2-taxable-value",
+  "chapter": "estate-2",
+  "title": "상속세 과세가액",
+  "hanja": "相續稅課稅價額",
+  "en": "taxable value of an inherited estate",
+  "one": "상속재산에서 빚·공과금·장례비를 빼고 일정 기간 안에 미리 증여한 재산을 더한, 상속세 계산의 출발 금액이다."
+ },
+ {
+  "id": "estate2-prior-gift",
+  "chapter": "estate-2",
+  "title": "사전증여재산 합산",
+  "hanja": "事前贈與財産合算",
+  "en": "aggregation of pre-death gifts",
+  "one": "피상속인이 세상을 떠나기 전 일정 기간 안에 넘긴 재산을 상속재산에 다시 더해 상속세를 계산하는 규정이다."
+ },
+ {
+  "id": "estate2-lump-deduction",
+  "chapter": "estate-2",
+  "title": "일괄공제",
+  "hanja": "一括控除",
+  "en": "lump-sum deduction",
+  "one": "기초공제와 인적공제의 합계 대신 정해진 금액을 한꺼번에 빼 주는 상속공제이다."
+ },
+ {
+  "id": "estate2-spouse-deduction",
+  "chapter": "estate-2",
+  "title": "배우자 상속공제",
+  "hanja": "配偶者相續控除",
+  "en": "spousal inheritance deduction",
+  "one": "피상속인의 배우자가 실제로 물려받은 재산만큼을 최소액과 상한 사이에서 과세가액에서 빼 주는 공제이다."
+ },
+ {
+  "id": "estate2-rate",
+  "chapter": "estate-2",
+  "title": "상속세율",
+  "hanja": "相續稅率",
+  "en": "inheritance tax rates",
+  "one": "상속세 과세표준에 곱하는 누진세율로, 구간을 넘는 부분에만 높은 세율이 붙는다."
+ },
+ {
+  "id": "estate2-filing",
+  "chapter": "estate-2",
+  "title": "상속세 신고",
+  "hanja": "相續稅申告",
+  "en": "inheritance tax return",
+  "one": "상속인이 상속재산과 공제, 세액을 스스로 계산해 기한 안에 세무서에 알리는 절차이다."
+ },
+ {
+  "id": "estate2-installment",
+  "chapter": "estate-2",
+  "title": "연부연납",
+  "hanja": "年賦延納",
+  "en": "payment in annual installments",
+  "one": "상속세를 담보를 내고 여러 해에 걸쳐 나누어 내도록 세무서가 허가하는 제도이다."
+ },
+ {
+  "id": "estate2-limited-acceptance",
+  "chapter": "estate-2",
+  "title": "한정승인",
+  "hanja": "限定承認",
+  "en": "qualified acceptance of inheritance",
+  "one": "물려받는 재산의 한도 안에서만 피상속인의 빚을 갚는 조건으로 상속을 받아들이는 것이다."
+ },
+ {
+  "id": "estate2-renunciation",
+  "chapter": "estate-2",
+  "title": "상속 포기",
+  "hanja": "相續拋棄",
+  "en": "renunciation of inheritance",
+  "one": "재산과 빚을 모두 물려받지 않겠다고 가정법원에 신고해 처음부터 상속인이 아니었던 것이 되는 것이다."
+ },
+ {
+  "id": "estate-market-value",
+  "chapter": "estate-3",
+  "title": "시가",
+  "hanja": "時價",
+  "en": "market value",
+  "one": "상속세와 증여세에서 재산의 값을 정하는 원칙으로, 평가기준일 앞뒤 일정 기간 안의 매매·감정·수용·경매 가액과 비슷한 재산의 거래가를 포함한다."
+ },
+ {
+  "id": "estate-supp-valuation",
+  "chapter": "estate-3",
+  "title": "보충적 평가방법",
+  "hanja": "補充的 評價方法",
+  "en": "supplementary valuation method",
+  "one": "시가를 찾기 어려울 때 공시가격, 기준시가, 임대료 환산가액 같은 법정 공식으로 재산의 값을 매기는 방법이다."
+ },
+ {
+  "id": "estate-listed-valuation",
+  "chapter": "estate-3",
+  "title": "상장주식 평가",
+  "hanja": "上場株式 評價",
+  "en": "valuation of listed shares",
+  "one": "유가증권시장·코스닥시장 상장주식을 평가기준일 앞뒤 각 2개월의 매일 종가 평균으로 평가하는 방법이다."
+ },
+ {
+  "id": "estate-control-premium",
+  "chapter": "estate-3",
+  "title": "최대주주 할증",
+  "hanja": "最大株主 割增",
+  "en": "controlling shareholder premium",
+  "one": "최대주주와 그 특수관계인이 가진 주식을 평가할 때 경영권 몫으로 평가액에 일정 비율을 더하는 것이다."
+ },
+ {
+  "id": "estate-deposit-valuation",
+  "chapter": "estate-3",
+  "title": "예금 평가",
+  "hanja": "預金 評價",
+  "en": "valuation of deposits",
+  "one": "예금·적금을 평가기준일 원금에 경과 이자를 더하고 그 이자의 원천징수세액을 뺀 금액으로 평가하는 방법이다."
+ },
+ {
+  "id": "estate-foreign-valuation",
+  "chapter": "estate-3",
+  "title": "국외재산 평가",
+  "hanja": "國外財産 評價",
+  "en": "valuation of foreign assets",
+  "one": "외국에 있거나 외화로 표시된 재산의 값을 정하는 방법으로, 평가기준일의 기준환율·재정환율로 원화로 바꾼다.",
+  "econ": "t156"
+ },
+ {
+  "id": "estate-carryover",
+  "chapter": "estate-3",
+  "title": "취득가액 이월과세",
+  "hanja": "取得價額 移越課稅",
+  "en": "carryover of donor's acquisition cost",
+  "one": "배우자나 직계존비속에게 증여받은 재산을 정해진 기간 안에 팔면 증여자가 산 값을 취득가액으로 보고 양도소득세를 계산하는 규정이다."
+ },
+ {
+  "id": "estate-gift-resale",
+  "chapter": "estate-3",
+  "title": "증여 후 양도 부인",
+  "hanja": "贈與 後 讓渡 否認",
+  "en": "denial of gift-then-sale",
+  "one": "특수관계인에게 증여한 재산을 받은 사람이 기간 안에 팔아 세금이 줄면 증여한 사람이 직접 판 것으로 보는 규정이다."
+ },
+ {
+  "id": "estate-burdened-gift",
+  "chapter": "estate-3",
+  "title": "부담부증여",
+  "hanja": "負擔附贈與",
+  "en": "gift with assumed debt",
+  "one": "재산에 딸린 빚을 받는 사람이 함께 떠안는 증여로, 떠안은 빚만큼은 양도로, 나머지는 증여로 과세된다."
+ },
+ {
+  "id": "funds-public-fund",
+  "chapter": "funds-1",
+  "title": "공모펀드",
+  "hanja": "公募펀드",
+  "en": "public fund",
+  "one": "불특정 다수에게 팔 수 있도록 등록한 펀드이다. 투자설명서, 운용 제한, 값 공고 같은 규제를 무겁게 받는다.",
+  "econ": "t694"
+ },
+ {
+  "id": "funds-manager",
+  "chapter": "funds-1",
+  "title": "운용사",
+  "hanja": "運用社",
+  "en": "asset management company",
+  "one": "펀드 돈으로 무엇을 사고팔지 정하고 펀드 값을 계산하는 회사이다. 법률 이름은 집합투자업자이다."
+ },
+ {
+  "id": "funds-distributor",
+  "chapter": "funds-1",
+  "title": "판매사",
+  "hanja": "販賣社",
+  "en": "fund distributor",
+  "one": "투자자에게 펀드를 팔고 환매 신청을 받아 주는 은행·증권회사·보험회사이다. 상품 설명 의무를 진다."
+ },
+ {
+  "id": "funds-trustee",
+  "chapter": "funds-1",
+  "title": "수탁은행",
+  "hanja": "受託銀行",
+  "en": "trustee bank",
+  "one": "펀드의 돈과 증권을 따로 맡아 보관하고 운용사가 규칙대로 굴리는지 감시하는 회사이다. 법률 이름은 신탁업자이다."
+ },
+ {
+  "id": "funds-nav",
+  "chapter": "funds-1",
+  "title": "기준가격",
+  "hanja": "基準價格",
+  "en": "net asset value per unit",
+  "one": "펀드 한 몫의 공식 가격이다. 자산에서 부채를 빼고 몫의 수로 나눠 하루에 한 번 정한다."
+ },
+ {
+  "id": "funds-forward-pricing",
+  "chapter": "funds-1",
+  "title": "미래가격 방식",
+  "hanja": "未來價格方式",
+  "en": "forward pricing",
+  "one": "펀드를 사고팔겠다고 신청한 뒤에 새로 계산되는 기준가격을 적용하는 원칙이다. 신청할 때는 적용될 값을 모른다."
+ },
+ {
+  "id": "funds-redemption",
+  "chapter": "funds-1",
+  "title": "환매",
+  "hanja": "還買",
+  "en": "redemption",
+  "one": "투자자가 펀드 몫을 돌려주고 그만큼의 돈을 받는 일이다. 대금은 규약이 정한 날에 들어온다."
+ },
+ {
+  "id": "funds-class",
+  "chapter": "funds-1",
+  "title": "종류형 펀드",
+  "hanja": "種類形펀드",
+  "en": "multi-class fund",
+  "one": "한 펀드 안에서 판매수수료와 판매보수만 달리한 여러 클래스를 둔 펀드이다. 클래스마다 기준가격이 다르다."
+ },
+ {
+  "id": "funds-report",
+  "chapter": "funds-1",
+  "title": "자산운용보고서",
+  "hanja": "資産運用報告書",
+  "en": "asset management report",
+  "one": "운용사가 정기적으로 펀드의 수익률, 담은 자산, 비용을 투자자에게 알리는 보고서이다."
+ },
+ {
+  "id": "funds-sales-load",
+  "chapter": "funds-2",
+  "title": "판매수수료",
+  "hanja": "販賣手數料",
+  "en": "sales load",
+  "one": "펀드를 판 대가로 판매회사가 투자자에게서 넣을 때나 찾을 때 한 번 받는 돈이다."
+ },
+ {
+  "id": "funds-fee",
+  "chapter": "funds-2",
+  "title": "펀드 보수",
+  "hanja": "펀드報酬",
+  "en": "fund fees",
+  "one": "운용·판매·수탁·사무관리 회사가 펀드 재산에서 해마다 비율로 떼어 가는 돈이다. 매일 기준가격에 반영된다."
+ },
+ {
+  "id": "funds-redemption-fee",
+  "chapter": "funds-2",
+  "title": "환매수수료",
+  "hanja": "還買手數料",
+  "en": "redemption fee",
+  "one": "정해진 기간 안에 펀드를 되팔 때 내는 돈이다. 회사가 아니라 펀드 재산으로 들어간다."
+ },
+ {
+  "id": "funds-ter",
+  "chapter": "funds-2",
+  "title": "총보수비용비율",
+  "hanja": "總報酬費用比率",
+  "en": "total expense ratio, TER",
+  "one": "한 해 동안 펀드에서 빠진 보수와 기타 비용을 평균 순자산으로 나눈 비율이다. 펀드 안의 매매 수수료는 들어가지 않는다."
+ },
+ {
+  "id": "funds-class-cost",
+  "chapter": "funds-2",
+  "title": "클래스별 비용 비교",
+  "hanja": "",
+  "en": "share class cost comparison",
+  "one": "같은 펀드의 클래스 가운데 보유 기간에 따라 어느 쪽 비용이 덜 드는지 계산하는 일이다."
+ },
+ {
+  "id": "funds-income",
+  "chapter": "funds-2",
+  "title": "펀드 이익의 과세",
+  "hanja": "",
+  "en": "taxation of fund income",
+  "one": "펀드에서 받은 이익을 안에 섞인 내용과 상관없이 배당소득으로 보아 세금을 매기는 방식이다."
+ },
+ {
+  "id": "funds-excluded-gain",
+  "chapter": "funds-2",
+  "title": "과세 제외 손익",
+  "hanja": "課稅除外損益",
+  "en": "excluded gains and losses",
+  "one": "펀드 안에서 생겼지만 국내 상장주식 매매·평가 손익처럼 펀드 이익 계산에서 빼는 손익이다. 손실도 함께 빠진다."
+ },
+ {
+  "id": "funds-ftc",
+  "chapter": "funds-2",
+  "title": "펀드 외국납부세액공제",
+  "hanja": "펀드外國納付稅額控除",
+  "en": "foreign tax credit for funds",
+  "one": "펀드가 외국에 먼저 낸 세금을 투자자가 낼 국내 세금에서 빼 주는 제도이다."
+ },
+ {
+  "id": "funds-els",
+  "chapter": "funds-3",
+  "title": "주가연계증권",
+  "hanja": "株價連繫證券",
+  "en": "equity-linked securities, ELS",
+  "one": "주가지수나 주식의 움직임에 따라 돌려받을 돈이 미리 정한 방법으로 정해지는, 증권회사가 발행하는 파생결합증권이다.",
+  "econ": "t693"
+ },
+ {
+  "id": "funds-els-underlying",
+  "chapter": "funds-3",
+  "title": "기초자산",
+  "hanja": "基礎資産",
+  "en": "underlying asset",
+  "one": "ELS의 상환 여부와 금액을 정하는 기준이 되는 지수나 주식이다. 여러 개를 묶으면 가장 많이 떨어진 하나로 평가하는 경우가 많다."
+ },
+ {
+  "id": "funds-els-autocall",
+  "chapter": "funds-3",
+  "title": "조기상환",
+  "hanja": "早期償還",
+  "en": "autocall, early redemption",
+  "one": "정해진 평가일에 기초자산이 기준 이상이면 만기 전에 원금과 쌓인 쿠폰을 돌려주고 끝내는 것이다."
+ },
+ {
+  "id": "funds-els-coupon",
+  "chapter": "funds-3",
+  "title": "쿠폰",
+  "hanja": "",
+  "en": "coupon",
+  "one": "ELS가 상환 조건을 채웠을 때 원금에 붙여 주는 수익이다. 연율로 적지만 상환 때까지 쌓인 몫을 한꺼번에 주는 구조가 많다."
+ },
+ {
+  "id": "funds-els-knockin",
+  "chapter": "funds-3",
+  "title": "녹인",
+  "hanja": "",
+  "en": "knock-in",
+  "one": "만기 전에 기초자산이 한 번이라도 정한 선 아래로 내려가면 원금 손실 가능성이 생기도록 하는 조건이다."
+ },
+ {
+  "id": "funds-els-issuer",
+  "chapter": "funds-3",
+  "title": "발행사 신용위험",
+  "hanja": "發行社 信用危險",
+  "en": "issuer credit risk",
+  "one": "ELS를 발행한 증권회사가 약속한 돈을 치르지 못할 위험이다. ELS는 담보 없는 발행사의 빚이고 예금자보호가 되지 않는다.",
+  "econ": "t629"
+ },
+ {
+  "id": "funds-els-unwind",
+  "chapter": "funds-3",
+  "title": "중도상환",
+  "hanja": "中途償還",
+  "en": "early unwind",
+  "one": "평가일을 기다리지 않고 발행사에 ELS를 되사 달라고 청구하는 것이다. 평가가격에서 수수료를 뺀 금액을 받는다."
+ },
+ {
+  "id": "funds-els-wrapper",
+  "chapter": "funds-3",
+  "title": "ELS를 담는 그릇",
+  "hanja": "",
+  "en": "ELS, ELT and ELF",
+  "one": "같은 ELS를 증권회사에서 직접 사는지, 은행 신탁(ELT)이나 펀드(ELF)에 담아 사는지의 차이이다. 적용되는 규칙과 비용이 다르다."
+ },
+ {
+  "id": "funds-els-tax",
+  "chapter": "funds-3",
+  "title": "ELS 수익의 과세",
+  "hanja": "ELS 收益의 課稅",
+  "en": "taxation of ELS returns",
+  "one": "ELS·DLS와 ELB·DLB에서 받은 돈이 낸 돈보다 많으면 그 차이를 배당소득으로 보아 과세하는 것이다. 상품 사이의 손실은 빼 주지 않는다."
+ },
+ {
+  "id": "funds-etn",
+  "chapter": "funds-4",
+  "title": "ETN",
+  "hanja": "上場指數證券",
+  "en": "exchange-traded note, ETN",
+  "one": "증권회사가 정한 지수의 수익률만큼 돌려주겠다고 약속하고 발행해 거래소에 상장한 파생결합증권이다. 담보 자산 바구니가 없고 만기가 있다."
+ },
+ {
+  "id": "funds-etn-issuer",
+  "chapter": "funds-4",
+  "title": "ETN 발행사 신용위험",
+  "hanja": "發行社信用危險",
+  "en": "issuer credit risk",
+  "one": "ETN을 낸 증권회사가 갚을 능력을 잃어 지수 성과와 상관없이 돈을 돌려받지 못할 위험이다.",
+  "econ": "t391"
+ },
+ {
+  "id": "funds-etn-iv",
+  "chapter": "funds-4",
+  "title": "지표가치",
+  "hanja": "指標價値",
+  "en": "indicative value, IV",
+  "one": "ETN 한 증권이 발행 조건대로라면 지금 얼마인지를 기초지수 움직임과 제비용으로 계산한 값이다. 장중 추정치는 iIV라고 한다."
+ },
+ {
+  "id": "funds-etn-lp",
+  "chapter": "funds-4",
+  "title": "ETN 유동성공급자",
+  "hanja": "流動性供給者",
+  "en": "ETN liquidity provider",
+  "one": "거래소에서 ETN의 매수·매도 호가를 꾸준히 내 주는 증권회사이다. 대개 발행사가 직접 맡는다."
+ },
+ {
+  "id": "funds-etn-gap",
+  "chapter": "funds-4",
+  "title": "ETN 괴리율",
+  "hanja": "乖離率",
+  "en": "ETN premium/discount to indicative value",
+  "one": "ETN의 시장 가격이 지표가치에서 몇 % 벗어났는지를 나타낸 값이다."
+ },
+ {
+  "id": "funds-etn-redeem",
+  "chapter": "funds-4",
+  "title": "ETN 중도상환",
+  "hanja": "中途償還",
+  "en": "early redemption",
+  "one": "만기 전에 ETN을 발행사에 직접 돌려주고 지표가치에서 수수료를 뺀 돈을 받는 일이다."
+ },
+ {
+  "id": "funds-etn-early-close",
+  "chapter": "funds-4",
+  "title": "조기청산",
+  "hanja": "早期淸算",
+  "en": "early termination",
+  "one": "투자설명서에 정한 사유가 생겨 ETN을 만기 전에 강제로 상환하고 상장을 끝내는 일이다."
+ },
+ {
+  "id": "funds-etn-delist",
+  "chapter": "funds-4",
+  "title": "ETN 상장폐지",
+  "hanja": "上場廢止",
+  "en": "ETN delisting",
+  "one": "ETN이 거래소에서 더는 거래되지 않게 되는 일이다. 상장폐지되어도 발행사는 지표가치로 상환할 의무를 진다."
+ },
+ {
+  "id": "funds-elw",
+  "chapter": "funds-4",
+  "title": "ELW",
+  "hanja": "株式워런트證券",
+  "en": "equity-linked warrant, ELW",
+  "one": "기초자산을 정해진 날에 정해진 가격으로 사거나 팔 권리를 증권으로 만들어 거래소에 상장한 것이다. 만기에 권리를 쓸 수 없으면 값이 0이 된다.",
+  "econ": "t442"
+ },
+ {
+  "id": "funds-discretionary",
+  "chapter": "funds-5",
+  "title": "투자일임",
+  "hanja": "投資一任",
+  "en": "discretionary investment management",
+  "one": "투자 판단의 전부나 일부를 금융회사에 맡겨, 그 투자자 계좌만 따로 운용하게 하는 계약이다. 손익은 투자자에게 돌아간다."
+ },
+ {
+  "id": "funds-wrap",
+  "chapter": "funds-5",
+  "title": "랩어카운트",
+  "hanja": "",
+  "en": "wrap account",
+  "one": "투자일임이나 자문에 매매 수수료와 관리 비용을 묶어 잔고의 일정 비율로 받는 계좌형 상품이다."
+ },
+ {
+  "id": "funds-trust",
+  "chapter": "funds-5",
+  "title": "신탁",
+  "hanja": "信託",
+  "en": "trust",
+  "one": "위탁자가 수탁자에게 재산을 넘기고, 수탁자가 수익자를 위해 관리·운용하게 하는 법률관계이다. 신탁재산은 수탁자의 다른 재산과 분리된다.",
+  "econ": "t141"
+ },
+ {
+  "id": "funds-smt",
+  "chapter": "funds-5",
+  "title": "특정금전신탁",
+  "hanja": "特定金錢信託",
+  "en": "specified money trust",
+  "one": "맡긴 돈의 운용 대상을 위탁자가 직접 지정하는 금전신탁이다. 손익은 위탁자에게 돌아가고 예금자보호 대상이 아니다."
+ },
+ {
+  "id": "funds-reit",
+  "chapter": "funds-5",
+  "title": "리츠",
+  "hanja": "",
+  "en": "real estate investment trust, REIT",
+  "one": "모은 돈으로 부동산을 사서 임대료와 매각 차익을 주주에게 나눠 주는 주식회사이다. 법률 이름은 부동산투자회사이다."
+ },
+ {
+  "id": "funds-reit-payout",
+  "chapter": "funds-5",
+  "title": "의무배당",
+  "hanja": "義務配當",
+  "en": "mandatory dividend payout",
+  "one": "리츠가 한 해 배당할 수 있는 이익의 대부분을 반드시 주주에게 나눠 주게 한 규정이다."
+ },
+ {
+  "id": "funds-reit-amc",
+  "chapter": "funds-5",
+  "title": "위탁관리 리츠",
+  "hanja": "委託管理",
+  "en": "externally managed REIT",
+  "one": "직원 없이 자산 운용은 자산관리회사에, 사무는 사무수탁회사에 맡기는 서류상 회사 형태의 리츠이다."
+ },
+ {
+  "id": "pension-multi-pillar",
+  "chapter": "pension-1",
+  "title": "다층 노후소득보장",
+  "hanja": "多層老後所得保障",
+  "en": "multi-pillar pension system",
+  "one": "노후 소득을 국민연금, 퇴직연금, 개인연금처럼 성격이 다른 여러 층의 제도로 나누어 쌓는 구조이다."
+ },
+ {
+  "id": "pension-basic",
+  "chapter": "pension-1",
+  "title": "기초연금",
+  "hanja": "基礎年金",
+  "en": "basic pension",
+  "one": "소득과 재산이 적은 65세 이상 노인에게 보험료 없이 세금으로 주는 연금이다."
+ },
+ {
+  "id": "pension-nps-contribution",
+  "chapter": "pension-1",
+  "title": "연금보험료",
+  "hanja": "年金保險料",
+  "en": "pension contribution",
+  "one": "국민연금 가입자가 신고 소득(기준소득월액)에 보험료율을 곱해 매달 내는 돈이다.",
+  "econ": "t081"
+ },
+ {
+  "id": "pension-replacement",
+  "chapter": "pension-1",
+  "title": "소득대체율",
+  "hanja": "所得代替率",
+  "en": "income replacement rate",
+  "one": "연금이 가입 기간 평균 소득의 몇 %를 대신하는지 나타낸 비율이다."
+ },
+ {
+  "id": "pension-claim-age",
+  "chapter": "pension-1",
+  "title": "수급개시연령",
+  "hanja": "受給開始年齡",
+  "en": "pensionable age",
+  "one": "국민연금 노령연금을 정상 금액으로 받기 시작하는 나이로, 태어난 해에 따라 다르다."
+ },
+ {
+  "id": "pension-retire-benefit",
+  "chapter": "pension-1",
+  "title": "퇴직급여",
+  "hanja": "退職給與",
+  "en": "retirement benefit",
+  "one": "회사를 그만둘 때 일한 기간에 비례해 받는 돈으로, 퇴직금이나 퇴직연금으로 받는다."
+ },
+ {
+  "id": "pension-account",
+  "chapter": "pension-1",
+  "title": "연금계좌",
+  "hanja": "年金計座",
+  "en": "pension account",
+  "one": "연금으로 받는 것을 조건으로 세금 혜택을 주는 연금저축계좌와 퇴직연금계좌이다."
+ },
+ {
+  "id": "pension-severance",
+  "chapter": "pension-2",
+  "title": "퇴직금",
+  "hanja": "退職金",
+  "en": "severance pay",
+  "one": "회사가 그만두는 근로자에게 근속 1년마다 30일분 이상의 평균임금을 한꺼번에 주는 퇴직급여이다."
+ },
+ {
+  "id": "pension-db",
+  "chapter": "pension-2",
+  "title": "확정급여형",
+  "hanja": "確定給與型",
+  "en": "defined benefit, DB",
+  "one": "근로자가 받을 급여가 미리 정해져 있고 운용의 이익과 손실을 회사가 지는 퇴직연금이다."
+ },
+ {
+  "id": "pension-dc",
+  "chapter": "pension-2",
+  "title": "확정기여형",
+  "hanja": "確定寄與型",
+  "en": "defined contribution, DC",
+  "one": "회사가 넣을 돈이 미리 정해져 있고 근로자가 운용을 정해 그 결과를 지는 퇴직연금이다."
+ },
+ {
+  "id": "pension-default-option",
+  "chapter": "pension-2",
+  "title": "사전지정운용제도",
+  "hanja": "事前指定運用制度",
+  "en": "default option",
+  "one": "확정기여형·IRP 가입자가 운용 방법을 고르지 않으면 미리 골라 둔 방법으로 적립금을 굴리는 제도이다."
+ },
+ {
+  "id": "pension-dc-withdrawal",
+  "chapter": "pension-2",
+  "title": "중도인출",
+  "hanja": "中途引出",
+  "en": "in-service withdrawal",
+  "one": "퇴직 전에 확정기여형이나 IRP 적립금을 꺼내는 것으로, 주택 구입이나 큰 의료비처럼 법이 정한 사유가 있을 때만 된다."
+ },
+ {
+  "id": "pension-irp",
+  "chapter": "pension-2",
+  "title": "개인형 퇴직연금",
+  "hanja": "個人型退職年金",
+  "en": "individual retirement pension, IRP",
+  "one": "개인이 금융회사에 여는 퇴직연금 계좌로, 그만둘 때 퇴직급여를 받는 그릇이자 스스로 더 넣는 계좌이다."
+ },
+ {
+  "id": "pension-tax-deferral",
+  "chapter": "pension-2",
+  "title": "과세이연",
+  "hanja": "課稅移延",
+  "en": "tax deferral",
+  "one": "세금을 없애지 않고 내는 시점을 뒤로 미루는 것으로, 퇴직급여가 연금계좌에 있는 동안 퇴직소득세를 떼지 않는 것이 대표적이다."
+ },
+ {
+  "id": "pension3-savings",
+  "chapter": "pension-3",
+  "title": "연금저축계좌",
+  "hanja": "年金貯蓄計座",
+  "en": "personal pension savings account",
+  "one": "\"연금저축\"이라는 이름으로 증권회사·은행·보험회사와 맺는 개인 연금계좌로, 맺는 상대에 따라 펀드·신탁·보험으로 나뉜다."
+ },
+ {
+  "id": "pension3-indirect",
+  "chapter": "pension-3",
+  "title": "간접투자 원칙",
+  "hanja": "間接投資原則",
+  "en": "indirect investment rule",
+  "one": "연금계좌에서 주식을 종목으로 직접 사지 못하고 펀드나 ETF를 거쳐서만 담게 하는 규칙이다."
+ },
+ {
+  "id": "pension3-risky-limit",
+  "chapter": "pension-3",
+  "title": "위험자산 한도",
+  "hanja": "危險資産限度",
+  "en": "risky asset limit",
+  "one": "DC·IRP 계좌에서 원금을 잃을 수 있는 상품에 넣을 수 있는 몫의 상한이며, 평가액 기준으로 잰다."
+ },
+ {
+  "id": "pension3-tdf",
+  "chapter": "pension-3",
+  "title": "적격 TDF",
+  "hanja": "適格",
+  "en": "qualified target date fund",
+  "one": "은퇴 예상 연도에 맞춰 주식 비중을 줄여 가는 펀드 가운데 감독 기준을 맞춰 위험자산 한도의 예외가 되는 것이다.",
+  "econ": "t694"
+ },
+ {
+  "id": "pension3-transfer",
+  "chapter": "pension-3",
+  "title": "연금계좌 이체",
+  "hanja": "年金計座移替",
+  "en": "pension account transfer",
+  "one": "연금계좌의 돈을 해지하지 않고 다른 연금계좌로 옮겨 세금 혜택을 그대로 잇는 것이다."
+ },
+ {
+  "id": "pension3-inkind",
+  "chapter": "pension-3",
+  "title": "실물이전",
+  "hanja": "實物移轉",
+  "en": "in-kind transfer",
+  "one": "계좌 안의 상품을 팔지 않고 그대로 다른 금융회사 계좌로 옮기는 것이다."
+ },
+ {
+  "id": "pension3-credit-order",
+  "chapter": "pension-3",
+  "title": "세액공제 대상 납입액",
+  "hanja": "稅額控除對象納入額",
+  "en": "creditable contributions",
+  "one": "연금계좌에 넣은 돈 가운데 연금저축 몫과 합산 몫의 한도 안에 들어 실제로 세금을 깎는 데 쓰이는 금액이다."
+ },
+ {
+  "id": "pension3-isa-rollover",
+  "chapter": "pension-3",
+  "title": "ISA 만기 전환",
+  "hanja": "滿期轉換",
+  "en": "ISA maturity rollover",
+  "one": "만기가 된 ISA의 돈을 기한 안에 연금계좌로 옮겨 그해 세액공제 한도를 늘리는 제도이다."
+ },
+ {
+  "id": "pension3-non-deducted",
+  "chapter": "pension-3",
+  "title": "공제받지 않은 납입금",
+  "hanja": "控除納入金",
+  "en": "non-deducted contributions",
+  "one": "연금계좌에 넣었지만 세액공제를 받지 못한 돈으로, 꺼낼 때 원금에 세금이 없고 다음 해 납입액으로 전환할 수 있다."
+ },
+ {
+  "id": "pension-annuity-receipt",
+  "chapter": "pension-4",
+  "title": "연금수령",
+  "hanja": "年金受領",
+  "en": "annuity-type withdrawal",
+  "one": "연금계좌에서 세법이 정한 나이, 가입 기간, 한 해 한도를 지켜 돈을 꺼내는 것으로, 낮은 연금소득세가 붙는다."
+ },
+ {
+  "id": "pension-payout-limit",
+  "chapter": "pension-4",
+  "title": "연금수령한도",
+  "hanja": "年金受領限度",
+  "en": "annual pension withdrawal limit",
+  "one": "한 해에 연금으로 인정받으며 꺼낼 수 있는 최대 금액으로, 계좌 평가액과 연금수령연차로 계산한다."
+ },
+ {
+  "id": "pension-nonannuity",
+  "chapter": "pension-4",
+  "title": "연금외수령",
+  "hanja": "年金外受領",
+  "en": "non-annuity withdrawal",
+  "one": "연금수령 요건을 갖추지 못하고 연금계좌에서 돈을 꺼내는 것으로, 공제받은 납입금과 수익에 기타소득세가 붙는다."
+ },
+ {
+  "id": "pension-unavoidable",
+  "chapter": "pension-4",
+  "title": "부득이한 인출",
+  "hanja": "不得已한 引出",
+  "en": "hardship withdrawal",
+  "one": "천재지변, 사망, 장기 요양, 파산처럼 법이 정한 사유로 연금계좌에서 돈을 꺼내는 것으로, 연금수령처럼 낮게 과세한다."
+ },
+ {
+  "id": "pension-withdraw-order",
+  "chapter": "pension-4",
+  "title": "인출 순서",
+  "hanja": "引出 順序",
+  "en": "withdrawal ordering rule",
+  "one": "연금계좌에서 일부를 꺼낼 때 공제받지 않은 납입금, 이연퇴직소득, 공제받은 납입금과 수익의 순으로 나간 것으로 보는 규칙이다."
+ },
+ {
+  "id": "pension-income-tax",
+  "chapter": "pension-4",
+  "title": "연금소득세",
+  "hanja": "年金所得稅",
+  "en": "pension income tax",
+  "one": "연금계좌에서 연금수령한 공제받은 납입금과 운용 수익에 매기는 세금으로, 받는 사람의 나이와 계약 형태에 따라 세율이 다르다."
+ },
+ {
+  "id": "pension-deferred-retirement",
+  "chapter": "pension-4",
+  "title": "이연퇴직소득",
+  "hanja": "移延退職所得",
+  "en": "deferred retirement income",
+  "one": "퇴직급여를 연금계좌로 옮기면서 세금을 떼지 않고 미뤄 둔 퇴직소득으로, 연금으로 받으면 퇴직소득세의 일부만 낸다."
+ },
+ {
+  "id": "pension-separate-choice",
+  "chapter": "pension-4",
+  "title": "분리과세 선택",
+  "hanja": "分離課稅 選擇",
+  "en": "option for separate taxation",
+  "one": "사적연금이 기준 금액을 넘을 때 종합과세와 정해진 세율의 분리과세 가운데 하나를 고르는 제도이다."
  }
 ];
