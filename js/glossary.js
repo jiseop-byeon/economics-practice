@@ -4044,5 +4044,267 @@ window.GLOSSARY = [
   "en": "crypto lending",
   "one": "거래소가 원화나 코인을 담보로 받고 코인이나 돈을 빌려주는 서비스이다. 코인을 빌려 팔면 값이 오를 때 잃는다.",
   "chapter": "cases-3"
+ },
+ {
+  "id": "common7-brokerage",
+  "chapter": "common-7",
+  "title": "위탁계좌",
+  "hanja": "委託計座",
+  "en": "brokerage account",
+  "one": "증권회사에 주식 매매를 맡기려고 여는 기본 계좌이다. 주문은 증권회사가 거래소에 대신 넣고, 체결된 주식과 남은 돈을 이 계좌에 적는다."
+ },
+ {
+  "id": "common7-dedicated",
+  "chapter": "common-7",
+  "title": "전용 계좌",
+  "hanja": "專用計座",
+  "en": "dedicated account",
+  "one": "ISA, 연금계좌, 개인투자용 국채처럼 법이 정한 목적에만 쓰도록 따로 여는 계좌이다. 혜택과 한도가 계좌에 붙어 있다."
+ },
+ {
+  "id": "common7-nonface",
+  "chapter": "common-7",
+  "title": "비대면 실명확인",
+  "hanja": "非對面實名確認",
+  "en": "non-face-to-face identity verification",
+  "one": "지점에 가지 않고 계좌를 열 때 정해진 방법 두 가지 이상을 겹쳐 신청인이 이름의 주인인지 확인하는 절차이다."
+ },
+ {
+  "id": "common7-purpose",
+  "chapter": "common-7",
+  "title": "금융거래목적 확인",
+  "hanja": "金融去來目的確認",
+  "en": "verification of account purpose",
+  "one": "계좌를 열 때 금융회사가 쓰임을 묻고 증빙을 받는 절차이다. 증빙이 없으면 하루 거래 한도가 묶인 계좌로 연다."
+ },
+ {
+  "id": "common7-20day",
+  "chapter": "common-7",
+  "title": "다수 계좌 개설 제한",
+  "hanja": "多數計座開設制限",
+  "en": "limit on opening multiple accounts",
+  "one": "짧은 기간에 여러 금융회사에서 입출금 계좌를 잇달아 열지 못하게 하는 금융권 관행이다."
+ },
+ {
+  "id": "common7-borrowed-name",
+  "chapter": "common-7",
+  "title": "차명 거래",
+  "hanja": "借名去來",
+  "en": "transaction under a borrowed name",
+  "one": "다른 사람 이름의 계좌로 자기 돈을 굴리는 것이다. 재산 은닉이나 탈세 같은 탈법 목적이면 처벌된다."
+ },
+ {
+  "id": "common7-transfer",
+  "chapter": "common-7",
+  "title": "타사 대체",
+  "hanja": "他社代替",
+  "en": "broker-to-broker securities transfer",
+  "one": "주식을 팔지 않고 한 증권회사 계좌에서 다른 증권회사 계좌로 옮기는 것이다. 매매가 아니어서 증권거래세가 붙지 않는다.",
+  "econ": "t039"
+ },
+ {
+  "id": "common7-dormant",
+  "chapter": "common-7",
+  "title": "휴면성 증권계좌",
+  "hanja": "休眠性證券計座",
+  "en": "dormant securities account",
+  "one": "오랫동안 거래가 없고 남은 자산이 적어 쓰이지 않는 것으로 보는 증권 계좌이다. 자산은 남아 있고 본인 확인을 거쳐 다시 쓴다."
+ },
+ {
+  "id": "common7-heir-inquiry",
+  "chapter": "common-7",
+  "title": "상속인 금융거래조회",
+  "hanja": "相續人金融去來照會",
+  "en": "inheritor's financial inquiry service",
+  "one": "세상을 떠난 사람의 금융자산과 빚을 상속인이 한 번에 찾도록 금융감독원이 금융회사들에 대신 묻는 제도이다."
+ },
+ {
+  "id": "ins-savings",
+  "chapter": "funds-6",
+  "title": "저축성 보험",
+  "hanja": "貯蓄性保險",
+  "en": "savings insurance",
+  "one": "만기나 해지 때 돌려받는 돈이 낸 보험료보다 많아지도록 설계한 보험이다."
+ },
+ {
+  "id": "ins-disclosed-rate",
+  "chapter": "funds-6",
+  "title": "공시이율",
+  "hanja": "公示利率",
+  "en": "announced crediting rate",
+  "one": "금리연동형 보험의 적립금에 붙이는 이율로, 보험회사가 정기적으로 정해 알리며 가입 뒤에도 바뀐다."
+ },
+ {
+  "id": "ins-variable",
+  "chapter": "funds-6",
+  "title": "변액보험",
+  "hanja": "變額保險",
+  "en": "variable insurance",
+  "one": "보험료 일부를 특별계정에서 주식과 채권 등에 운용해, 실적에 따라 적립금과 보험금이 오르내리는 보험이다."
+ },
+ {
+  "id": "ins-loading",
+  "chapter": "funds-6",
+  "title": "사업비",
+  "hanja": "事業費",
+  "en": "expense loading",
+  "one": "보험료 가운데 적립되지 않고 모집, 유지, 수금 같은 보험회사 비용으로 쓰이는 몫이다."
+ },
+ {
+  "id": "ins-surrender",
+  "chapter": "funds-6",
+  "title": "해지환급금",
+  "hanja": "解止還給金",
+  "en": "surrender value",
+  "one": "보험계약을 만기 전에 끝낼 때 적립금에서 해지공제액을 빼고 돌려주는 돈이다.",
+  "econ": "t228"
+ },
+ {
+  "id": "ins-gain",
+  "chapter": "funds-6",
+  "title": "보험차익",
+  "hanja": "保險差益",
+  "en": "insurance gain",
+  "one": "저축성 보험의 만기보험금이나 해지환급금에서 낸 보험료를 뺀 금액으로, 요건을 채우지 못하면 이자소득으로 과세된다."
+ },
+ {
+  "id": "ins-deposit-scope",
+  "chapter": "funds-6",
+  "title": "보험의 예금자보호 범위",
+  "hanja": "",
+  "en": "deposit insurance coverage of insurance",
+  "one": "보험회사가 무너졌을 때 예금보험이 대신 돌려주는 보험 계약상 돈의 범위로, 변액보험 주계약은 빠진다.",
+  "econ": "t434"
+ },
+ {
+  "id": "ins-cancel",
+  "chapter": "funds-6",
+  "title": "보험계약 취소권",
+  "hanja": "保險契約取消權",
+  "en": "right to rescind an insurance contract",
+  "one": "약관을 받지 못했거나 중요한 내용을 설명받지 못한 계약자가 정해진 기간 안에 계약을 없던 일로 돌릴 수 있는 권리이다."
+ },
+ {
+  "id": "ipo-price-band",
+  "chapter": "stocks-8",
+  "title": "희망 공모가 범위",
+  "hanja": "希望公募價範圍",
+  "en": "indicative price range",
+  "one": "회사와 주관회사가 증권신고서에 처음 적는 공모가의 아래·위 범위이다."
+ },
+ {
+  "id": "ipo-bookbuilding",
+  "chapter": "stocks-8",
+  "title": "수요예측",
+  "hanja": "需要豫測",
+  "en": "book building",
+  "one": "개인 청약 전에 기관투자자에게서 가격별 매수 희망 수량을 받아 공모가와 기관 배정을 정하는 절차이다.",
+  "econ": "t148"
+ },
+ {
+  "id": "ipo-equal-alloc",
+  "chapter": "stocks-8",
+  "title": "균등배정",
+  "hanja": "均等配定",
+  "en": "equal allocation",
+  "one": "최소 단위 이상을 청약한 모든 일반청약자에게 같은 수의 공모주를 나누는 방식이다."
+ },
+ {
+  "id": "ipo-prop-alloc",
+  "chapter": "stocks-8",
+  "title": "비례배정",
+  "hanja": "比例配定",
+  "en": "proportional allocation",
+  "one": "균등배정을 뺀 일반청약자 물량을 청약 수량에 비례해 나누는 방식이다."
+ },
+ {
+  "id": "ipo-deposit",
+  "chapter": "stocks-8",
+  "title": "청약 증거금",
+  "hanja": "請約證據金",
+  "en": "subscription deposit",
+  "one": "공모주를 청약할 때 미리 맡기는 돈으로, 배정 뒤 주식 값으로 바뀌고 남는 돈은 돌려받는다."
+ },
+ {
+  "id": "ipo-lockup",
+  "chapter": "stocks-8",
+  "title": "의무보유 확약",
+  "hanja": "義務保有確約",
+  "en": "lock-up commitment",
+  "one": "공모주를 받은 기관이 상장 뒤 정한 기간 동안 주식을 팔지 않겠다고 하는 약속이다."
+ },
+ {
+  "id": "ipo-listing-range",
+  "chapter": "stocks-8",
+  "title": "상장일 가격 범위",
+  "hanja": "上場日價格範圍",
+  "en": "listing-day price range",
+  "one": "신규상장 종목이 상장 첫날 거래될 수 있는 가격의 아래·위 끝이다."
+ },
+ {
+  "id": "sh-agm",
+  "chapter": "stocks-9",
+  "title": "주주총회",
+  "hanja": "株主總會",
+  "en": "general meeting of shareholders",
+  "one": "주주들이 모여 이사 선임, 재무제표 승인, 정관 변경, 합병 같은 회사의 중요한 일을 정하는 최고 의사결정 기구이다."
+ },
+ {
+  "id": "sh-voting",
+  "chapter": "stocks-9",
+  "title": "의결권",
+  "hanja": "議決權",
+  "en": "voting right",
+  "one": "주주총회 안건에 찬성이나 반대의 표를 던질 수 있는 권리로, 원칙은 한 주에 한 표이다."
+ },
+ {
+  "id": "sh-cumulative",
+  "chapter": "stocks-9",
+  "title": "집중투표",
+  "hanja": "集中投票",
+  "en": "cumulative voting",
+  "one": "이사 여러 명을 뽑을 때 한 주에 뽑을 이사 수만큼 표를 주고 그 표를 한 후보에게 몰아줄 수 있게 하는 방식이다."
+ },
+ {
+  "id": "sh-minority",
+  "chapter": "stocks-9",
+  "title": "소수주주권",
+  "hanja": "少數株主權",
+  "en": "minority shareholder rights",
+  "one": "발행주식의 일정 비율 이상을 가진 주주만 쓸 수 있는 권리로, 총회 소집 청구, 주주제안, 대표소송 등이 있다."
+ },
+ {
+  "id": "sh-derivative",
+  "chapter": "stocks-9",
+  "title": "주주대표소송",
+  "hanja": "株主代表訴訟",
+  "en": "shareholder derivative suit",
+  "one": "회사가 책임을 묻지 않을 때 주주가 회사를 대신해 이사를 상대로 내는 소송이며, 이긴 돈은 회사로 들어간다."
+ },
+ {
+  "id": "sh-appraisal",
+  "chapter": "stocks-9",
+  "title": "주식매수청구권",
+  "hanja": "株式買受請求權",
+  "en": "appraisal right",
+  "one": "합병이나 분할 같은 결정에 반대한 주주가 회사에 자기 주식을 사 달라고 요구할 수 있는 권리이다.",
+  "econ": "t149"
+ },
+ {
+  "id": "sh-tender",
+  "chapter": "stocks-9",
+  "title": "공개매수",
+  "hanja": "公開買收",
+  "en": "tender offer",
+  "one": "가격과 수량, 기간을 미리 알리고 거래소 밖에서 여러 주주에게서 주식을 한꺼번에 사들이는 방식이다.",
+  "econ": "t773"
+ },
+ {
+  "id": "sh-squeeze",
+  "chapter": "stocks-9",
+  "title": "소수주식 강제매수",
+  "hanja": "少數株式強制買受",
+  "en": "squeeze-out",
+  "one": "발행주식의 95% 이상을 가진 지배주주가 남은 소수 주주에게 주식을 팔라고 요구할 수 있게 한 제도이다."
  }
 ];
