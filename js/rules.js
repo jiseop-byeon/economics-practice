@@ -109,6 +109,10 @@ window.RULE_TOPICS = [
   {
     "id": "research",
     "name": "조사분석자료"
+  },
+  {
+    "id": "cost",
+    "name": "거래 비용"
   }
 ];
 
@@ -181,8 +185,8 @@ window.RULES = {
     "label": "정규 거래 시간 (뉴욕증권거래소·나스닥)",
     "value": "09:30~16:00 (미국 동부 시간)",
     "short": "미국 동부 시간 오전 9시 30분부터 오후 4시",
-    "checked": "2026-10-17",
-    "level": "pending",
+    "checked": "2026-10-18",
+    "level": "official",
     "note": "한국 시간으로는 서머타임 기간 22:30~05:00, 그 밖에는 23:30~06:00이다. 정규 시간 앞뒤의 장 전·장 후 거래는 증권사마다 제공 범위가 다르다.",
     "sources": [
       {
@@ -6627,6 +6631,537 @@ window.RULES = {
       {
         "name": "시사경제(sateconomy), 2019-01-20",
         "url": "https://www.sateconomy.co.kr/news/view/179589241193687"
+      }
+    ]
+  },
+  "us-hours-ext": {
+    "topic": "hours",
+    "market": "US",
+    "label": "장 전·장 후 거래 시간 (NYSE Arca 기준)",
+    "value": "장 전 04:00~09:30, 장 후 16:00~20:00 (미국 동부 시간)",
+    "short": "미국 동부 시간 새벽 4시부터 정규장 전까지, 정규장 뒤 오후 8시까지",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "거래소마다 다르다. 뉴욕증권거래소 본시장(NYSE)은 Tape A 종목의 장 전 거래가 없고 Tape B·C 종목만 07:00부터 받는다. 나스닥도 04:00~20:00 시간대를 운영한다고 금융회사들이 안내한다. 한국 증권회사가 받는 시간대는 회사마다 다르다.",
+    "sources": [
+      {
+        "name": "NYSE, Holidays & Trading Hours",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      },
+      {
+        "name": "J.P. Morgan Chase, Stock market hours and extended trading",
+        "url": "https://www.chase.com/personal/investments/learning-and-insights/article/stock-market-hours-holidays-extended-trading"
+      }
+    ]
+  },
+  "us-sec-fee": {
+    "topic": "cost",
+    "market": "US",
+    "label": "SEC 거래 수수료 (Section 31)",
+    "value": "매도 금액 100만 달러당 20.60달러",
+    "short": "판 금액의 0.00206%",
+    "effective": "2026-04-04",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "거래소가 SEC에 내고 증권회사를 거쳐 파는 사람에게 넘어온다. 2026회계연도 요율로, 2026년 4월 3일까지는 0달러였다. 2027회계연도 예산 법이 정해진 뒤 60일이 지나면 다시 정해진다. FINRA 거래활동수수료(TAF)는 별도이다.",
+    "sources": [
+      {
+        "name": "SEC Fee Rate Advisory 2026-2",
+        "url": "https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2"
+      },
+      {
+        "name": "SEC Order 34-104909",
+        "url": "https://www.sec.gov/files/rules/other/2026/34-104909.pdf"
+      }
+    ]
+  },
+  "us-luld-ref": {
+    "topic": "limits",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "LULD 기준가격",
+    "value": "직전 5분 동안 거래 가격의 평균",
+    "short": "직전 5분 동안 거래된 가격의 평균이다",
+    "level": "official",
+    "note": "기준가격은 장중 계속 다시 계산된다. 하루 상한·하한이 아니다.",
+    "sources": [
+      {
+        "name": "SEC Investor Bulletin: Measures to Address Market Volatility (2013)",
+        "url": "https://www.sec.gov/investor/alerts/circuitbreakersbulletin.htm"
+      },
+      {
+        "name": "LULD Plan 운영 사이트 (Overview, 2026.10 확인)",
+        "url": "https://www.luldplan.com/"
+      }
+    ]
+  },
+  "us-luld-tier": {
+    "topic": "limits",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "LULD 종목 등급",
+    "value": "1등급: S&P 500·러셀 1000 구성 종목과 일부 ETP / 2등급: 그 밖의 NMS 종목(권리·워런트 제외)",
+    "short": "S&P 500과 러셀 1000 구성 종목, 일부 상장지수상품이고, 2등급(Tier 2)은 그 밖의 종목이다",
+    "level": "official",
+    "note": "권리(rights)와 워런트는 LULD 대상이 아니다.",
+    "sources": [
+      {
+        "name": "LULD Plan 운영 사이트 (Overview, 2026.10 확인)",
+        "url": "https://www.luldplan.com/"
+      }
+    ]
+  },
+  "us-luld-band": {
+    "topic": "limits",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "LULD 가격 밴드 폭",
+    "value": "3달러 초과: 1등급 5%, 2등급 10% / 0.75~3달러: 20% / 0.75달러 미만: 0.15달러와 75% 중 작은 값",
+    "short": "3달러 넘는 종목은 1등급 5%, 2등급 10%, 0.75~3달러는 20%, 0.75달러 미만은 0.15달러와 75% 중 작은 값",
+    "level": "official",
+    "note": "기준가격 위아래로 같은 폭을 둔다.",
+    "sources": [
+      {
+        "name": "LULD Plan 운영 사이트 (Overview, 2026.10 확인)",
+        "url": "https://www.luldplan.com/"
+      },
+      {
+        "name": "SEC Investor Bulletin: Measures to Address Market Volatility (2013)",
+        "url": "https://www.sec.gov/investor/alerts/circuitbreakersbulletin.htm"
+      }
+    ]
+  },
+  "us-luld-close": {
+    "topic": "limits",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "LULD 마감 전 밴드 확대",
+    "value": "마감 전 25분(15:35~16:00, 동부 시간) 1등급과 3달러 이하 2등급 종목의 밴드 2배",
+    "short": "마감 전 25분 동안은 1등급 종목과 3달러 이하 2등급 종목의 밴드 폭이 두 배가 된다",
+    "level": "official",
+    "note": "2013년 SEC 투자자 안내문은 장 시작 무렵에도 두 배가 된다고 적었으나, 현재 LULD 계획 사이트는 마감 전 25분만 밝힌다.",
+    "sources": [
+      {
+        "name": "LULD Plan 운영 사이트 (Overview, 2026.10 확인)",
+        "url": "https://www.luldplan.com/"
+      },
+      {
+        "name": "SEC Investor Bulletin: Measures to Address Market Volatility (2013)",
+        "url": "https://www.sec.gov/investor/alerts/circuitbreakersbulletin.htm"
+      }
+    ]
+  },
+  "us-luld-pause": {
+    "topic": "limits",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "LULD 거래 일시정지",
+    "value": "지정가격 상태가 15초 안에 풀리지 않으면 5분 정지(5분 연장 가능)",
+    "short": "이 상태가 15초 안에 풀리지 않으면 상장 거래소가 5분 동안 거래를 멈춘다. 필요하면 5분 더 늘릴 수 있다",
+    "level": "official",
+    "note": "정규 거래 마지막 10분 안에 멈추면 다시 열지 않고 종가 결정 절차로 간다.",
+    "sources": [
+      {
+        "name": "LULD Plan 운영 사이트 (Overview, 2026.10 확인)",
+        "url": "https://www.luldplan.com/"
+      },
+      {
+        "name": "SEC Investor Bulletin: Measures to Address Market Volatility (2013)",
+        "url": "https://www.sec.gov/investor/alerts/circuitbreakersbulletin.htm"
+      }
+    ]
+  },
+  "us-mwcb-halt": {
+    "topic": "limits",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "시장 전체 서킷브레이커 발동 시 조치",
+    "value": "1·2단계: 15:25(동부 시간) 전이면 15분 정지, 이후엔 정지 없음 / 3단계: 그날 거래 종료",
+    "short": "1·2단계는 동부 시간 오후 3시 25분 전이면 15분 동안 멈추고, 그 뒤에는 멈추지 않는다. 3단계는 시각과 상관없이 그날 거래를 끝낸다",
+    "level": "official",
+    "effective": "2013-02-04",
+    "note": "2013.2.4 전에는 다우 지수 10/20/30% 기준이었다.",
+    "sources": [
+      {
+        "name": "SEC Investor Bulletin: Measures to Address Market Volatility (2013)",
+        "url": "https://www.sec.gov/investor/alerts/circuitbreakersbulletin.htm"
+      },
+      {
+        "name": "NYSE rule filing SR-NYSE-2019-51 (34-87016)",
+        "url": "https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2019/(SR-NYSE-2019-51)%2034-87016.pdf"
+      }
+    ]
+  },
+  "us-sec-suspension": {
+    "topic": "protect",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "SEC 거래 중지 기간",
+    "value": "최장 10거래일",
+    "short": "최장 10거래일 동안",
+    "level": "official",
+    "note": "증권거래법 12(k)조에 근거한다. 중지가 끝나도 장외 종목은 곧바로 거래가 재개되지 않을 수 있다.",
+    "sources": [
+      {
+        "name": "SEC, Trading Suspensions",
+        "url": "https://www.sec.gov/enforcement-litigation/trading-suspensions"
+      }
+    ]
+  },
+  "us-sho-threshold": {
+    "topic": "credit",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "기준 미달 종목(threshold security) 요건",
+    "value": "결제 실패 물량이 5결제일 연속 10,000주 이상이면서 발행주식의 0.5% 이상",
+    "short": "결제되지 못한 물량이 5결제일 연속 10,000주 이상이면서 발행주식의 0.5% 이상인 것",
+    "level": "official",
+    "note": "목록에 오른 종목에서 결제 실패가 13결제일 이어지면 즉시 사서 메워야 한다. 목록은 거래소와 FINRA가 공개한다.",
+    "sources": [
+      {
+        "name": "SEC, Key Points About Regulation SHO",
+        "url": "https://www.sec.gov/investor/pubs/regsho.htm"
+      }
+    ]
+  },
+  "us-ssr-201": {
+    "topic": "credit",
+    "market": "US",
+    "checked": "2026-10-18",
+    "label": "공매도 가격 제한 (Reg SHO Rule 201)",
+    "value": "전날 종가 대비 10% 이상 하락 시, 그날 남은 시간과 다음 날 전국 최우선 매수호가보다 높은 가격에서만 공매도",
+    "short": "전날 종가보다 10% 이상 떨어지면 그날 남은 시간과 다음 날 하루, 공매도를 전국 최우선 매수호가(National Best Bid)보다 높은 가격으로만 낼 수 있다는 것",
+    "level": "official",
+    "note": "2010.2.24 SEC 채택. 매수호가와 같은 가격은 허용되지 않는다. 거래소 상장 주식 전체에 적용.",
+    "sources": [
+      {
+        "name": "SEC 보도자료 2010-26, 2010.2.24",
+        "url": "https://www.sec.gov/news/press/2010/2010-26.htm"
+      },
+      {
+        "name": "SEC, Key Points About Regulation SHO",
+        "url": "https://www.sec.gov/investor/pubs/regsho.htm"
+      }
+    ]
+  },
+  "us-disc-edgar-hours": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "EDGAR 운영 시간과 제출일 마감",
+    "value": "평일 06:00~22:00 (미국 동부 시간), 17:30 이후 접수분은 대부분 다음 영업일 제출로 본다",
+    "short": "미국 동부 시간으로 평일 오전 6시부터 오후 10시까지 서류를 받고, 오후 5시 30분이 지나 들어온 서류는 대부분 다음 영업일에 낸 것으로 친다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "Form 3·4·5와 Form 144 등 일부 서식은 오후 10시까지 낸 것을 그날 제출로 본다. 연방 공휴일에는 운영하지 않는다.",
+    "sources": [
+      {
+        "name": "SEC, EDGAR - How Do I Determine the Status of My Filing",
+        "url": "https://www.sec.gov/page/edgar-how-do-i-determine-status-my-filing"
+      }
+    ]
+  },
+  "us-disc-filer-status": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "제출자 구분 기준 (공모 유동주식 시가)",
+    "value": "대형 가속 제출자: 7억 달러 이상 / 가속 제출자: 7,500만 달러 이상 7억 달러 미만",
+    "short": "대주주 등 관계자를 뺀 주주가 가진 보통주의 시가(public float)가 7억 달러 이상이면 대형 가속 제출자, 7,500만 달러 이상 7억 달러 미만이면 가속 제출자",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "직전 회계연도 2분기 마지막 영업일 기준으로 잰다. 12개월 넘게 보고 의무가 있었고 연차보고서를 한 번 이상 냈어야 하며, 연매출 1억 달러 미만으로 소규모 보고회사 요건을 채우는 회사는 가속 제출자에서 빠진다. 나머지는 비가속 제출자이다.",
+    "sources": [
+      {
+        "name": "17 CFR 240.12b-2 (Cornell LII 법령 원문)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/240.12b-2"
+      }
+    ]
+  },
+  "us-disc-10k": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "10-K 제출 기한",
+    "value": "대형 가속 60일 / 가속 75일 / 그 밖 90일 (회계연도 말부터)",
+    "short": "회계연도가 끝난 날부터 대형 가속 제출자는 60일, 가속 제출자는 75일, 그 밖의 회사는 90일 안",
+    "checked": "2026-10-18",
+    "effective": "2006-12-15",
+    "level": "official",
+    "note": "대형 가속 제출자의 60일은 2006년 12월 15일 이후 끝나는 회계연도부터 적용되었다. 마감일이 주말이나 연방 공휴일이면 다음 영업일로 넘어간다. 2026년 5월 SEC가 분기보고서 선택제를 제안했으나 이 장 확인일 기준 최종 채택은 확인되지 않았다.",
+    "sources": [
+      {
+        "name": "SEC, Form 10-K General Instructions A(2)",
+        "url": "https://www.sec.gov/files/form10-k.pdf"
+      }
+    ]
+  },
+  "us-disc-10q": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "10-Q 제출 기한",
+    "value": "대형 가속·가속 40일 / 그 밖 45일 (분기 말부터)",
+    "short": "분기가 끝난 날부터 대형 가속·가속 제출자는 40일, 그 밖의 회사는 45일 안",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "1·2·3분기에만 낸다. 4분기는 10-K로 갈음한다. 마감일이 주말이나 연방 공휴일이면 다음 영업일로 넘어간다.",
+    "sources": [
+      {
+        "name": "SEC, Form 10-Q General Instructions A",
+        "url": "https://www.sec.gov/files/form10-q.pdf"
+      }
+    ]
+  },
+  "us-disc-20f": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "20-F 제출 기한",
+    "value": "회계연도 말부터 4개월",
+    "short": "회계연도가 끝난 날부터 4개월 안",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "외국 민간 발행인의 연차보고서 기한이다.",
+    "sources": [
+      {
+        "name": "SEC, Form 20-F General Instructions A",
+        "url": "https://www.sec.gov/files/form20-f.pdf"
+      }
+    ]
+  },
+  "us-disc-8k": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "8-K 제출 기한",
+    "value": "사유 발생 뒤 4영업일",
+    "short": "사유가 생긴 날부터 4영업일 안",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "사유가 토요일, 일요일, SEC가 쉬는 공휴일에 생기면 그다음 첫 영업일부터 센다. 일부 항목은 기산점이 따로 있다(예: 사이버 보안 사고는 중대하다고 판단한 날부터).",
+    "sources": [
+      {
+        "name": "SEC, Form 8-K General Instruction B.1",
+        "url": "https://www.sec.gov/files/form8-k.pdf"
+      }
+    ]
+  },
+  "us-disc-form4": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "Form 4 제출 기한",
+    "value": "거래일 뒤 2영업일",
+    "short": "거래한 날부터 2영업일 안",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "내부자(임원, 이사, 10% 초과 보유 주주)가 그 회사 증권을 거래했을 때 낸다. 오후 10시(미국 동부 시간)까지 EDGAR에 낸 것을 그날 제출로 본다.",
+    "sources": [
+      {
+        "name": "SEC, Insider Transactions and Forms 3, 4, and 5",
+        "url": "https://www.sec.gov/files/forms-3-4-5.pdf"
+      }
+    ]
+  },
+  "us-disc-13d": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "Schedule 13D 기한",
+    "value": "최초: 5% 초과 취득 뒤 5영업일 / 정정: 중요한 변경 뒤 2영업일",
+    "short": "5%를 넘게 된 날부터 5영업일 안에 처음 보고하고, 보유 비율이 1%포인트 이상 변하는 등 중요한 변경이 생기면 2영업일 안에 정정 보고",
+    "checked": "2026-10-18",
+    "effective": "2024-02-05",
+    "level": "official",
+    "note": "2023년 10월 개정 전에는 최초 보고가 10일, 정정은 '지체 없이'였다. 1% 이상의 취득·처분은 중요한 변경으로 보며, 그보다 작은 변동도 사정에 따라 중요할 수 있다.",
+    "sources": [
+      {
+        "name": "17 CFR 240.13d-1 (Cornell LII 법령 원문)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/240.13d-1"
+      },
+      {
+        "name": "17 CFR 240.13d-2 (Cornell LII 법령 원문)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/240.13d-2"
+      },
+      {
+        "name": "SEC 보도자료 2023-219",
+        "url": "https://www.sec.gov/newsroom/press-releases/2023-219"
+      },
+      {
+        "name": "Skadden, 2024.2",
+        "url": "https://www.skadden.com/insights/publications/2024/02/reminders-amended-beneficial-ownership-rules-effective"
+      }
+    ]
+  },
+  "us-disc-13g": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "Schedule 13G 기한",
+    "value": "적격 기관투자자·면제 투자자: 분기 말부터 45일 / 수동적 투자자: 5% 초과 취득 뒤 5영업일",
+    "short": "적격 기관투자자와 면제 투자자는 5%를 넘은 분기가 끝난 날부터 45일 안에, 수동적 투자자는 5%를 넘게 된 날부터 5영업일 안에 보고한다",
+    "checked": "2026-10-18",
+    "effective": "2024-09-30",
+    "level": "official",
+    "note": "정정은 중요한 변경이 있으면 분기 말부터 45일 안에 한다. 적격 기관투자자가 10%를 넘으면 그달 말부터 5영업일, 수동적 투자자가 10%를 넘으면 2영업일 안에 따로 보고한다. 2023년 10월 개정 전에는 연말 뒤 45일 등이었다.",
+    "sources": [
+      {
+        "name": "17 CFR 240.13d-1 (Cornell LII 법령 원문)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/240.13d-1"
+      },
+      {
+        "name": "17 CFR 240.13d-2 (Cornell LII 법령 원문)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/240.13d-2"
+      },
+      {
+        "name": "SEC 보도자료 2023-219",
+        "url": "https://www.sec.gov/newsroom/press-releases/2023-219"
+      }
+    ]
+  },
+  "us-disc-13f": {
+    "topic": "disclose",
+    "market": "US",
+    "label": "13F 대상과 기한",
+    "value": "13(f) 증권 1억 달러 이상 운용 / 분기 말부터 45일",
+    "short": "13(f) 증권을 1억 달러어치 이상 재량으로 운용하는 운용사가 분기가 끝난 날부터 45일 안에 낸다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "13(f) 증권은 SEC가 목록으로 정하며 미국 거래소 상장주식, 일부 옵션·전환사채 등이 들어간다. 연말 기준 보고서는 이듬해 2월 14일까지이다.",
+    "sources": [
+      {
+        "name": "SEC, Frequently Asked Questions About Form 13F",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-about-form-13f"
+      }
+    ]
+  },
+  "kr-tax-fstock-filing": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "해외주식 양도소득세 신고 기한",
+    "value": "예정신고 없이 다음 해 5월 1일~5월 31일 확정신고",
+    "short": "판 해의 다음 해 5월 1일부터 31일까지",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "국내 대주주 주식과 달리 해외주식은 반기별 예정신고 없이 확정신고만 한다(소득세법 제105조제1항). 홈택스 전자신고나 주소지 관할 세무서 제출로 한다. 증권회사가 대신 신고해 주지 않는다.",
+    "sources": [
+      {
+        "name": "국세청, 2025년 신고안내 해외주식과 세금(개인투자자용)",
+        "url": "https://taxlaw.nts.go.kr/downloadPDFFile.do?fleId=300000000001047678&fleSn=923559"
+      }
+    ]
+  },
+  "kr-tax-fstock-fx": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "해외주식 양도차익의 원화 환산 기준일",
+    "value": "양도가액은 대금이 입금되는 날, 취득가액·비용은 대금이 출금되는 날의 기준환율(재정환율)",
+    "short": "판 돈은 계좌에 들어온 날(매도 결제일), 산 돈과 비용은 계좌에서 나간 날(매수 결제일)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "외국환거래법에 따른 기준환율 또는 재정환율을 쓴다. 실제 환전한 환율이 아니다. 나누어 받거나 낸 경우 각 날의 환율을 쓴다(소득세법 시행령 제178조의5, 국제세원-229, 2010.5.10.). 증권회사 계산 자료는 매수·매도 결제일의 기준환율로 작성한다. 환율 자료는 서울외국환중개가 공시한다.",
+    "sources": [
+      {
+        "name": "국세청, 2025년 신고안내 해외주식과 세금(개인투자자용)",
+        "url": "https://taxlaw.nts.go.kr/downloadPDFFile.do?fleId=300000000001047678&fleSn=923559"
+      }
+    ]
+  },
+  "kr-tax-fstock-netting": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "해외주식 양도손익 통산 범위",
+    "value": "같은 해 해외주식끼리, 그리고 양도소득세 대상 국내주식(대주주 상장주식·비상장주식)과 통산. 기본공제는 국내·국외 합쳐 연 250만 원",
+    "short": "같은 해 안에서만, 양도세 대상 국내 주식과도 합칠 수 있다",
+    "effective": "2020-01-01",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2019년 세법 개정으로 2020년 1월 1일 이후 양도분부터 국내·국외 주식 간 통산이 허용되었다. 일반 투자자의 국내 상장주식 매매 손익은 과세 대상이 아니어서 통산에 들어가지 않는다. 해외 부동산주식 등 누진세율 대상 자산은 통산에서 빠진다. 양도차손은 다음 해로 이월되지 않는다.",
+    "sources": [
+      {
+        "name": "국세청, 2025년 신고안내 해외주식과 세금(개인투자자용)",
+        "url": "https://taxlaw.nts.go.kr/downloadPDFFile.do?fleId=300000000001047678&fleSn=923559"
+      }
+    ]
+  },
+  "kr-tax-fdiv-wht": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "해외주식 배당의 국내 원천징수",
+    "value": "국내 세율 14%에서 외국에서 원천징수된 세액을 뺀 나머지만 원천징수",
+    "short": "국내 세율 14%에서 외국에서 이미 뗀 세금을 뺀 나머지만 더 뗀다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "국내 증권회사처럼 지급을 대리하는 곳이 떼며, 빼 주는 외국 세액은 조세조약 제한세율 상당액이 한도이다(소득세법 제127조, 제129조제4항). 금융소득이 연 2,000만 원을 넘거나 국내에서 원천징수되지 않은 국외 배당이 있으면 종합소득세 신고 때 외국납부세액공제(소득세법 제57조)로 조정한다.",
+    "sources": [
+      {
+        "name": "국세청, 2025년 신고안내 해외주식과 세금(개인투자자용)",
+        "url": "https://taxlaw.nts.go.kr/downloadPDFFile.do?fleId=300000000001047678&fleSn=923559"
+      }
+    ]
+  },
+  "kr-tax-gift-carryover-stock": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "증여받은 주식의 이월과세 (배우자·직계존비속)",
+    "value": "증여받은 날부터 1년 이내 양도하면 증여자의 취득가액으로 양도차익 계산",
+    "short": "증여받은 지 1년 안에 팔면 증여한 사람이 산 가격을 취득가액으로 본다",
+    "effective": "2025-01-01",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "소득세법 제97조의2 이월과세 대상에 같은 법 제94조제1항제3호 자산(주식등)이 2024년 12월 31일 개정으로 들어갔고, 주식의 기간은 1년이다(부동산은 10년). 2025년 1월 1일 이후 증여받은 분부터 적용된다는 것이 일반적 해석이다. 납부한 증여세 상당액은 필요경비에 넣는다. 2025년 12월 개정으로 사망 등 일부 제외 사유가 정비되었다(2026년 1월 1일 시행).",
+    "sources": [
+      {
+        "name": "CaseNote, 소득세법 제97조의2 (2026.1.1. 시행본)",
+        "url": "https://casenote.kr/%EB%B2%95%EB%A0%B9/%EC%86%8C%EB%93%9D%EC%84%B8%EB%B2%95/%EC%A0%9C97%EC%A1%B0%EC%9D%982"
+      },
+      {
+        "name": "전북일보 기고, 2025.1.16",
+        "url": "https://www.jjan.kr/articleAmp/20250116580119"
+      }
+    ]
+  },
+  "us-nra-wht-default": {
+    "topic": "tax",
+    "market": "US",
+    "label": "외국인이 받는 미국 원천 소득의 기본 원천징수율",
+    "value": "30% (조세조약으로 낮아질 수 있음)",
+    "short": "조약이 없으면 30%",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "배당 같은 FDAP 소득에 적용하는 기본 세율이다. 거주 국가와 미국 사이에 조세조약이 있고 W-8BEN 등으로 이를 확인하면 낮은 세율이나 면제가 적용된다. 한국 거주자의 배당 조약 세율은 us-tax-div를 본다.",
+    "sources": [
+      {
+        "name": "IRS, NRA Withholding",
+        "url": "https://www.irs.gov/individuals/international-taxpayers/nra-withholding"
+      }
+    ]
+  },
+  "us-w8ben-valid": {
+    "topic": "tax",
+    "market": "US",
+    "label": "W-8BEN 효력 기간",
+    "value": "서명한 날부터 그 뒤 세 번째 해의 12월 31일까지",
+    "short": "서명한 날부터 그 뒤 세 번째 해 말일까지 유효하다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "예를 들어 2015년 9월 30일에 서명하면 2018년 12월 31일까지 유효하다. 기재 내용이 틀리게 되는 사정 변경이 생기면 그 전에 효력이 끝난다.",
+    "sources": [
+      {
+        "name": "IRS, Instructions for Form W-8BEN",
+        "url": "https://www.irs.gov/instructions/iw8ben"
+      }
+    ]
+  },
+  "us-estate-nra-threshold": {
+    "topic": "tax",
+    "market": "US",
+    "label": "비거주 외국인의 미국 상속세 신고 기준",
+    "value": "사망 시 미국 소재 재산 6만 달러 초과",
+    "short": "6만 달러를 넘으면",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "미국 시민도 거주자도 아닌 사람이 사망하면, 미국 소재 재산의 사망일 공정가치가 이 금액을 넘을 때 유산 집행인이 Form 706-NA를 낸다. 미국 법에 따라 설립된 회사의 주식은 증권이 외국에 보관되어 있어도 미국 소재 재산이다. 생전 증여 이력이 있으면 기준이 달라질 수 있다. 미국과 상속세 조약을 맺은 나라 목록에 한국은 없다.",
+    "sources": [
+      {
+        "name": "IRS, Some nonresidents with U.S. assets must file estate tax returns",
+        "url": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns"
+      },
+      {
+        "name": "IRS, Estate & gift tax treaties (international)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-gift-tax-treaties-international"
       }
     ]
   }

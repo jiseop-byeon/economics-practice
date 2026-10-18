@@ -3182,5 +3182,276 @@ window.GLOSSARY = [
   "hanja": "事實과 解釋",
   "en": "fact vs. interpretation",
   "one": "기사 문장을 확인할 수 있는 일과 그 일에 대한 누군가의 판단으로 나누어 읽는 방법이다."
+ },
+ {
+  "id": "us-fx-spread",
+  "title": "환전 스프레드",
+  "hanja": "換錢 스프레드",
+  "en": "FX spread",
+  "one": "달러를 살 때 내는 환율과 팔 때 받는 환율의 차이이다. 수수료 표 대신 환율 안에 녹아 있는 환전 비용이다.",
+  "econ": "t156",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-regular",
+  "title": "미국 정규장",
+  "hanja": "美國正規場",
+  "en": "U.S. core trading session",
+  "one": "뉴욕증권거래소와 나스닥이 주식을 정식으로 사고파는 기본 시간대이다. 한국 시간으로는 밤이며 서머타임에 따라 한 시간 움직인다.",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-ext-hours",
+  "title": "장 전·장 후 거래",
+  "hanja": "場前·場後去來",
+  "en": "pre-market and after-hours trading",
+  "one": "미국 정규장 앞뒤에 열리는 거래 시간대이다. 사고파는 사람이 적어 가격이 튀기 쉽다.",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-fractional",
+  "title": "소수단위 거래",
+  "hanja": "小數單位去來",
+  "en": "fractional share trading",
+  "one": "1주보다 작은 단위로 주식을 사고파는 거래이다. 증권회사가 주문을 모아 1주 단위로 사고 고객 몫을 나누어 적는다.",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-settle-t1",
+  "title": "미국 주식 결제일",
+  "hanja": "美國株式決濟日",
+  "en": "U.S. stock settlement date (T+1)",
+  "one": "미국에서 체결된 주식 거래의 돈과 주식이 실제로 옮겨 가는 날이다. 거래한 날부터 1영업일 뒤이다.",
+  "econ": "t019",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-custody",
+  "title": "외국보관기관",
+  "hanja": "外國保管機關",
+  "en": "foreign custodian",
+  "one": "한국 투자자가 산 외국 주식을 현지에서 한국예탁결제원 대신 보관하고 결제하는 기관이다.",
+  "econ": "t591",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-sec-fee",
+  "title": "SEC 수수료",
+  "hanja": "SEC 手數料",
+  "en": "SEC Section 31 fee",
+  "one": "미국 거래소에서 주식을 팔 때 판 금액에 붙는 작은 요금이다. 증권거래위원회 운영비를 마련하려는 것으로 요율은 해마다 다시 정한다.",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-div-wht",
+  "title": "미국 배당 원천징수",
+  "hanja": "美國配當源泉徵收",
+  "en": "U.S. dividend withholding tax",
+  "one": "미국 회사가 배당을 줄 때 미국 정부가 세금을 먼저 떼는 것이다. 한국 거주자에게는 조세조약 세율이 적용된다.",
+  "chapter": "us-1"
+ },
+ {
+  "id": "us-cg-tax",
+  "title": "해외주식 양도소득세",
+  "hanja": "海外株式讓渡所得稅",
+  "en": "capital gains tax on foreign stocks",
+  "one": "외국 주식을 팔아 생긴 한 해 이익에 붙는 세금이다. 원화로 계산하고 다음 해 5월에 스스로 신고한다.",
+  "chapter": "us-1"
+ },
+ {
+  "id": "luld-band",
+  "chapter": "us-2",
+  "title": "LULD 가격 밴드",
+  "hanja": "",
+  "en": "Limit Up-Limit Down price band",
+  "one": "미국 주식에서 종목마다 직전 5분 평균 가격 위아래에 그어 두고, 그 밖에서는 체결이 일어나지 않게 하는 가격 범위이다."
+ },
+ {
+  "id": "luld-pause",
+  "chapter": "us-2",
+  "title": "거래 일시정지",
+  "hanja": "去來一時停止",
+  "en": "trading pause",
+  "one": "미국 주식의 가격이 LULD 밴드 끝에 붙은 채 정해진 시간 안에 풀리지 않을 때 그 종목의 거래를 몇 분 멈추는 조치이다."
+ },
+ {
+  "id": "mwcb",
+  "chapter": "us-2",
+  "title": "시장 전체 서킷브레이커",
+  "hanja": "市場全體",
+  "en": "market-wide circuit breaker",
+  "one": "S&P 500 지수가 하루에 정해진 비율 이상 떨어질 때 미국의 모든 주식 시장에서 거래를 함께 멈추는 장치이다.",
+  "econ": "t329"
+ },
+ {
+  "id": "flash-crash",
+  "chapter": "us-2",
+  "title": "플래시 크래시",
+  "hanja": "",
+  "en": "flash crash",
+  "one": "뚜렷한 소식 없이 몇 분 사이에 가격이 폭락했다가 곧바로 되돌아오는 현상이다. 2010년 5월 6일 미국 시장이 대표 사례이다.",
+  "econ": "t476"
+ },
+ {
+  "id": "halt-code",
+  "chapter": "us-2",
+  "title": "거래 정지 코드",
+  "hanja": "去來停止",
+  "en": "trading halt code",
+  "one": "거래소가 한 종목의 거래를 멈출 때 뉴스 대기, 변동성, 규제 같은 이유를 짧게 적어 알리는 표시이다."
+ },
+ {
+  "id": "reg-sho",
+  "chapter": "us-2",
+  "title": "레귤레이션 SHO",
+  "hanja": "",
+  "en": "Regulation SHO",
+  "one": "미국 주식의 공매도에 차입 확인, 결제 실패 정리, 기준 미달 종목 목록 같은 요건을 거는 SEC 규정이다.",
+  "econ": "t057"
+ },
+ {
+  "id": "ssr-201",
+  "chapter": "us-2",
+  "title": "공매도 가격 제한",
+  "hanja": "空賣渡價格制限",
+  "en": "short sale price test (Rule 201)",
+  "one": "하루에 크게 떨어진 미국 종목에 대해 공매도를 전국 최우선 매수호가보다 높은 가격으로만 내게 하는 규칙이다.",
+  "econ": "t057"
+ },
+ {
+  "id": "edgar",
+  "chapter": "us-3",
+  "title": "EDGAR",
+  "hanja": "",
+  "en": "Electronic Data Gathering, Analysis, and Retrieval",
+  "one": "미국 증권거래위원회(SEC)가 운영하는 전자공시시스템이다. 상장회사와 내부자, 운용사가 낸 서류를 무료로 찾아볼 수 있다."
+ },
+ {
+  "id": "form-10k",
+  "chapter": "us-3",
+  "title": "10-K",
+  "hanja": "",
+  "en": "Form 10-K (annual report)",
+  "one": "미국 상장회사가 회계연도마다 내는 연차보고서이다. 감사받은 재무제표와 사업, 위험 요인, 경영진의 분석이 들어간다."
+ },
+ {
+  "id": "form-10q",
+  "chapter": "us-3",
+  "title": "10-Q",
+  "hanja": "",
+  "en": "Form 10-Q (quarterly report)",
+  "one": "미국 상장회사가 1·2·3분기마다 내는 분기보고서이다. 재무제표는 감사 대신 검토를 받는다."
+ },
+ {
+  "id": "form-20f",
+  "chapter": "us-3",
+  "title": "20-F",
+  "hanja": "",
+  "en": "Form 20-F",
+  "one": "미국에 상장한 외국 민간 발행인이 내는 연차보고서이다. 국제회계기준으로 작성할 수 있다.",
+  "econ": "t100"
+ },
+ {
+  "id": "form-8k",
+  "chapter": "us-3",
+  "title": "8-K",
+  "hanja": "",
+  "en": "Form 8-K (current report)",
+  "one": "중요한 계약, 실적 발표, 임원 변동처럼 주주가 알아야 할 일이 생겼을 때 내는 미국의 수시보고서이다."
+ },
+ {
+  "id": "form-4",
+  "chapter": "us-3",
+  "title": "Form 4",
+  "hanja": "",
+  "en": "Form 4 (statement of changes in beneficial ownership)",
+  "one": "미국 회사의 임원, 이사, 10% 초과 주주가 그 회사 증권을 거래한 내역을 알리는 보고서이다."
+ },
+ {
+  "id": "schedule-13d",
+  "chapter": "us-3",
+  "title": "13D와 13G",
+  "hanja": "",
+  "en": "Schedule 13D / Schedule 13G",
+  "one": "미국 회사의 의결권 있는 주식을 5% 넘게 가진 사람이 내는 대량보유 보고서이다. 경영 참여 의도가 없으면 짧은 13G를 낼 수 있다."
+ },
+ {
+  "id": "form-13f",
+  "chapter": "us-3",
+  "title": "13F",
+  "hanja": "",
+  "en": "Form 13F",
+  "one": "일정 규모 이상의 운용사가 분기 말에 가진 미국 상장주식 등의 목록을 알리는 보고서이다."
+ },
+ {
+  "id": "non-gaap",
+  "chapter": "us-3",
+  "title": "비GAAP 지표",
+  "hanja": "",
+  "en": "non-GAAP financial measure",
+  "one": "회사가 미국 회계기준에 없는 방식으로 조정해 내놓는 실적 숫자이다. SEC 규정은 가장 가까운 GAAP 숫자와 조정표를 함께 보이게 한다."
+ },
+ {
+  "id": "fstock-cg-tax",
+  "chapter": "us-4",
+  "title": "해외주식 양도소득세",
+  "hanja": "海外株式 讓渡所得稅",
+  "en": "capital gains tax on foreign stocks",
+  "one": "한국 거주자가 외국 상장주식을 팔아 남긴 한 해 이익에서 기본공제를 빼고 매기는 세금으로, 다음 해 5월에 스스로 신고한다."
+ },
+ {
+  "id": "fstock-fx-conversion",
+  "chapter": "us-4",
+  "title": "양도차익의 원화 환산",
+  "hanja": "讓渡差益 換算",
+  "en": "KRW conversion of capital gains",
+  "one": "달러로 사고판 금액을 산 날과 판 날 각각의 기준환율로 원화로 바꾸어 세금을 계산하는 방법이다."
+ },
+ {
+  "id": "fstock-loss-netting",
+  "chapter": "us-4",
+  "title": "손익통산과 손실의 이월",
+  "hanja": "損益通算",
+  "en": "netting of gains and losses",
+  "one": "같은 해의 양도 이익과 손실을 합쳐 순이익에만 세금을 매기는 것으로, 남은 손실은 다음 해로 넘어가지 않는다."
+ },
+ {
+  "id": "foreign-tax-credit",
+  "chapter": "us-4",
+  "title": "외국납부세액공제",
+  "hanja": "外國納付稅額控除",
+  "en": "foreign tax credit",
+  "one": "외국에 이미 낸 세금을 한국 세금에서 빼 주어 같은 소득에 두 번 과세되지 않게 하는 제도이다."
+ },
+ {
+  "id": "w8ben",
+  "chapter": "us-4",
+  "title": "W-8BEN",
+  "en": "Form W-8BEN",
+  "one": "미국인이 아닌 개인이 자신의 거주 국가를 밝혀 미국 원천징수에 조세조약 세율을 받도록 증권회사에 내는 미국 서식이다."
+ },
+ {
+  "id": "etf-listing-tax",
+  "chapter": "us-4",
+  "title": "상장 시장에 따른 ETF 과세",
+  "hanja": "上場 市場",
+  "en": "ETF taxation by listing venue",
+  "one": "미국 상장 ETF는 해외주식 양도소득세로, 국내 상장 해외 ETF는 배당소득세로 과세되어 공제·통산·종합과세 여부가 갈리는 차이이다."
+ },
+ {
+  "id": "stock-gift-carryover",
+  "chapter": "us-4",
+  "title": "주식 이월과세",
+  "hanja": "株式 移越課稅",
+  "en": "carryover basis on gifted stock",
+  "one": "배우자나 직계존비속에게 증여받은 주식을 정해진 기간 안에 팔면 증여자의 취득가액으로 양도세를 계산하는 규정이다."
+ },
+ {
+  "id": "us-estate-tax",
+  "chapter": "us-4",
+  "title": "미국 상속세",
+  "hanja": "美國 相續稅",
+  "en": "U.S. estate tax",
+  "one": "사망한 사람이 남긴 미국 재산에 미국이 매기는 세금으로, 미국인이 아닌 사람이 가진 미국 회사 주식도 대상이다."
  }
 ];

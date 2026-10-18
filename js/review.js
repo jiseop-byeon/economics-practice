@@ -5,7 +5,7 @@ window.REVIEW_GROUPS = [
   { id: "entry", name: "레버리지 상품·공매도·파생 진입 요건", days: 180, why: "2025~2026년에 여러 번 바뀌었다.", pattern: "^kr-(etp|short|deriv-(edu|mock|deposit)|ovs-deriv)" },
   { id: "re-tax", name: "부동산 세금", days: 180, why: "여름 세제개편안과 연말·연초 개정 시행 때 바뀐다.", topics: ["re-tax"] },
   { id: "re-rules", name: "청약·임대차·거래 절차", days: 180, why: "시행령과 규칙 개정이 해마다 몇 번씩 있다.", topics: ["subscription", "lease", "re-deal"] },
-  { id: "market", name: "증권시장 제도", days: 180, why: "거래 시간, 가격 장치, 공매도·신용, ETF, 배당 절차.", topics: ["hours", "limits", "credit", "etf", "corp"] },
+  { id: "market", name: "증권시장 제도", days: 180, why: "거래 시간, 가격 장치, 공매도·신용, ETF, 배당 절차, 거래 비용.", topics: ["hours", "limits", "credit", "etf", "corp", "cost"] },
   { id: "tax", name: "금융 세금·절세 계좌", days: 365, why: "세법 개정은 대개 1월 1일에 시행된다. 연초에 본다.", topics: ["tax", "account"] },
   { id: "base", name: "공시·결제·발표 일정·투자자 보호", days: 365, why: "법령에 박힌 기한과 한도, 기관이 정해 둔 발표 관행이라 드물게 바뀐다.", topics: ["disclose", "settle", "tick", "protect", "release", "research"] },
   { id: "bonds", name: "채권과 국채", days: 365, why: "발행 제도와 등급 체계는 드물게 바뀐다.", topics: ["bonds", "rating", "govbond"] },
