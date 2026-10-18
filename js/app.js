@@ -345,6 +345,11 @@ function setTheme(light) {
   if (btn) { btn.textContent = light ? "어둡게" : "밝게"; btn.setAttribute("aria-pressed", light ? "true" : "false"); }
   document.querySelector('meta[name="theme-color"]')?.setAttribute("content", light ? "#f3f6f5" : "#0e1513");
 }
+// 머리줄의 갱신 시각. js/updated.js는 커밋할 때 pre-commit 훅이 다시 쓴다.
+if (window.SITE_UPDATED) {
+  const [d, t] = window.SITE_UPDATED.split("T");
+  document.getElementById("asof").textContent = `갱신 ${fmtDate(d)} ${t.slice(0, 5)}`;
+}
 setTheme(document.documentElement.dataset.theme === "light");
 document.getElementById("theme").addEventListener("click", () => setTheme(document.documentElement.dataset.theme !== "light"));
 addEventListener("hashchange", render);
