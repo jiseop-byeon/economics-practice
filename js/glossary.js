@@ -712,5 +712,441 @@ window.GLOSSARY = [
   "hanja": "信用去來利子",
   "en": "margin interest",
   "one": "신용거래로 빌린 돈이나 주식에 붙는 이자이다. 증권회사와 빌린 기간에 따라 다르다."
+ },
+ {
+  "id": "bond-terms",
+  "chapter": "bonds-1",
+  "title": "채권의 발행 조건",
+  "hanja": "債券의 發行 條件",
+  "en": "bond terms",
+  "one": "채권에 적힌 액면, 표면금리, 만기, 이자 지급 주기의 네 가지 약속이다. 발행할 때 정해지고 만기까지 바뀌지 않는다.",
+  "econ": "p07"
+ },
+ {
+  "id": "ktb",
+  "chapter": "bonds-1",
+  "title": "국고채",
+  "hanja": "國庫債",
+  "en": "Korea Treasury Bond, KTB",
+  "one": "정부가 나라 살림에 쓸 돈을 빌리려고 발행하는 대표 국채이다. 다른 채권 금리를 재는 기준이 된다.",
+  "econ": "t101"
+ },
+ {
+  "id": "bond-issuers",
+  "chapter": "bonds-1",
+  "title": "지방채·특수채·은행채·회사채",
+  "hanja": "地方債·特殊債·銀行債·會社債",
+  "en": "municipal, public-corporation, bank and corporate bonds",
+  "one": "지방자치단체, 공기업, 은행, 일반 회사가 각각 발행하는 채권이다. 대체로 뒤로 갈수록 떼일 위험과 이자가 커진다.",
+  "econ": "t741"
+ },
+ {
+  "id": "primary-bond",
+  "chapter": "bonds-1",
+  "title": "채권 발행시장",
+  "hanja": "債券 發行市場",
+  "en": "primary bond market",
+  "one": "새로 만든 채권을 발행자가 처음 투자자에게 파는 시장이다. 국고채는 경쟁입찰, 회사채는 수요예측으로 금리를 정한다.",
+  "econ": "t253"
+ },
+ {
+  "id": "otc-bond",
+  "chapter": "bonds-1",
+  "title": "장외 채권 거래",
+  "hanja": "場外 債券 去來",
+  "en": "over-the-counter bond trading",
+  "one": "거래소를 거치지 않고 증권회사와 투자자가 직접 값을 정해 채권을 사고파는 일이다. 증권회사 앱의 장외채권 매매가 여기에 든다.",
+  "econ": "t541"
+ },
+ {
+  "id": "krx-bond",
+  "chapter": "bonds-1",
+  "title": "장내 채권시장",
+  "hanja": "場內 債券市場",
+  "en": "exchange bond market",
+  "one": "한국거래소가 연 채권 시장이다. 개인은 일반채권시장과 소액채권시장에서 호가를 내어 사고판다.",
+  "econ": "t627"
+ },
+ {
+  "id": "min-pyeong",
+  "chapter": "bonds-1",
+  "title": "민평금리",
+  "hanja": "民評金利",
+  "en": "private pricing agencies' average yield",
+  "one": "민간 채권평가회사들이 매일 매기는 채권 수익률의 평균이다. 증권회사가 제시하는 판매 수익률이 적당한지 견주는 잣대로 쓴다.",
+  "econ": "t626"
+ },
+ {
+  "id": "retail-ktb",
+  "chapter": "bonds-1",
+  "title": "개인투자용 국채",
+  "hanja": "個人投資用 國債",
+  "en": "retail investment government bond",
+  "one": "개인만 살 수 있도록 정부가 매달 청약을 받아 발행하는 저축 성격의 국채이다. 남에게 팔 수 없고 만기까지 가지고 있어야 가산금리와 분리과세를 받는다."
+ },
+ {
+  "id": "bond-fund",
+  "chapter": "bonds-1",
+  "title": "채권형 펀드·ETF",
+  "hanja": "債券型 펀드",
+  "en": "bond fund / bond ETF",
+  "one": "여러 채권을 담은 펀드나 ETF로 채권을 간접으로 갖는 방법이다. 직접 보유와 달리 펀드 전체의 만기가 오지 않는다.",
+  "econ": "t316"
+ },
+ {
+  "id": "coupon-rate",
+  "chapter": "bonds-2",
+  "title": "표면금리",
+  "hanja": "表面金利",
+  "en": "coupon rate",
+  "one": "채권을 발행할 때 액면에 적어 둔 연 이자율이다. 해마다 받을 이자의 크기를 정하지만, 지금 사는 사람의 수익률을 정하지는 않는다.",
+  "econ": "t698"
+ },
+ {
+  "id": "bond-price",
+  "chapter": "bonds-2",
+  "title": "채권 가격",
+  "hanja": "債券價格",
+  "en": "bond price",
+  "one": "앞으로 받을 이자와 원금을 시장금리로 할인해 오늘 값으로 바꾼 것의 합이다.",
+  "econ": "p07"
+ },
+ {
+  "id": "premium-discount",
+  "chapter": "bonds-2",
+  "title": "할인과 할증",
+  "hanja": "割引 · 割增",
+  "en": "discount and premium",
+  "one": "채권이 액면보다 싸게 거래되면 할인, 비싸게 거래되면 할증이다. 시장금리가 표면금리보다 높으면 할인, 낮으면 할증이 된다."
+ },
+ {
+  "id": "ytm",
+  "chapter": "bonds-2",
+  "title": "만기수익률",
+  "hanja": "滿期收益率",
+  "en": "yield to maturity, YTM",
+  "one": "지금 값에 사서 만기까지 들고 있을 때의 연 수익률이다. 중간 이자를 같은 금리로 다시 굴린다는 가정이 들어 있다.",
+  "econ": "t226"
+ },
+ {
+  "id": "bond-cf-type",
+  "chapter": "bonds-2",
+  "title": "할인채·이표채·복리채",
+  "hanja": "割引債 · 利票債 · 複利債",
+  "en": "discount, coupon and compound bonds",
+  "one": "이자를 주는 방식에 따른 채권의 구분이다. 이표채는 정기적으로 이자를 주고, 할인채는 싸게 팔아 만기에 액면을 주며, 복리채는 이자를 불려 만기에 한꺼번에 준다.",
+  "econ": "t179"
+ },
+ {
+  "id": "yield-quote",
+  "chapter": "bonds-2",
+  "title": "수익률 호가",
+  "hanja": "收益率呼價",
+  "en": "yield quotation",
+  "one": "채권 값을 원 단위 가격 대신 수익률로 부르는 관행이다. 가격은 그 수익률로 받을 돈을 할인해 계산한다.",
+  "econ": "t626"
+ },
+ {
+  "id": "accrued-interest",
+  "chapter": "bonds-2",
+  "title": "경과이자",
+  "hanja": "經過利子",
+  "en": "accrued interest",
+  "one": "직전 이자 지급일부터 거래일까지 쌓였지만 아직 지급되지 않은 이자이다. 사는 사람이 판 사람에게 얹어 준다."
+ },
+ {
+  "id": "hpr",
+  "chapter": "bonds-2",
+  "title": "보유기간 수익률",
+  "hanja": "保有期間收益率",
+  "en": "holding period return",
+  "one": "만기 전에 팔았을 때 받은 이자와 판 값에서 산 값을 빼고, 산 값으로 나눈 수익률이다."
+ },
+ {
+  "id": "after-tax-yield",
+  "chapter": "bonds-2",
+  "title": "세후 수익률",
+  "hanja": "稅後收益率",
+  "en": "after-tax yield",
+  "one": "세금을 빼고 손에 남는 돈으로 다시 계산한 수익률이다. 개인의 채권은 이자에만 세금이 붙어, 같은 만기수익률이라도 표면금리가 낮을수록 세후 수익률이 높아질 수 있다."
+ },
+ {
+  "id": "rate-risk",
+  "chapter": "bonds-3",
+  "title": "금리 위험",
+  "hanja": "金利危險",
+  "en": "interest rate risk",
+  "one": "시장 금리가 바뀌어 채권 값이 떨어지거나, 받은 이자를 더 낮은 금리로 굴리게 되어 결과가 처음 예상과 달라질 위험이다."
+ },
+ {
+  "id": "macaulay-dur",
+  "chapter": "bonds-3",
+  "title": "매컬리 듀레이션",
+  "hanja": "",
+  "en": "Macaulay duration",
+  "one": "채권에서 받는 돈이 평균 몇 년 뒤에 들어오는지를 각 돈의 현재가치를 무게로 삼아 구한 값이다.",
+  "econ": "t206"
+ },
+ {
+  "id": "mod-dur",
+  "chapter": "bonds-3",
+  "title": "수정 듀레이션",
+  "hanja": "修正 duration",
+  "en": "modified duration",
+  "one": "금리가 1%포인트 움직일 때 채권 값이 대략 몇 % 움직이는지를 나타내는 값이다. 매컬리 듀레이션을 (1 + 만기수익률)로 나누어 구한다.",
+  "econ": "t206"
+ },
+ {
+  "id": "convexity",
+  "chapter": "bonds-3",
+  "title": "볼록성",
+  "hanja": "볼록性",
+  "en": "convexity",
+  "one": "금리와 채권 값의 관계가 아래로 볼록한 곡선이라서, 금리가 크게 움직일수록 듀레이션 근사보다 덜 떨어지고 더 오르는 성질이다."
+ },
+ {
+  "id": "zero-coupon",
+  "chapter": "bonds-3",
+  "title": "무이표채",
+  "hanja": "無利票債",
+  "en": "zero-coupon bond",
+  "one": "중간에 이자를 주지 않고 액면보다 싸게 팔았다가 만기에 액면을 한 번에 돌려주는 채권이다. 듀레이션이 만기와 같다."
+ },
+ {
+  "id": "yield-curve-b",
+  "chapter": "bonds-3",
+  "title": "수익률곡선",
+  "hanja": "收益率曲線",
+  "en": "yield curve",
+  "one": "같은 발행자의 채권 금리를 만기 순서대로 이어 그린 선이다. 만기마다 금리가 따로 움직여 곡선의 모양이 바뀐다.",
+  "econ": "t355"
+ },
+ {
+  "id": "long-bond-etf",
+  "chapter": "bonds-3",
+  "title": "장기채 ETF",
+  "hanja": "長期債 ETF",
+  "en": "long-term bond ETF",
+  "one": "만기가 긴 채권을 모아 담고 거래소에서 사고파는 펀드이다. 만기 구간을 계속 유지하므로 만기에 액면으로 돌아오는 날이 없다."
+ },
+ {
+  "id": "hold-to-maturity",
+  "chapter": "bonds-3",
+  "title": "만기 보유",
+  "hanja": "滿期保有",
+  "en": "holding to maturity",
+  "one": "채권을 중간에 팔지 않고 만기까지 들고 있다가 액면을 돌려받는 것이다. 가격 위험은 결과에 드러나지 않지만 재투자, 물가, 기회비용의 위험은 남는다.",
+  "econ": "t161"
+ },
+ {
+  "id": "credit-rating",
+  "chapter": "bonds-4",
+  "title": "신용등급",
+  "hanja": "信用等級",
+  "en": "credit rating",
+  "one": "빚을 진 쪽이 원금과 이자를 약속대로 갚을 능력을 신용평가회사가 몇 개의 문자로 줄여 나타낸 것이다.",
+  "econ": "t394"
+ },
+ {
+  "id": "investment-grade",
+  "chapter": "bonds-4",
+  "title": "투자등급",
+  "hanja": "投資等級",
+  "en": "investment grade",
+  "one": "원리금을 갚을 능력이 인정된다고 보는 위쪽 등급 무리로, 국내 장기 등급에서는 BBB− 이상이다.",
+  "econ": "t568"
+ },
+ {
+  "id": "rating-outlook",
+  "chapter": "bonds-4",
+  "title": "등급 전망",
+  "hanja": "等級展望",
+  "en": "rating outlook",
+  "one": "신용평가회사가 지금 등급이 앞으로 오를지 내릴지 가능성을 미리 알리는 표시이다."
+ },
+ {
+  "id": "credit-spread",
+  "chapter": "bonds-4",
+  "title": "신용스프레드",
+  "hanja": "信用스프레드",
+  "en": "credit spread",
+  "one": "같은 만기의 국채 금리와 회사채 금리의 차이로, 떼일 위험과 팔기 어려운 불편에 대한 값이다.",
+  "econ": "t389"
+ },
+ {
+  "id": "expected-loss",
+  "chapter": "bonds-4",
+  "title": "기대손실",
+  "hanja": "期待損失",
+  "en": "expected loss",
+  "one": "부도 확률(PD)과 부도 시 손실률(LGD)을 곱해 평균적으로 잃을 몫을 어림한 값이다.",
+  "econ": "t439"
+ },
+ {
+  "id": "downgrade",
+  "chapter": "bonds-4",
+  "title": "등급 강등",
+  "hanja": "等級降等",
+  "en": "rating downgrade",
+  "one": "신용평가회사가 등급을 한 칸 이상 내리는 것으로, 요구 수익률이 올라 이미 발행된 채권 값이 떨어진다."
+ },
+ {
+  "id": "seniority",
+  "chapter": "bonds-4",
+  "title": "선순위와 후순위",
+  "hanja": "先順位 · 後順位",
+  "en": "seniority and subordination",
+  "one": "회사가 망해 남은 재산을 나눌 때 누가 먼저 받는지의 순서이다.",
+  "econ": "t743"
+ },
+ {
+  "id": "hybrid-bond",
+  "chapter": "bonds-4",
+  "title": "신종자본증권",
+  "hanja": "新種資本證券",
+  "en": "hybrid capital securities",
+  "one": "이자를 주지만 만기가 아주 길거나 연장할 수 있어 자본으로 인정받는 증권으로, 영구채라고도 한다."
+ },
+ {
+  "id": "coco-bond",
+  "chapter": "bonds-4",
+  "title": "조건부자본증권",
+  "hanja": "條件附資本證券",
+  "en": "contingent capital securities",
+  "one": "미리 정한 사건이 일어나면 원금이 상각되거나 주식으로 바뀌는 채권이다.",
+  "econ": "t465"
+ },
+ {
+  "id": "bond-interest-tax",
+  "chapter": "bonds-5",
+  "title": "채권 이자소득세",
+  "hanja": "債券 利子所得稅",
+  "en": "tax on bond interest",
+  "one": "채권에서 받는 이자와 할인액에 붙는 세금이다. 이자를 주는 쪽이 미리 떼고 나머지를 준다."
+ },
+ {
+  "id": "holding-period-tax",
+  "chapter": "bonds-5",
+  "title": "보유기간 과세",
+  "hanja": "保有期間 課稅",
+  "en": "taxation by holding period",
+  "one": "채권을 중간에 사고팔았을 때 이자를 각자 들고 있던 기간만큼 나누어 세금을 매기는 방식이다."
+ },
+ {
+  "id": "bond-capital-gain",
+  "chapter": "bonds-5",
+  "title": "채권 매매차익",
+  "hanja": "債券 賣買差益",
+  "en": "capital gain on bonds",
+  "one": "채권을 산 값보다 비싸게 팔거나 싸게 사서 만기에 액면을 받아 생긴 이익이다. 개인이 직접 가지면 과세 대상이 아니다."
+ },
+ {
+  "id": "low-coupon-bond",
+  "chapter": "bonds-5",
+  "title": "저쿠폰 채권",
+  "hanja": "低쿠폰 債券",
+  "en": "low-coupon bond",
+  "one": "표면금리가 시장금리보다 낮아 액면보다 싸게 거래되는 채권이다. 수익 중 비과세인 차익의 몫이 커서 세후 수익률이 높아질 수 있다.",
+  "econ": "t226"
+ },
+ {
+  "id": "separate-taxation",
+  "chapter": "bonds-5",
+  "title": "분리과세",
+  "hanja": "分離課稅",
+  "en": "separate taxation",
+  "one": "어떤 소득을 다른 소득과 합치지 않고 정해진 세율로 따로 세금을 매기고 끝내는 방식이다."
+ },
+ {
+  "id": "retail-gov-bond",
+  "chapter": "bonds-5",
+  "title": "개인투자용 국채",
+  "hanja": "個人投資用 國債",
+  "en": "retail investment government bond",
+  "one": "정부가 개인만 살 수 있게 따로 발행하는 국채이다. 만기까지 들면 일정 한도의 이자를 분리과세한다.",
+  "econ": "t101"
+ },
+ {
+  "id": "bond-fund-tax",
+  "chapter": "bonds-5",
+  "title": "채권형 펀드 과세",
+  "hanja": "債券型 펀드 課稅",
+  "en": "taxation of bond funds",
+  "one": "채권형 펀드와 ETF의 이익에 세금을 매기는 방식이다. 이자와 매매차익이 섞여 배당소득으로 과세된다."
+ },
+ {
+  "id": "ust",
+  "chapter": "bonds-6",
+  "title": "미국 국채",
+  "hanja": "美國 國債",
+  "en": "U.S. Treasury securities",
+  "one": "미국 재무부가 발행하는 채권이다. 만기에 따라 T-bill, T-note, T-bond로 나뉘고 물가연동국채(TIPS)도 있다.",
+  "econ": "t101"
+ },
+ {
+  "id": "ust-auction",
+  "chapter": "bonds-6",
+  "title": "단일가격 경매",
+  "hanja": "單一價格 競賣",
+  "en": "single-price auction",
+  "one": "낙찰된 사람 모두가 받아들여진 가장 높은 금리, 곧 같은 가격으로 채권을 받는 경매 방식이다."
+ },
+ {
+  "id": "ust-10y",
+  "chapter": "bonds-6",
+  "title": "미국 10년물 금리",
+  "hanja": "美國 十年物 金利",
+  "en": "10-year Treasury yield",
+  "one": "만기 10년짜리 미국 국채를 지금 사면 얻는 수익률이다. 세계 금리와 자산 가격의 기준처럼 쓰인다."
+ },
+ {
+  "id": "ycc",
+  "chapter": "bonds-6",
+  "title": "수익률곡선 통제",
+  "hanja": "收益率曲線 統制",
+  "en": "yield curve control, YCC",
+  "one": "중앙은행이 장기 국채 금리에도 목표를 정하고 그 수준을 지키려고 국채를 사들이는 정책이다.",
+  "econ": "t355"
+ },
+ {
+  "id": "jgb",
+  "chapter": "bonds-6",
+  "title": "일본 국채",
+  "hanja": "日本 國債",
+  "en": "Japanese government bonds, JGB",
+  "one": "일본 재무성이 발행하는 국채이다. 1년 이하는 할인 방식, 2년부터 40년까지는 6개월마다 이자를 주는 이표채가 중심이다."
+ },
+ {
+  "id": "fbond-route",
+  "chapter": "bonds-6",
+  "title": "해외 국채를 사는 세 길",
+  "hanja": "海外 國債",
+  "en": "ways to buy foreign government bonds",
+  "one": "국내 증권회사에서 장외로 직접 사는 길, 미국 상장 ETF, 국내 상장 ETF의 세 가지이다."
+ },
+ {
+  "id": "fx-risk",
+  "chapter": "bonds-6",
+  "title": "환율 위험",
+  "hanja": "換率 危險",
+  "en": "currency risk",
+  "one": "외화 자산의 값이 환율 때문에 원화로 따져 달라지는 위험이다."
+ },
+ {
+  "id": "fx-hedge",
+  "chapter": "bonds-6",
+  "title": "환헤지",
+  "hanja": "換헤지",
+  "en": "currency hedging",
+  "one": "미래에 바꿀 환율을 미리 정해 환율 위험을 지우는 일이다. 그 비용이나 이익은 두 나라 금리 차이에서 나온다.",
+  "econ": "t117"
+ },
+ {
+  "id": "fbond-tax",
+  "chapter": "bonds-6",
+  "title": "해외채권 과세",
+  "hanja": "海外債券 課稅",
+  "en": "taxation of foreign bonds",
+  "one": "외국 채권의 이자, 매매차익, 환차익에 한국 거주자가 내는 세금의 체계이다. 직접 보유한 개인은 이자에만 세금이 붙는 것이 보통이다."
  }
 ];

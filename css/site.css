@@ -392,7 +392,7 @@ h1 .title-gloss { display: block; margin-left: 0; margin-top: 4px; }
 .rules-used li:first-child { border-top: 0; }
 .rules-used b { color: var(--text); }
 .rules-table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 8px 0 24px; font-size: 15px; }
-.rules-table td, .rules-table th { width: 50%; white-space: normal; overflow-wrap: anywhere; word-break: keep-all; }
+.rules-table td, .rules-table th { white-space: normal; overflow-wrap: anywhere; word-break: keep-all; }
 .rules-table th, .rules-table td { border-top: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
 .rules-table th { color: var(--muted); font-weight: 500; font-size: 13px; }
 .rules-table td small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
@@ -426,3 +426,4 @@ h1 .title-gloss { display: block; margin-left: 0; margin-top: 4px; }
 .part-card.is-planned strong { color: var(--muted); }
 .landing { max-width: 860px; }
 .landing .note { margin-top: 28px; }
+.rules-table.cols-1 td { width: 100%; } .rules-table.cols-2 td { width: 50%; } .rules-table.cols-3 td { width: 33.3%; }

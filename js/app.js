@@ -30,7 +30,7 @@ const chapters = () => window.CHAPTERS || [];
 const RULES = window.RULES || {};
 const ready = () => chapters().filter((c) => c.status === "ready");
 const partName = (id) => parts().find((p) => p.id === id)?.name || id;
-const MARKET = { KR: "한국", US: "미국" };
+const MARKET = { KR: "한국", US: "미국", JP: "일본" };
 const GLOSS = () => window.GLOSSARY || [];
 const gloss = (id) => GLOSS().find((g) => g.id === id);
 const glossText = (g) => [g.hanja, g.en].filter(Boolean).map(esc).join(" · ");
@@ -210,11 +210,13 @@ function rulesView() {
     return `<td><b>${esc(r.value)}</b><small>${esc(r.label)}</small><small>${esc(ruleDate(r))} · <span class="${r.level === "official" ? "" : "level-press"}">${esc(LEVEL[r.level])}</span>${src ? ` · <a href="${esc(src.url)}" target="_blank" rel="noopener">출처</a>` : ""}</small>${r.note ? `<small>${esc(r.note)}</small>` : ""}</td>`;
   };
   const body = topics.map((t) => {
-    const kr = ids.filter((id) => RULES[id].topic === t.id && RULES[id].market === "KR");
-    const us = ids.filter((id) => RULES[id].topic === t.id && RULES[id].market === "US");
-    const n = Math.max(kr.length, us.length);
-    const rows = Array.from({ length: n }, (_, i) => `<tr>${cell(kr[i])}${cell(us[i])}</tr>`).join("");
-    return `<h2>${esc(t.name)}</h2><table class="rules-table"><thead><tr><th>한국</th><th>미국</th></tr></thead><tbody>${rows}</tbody></table>`;
+    const mine = ids.filter((id) => RULES[id].topic === t.id);
+    if (!mine.length) return "";
+    const markets = Object.keys(MARKET).filter((m) => mine.some((id) => RULES[id].market === m));
+    const cols = markets.map((m) => mine.filter((id) => RULES[id].market === m));
+    const n = Math.max(...cols.map((c) => c.length));
+    const rows = Array.from({ length: n }, (_, i) => `<tr>${cols.map((c) => cell(c[i])).join("")}</tr>`).join("");
+    return `<h2>${esc(t.name)}</h2><table class="rules-table cols-${markets.length}"><thead><tr>${markets.map((m) => `<th>${MARKET[m]}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table>`;
   }).join("");
   return `
     <article class="lesson">

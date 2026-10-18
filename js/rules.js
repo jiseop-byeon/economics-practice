@@ -41,6 +41,18 @@ window.RULE_TOPICS = [
   {
     "id": "credit",
     "name": "공매도와 신용거래"
+  },
+  {
+    "id": "bonds",
+    "name": "채권"
+  },
+  {
+    "id": "rating",
+    "name": "신용등급"
+  },
+  {
+    "id": "govbond",
+    "name": "국채 발행과 중앙은행"
   }
 ];
 
@@ -1560,6 +1572,557 @@ window.RULES = {
       {
         "name": "다올투자증권 주식 결제·미수 안내",
         "url": "https://www.daolsecurities.com/customer/guide/stockPayment.jsp"
+      }
+    ]
+  },
+  "kr-ktb-terms": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "국고채 만기와 이자 지급",
+    "value": "만기 2·3·5·10·20·30·50년, 이자는 6개월마다",
+    "short": "2년부터 50년까지 일곱 가지 만기, 이자는 1년에 두 번",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "고정금리 국고채 기준. 물가연동국고채는 만기 10년이다. 국고채전문딜러를 상대로 한 경쟁입찰로 발행하고 한국은행이 발행 사무를 대행한다.",
+    "sources": [
+      {
+        "name": "재정경제부 국채시장, 국고채권",
+        "url": "https://ktb.moef.go.kr/ntpbnd.do"
+      },
+      {
+        "name": "재정경제부 국채시장, FAQ",
+        "url": "https://ktb.moef.go.kr/faq.do"
+      }
+    ]
+  },
+  "kr-bond-krx-hours": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "장내 일반채권시장 매매 시간 (한국거래소)",
+    "value": "09:00~15:30",
+    "short": "오전 9시부터 오후 3시 30분",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "소액채권시장은 마감 무렵 정해진 시간에 단일가로 거래한다. 증권회사마다 주문 접수 시간은 조금씩 다르다.",
+    "sources": [
+      {
+        "name": "KB증권 장내채권 매매 안내",
+        "url": "https://www.kbsec.com/go.able?linkcd=s01060600P100"
+      }
+    ]
+  },
+  "kr-bond-krx-lot": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "장내 일반채권시장 매매수량단위",
+    "value": "액면 1만 원",
+    "short": "액면 1만 원 단위",
+    "effective": "2026-01-12",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2026년 1월 12일 액면 1,000원에서 1만 원으로 바뀌었다. 소액채권시장(첨가소화채권)은 액면 1,000원 단위를 유지한다. 재정경제부 국채시장 안내 페이지는 아직 1천 원으로 적고 있다.",
+    "sources": [
+      {
+        "name": "유진투자증권 공지 '[장내채권] 일반채권시장 매매수량 단위 변경 안내', 2025.12.10",
+        "url": "https://m.eugenefn.com/no20r.do?msgId=501606&pageNo=1&topFlag=0"
+      }
+    ]
+  },
+  "kr-bond-krx-tick": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "장내 채권 호가가격단위 (액면 1만 원당)",
+    "value": "잔존만기 2년 미만 0.1원, 2년 이상 10년 미만 0.5원, 10년 이상 1원",
+    "short": "남은 만기에 따라 0.1원·0.5원·1원",
+    "effective": "2016-06-27",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "그 전에는 1원으로 통일되어 있었다. 국고채 10년 지표물과 물가연동국고채 지표물은 1원을 유지한다는 증권사 안내가 있다. 현행 거래소 세칙 원문은 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "이데일리, 2016.6.24",
+        "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02335366612685000"
+      },
+      {
+        "name": "다올투자증권 채권 매매 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/bondTrade.jsp"
+      }
+    ]
+  },
+  "kr-bond-krx-settle": {
+    "topic": "settle",
+    "market": "KR",
+    "label": "장내 일반채권시장 결제일",
+    "value": "당일결제(T+0)",
+    "short": "체결한 날 바로",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "주식(T+2)과 달리 체결한 날 돈과 채권이 바뀐다.",
+    "sources": [
+      {
+        "name": "재정경제부 국채시장, 한국거래소 채권시장",
+        "url": "https://ktb.moef.go.kr/koreaExchnBondMrkt.do"
+      }
+    ]
+  },
+  "kr-bond-otc-settle": {
+    "topic": "settle",
+    "market": "KR",
+    "label": "장외 채권 결제일",
+    "value": "체결 다음 날부터 30영업일 이내 (소매채권매매는 당일 결제 가능)",
+    "short": "체결 다음 날부터 30영업일 안, 개인 대상 소매 거래는 당일도 가능",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "소매채권매매는 개인과 일반법인(전문투자자 제외)을 상대로 한 액면 100억 원 미만의 거래를 말한다. 실제 결제일은 증권회사가 정하며, 개인 거래는 당일 또는 다음 영업일 결제가 흔하다.",
+    "sources": [
+      {
+        "name": "금융투자업규정 제5-4조·제5-1조제10호 (금융위원회 고시, 2026.9.15 시행본)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
+      }
+    ]
+  },
+  "kr-bond-otc-report": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "장외 채권 거래 보고 시한",
+    "value": "체결 후 15분 이내",
+    "short": "체결하고 15분 안에",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "채권을 장외에서 투자자와 매매하거나 중개한 금융투자회사가 건별 거래 내역을 금융투자협회에 보고하고, 협회가 이를 공시한다(15분 룰, 2000년 도입). 해외 발행 외화채권과 단기사채 등은 제외한다.",
+    "sources": [
+      {
+        "name": "금융투자협회 금융투자회사의 영업 및 업무에 관한 규정 제7-5조 (2024.8.22 개정)",
+        "url": "https://law.kofia.or.kr/service/law/detailArticlePrint.do?seq=136&historySeq=1655&contentSeq=277822"
+      },
+      {
+        "name": "재정경제부 국채시장, 장외시장",
+        "url": "https://ktb.moef.go.kr/curbMrkt.do"
+      }
+    ]
+  },
+  "kr-rktb-maturities": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "개인투자용 국채 종류",
+    "value": "3년(이표채·복리채), 5년, 10년, 20년",
+    "short": "3년·5년·10년·20년 네 가지 만기",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2024년 6월 10년물·20년물로 시작했고, 2025년 3월 5년물, 2026년 4월 3년물이 더해졌다. 3년물은 가산금리가 없고 분리과세 대상이 아니며, 이자를 해마다 받는 이표채와 만기에 받는 복리채 중에서 고른다. 매달 종목별 발행 한도와 금리를 새로 공고한다.",
+    "sources": [
+      {
+        "name": "국회예산정책처 나보포커스 제134호, 2026.2.2",
+        "url": "https://www.nabo.go.kr/board/file/down.do?fid=33319091"
+      },
+      {
+        "name": "한국소통투데이, 2026.9.30 (10월 발행계획)",
+        "url": "https://www.kbcs.kr/news/article.html?no=413854"
+      }
+    ]
+  },
+  "kr-rktb-limit": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "개인투자용 국채 매입 단위와 한도",
+    "value": "최소 10만 원, 전용계좌 1인당 연 2억 원",
+    "short": "10만 원부터 한 해 2억 원까지(퇴직연금 계좌는 별도 한도 없음)",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "전용계좌는 1인 1계좌이다. 퇴직연금(DC·IRP) 계좌에는 별도의 연간 매입 한도가 없다. 청약이 한도를 넘으면 모든 청약자에게 300만 원까지 먼저 배정하고 나머지를 청약액에 비례해 나눈다. 출시 초기에는 연간 한도가 1억 원이었다는 보도가 있다.",
+    "sources": [
+      {
+        "name": "뉴스핌, 2026.8.27",
+        "url": "https://www.newspim.com/news/view/20260827001141"
+      }
+    ]
+  },
+  "kr-rktb-tax": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "개인투자용 국채 이자 분리과세",
+    "value": "매입액 총 2억 원까지의 이자에 14% (지방소득세 포함 15.4%)",
+    "short": "2027년 말까지 전용계좌로 산 만기 5년 이상물을 만기까지 보유하면, 매입액 총 2억 원까지의 이자에 14%(지방소득세 포함 15.4%) 분리과세",
+    "effective": "2023-04-11",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "조세특례제한법 제91조의23: 전용계좌로 2027년 12월 31일까지 매입하고, 시행령 제93조의9에 따라 발행일부터 만기일까지 5년 이상인 개인투자용 국채를 발행일부터 만기일까지 보유해야 한다. 종합소득 과세표준에 합산하지 않는다. 3년물과 중도환매분은 적용되지 않는다. 처음에는 만기 10년 이상만 대상이었고 2024년 말 개정으로 5년물이 포함되었다.",
+    "sources": [
+      {
+        "name": "조세특례제한법 제91조의23 (국가법령정보센터, 2026.9.18 시행본)",
+        "url": "https://www.law.go.kr/법령/조세특례제한법/제91조의23"
+      },
+      {
+        "name": "조세특례제한법 시행령 제93조의9",
+        "url": "https://www.law.go.kr/법령/조세특례제한법시행령/제93조의9"
+      }
+    ]
+  },
+  "kr-rktb-redeem": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "개인투자용 국채 중도환매",
+    "value": "발행일부터 1년이 지난 뒤, 매달 정해진 신청 기간에 월별 한도 안에서",
+    "short": "발행 1년 뒤부터 매달 신청 기간에, 원금과 표면금리 단리 이자만 받는 조건으로",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "중도환매하면 원금과 발행일부터 환매일까지 표면금리의 단리 이자만 받고, 가산금리·연복리·분리과세는 적용되지 않는다. 월별 중도환매 한도를 넘으면 신청해도 환매되지 않을 수 있다. 남에게 팔거나 넘길 수는 없다(상속 등은 예외).",
+    "sources": [
+      {
+        "name": "국회예산정책처 나보포커스 제134호, 2026.2.2",
+        "url": "https://www.nabo.go.kr/board/file/down.do?fid=33319091"
+      },
+      {
+        "name": "한국소통투데이, 2026.9.30",
+        "url": "https://www.kbcs.kr/news/article.html?no=413854"
+      }
+    ]
+  },
+  "kr-rktb-pension": {
+    "topic": "bonds",
+    "market": "KR",
+    "label": "개인투자용 국채 퇴직연금 계좌 매입",
+    "value": "DC·IRP 계좌에서 10년물·20년물",
+    "short": "퇴직연금 DC·IRP 계좌에서 10년물과 20년물만",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2026년 9월 발행분부터 허용되었다. 확정급여형(DB)은 대상이 아니다. 판매 금융회사는 은행과 증권회사 8곳으로 늘었다.",
+    "sources": [
+      {
+        "name": "뉴스핌, 2026.8.27",
+        "url": "https://www.newspim.com/news/view/20260827001141"
+      },
+      {
+        "name": "SBS Biz, 2026.8",
+        "url": "https://biz.sbs.co.kr/article/20000331223"
+      }
+    ]
+  },
+  "kr-tax-interest": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "이자소득 원천징수 세율(채권 이자)",
+    "value": "15.4%",
+    "short": "소득세 14%와 지방소득세 1.4%를 합친 15.4%",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "개인이 채권을 직접 가지면 표면금리로 받는 이자에만 붙고, 값이 올라 생긴 매매차익에는 붙지 않는다. 금융소득종합과세 기준을 넘는 부분은 따로 계산한다.",
+    "sources": [
+      {
+        "name": "머니투데이, 2022-08-02",
+        "url": "https://www.mt.co.kr/stock/2022/08/02/2022080215180038317"
+      },
+      {
+        "name": "검색 결과 종합(세율 15.4% = 14% + 1.4%), 2026-10-18 확인",
+        "url": "https://glasswallet.com/calculate/deposit-interest/tax"
+      }
+    ]
+  },
+  "kr-rating-scale-long": {
+    "topic": "rating",
+    "market": "KR",
+    "label": "국내 장기 신용등급(회사채) 체계",
+    "value": "AAA~D 10개 등급, AA~CCC에 +·− 부호",
+    "short": "AAA, AA, A, BBB, BB, B, CCC, CC, C, D의 10개 등급이고, AA부터 CCC까지는 같은 등급 안의 우열을 +와 −로 나눈다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "한국기업평가 등 국내 신용평가회사의 등급 정의를 발행회사 IR 페이지에서 확인했다. 평가회사 누리집의 등급 정의 원문은 열어 보지 못했다.",
+    "sources": [
+      {
+        "name": "삼성SDI IR 신용등급(한국기업평가 등급 정의 수록)",
+        "url": "https://samsungsdi.co.kr/ir/financial/credit-rating.html"
+      },
+      {
+        "name": "LG전자 IR 신용등급 안내(국내 3사 회사채 등급 정의 수록)",
+        "url": "https://www.lge.co.kr/company/investor/creditrating"
+      }
+    ]
+  },
+  "kr-rating-ig-line": {
+    "topic": "rating",
+    "market": "KR",
+    "label": "투자등급과 투기등급의 경계(장기 등급)",
+    "value": "BBB− 이상 투자등급, BB+ 이하 투기등급",
+    "short": "BBB−까지가 투자등급이고 BB+부터 투기등급",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "국내 등급 정의는 AAA~BBB를 투자등급, BB~C를 투기등급으로 나눈다. 법령이 정한 선이 아니라 등급 정의와 시장 관행에 따른 구분이다.",
+    "sources": [
+      {
+        "name": "LG전자 IR 신용등급 안내(국내 3사 회사채 등급 정의 수록)",
+        "url": "https://www.lge.co.kr/company/investor/creditrating"
+      }
+    ]
+  },
+  "kr-rating-scale-short": {
+    "topic": "rating",
+    "market": "KR",
+    "label": "국내 단기 신용등급(기업어음·전자단기사채) 체계",
+    "value": "A1~D 6개 등급, A2~B에 +·− 부호",
+    "short": "A1, A2, A3, B, C, D의 6개 등급이고, A2부터 B까지는 +와 −로 더 나눈다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "한국기업평가와 한국신용평가의 기업어음 등급 정의(A2~B에 +,− 부여 가능)를 발행회사 IR 페이지에서 확인했다.",
+    "sources": [
+      {
+        "name": "현대그룹 IR 신용등급(한국기업평가·한국신용평가 CP 등급 정의 수록)",
+        "url": "https://www.ehyundai.com/newPortal/group/HLDS/FI000120.do?locale=ko"
+      }
+    ]
+  },
+  "kr-tax-bond-holding": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "채권 보유기간 과세 (파는 사람 몫)",
+    "value": "직전 이자지급일(없으면 발행일)부터 매도일까지의 이자상당액",
+    "short": "직전 이자 지급일부터 판 날까지 쌓인 이자에 해당하는 금액",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "소득세법 제46조는 채권 이자를 보유기간별로 각 보유자의 이자소득으로 보고, 제133조의2는 이자를 받거나 발행법인 또는 시행령이 정한 법인에 팔 때 이 금액을 원천징수하게 한다. 계산 방법은 시행령에 맡겨져 있다. 법령 원문을 옮겨 둔 케이스노트 페이지로 확인했고, 국가법령정보센터 페이지는 내용을 불러오지 못했다.",
+    "sources": [
+      {
+        "name": "소득세법 제46조 (케이스노트 법령 원문)",
+        "url": "https://casenote.kr/법령/소득세법/제46조"
+      },
+      {
+        "name": "소득세법 제133조의2 (케이스노트 법령 원문)",
+        "url": "https://casenote.kr/법령/소득세법/제133조의2"
+      }
+    ]
+  },
+  "kr-tax-bond-gain": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "개인의 채권 매매차익",
+    "value": "비과세",
+    "short": "세금이 붙지 않는다",
+    "effective": "2024-12-10",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "소득세법이 과세 소득으로 열거하지 않아 개인이 직접 가진 채권의 매매차익과 만기상환 차익(시장에서 싸게 산 경우)은 과세하지 않는다. 이를 과세하려던 금융투자소득세는 2024년 12월 10일 국회 본회의에서 폐지 법안이 통과되어 시행되지 않았다(effective는 폐지 의결일). 발행 할인액은 이자로 과세한다. 펀드·ETF를 거치면 배당소득으로 과세된다.",
+    "sources": [
+      {
+        "name": "KB국민은행 KB Think, 2024.6.24 (현행 채권 자본이익 비과세)",
+        "url": "https://kbthink.com/main/economy/expert-column/tax-column/2024/tax-column-240624.html"
+      },
+      {
+        "name": "SBS Biz, 2024.12.10 (금투세 폐지 법안 본회의 통과)",
+        "url": "https://biz.sbs.co.kr/amp/article/20000206343"
+      },
+      {
+        "name": "머니투데이, 2022.8.2",
+        "url": "https://www.mt.co.kr/stock/2022/08/02/2022080215180038317"
+      }
+    ]
+  },
+  "us-tsy-types": {
+    "topic": "govbond",
+    "market": "US",
+    "label": "미국 국채의 만기별 종류",
+    "value": "T-bill 4주~52주, T-note 2·3·5·7·10년, T-bond 20·30년, TIPS 5·10·30년",
+    "short": "1년 이하는 T-bill, 2~10년은 T-note, 20·30년은 T-bond",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "T-bill은 이자 없이 액면보다 싸게 팔고 만기에 액면을 준다. T-note, T-bond, TIPS는 6개월마다 이자를 준다. 이 밖에 3개월마다 이자가 바뀌는 2년 만기 변동금리채(FRN)가 있다.",
+    "sources": [
+      {
+        "name": "TreasuryDirect, Marketable Securities",
+        "url": "https://www.treasurydirect.gov/marketable-securities/"
+      },
+      {
+        "name": "TreasuryDirect, Treasury Bonds",
+        "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bonds/"
+      }
+    ]
+  },
+  "us-tsy-min": {
+    "topic": "govbond",
+    "market": "US",
+    "label": "미국 국채 최소 매입 단위",
+    "value": "100달러, 100달러 단위",
+    "short": "100달러부터 100달러 단위로",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "경매에서 비경쟁 입찰은 한 번에 최대 1천만 달러까지이다. 한국 개인이 국내 증권회사에서 장외로 살 때의 최소 금액과 단위는 증권회사가 따로 정한다.",
+    "sources": [
+      {
+        "name": "TreasuryDirect, Buying a Marketable Security",
+        "url": "https://www.treasurydirect.gov/marketable-securities/buying-a-marketable-security/"
+      },
+      {
+        "name": "TreasuryDirect, Treasury Bonds",
+        "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bonds/"
+      }
+    ]
+  },
+  "us-tsy-auction": {
+    "topic": "govbond",
+    "market": "US",
+    "label": "미국 국채 경매 방식과 낙찰 한도",
+    "value": "단일가격 경매, 경쟁 입찰자 한 명 낙찰 한도 발행액의 35%",
+    "short": "경쟁 입찰로 한 입찰자가 받을 수 있는 몫은 발행 금액의 35%까지로 묶는다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "낙찰된 경쟁 입찰자와 비경쟁 입찰자 모두 받아들여진 가장 높은 금리에 해당하는 가격으로 받는다. 35% 한도에서는 입찰자가 이미 가진 순매수 포지션을 뺀다.",
+    "sources": [
+      {
+        "name": "TreasuryDirect, Auction FAQs",
+        "url": "https://www.treasurydirect.gov/help-center/faqs/auction-faqs/"
+      },
+      {
+        "name": "31 CFR 356.20 (Cornell LII)",
+        "url": "https://www.law.cornell.edu/cfr/text/31/356.20"
+      }
+    ]
+  },
+  "jp-boj-ycc-end": {
+    "topic": "govbond",
+    "market": "JP",
+    "label": "일본은행 수익률곡선 통제 종료",
+    "value": "2024-03-19",
+    "short": "2024년 3월 19일 수익률곡선 통제를 끝냈다",
+    "effective": "2024-03-19",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "단기 정책금리를 −0.1%에서 0~0.1%로 올리고, ETF와 J-REIT 매입을 멈췄다. 국채 매입은 당시 한 달 약 6조 엔 수준을 대체로 유지한다고 했다. 수익률곡선 통제는 2016년 9월 시작했다.",
+    "sources": [
+      {
+        "name": "일본은행, Changes in the Monetary Policy Framework, 2024.3.19",
+        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2024/k240319a.pdf"
+      }
+    ]
+  },
+  "jp-boj-rate": {
+    "topic": "govbond",
+    "market": "JP",
+    "label": "일본은행 정책금리 (무담보 콜금리 익일물 유도 목표)",
+    "value": "1.25% 정도",
+    "short": "1.25% 정도",
+    "effective": "2026-09-18",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2024년 3월 0~0.1%, 2024년 7월 0.25%, 2025년 1월 0.5%, 2025년 12월 0.75%, 2026년 6월 1.0%, 2026년 9월 18일 1.25%로 올렸다. 다음 결정회의 결과로 바뀔 수 있다.",
+    "sources": [
+      {
+        "name": "구마니치(교도통신), 2026.9",
+        "url": "https://kumanichi.com/articles/2037289"
+      },
+      {
+        "name": "다이와종합연구소, 2025.12.22",
+        "url": "https://www.dir.co.jp/report/research/capital-mkt/securities/20251222_025483.html"
+      },
+      {
+        "name": "미쓰비시UFJ모건스탠리, 2026.6.16",
+        "url": "https://www.am.mufg.jp/report/special/special_260616.pdf"
+      }
+    ]
+  },
+  "jp-boj-jgb-purchase": {
+    "topic": "govbond",
+    "market": "JP",
+    "label": "일본은행 국채 매입 감액 계획",
+    "value": "분기마다 감액, 2027년 1~3월 한 달 약 2조 엔",
+    "short": "2024년 7월 감액 계획을 세워 분기마다 줄이고 있고, 2027년 1~3월에는 한 달 약 2조 엔까지 낮춘다",
+    "effective": "2024-07-31",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2024년 7월 계획: 분기마다 약 4천억 엔씩 줄여 2026년 1~3월 한 달 약 3조 엔. 2025년 6월 중간 점검: 2026년 4~6월부터 분기마다 약 2천억 엔씩 줄여 2027년 1~3월 약 2조 엔. 2026년 6월 중간 점검에서 2027년 4월 이후 한 달 약 2조 엔을 유지하기로 했다고 보도되었다(이 부분은 보도로 확인).",
+    "sources": [
+      {
+        "name": "일본은행, 2025.6.17 결정문",
+        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250617a.htm"
+      },
+      {
+        "name": "일본은행, 2024.7.31 결정문",
+        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240731a.htm"
+      },
+      {
+        "name": "미쓰비시UFJ모건스탠리, 2026.6.16",
+        "url": "https://www.am.mufg.jp/report/special/special_260616.pdf"
+      }
+    ]
+  },
+  "jp-jgb-types": {
+    "topic": "govbond",
+    "market": "JP",
+    "label": "일본 국채의 만기별 종류",
+    "value": "국고단기증권(1년 이하, 할인), 이표채 2·5·10·20·30·40년, 10년 물가연동채",
+    "short": "2년, 5년, 10년, 20년, 30년, 40년 만기로 나오며 6개월마다 이자를 준다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "10년물 표면금리는 원칙적으로 3개월마다 시장 금리에 맞추어 조정한다. 2026년 10월 6일 입찰에서 3.1%로 정해졌다. 개인용 국채(個人向け国債)는 따로 있다.",
+    "sources": [
+      {
+        "name": "일본 재무성, 개인용 국채 안내",
+        "url": "https://www.mof.go.jp/jgbs/individual/how_to/index.htm"
+      },
+      {
+        "name": "구마니치(교도통신), 2026.10.6",
+        "url": "https://kumanichi.com/articles/2043510"
+      }
+    ]
+  },
+  "us-tax-tsy-wht": {
+    "topic": "tax",
+    "market": "US",
+    "label": "미국 국채 이자의 미국 원천징수 (외국인)",
+    "value": "포트폴리오 이자 면제 · 만기 183일 이하 채권 면제",
+    "short": "외국인이 받는 미국 국채 이자에는 대체로 미국이 세금을 떼지 않는다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "등록식(registered form) 채권의 이자는 받는 사람이 미국인이 아님을 서류(W-8BEN 등)로 확인하면 포트폴리오 이자로 미국 원천징수가 면제된다. 만기 183일 이하 채권의 이자와 할인액도 면제된다. 미국 상장 채권 ETF의 분배금은 펀드가 이자 관련 배당으로 지정한 부분만 면제될 수 있어, 실제 원천징수는 증권회사 내역으로 확인한다. 한미 조세조약의 이자 제한세율은 12%이다.",
+    "sources": [
+      {
+        "name": "IRS Publication 515 (2026)",
+        "url": "https://www.irs.gov/publications/p515"
+      },
+      {
+        "name": "전국투자자교육협의회, 해외채권",
+        "url": "https://www.kcie.or.kr/mobile/guide/2/12/web_view?content_idx=481"
+      }
+    ]
+  },
+  "kr-tax-fbond-interest": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "해외채권 이자소득 과세 (개인, 직접 보유)",
+    "value": "15.4% 원천징수",
+    "short": "15.4%를 원천징수한다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "소득세 14%와 지방소득세 1.4%이다. 외국에서 조약 세율만큼 먼저 떼었다면 국내 세율과의 차이만 더 뗀다. 이자와 배당 합계가 연 2,000만 원을 넘으면 금융소득종합과세 대상이다.",
+    "sources": [
+      {
+        "name": "전국투자자교육협의회, 해외채권",
+        "url": "https://www.kcie.or.kr/mobile/guide/2/12/web_view?content_idx=481"
+      },
+      {
+        "name": "KB국민은행 KB Think, 미국채 사는 법, 2024.8",
+        "url": "https://kbthink.com/main/asset-management/wealth-manage-tip/kbthink-original/202408/howtobuyUSbonds.html"
+      },
+      {
+        "name": "토스뱅크, 채권 세금",
+        "url": "https://www.tossbank.com/articles/bondstax"
+      }
+    ]
+  },
+  "kr-tax-fbond-gain": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "해외채권 매매차익·환차익 과세 (개인, 직접 보유)",
+    "value": "비과세",
+    "short": "세금이 붙지 않는다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "소득세법이 정한 소득만 과세하는 구조에서 개인의 채권 매매차익과 환차익은 과세 대상 소득에 들지 않는다. 할인채의 할인액은 이자로 볼 수 있다. ETF나 펀드로 산 경우에는 해당하지 않는다.",
+    "sources": [
+      {
+        "name": "전국투자자교육협의회, 해외채권",
+        "url": "https://www.kcie.or.kr/mobile/guide/2/12/web_view?content_idx=481"
+      },
+      {
+        "name": "KB국민은행 KB Think, 미국채 사는 법, 2024.8",
+        "url": "https://kbthink.com/main/asset-management/wealth-manage-tip/kbthink-original/202408/howtobuyUSbonds.html"
       }
     ]
   }

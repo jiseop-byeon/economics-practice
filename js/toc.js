@@ -27,12 +27,12 @@ window.CHAPTERS = [
   { id: "stocks-6", part: "stocks", status: "ready", title: "ETF의 구조", dek: "지수를 따라가는 방법, 괴리와 추적 오차, 레버리지와 인버스 상품이 오래 들고 있으면 어긋나는 이유." },
   { id: "stocks-7", part: "stocks", status: "ready", title: "공매도와 신용거래", dek: "빌려서 파는 거래와 빌려서 사는 거래의 규칙과 위험." },
 
-  { id: "bonds-1", part: "bonds", status: "planned", title: "개인이 채권을 사는 길", dek: "장내와 장외, 증권사 창구, 발행시장과 유통시장." },
-  { id: "bonds-2", part: "bonds", status: "planned", title: "수익률과 가격의 계산", dek: "표면금리, 만기수익률, 산 값에 따라 달라지는 실제 수익." },
-  { id: "bonds-3", part: "bonds", status: "planned", title: "금리 위험과 듀레이션", dek: "금리가 1%포인트 움직일 때 채권 값이 얼마나 움직이는지." },
-  { id: "bonds-4", part: "bonds", status: "planned", title: "신용등급과 스프레드", dek: "등급이 낮은 채권이 더 많은 이자를 주는 이유와 그 대가." },
-  { id: "bonds-5", part: "bonds", status: "planned", title: "채권의 세금", dek: "이자에 붙는 세금과 매매차익의 처리." },
-  { id: "bonds-6", part: "bonds", status: "planned", title: "미국 국채와 일본 국채", dek: "해외 국채를 사는 길(직접 매수, ETF), 만기별 종류, 세계의 기준이 되는 10년물 금리, 환율 위험과 환헤지, 세금." },
+  { id: "bonds-1", part: "bonds", status: "ready", title: "개인이 채권을 사는 길", dek: "장내와 장외, 증권사 창구, 발행시장과 유통시장." },
+  { id: "bonds-2", part: "bonds", status: "ready", title: "수익률과 가격의 계산", dek: "표면금리, 만기수익률, 산 값에 따라 달라지는 실제 수익." },
+  { id: "bonds-3", part: "bonds", status: "ready", title: "금리 위험과 듀레이션", dek: "금리가 1%포인트 움직일 때 채권 값이 얼마나 움직이는지." },
+  { id: "bonds-4", part: "bonds", status: "ready", title: "신용등급과 스프레드", dek: "등급이 낮은 채권이 더 많은 이자를 주는 이유와 그 대가." },
+  { id: "bonds-5", part: "bonds", status: "ready", title: "채권의 세금", dek: "이자에 붙는 세금과 매매차익의 처리." },
+  { id: "bonds-6", part: "bonds", status: "ready", title: "미국 국채와 일본 국채", dek: "해외 국채를 사는 길(직접 매수, ETF), 만기별 종류, 세계의 기준이 되는 10년물 금리, 환율 위험과 환헤지, 세금." },
 
   { id: "derivatives-1", part: "derivatives", status: "planned", title: "선물 계약 하나의 크기", dek: "거래 단위와 승수. 작은 증거금 뒤에 있는 큰 계약 금액." },
   { id: "derivatives-2", part: "derivatives", status: "planned", title: "증거금과 매일의 정산", dek: "개시증거금, 유지증거금, 추가 증거금 요구, 반대매매." },
