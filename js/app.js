@@ -77,10 +77,10 @@ function reviewTable() {
     return `<tr>
       <td><b>${esc(g.name)}</b><small>${esc(g.why)}</small></td>
       <td>${mine.length}<small>공식 ${lv("official")} · 보도 ${lv("press")}${lv("pending") ? ` · 대조 전 ${lv("pending")}` : ""}</small></td>
-      <td>${cycleName(g.days)}</td>
-      <td>${fmtDate(latest)}${oldest !== latest ? `<small>가장 오래된 것 ${fmtDate(oldest)}</small>` : ""}</td>
-      <td>${fmtDate(due)}</td>
-      <td class="${stale ? "level-press" : ""}">${stale ? `점검 필요 ${stale}` : soon ? "곧 점검" : "정상"}</td>
+      <td class="nowrap"><span class="pill">${cycleName(g.days)}</span></td>
+      <td class="nowrap">${fmtDate(latest)}${oldest !== latest ? `<small>가장 오래된 것 ${fmtDate(oldest)}</small>` : ""}</td>
+      <td class="nowrap">${fmtDate(due)}</td>
+      <td class="nowrap"><span class="pill ${stale ? "pill-warn" : soon ? "pill-soon" : "pill-ok"}">${stale ? `점검 필요 ${stale}` : soon ? "곧 점검" : "정상"}</span></td>
     </tr>`;
   }).join("");
   const all = ids.map((id) => RULES[id].checked).sort();

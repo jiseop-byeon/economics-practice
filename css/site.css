@@ -435,3 +435,10 @@ h1 .title-gloss { display: block; margin-left: 0; margin-top: 4px; }
 .review-table td small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; white-space: normal; }
 .review-table td, .review-table th { white-space: normal; vertical-align: top; font-size: 14px; }
 .review-table td:first-child { min-width: 180px; }
+.review-table .nowrap { white-space: nowrap; }
+.review-table td.nowrap small { white-space: nowrap; }
+.pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 13px; line-height: 1.6; border: 1px solid var(--line-strong); color: var(--text); background: var(--surface-2); }
+.pill-ok { border-color: var(--accent-line); background: var(--accent-soft); color: var(--accent-text); }
+.pill-soon { border-color: var(--warm-line); background: var(--warm-soft); color: var(--warm); }
+.pill-warn { border-color: var(--warm); background: var(--warm-soft); color: var(--warm); font-weight: 600; }
+.review-table th { white-space: nowrap; }
