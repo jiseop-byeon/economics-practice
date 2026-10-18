@@ -104,7 +104,7 @@ function home() {
         ${next ? `<a class="btn" href="#/read/${esc(next.id)}">${readDates(s, next.id).length ? "이어서 읽기" : "1장부터 읽기"}</a>` : ""}
         <a class="btn-quiet" href="#/toc">전체 목차</a>
       </div>
-      <h2 class="home-h">열 개의 영역</h2>
+      <h2 class="home-h">${parts().length}개 영역</h2>
       <div class="parts-grid">
         ${parts().map((p, k) => {
           const cs = chapters().filter((c) => c.part === p.id);
