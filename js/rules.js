@@ -57,6 +57,18 @@ window.RULE_TOPICS = [
   {
     "id": "deriv",
     "name": "선물과 옵션"
+  },
+  {
+    "id": "commodity",
+    "name": "원자재"
+  },
+  {
+    "id": "metals",
+    "name": "금속 거래소와 금속 정책"
+  },
+  {
+    "id": "energy",
+    "name": "에너지 시장"
   }
 ];
 
@@ -3244,6 +3256,864 @@ window.RULES = {
       {
         "name": "국세청, 파생상품에 대한 양도소득세 신고납부 안내",
         "url": "https://www.nts.go.kr/tax/sub/1.5.4.파생상품에 대한 양도소득세 신고납부 안내.html"
+      }
+    ]
+  },
+  "us-cme-wti-unit": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "WTI 원유 선물 1계약의 크기 (NYMEX)",
+    "value": "1,000배럴",
+    "short": "1,000배럴로, 값은 배럴당 달러로 부른다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "최소 가격 변동 배럴당 0.01달러(1계약 10달러). 실물 인도 장소는 오클라호마주 쿠싱. CME 공식 페이지가 자동 접속을 막아(403·시간 초과) 검색 결과에 나온 CME 페이지 내용으로 확인했다.",
+    "sources": [
+      {
+        "name": "CME Group, Light Sweet Crude Oil Futures contract specs (검색 결과로 확인)",
+        "url": "https://cmegroup.com/trading/energy/crude-oil/light-sweet-crude_contractSpecs_futures.html"
+      }
+    ]
+  },
+  "us-ice-brent-unit": {
+    "topic": "commodity",
+    "market": "GL",
+    "label": "브렌트 원유 선물 1계약의 크기 (ICE Futures Europe)",
+    "value": "1,000배럴",
+    "short": "1,000배럴로, 값은 배럴당 달러로 부른다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "EFP 방식 인도에 ICE Brent Index로 현금 결제할 수 있는 선택이 붙은 계약. 최소 변동 배럴당 0.01달러. 만기는 해당 월의 두 달 전 마지막 영업일. 실제 시장은 런던이다(market 표시는 임시로 US).",
+    "sources": [
+      {
+        "name": "ICE Futures Europe, Brent Crude Futures Contract Specifications (2026-10-18 내려받음)",
+        "url": "https://www.ice.com/api/productguide/spec/219/pdf"
+      }
+    ]
+  },
+  "us-comex-gold-unit": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "금 선물 1계약의 크기 (COMEX)",
+    "value": "100트로이온스",
+    "short": "100트로이온스로, 값은 온스당 달러로 부른다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "최소 가격 변동 온스당 0.10달러. CME 공식 페이지 직접 열기 실패, 검색 결과의 CME 자료로 확인.",
+    "sources": [
+      {
+        "name": "CME Group, Gold futures and options fact card",
+        "url": "https://www.cmegroup.com/trading/metals/files/fact-card-gold-futures-options.pdf"
+      }
+    ]
+  },
+  "us-comex-silver-unit": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "은 선물 1계약의 크기 (COMEX)",
+    "value": "5,000트로이온스",
+    "short": "5,000트로이온스",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "최소 가격 변동 온스당 0.005달러(1계약 25달러). Barchart 계약 명세표(2026.3)로 확인, CME 원문은 열지 못했다.",
+    "sources": [
+      {
+        "name": "Barchart, Metals contract specifications",
+        "url": "https://www.barchart.com/futures/contract-specifications/metals"
+      }
+    ]
+  },
+  "us-cbot-grain-unit": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "옥수수·밀·대두 선물 1계약의 크기 (CBOT)",
+    "value": "5,000부셸",
+    "short": "5,000부셸",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "세 곡물 모두 부셸당 센트로 호가. 옥수수 최소 변동 1/4센트(1계약 12.50달러). CME 밀 상품 페이지 내용이 검색 결과로 확인됨.",
+    "sources": [
+      {
+        "name": "CME Group, Wheat futures",
+        "url": "https://cmegroup.com/markets/agriculture/grains/wheat.html"
+      },
+      {
+        "name": "Virginia Tech, Feeder grain CME",
+        "url": "https://aaec.vt.edu/extension/va-commodity-market/feedergraincme.html"
+      }
+    ]
+  },
+  "us-lme-lot-base": {
+    "topic": "commodity",
+    "market": "GL",
+    "label": "LME 구리·알루미늄·아연의 거래 단위",
+    "value": "25톤",
+    "short": "25톤(2% 안팎 허용)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "LME 규정집 Special Contract Rules의 SIZE OF LOT: Copper Grade A, High Grade Primary Aluminium, Special High Grade Zinc 각 25 tonnes (2% either more or less). 2023년 규정 개정 공지문으로 확인. 실제 시장은 런던(market 표시는 임시로 US).",
+    "sources": [
+      {
+        "name": "LME, Notice 23/133 Special Contracts Rules (규정집 개정본 포함), 2023.7",
+        "url": "https://www.lme.com/-/media/Files/News/Notices/2023/07/RULEBOOK-23-133-SPECIAL-CONTRACTS-RULES--ADDITION-OF-ZINC-JUMBOS-AND-OTHER-ADMINISTRATIVE-AMENDMENTS.pdf"
+      }
+    ]
+  },
+  "us-lme-lot-nickel": {
+    "topic": "commodity",
+    "market": "GL",
+    "label": "LME 니켈의 거래 단위",
+    "value": "6톤",
+    "short": "6톤(2% 안팎 허용)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "LME 규정집 Special Contract Rules for Primary Nickel, SIZE OF LOT 6 tonnes. 실제 시장은 런던(market 표시는 임시로 US).",
+    "sources": [
+      {
+        "name": "LME, Notice 23/133 Special Contracts Rules, 2023.7",
+        "url": "https://www.lme.com/-/media/Files/News/Notices/2023/07/RULEBOOK-23-133-SPECIAL-CONTRACTS-RULES--ADDITION-OF-ZINC-JUMBOS-AND-OTHER-ADMINISTRATIVE-AMENDMENTS.pdf"
+      }
+    ]
+  },
+  "us-lbma-gold-times": {
+    "topic": "commodity",
+    "market": "GL",
+    "label": "LBMA 금 가격 경매 시각",
+    "value": "런던 시각 10:30, 15:00",
+    "short": "런던 시각 오전 10시 30분과 오후 3시, 하루 두 번",
+    "effective": "2015-03-20",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "ICE Benchmark Administration(IBA)이 운영하는 전자 경매. 가격 발견은 미국 달러로 하고, 다른 통화 값은 참고·결제용. IBA 운영은 2015.3.20부터. 실제 시장은 런던(market 표시는 임시로 US).",
+    "sources": [
+      {
+        "name": "LBMA, LBMA Gold Price",
+        "url": "https://www.lbma.org.uk/prices-and-data/lbma-gold-price/lbma-gold-price"
+      }
+    ]
+  },
+  "us-lbma-gold-tolerance": {
+    "topic": "commodity",
+    "market": "GL",
+    "label": "LBMA 금 가격 경매가 끝나는 매수·매도 차이 범위",
+    "value": "10,000온스",
+    "short": "사려는 양과 팔려는 양의 차이 10,000온스 이내",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "차이가 범위 안에 들면 경매를 끝내고, 남은 차이는 직접 참가자들이 똑같이 나눠 진다.",
+    "sources": [
+      {
+        "name": "LBMA, LBMA Gold Price",
+        "url": "https://www.lbma.org.uk/prices-and-data/lbma-gold-price/lbma-gold-price"
+      }
+    ]
+  },
+  "kr-goldmkt-product": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 거래 대상",
+    "value": "순도 99.99% 금지금 1kg·100g",
+    "short": "순도 99.99퍼센트의 금괴(1kg와 100g 두 종목)",
+    "effective": "2014-03-24",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2014.3.24 개설. 100g 종목은 뒤에 추가됐다. 증권회사 안내 페이지로 확인, 한국거래소 원문은 열지 못했다.",
+    "sources": [
+      {
+        "name": "유안타증권(myasset), 금현물 거래 안내",
+        "url": "https://www.myasset.com/myasset/static/trading/TR_1401000_P1.jsp"
+      }
+    ]
+  },
+  "kr-goldmkt-unit": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 매매·호가 수량 단위",
+    "value": "1g",
+    "short": "1그램",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "호가 가격 단위 10원, 가격제한폭 기준가격의 ±10%, 1회 주문 한도 5,000g, 지정가 주문만, 당일 결제.",
+    "sources": [
+      {
+        "name": "유안타증권(myasset), 금현물 거래 안내",
+        "url": "https://www.myasset.com/myasset/static/trading/TR_1401000_P1.jsp"
+      }
+    ]
+  },
+  "kr-goldmkt-hours": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 매매 시간",
+    "value": "09:00~15:30",
+    "short": "오전 9시부터 오후 3시 30분(시작 전 8시 30분부터 단일가 주문 접수, 마감 10분은 단일가)",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "08:30~09:00 시가 단일가, 09:00~15:20 접속매매, 15:20~15:30 종가 단일가. 2014년 개장 때는 10:00~15:00이었다.",
+    "sources": [
+      {
+        "name": "유안타증권(myasset), 금현물 거래 안내",
+        "url": "https://www.myasset.com/myasset/static/trading/TR_1401000_P1.jsp"
+      }
+    ]
+  },
+  "kr-gold-bar-vat": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "금 실물(골드바) 장외 구입 시 부가가치세",
+    "value": "10%",
+    "short": "구입 가격의 10% 부가가치세",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "금지금 공급은 부가가치세 과세 대상이다. 개인은 살 때 낸 부가가치세를 되팔 때 돌려받지 못한다. 판매처의 가공비·마진(5% 안팎으로 보도)이 별도로 붙는다. 한국거래소 금시장 안의 매매만 조세특례제한법 제126조의7에 따라 면제된다.",
+    "sources": [
+      {
+        "name": "매일경제, 2026.1.26 (다음 뉴스 게재)",
+        "url": "https://v.daum.net/v/20260126060003073"
+      },
+      {
+        "name": "KB국민은행 KB Think, 금 통장 장단점, 2026.4.20",
+        "url": "https://kbthink.com/investment/101/gold-banking.html"
+      },
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      }
+    ]
+  },
+  "kr-goldmkt-limit": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 가격제한폭",
+    "value": "기준가격(전날 종가) ±10%",
+    "short": "전날 종가에서 위아래 10%",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "전날 종가가 없으면 최근 매매거래일 종가가 기준가격이다.",
+    "sources": [
+      {
+        "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
+        "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      }
+    ]
+  },
+  "kr-goldmkt-settle": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 결제일",
+    "value": "당일결제(T+0)",
+    "short": "체결된 당일에 이루어진다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "매수 대금은 현금으로 전액 미리 맡겨야 한다(현금위탁증거금률 100%). 결제 뒤 매수자는 한국예탁결제원에 혼합보관된 금지금의 지분을 갖는다.",
+    "sources": [
+      {
+        "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
+        "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      }
+    ]
+  },
+  "kr-goldmkt-tax": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "KRX 금시장 개인 매매차익 과세",
+    "value": "양도소득세·배당소득세 비과세 (금융소득종합과세 제외)",
+    "short": "양도소득세와 배당소득세가 없고 금융소득종합과세에도 들어가지 않는다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "장내 거래에서 생긴 개인투자자의 매매차익에 해당한다. 사업자는 거래차익에 법인세(소득세)가 붙는다.",
+    "sources": [
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      }
+    ]
+  },
+  "kr-goldmkt-vat": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "KRX 금시장 부가가치세",
+    "value": "장내 매매 면제 · 실물 인출 시 공급가액(평균 매수 단가 × 인출 수량)의 10%",
+    "short": "장내 매매는 부가가치세 면제",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "조세특례제한법 제126조의7 제1항 제2호(장내 면제)와 제4항(인출 시 납부)에 근거한다고 금융회사 설명서가 적고 있다. 증권회사 위탁수수료와 인출 수수료에는 별도로 부가가치세 10%가 붙는다. 법령 원문은 직접 열어 보지 못했다.",
+    "sources": [
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      },
+      {
+        "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
+        "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      }
+    ]
+  },
+  "kr-goldmkt-withdraw": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 실물 인출",
+    "value": "1kg·100g 골드바 단위, 부가가치세 10% + 인출 수수료(개당 2만 원 안팎)",
+    "short": "1kg나 100g 골드바 한 개 단위로 꺼내며, 부가가치세 10%와 개당 2만 원 안팎의 인출 수수료가 든다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "17시까지 신청하면 다음 영업일에 받을 수 있다. 한 번 인출한 골드바는 다시 입고해 장내에서 팔 수 없다. 수수료는 증권회사마다 다르다(예: 1만 원 + 인수도단위당 2만 원).",
+    "sources": [
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      },
+      {
+        "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
+        "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      }
+    ]
+  },
+  "kr-goldmkt-fee": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "KRX 금시장 매매 수수료 (증권회사)",
+    "value": "증권회사마다 다름, 온라인 0.2~0.3% 안팎 (부가가치세 별도)",
+    "short": "증권회사마다 다르지만 온라인 0.2~0.3% 안팎",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "한국거래소 안내는 '0.3% 내외', 한 증권회사 설명서(2026.10)는 온라인 0.2%·모바일 0.3%·영업점 0.5%(부가세 별도)로 적는다. 일부 증권회사는 보관수수료를 받는다.",
+    "sources": [
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      },
+      {
+        "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
+        "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      }
+    ]
+  },
+  "kr-goldbank-tax": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "골드뱅킹(금 통장) 매매차익 과세",
+    "value": "배당소득으로 15.4% 원천징수",
+    "short": "배당소득으로 보아 출금·해지할 때 15.4%를 원천징수한다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "배당소득세 14%와 지방소득세 1.4%이다. 금융소득종합과세 합산 대상이다. 2010년 과세 방침과 이후 소송을 거쳐 소득세법 개정으로 배당소득 과세가 명확해졌다(2018년부터라는 보도).",
+    "sources": [
+      {
+        "name": "KB국민은행 KB Think, 금 통장 장단점, 2026.4.20",
+        "url": "https://kbthink.com/investment/101/gold-banking.html"
+      },
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      },
+      {
+        "name": "한국경제, 2017.12.15",
+        "url": "https://www.hankyung.com/amp/2017121576431"
+      }
+    ]
+  },
+  "kr-goldbank-protect": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "골드뱅킹(금 통장) 예금자보호",
+    "value": "보호되지 않음",
+    "short": "예금자보호법에 따라 보호되지 않는다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "은행 상품이지만 금 시세에 연동된 투자 상품이다. KRX 금현물 거래도 예금자보호 대상이 아니다.",
+    "sources": [
+      {
+        "name": "KB국민은행 KB Think, 금 통장 장단점, 2026.4.20",
+        "url": "https://kbthink.com/investment/101/gold-banking.html"
+      },
+      {
+        "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
+        "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      }
+    ]
+  },
+  "kr-goldbank-cost": {
+    "topic": "commodity",
+    "market": "KR",
+    "label": "골드뱅킹 거래 비용",
+    "value": "사고팔 때 각 1% 안팎 · 실물 인출 시 4~5% 수수료 + 부가가치세 10%",
+    "short": "사고팔 때 각각 시세의 1% 안팎이고, 실물로 받으면 4~5% 수수료와 부가가치세 10%가 붙는다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "은행마다 다르다. 거래 단위는 0.01g이다. 실물 인출에는 약 1주일이 걸린다는 안내가 있다.",
+    "sources": [
+      {
+        "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      },
+      {
+        "name": "KB국민은행 KB Think, 금 통장 장단점, 2026.4.20",
+        "url": "https://kbthink.com/investment/101/gold-banking.html"
+      }
+    ]
+  },
+  "kr-tax-etn-gain": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "국내주식형 외 ETN 매매차익 과세",
+    "value": "보유기간과세로 배당소득세 15.4%",
+    "short": "국내주식형이 아니면 매매차익을 보유 기간 기준으로 계산해 배당소득세를 뗀다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "분배금과 중도상환·만기 상환금도 배당소득이다. 매매차익은 합산하되 매매차손은 빼지 않는다. 금융소득종합과세 합산 대상이 될 수 있다. ETN은 발행 증권회사의 신용위험을 진다.",
+    "sources": [
+      {
+        "name": "키움증권 ETN 투자 유의사항 안내",
+        "url": "https://download.kiwoom.com/web/ETN_NOTE.pdf"
+      }
+    ]
+  },
+  "us-ptp-withholding": {
+    "topic": "tax",
+    "market": "US",
+    "label": "미국 PTP(상장 조합) 지분 매도 시 원천징수 (외국인)",
+    "value": "매도 금액의 10%",
+    "short": "이익과 상관없이 매도 금액의 10%를 원천징수한다",
+    "effective": "2023-01-01",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "미국 세법 1446(f) 규정이다. 규정 조문의 적용일은 2022-01-01이지만 브로커 원천징수는 IRS 고시로 2023-01-01부터 시작되었다. 일부 원자재 선물 상품이 PTP 형태이다. 해당 여부는 상품 설명서로 확인한다.",
+    "sources": [
+      {
+        "name": "26 CFR 1.1446(f)-4 (Cornell LII)",
+        "url": "https://www.law.cornell.edu/cfr/text/26/1.1446(f)-4"
+      },
+      {
+        "name": "SIX Group, IRS Section 1446(f), 2022",
+        "url": "https://www.six-group.com/de/newsroom/news/financial-information/2022/irs-section-1446f-how-to-tackle-the-challenges.html"
+      }
+    ]
+  },
+  "us-fut-cl-last-trade": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "미국 WTI 원유 선물 최종거래일",
+    "value": "인도 월 전달 25일의 3영업일 전 (25일이 영업일이 아니면 4영업일 전)",
+    "short": "인도 월 전달 25일의 3영업일 전(25일이 휴일이면 4영업일 전)에",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "예를 들어 2020년 5월물은 4월 21일에 거래가 끝났다. CME 상품 명세 페이지가 자동 접속을 막아 검색 결과로 확인했으며 규정 원문(NYMEX Rulebook 200장) 대조가 남았다.",
+    "sources": [
+      {
+        "name": "CME Group, Light Sweet Crude Oil 상품 명세",
+        "url": "https://cmegroup.com/trading/energy/crude-oil/light-sweet-crude_contractSpecs_futures.html"
+      },
+      {
+        "name": "CFTC 중간 보고서 보도자료, 2020.11.23",
+        "url": "https://www.cftc.gov/node/234886"
+      }
+    ]
+  },
+  "us-idx-gsci-roll": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "S&P GSCI 원자재 지수의 정기 롤 기간",
+    "value": "매달 5~9번째 영업일, 하루 20%씩",
+    "short": "매달 5번째부터 9번째 영업일까지 하루 20%씩 나누어",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "계약 수량 기준으로 첫 근월물에서 다음 월물로 옮긴다. 모든 품목이 매달 옮기는 것은 아니다(일부 품목은 정해진 달에만). 2020년 4월에는 6월물을 7월물로 즉시 옮기는 비정기 롤을 했다. S&P 방법론 원문은 자동 접속이 막혀 요약 자료로 확인했다.",
+    "sources": [
+      {
+        "name": "Goldman Sachs, S&P GSCI Roll Period 설명",
+        "url": "https://www.goldmansachs.com/what-we-do/FICC-and-equities/business-groups/sts-folder/gsci/roll-period.html"
+      },
+      {
+        "name": "대신증권 ETN 자료(S&P GSCI 방법론 요약), 2022.6",
+        "url": "https://etn.daishin.com/e5_data/mboard/etn_product/2022/06/34_00_methodology-sp-gsci-quick-guide.pdf"
+      },
+      {
+        "name": "Bloomberg, 2020.4.28",
+        "url": "https://www.bloomberg.com/news/articles/2020-04-28/biggest-commodity-index-moves-all-wti-exposure-away-from-june"
+      }
+    ]
+  },
+  "comex-lot-copper": {
+    "topic": "metals",
+    "market": "US",
+    "label": "COMEX 구리 한 계약 크기와 호가 단위",
+    "value": "25,000파운드, 파운드당 센트",
+    "short": "한 계약 25,000파운드에 파운드당 센트로 값을 부르고",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "25,000파운드는 약 11.34톤이다. CME그룹 소속 거래소이다.",
+    "sources": [
+      {
+        "name": "ICSG, The World Copper Factbook 2026",
+        "url": "https://icsg.org/copper-factbook/"
+      }
+    ]
+  },
+  "shfe-lot-copper": {
+    "topic": "metals",
+    "market": "GL",
+    "label": "상하이선물거래소(SHFE) 구리 한 계약 크기",
+    "value": "5톤, 톤당 위안",
+    "short": "한 계약 5톤에 위안화로 톤당 값을 부른다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "ICSG 공식 자료로 확인. SHFE 원문은 열지 않았다.",
+    "sources": [
+      {
+        "name": "ICSG, The World Copper Factbook 2026",
+        "url": "https://icsg.org/copper-factbook/"
+      }
+    ]
+  },
+  "lme-limit-base": {
+    "topic": "metals",
+    "market": "GL",
+    "label": "LME 하루 가격 제한 (구리·알루미늄·아연, 3개월물)",
+    "value": "12%",
+    "short": "전날 3개월물 종가에서 위아래 12%",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2022년 니켈 사태 뒤 도입. 전날 밤 3개월물 종가를 기준으로 모든 만기에 적용한다. 2022년 보도에는 다른 금속이 15%였다고 되어 있어 이후 바뀐 것으로 보이며 변경 날짜는 확인하지 못했다. LME 페이지는 접속 차단으로 검색 요약만 확인.",
+    "sources": [
+      {
+        "name": "LME, Volatility controls: price limits and price bands",
+        "url": "https://www.lme.com/en/trading/volatility-controls-price-limits-and-price-bands"
+      }
+    ]
+  },
+  "lme-limit-nickel": {
+    "topic": "metals",
+    "market": "GL",
+    "label": "LME 하루 가격 제한 (니켈, 3개월물)",
+    "value": "15%",
+    "short": "전날 3개월물 종가에서 위아래 15%",
+    "effective": "2022-03-21",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2022년 3월 16일 재개 때 5%로 시작해 8%, 12%를 거쳐 3월 21일 15%가 되었다(LME 공지 22/080, '추후 공지까지').",
+    "sources": [
+      {
+        "name": "LME 공지 TRADING 22/080 (ISDA 게시본)",
+        "url": "https://www.isda.org/a/diPgE/TRADING-22-080-DAILY-PRICE-LIMITS-UPDATE-NICKEL.pdf"
+      },
+      {
+        "name": "LME, Volatility controls: price limits and price bands",
+        "url": "https://www.lme.com/en/trading/volatility-controls-price-limits-and-price-bands"
+      }
+    ]
+  },
+  "cn-al-cap": {
+    "topic": "metals",
+    "market": "GL",
+    "label": "중국 알루미늄 제련 능력 상한",
+    "value": "연 4,500만 톤",
+    "short": "연 4,500만 톤",
+    "effective": "2017-01-01",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2017년 도입. 새 제련소를 지으려면 같은 능력의 기존 설비를 닫아야 한다. 효율 개선으로 2026년 실제 생산은 연율 약 4,670만 톤으로 상한을 넘었다는 보도가 있다. 2017년 안의 정확한 시행일은 확인하지 못해 1월 1일로 적었다.",
+    "sources": [
+      {
+        "name": "Mining Weekly(Reuters), 2026.9.9",
+        "url": "https://www.miningweekly.com/article/capped-at-home-china-extends-its-aluminium-dominance-abroad-reuters-says-2026-09-09"
+      },
+      {
+        "name": "Engineering News(Reuters), 2026.9.15",
+        "url": "https://www.engineeringnews.co.za/article/china-aluminium-output-hits-record-high-in-august-with-capacity-cap-in-sight-2026-09-15"
+      }
+    ]
+  },
+  "id-ni-ore-ban": {
+    "topic": "metals",
+    "market": "GL",
+    "label": "인도네시아 니켈 광석 수출 금지",
+    "value": "2020년 1월 1일 시행",
+    "short": "2020년 1월부터",
+    "effective": "2020-01-01",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "원래 2022년 예정이던 금지를 2019년 9월 발표로 2년 앞당겼다. 나라 안 제련·가공 투자를 끌어들이려는 정책이다. 대상 광석 품위 범위는 보도마다 다르다.",
+    "sources": [
+      {
+        "name": "Al Jazeera, 2019.9.2",
+        "url": "https://www.aljazeera.com/economy/2019/9/2/worlds-biggest-nickel-ore-maker-bans-exports-from-january-2020"
+      },
+      {
+        "name": "Argus, 2019",
+        "url": "https://www.argusmedia.com/en/news/1969668-indonesia-to-stop-nickel-ore-exports-in-2020"
+      }
+    ]
+  },
+  "us-cbot-grain-tick": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "CBOT 밀·옥수수·대두 선물 최소 가격 단위",
+    "value": "부셸당 1/4센트(한 계약 12.50달러)",
+    "short": "부셸당 1/4센트, 한 계약에 12.50달러",
+    "level": "press",
+    "note": "가격은 부셸당 센트로 부르므로 1센트 움직이면 한 계약에 50달러가 오간다.",
+    "sources": [
+      {
+        "name": "CME Group CBOT Rulebook Chapter 10 (Corn Futures)",
+        "url": "https://www.cmegroup.com/content/dam/cmegroup/rulebook/CBOT/I/10.pdf"
+      },
+      {
+        "name": "CME Group 옥수수 선물 계약 명세",
+        "url": "https://cmegroup.com/content/cmegroup/en//trading/agricultural/grain-and-oilseed/corn_contract_specifications.html"
+      }
+    ]
+  },
+  "us-cbot-grain-limit": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "CBOT 곡물 선물 하루 가격제한폭 재설정",
+    "value": "매년 5월·11월 재설정, 기준 가격의 약 7%(최저 한도 있음)",
+    "short": "해마다 5월과 11월에 최근 가격의 약 7%로 다시 정한다",
+    "effective": "2026-05-01",
+    "level": "press",
+    "note": "7%로 계산한 값과 품목별 최저 한도 가운데 큰 쪽을 쓴다. 제한폭까지 움직인 다음 거래일에는 한도를 넓힌다. 2026년 5월 1일 거래일부터 적용된 한도는 11월 첫 거래일까지 쓴다. 구체적인 센트 값은 CME 공지 원문으로 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "CME Group SER-9730, 2026.4.24",
+        "url": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2026/04/ser-9730.pdf"
+      },
+      {
+        "name": "Manitoba Co-operator (CME 가변 가격제한폭 도입 보도)",
+        "url": "https://www.manitobacooperator.ca/?p=120856"
+      }
+    ]
+  },
+  "grain-bushel-weight": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "곡물 1부셸의 표준 무게와 톤 환산",
+    "value": "옥수수 56파운드(1톤 = 39.368부셸), 밀·대두 60파운드(1톤 = 36.744부셸)",
+    "short": "옥수수는 56파운드, 밀과 대두는 60파운드",
+    "level": "press",
+    "note": "1톤 = 2,204.62파운드. 미국 농업통계청 웹사이트에 실린 캔자스 밀 위원회 환산표 기준이다.",
+    "sources": [
+      {
+        "name": "Kansas Wheat Quality 보고서 환산표 (USDA NASS 게재)",
+        "url": "https://nass.usda.gov/statistics_by_state/Kansas/Publications/Cooperative_Projects/Wheat_Quality/wq02pdf.pdf"
+      }
+    ]
+  },
+  "soy-crush-yield": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "대두 1부셸 압착 수율 (선물 압착 마진 계산 기준)",
+    "value": "대두박 44파운드(0.022숏톤), 대두유 11파운드",
+    "short": "대두박 44파운드와 대두유 11파운드",
+    "level": "press",
+    "note": "CME가 압착 마진(board crush) 계산에 쓰는 표준값이다. 실제 수율은 대두 품질과 공장에 따라 다르며, 나머지는 껍질과 손실이다.",
+    "sources": [
+      {
+        "name": "CME Group, The Soybean Crush",
+        "url": "https://cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-crush-spreads.html"
+      }
+    ]
+  },
+  "us-grain-marketing-year": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "미국 곡물 판매연도",
+    "value": "옥수수·대두 9월~이듬해 8월, 밀 6월~이듬해 5월",
+    "short": "옥수수와 대두는 9월부터 이듬해 8월까지, 밀은 6월부터 이듬해 5월까지이다",
+    "level": "official",
+    "note": "미국 농무부 수급표의 기준 기간이다. 세계 교역 통계는 곡물별 국제 교역연도(밀 7월~6월 등)를 따로 쓴다.",
+    "sources": [
+      {
+        "name": "USDA ERS Wheat Outlook WHS-26i, 2026.9.15",
+        "url": "https://ers.usda.gov/media/29631/whs-26i.pdf"
+      },
+      {
+        "name": "USDA ERS Feed Outlook FDS-26j, 2026.10.14",
+        "url": "https://www.ers.usda.gov/media/29746/fds-26j.pdf"
+      }
+    ]
+  },
+  "us-wasde-schedule": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "WASDE(세계 농산물 수급 전망) 발표 일정",
+    "value": "매달 8~12일 무렵, 미국 동부 시간 정오",
+    "short": "매달 한 번, 8~12일 무렵 정오(미국 동부 시간)",
+    "level": "press",
+    "note": "미국 농무부 세계농업전망위원회(WAOB)가 낸다. 미국 농무부 WASDE 페이지는 접속이 막혀 검색 결과의 일정표와 CME 해설로 확인했다.",
+    "sources": [
+      {
+        "name": "USDA WASDE 페이지",
+        "url": "https://www.usda.gov/oce/commodity/wasde"
+      },
+      {
+        "name": "CME Group, Understanding Major USDA Reports in 2026",
+        "url": "https://www.cmegroup.com/articles/2026/understanding-major-usda-reports-in-2026.html"
+      }
+    ]
+  },
+  "us-crop-progress": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "작황 보고서(Crop Progress) 발표",
+    "value": "생육기(4월 초~11월 말) 매주 첫 영업일 동부시간 16:00 이후",
+    "short": "4월 초부터 11월 말까지 매주 첫 영업일(보통 월요일) 미국 동부시간 오후 4시 이후에 발표한다",
+    "level": "official",
+    "note": "작물 상태는 매우 나쁨·나쁨·보통·좋음·아주 좋음 다섯 단계 비율로 적는다. 12~3월에는 주간 보고서 대신 월간 자료가 나온다.",
+    "sources": [
+      {
+        "name": "USDA NASS Crop Progress, 2026.10.5",
+        "url": "https://esmis.nal.usda.gov/sites/default/release-files/796095/prog4026.txt"
+      }
+    ]
+  },
+  "india-wheat-ban-2022": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "WORLD",
+    "label": "인도 밀 수출 금지 (2022)",
+    "value": "2022-05-13 고시, 즉시 시행",
+    "short": "인도가 폭염으로 작황이 나빠지자 밀 수출을 금지했다",
+    "effective": "2022-05-13",
+    "level": "press",
+    "note": "식량 안보와 물가를 이유로 들었다. 그 이전에 발행된 신용장 물량 등은 예외로 했다.",
+    "sources": [
+      {
+        "name": "farmdoc Farm Policy News, 2022.5",
+        "url": "https://farmpolicynews.illinois.edu/2022/05/india-bans-wheat-exports/"
+      }
+    ]
+  },
+  "black-sea-grain-initiative": {
+    "topic": "commodity",
+    "checked": "2026-10-18",
+    "market": "WORLD",
+    "label": "흑해곡물협정 기간",
+    "value": "2022-07-22 서명 ~ 2023-07-17 만료(러시아 연장 거부)",
+    "short": "2022년 7월 22일부터 러시아가 빠진 2023년 7월 17일까지",
+    "effective": "2022-07-22",
+    "level": "press",
+    "note": "러시아, 튀르키예, 우크라이나, 유엔이 이스탄불에서 서명했다. 우크라이나 세 항구에서 약 3,300만 톤의 곡물·식품이 나갔다.",
+    "sources": [
+      {
+        "name": "UN, Black Sea Grain Initiative",
+        "url": "https://www.un.org/en/black-sea-grain-initiative"
+      },
+      {
+        "name": "Michigan Farm Bureau, 2023.7.18",
+        "url": "https://www.michfb.com/about/news-media/lifeline-cut-russia-pulls-out-black-sea-grain-deal"
+      }
+    ]
+  },
+  "brent-basket": {
+    "topic": "energy",
+    "checked": "2026-10-18",
+    "market": "GL",
+    "label": "브렌트 기준 가격에 들어가는 원유",
+    "value": "Brent, Forties, Oseberg, Ekofisk, Troll + WTI Midland(2023.6 인도분부터)",
+    "short": "브렌트, 포티스, 오세베르그, 에코피스크, 트롤에 2023년 6월 인도분부터 미국의 WTI 미들랜드까지 들어 있다",
+    "effective": "2023-06-01",
+    "level": "press",
+    "note": "S&P Global Platts의 Dated Brent 평가 기준. 북해 생산 감소로 바구니를 넓혔다. 북해 밖 원유가 들어간 것은 처음이다.",
+    "sources": [
+      {
+        "name": "S&P Global Commodity Insights, 2022.6.8",
+        "url": "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/060822-platts-to-include-wti-midland-in-dated-brent-related-assessments-from-june-2023"
+      },
+      {
+        "name": "Kitco/Reuters 해설, 2023.4.25",
+        "url": "https://www.kitco.com/news/off-the-wire/2023-04-25/explainer-will-wti-midlandaposs-inclusion-dated-brent-affect-oil"
+      }
+    ]
+  },
+  "us-eia-wpsr": {
+    "topic": "energy",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "EIA 주간 석유 현황 보고서 발표 시각",
+    "value": "매주 수요일 10:30 (미국 동부시간)",
+    "short": "매주 수요일 오전 10시 30분, 미국 동부시간 기준이다. 한국 시각으로는 미국 서머타임 기간에 수요일 밤 11시 30분, 그 밖에는 목요일 0시 30분이다",
+    "level": "official",
+    "note": "직전 금요일에 끝난 주의 자료. 월요일이 연방 공휴일인 주 등에는 대개 목요일 정오(동부시간)로 미뤄진다(예: 2026.10.15, 11.12).",
+    "sources": [
+      {
+        "name": "미국 에너지정보청(EIA) 발표 일정",
+        "url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php"
+      }
+    ]
+  },
+  "us-api-wsb": {
+    "topic": "energy",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "미국석유협회(API) 주간 통계 발표 시각",
+    "value": "매주 화요일 16:30 무렵 (미국 동부시간)",
+    "short": "매주 화요일 오후 4시 30분 무렵(미국 동부시간)",
+    "level": "press",
+    "note": "유료 구독 자료. 월요일이 연방 공휴일이면 수요일 오후로 미뤄진다.",
+    "sources": [
+      {
+        "name": "API Weekly Statistical Bulletin 안내(검색 결과 요약)",
+        "url": "https://www.api.org/energy-insights/statistics/wsb"
+      }
+    ]
+  },
+  "us-eia-ngs": {
+    "topic": "energy",
+    "checked": "2026-10-18",
+    "market": "US",
+    "label": "EIA 주간 천연가스 저장 보고서 발표 시각",
+    "value": "매주 목요일 10:30 (미국 동부시간)",
+    "short": "매주 목요일 오전 10시 30분(미국 동부시간)",
+    "level": "official",
+    "note": "공휴일이 낀 주에는 요일이나 시각이 바뀐다. 한국 시각으로는 서머타임 기간 목요일 밤 11시 30분, 그 밖에는 금요일 0시 30분.",
+    "sources": [
+      {
+        "name": "미국 에너지정보청(EIA) 천연가스 저장 보고서 일정",
+        "url": "https://ir.eia.gov/ngs/schedule.html"
+      }
+    ]
+  },
+  "kr-fuel-tax-structure": {
+    "topic": "energy",
+    "checked": "2026-10-18",
+    "market": "KR",
+    "label": "유류세의 구성 (휘발유·경유)",
+    "value": "교통·에너지·환경세 + 교육세(교통세의 15%) + 주행세(교통세의 26%) + 부가가치세 10%",
+    "short": "교통·에너지·환경세, 그 15%인 교육세, 그 26%인 주행세, 그리고 부가가치세 10%",
+    "level": "press",
+    "note": "교통·에너지·환경세는 법정세율의 30% 범위에서 시행령(탄력세율)으로 조정한다. 휘발유 탄력세율 리터당 529원 기준 세 세금 합계 745.9원(=529×1.41)에 부가세 10%를 더하면 약 820원으로, 인하 전 금액 보도와 맞는다. 주행세 비율은 법령 원문으로 대조하지 못했다.",
+    "sources": [
+      {
+        "name": "택스워치, 2023.6.22",
+        "url": "https://www.taxwatch.co.kr/article/tax/2023/06/22/0001"
+      }
+    ]
+  },
+  "kr-fuel-tax-amount": {
+    "topic": "energy",
+    "checked": "2026-10-18",
+    "market": "KR",
+    "label": "한시 인하 전 기준 리터당 유류세",
+    "value": "휘발유 약 820원, 경유 약 581원 (부가세 포함, 한시 인하 적용 전)",
+    "short": "부가가치세를 포함해 리터당 휘발유 약 820원, 경유 약 581원",
+    "level": "press",
+    "note": "재정경제부가 한시 인하를 발표하면 실제 세액은 이보다 낮아진다. 인하율과 기간은 자주 바뀌므로 재정경제부 발표로 확인한다. 금액은 2026.9.18 보도의 인하 후 세액(휘발유 698원, 경유 436원)과 인하액(122원, 145원)을 더해 계산했고, 휘발유는 탄력세율 529원 × 1.41 × 1.1 ≈ 820원과도 맞는다.",
+    "sources": [
+      {
+        "name": "SBS Biz, 2026.9.18",
+        "url": "https://biz.sbs.co.kr/amp/article/20000335452"
+      },
+      {
+        "name": "택스워치, 2023.6.22",
+        "url": "https://www.taxwatch.co.kr/article/tax/2023/06/22/0001"
       }
     ]
   }

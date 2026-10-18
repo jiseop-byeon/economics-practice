@@ -30,7 +30,7 @@ const chapters = () => window.CHAPTERS || [];
 const RULES = window.RULES || {};
 const ready = () => chapters().filter((c) => c.status === "ready");
 const partName = (id) => parts().find((p) => p.id === id)?.name || id;
-const MARKET = { KR: "한국", US: "미국", JP: "일본" };
+const MARKET = { KR: "한국", US: "미국", JP: "일본", GL: "국제" };
 const GLOSS = () => window.GLOSSARY || [];
 const gloss = (id) => GLOSS().find((g) => g.id === id);
 const glossText = (g) => [g.hanja, g.en].filter(Boolean).map(esc).join(" · ");

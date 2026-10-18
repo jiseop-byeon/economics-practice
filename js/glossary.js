@@ -1596,5 +1596,582 @@ window.GLOSSARY = [
   "hanja": "基本控除 · 損益通算",
   "en": "basic deduction and loss netting",
   "one": "파생상품 소득에서 한 해 250만 원을 빼 주고, 국내외 파생상품의 이익과 손실을 합쳐 순이익에만 세금을 매기는 방식이다."
+ },
+ {
+  "id": "comm-sectors",
+  "chapter": "commodities-1",
+  "title": "원자재의 네 무리",
+  "hanja": "原資材",
+  "en": "commodity sectors",
+  "one": "원자재를 쓰임과 성질에 따라 에너지, 귀금속, 산업금속, 농산물로 나눈 분류이다."
+ },
+ {
+  "id": "comm-exchanges",
+  "chapter": "commodities-1",
+  "title": "원자재 거래소",
+  "hanja": "原資材去來所",
+  "en": "commodity exchange",
+  "one": "원자재 선물을 표준화된 계약으로 거래하고 청산하는 시장으로, CME 그룹, LME, ICE, 상하이선물거래소 등이 있다."
+ },
+ {
+  "id": "crude-benchmark",
+  "chapter": "commodities-1",
+  "title": "기준 유종",
+  "hanja": "基準油種",
+  "en": "benchmark crude",
+  "one": "세계의 원유 거래가 값을 정할 때 잣대로 삼는 WTI, 브렌트, 두바이유 같은 대표 원유이다.",
+  "econ": "t095"
+ },
+ {
+  "id": "lbma-gold-price",
+  "chapter": "commodities-1",
+  "title": "LBMA 금 가격",
+  "hanja": "金價格",
+  "en": "LBMA Gold Price",
+  "one": "런던에서 하루 두 번 전자 경매로 정하는 달러 표시 금 현물의 기준 가격이다."
+ },
+ {
+  "id": "lme-official-price",
+  "chapter": "commodities-1",
+  "title": "LME 공식 가격",
+  "hanja": "公式價格",
+  "en": "LME Official Price",
+  "one": "런던금속거래소가 산업금속마다 매일 발표하여 실물 금속 계약의 잣대로 쓰이는 톤당 달러 가격이다."
+ },
+ {
+  "id": "grain-futures",
+  "chapter": "commodities-1",
+  "title": "곡물 선물",
+  "hanja": "穀物先物",
+  "en": "grain futures",
+  "one": "밀, 옥수수, 대두를 정해진 날에 정해진 값으로 주고받기로 하는 거래소 계약으로, 시카고 CBOT가 기준이다."
+ },
+ {
+  "id": "comm-units",
+  "chapter": "commodities-1",
+  "title": "원자재 가격 단위",
+  "hanja": "價格單位",
+  "en": "commodity price units",
+  "one": "원유의 배럴, 귀금속의 트로이온스, 산업금속의 톤, 곡물의 부셸처럼 무리마다 굳은 거래 단위이다."
+ },
+ {
+  "id": "spot-futures-price",
+  "chapter": "commodities-1",
+  "title": "현물 가격과 선물 가격",
+  "hanja": "現物價格·先物價格",
+  "en": "spot price and futures price",
+  "one": "지금 바로 넘겨받는 거래의 값과 정해진 미래에 넘겨받기로 오늘 정하는 값이다.",
+  "econ": "t331"
+ },
+ {
+  "id": "kr-comm-price",
+  "chapter": "commodities-1",
+  "title": "한국에서 보는 원자재 가격",
+  "hanja": "",
+  "en": "commodity prices in Korea",
+  "one": "오피넷의 국제유가처럼 국내 기관이 공개하는 국제 가격과 KRX 금시장처럼 국내에서 원화로 정해지는 가격이다."
+ },
+ {
+  "id": "gold-bar",
+  "chapter": "commodities-2",
+  "title": "골드바",
+  "hanja": "",
+  "en": "gold bar, bullion",
+  "one": "금은방이나 은행에서 사는 막대 모양의 금 실물이다. 장외에서 살 때 부가가치세 10%와 판매처 마진이 붙는다."
+ },
+ {
+  "id": "krx-gold",
+  "chapter": "commodities-2",
+  "title": "한국거래소 금시장",
+  "hanja": "韓國去來所 金市場",
+  "en": "KRX Gold Market",
+  "one": "한국거래소가 연 금 현물 시장이다. 증권 계좌로 1g 단위로 사고팔며, 개인의 장내 매매차익은 비과세이다."
+ },
+ {
+  "id": "gold-banking",
+  "chapter": "commodities-2",
+  "title": "골드뱅킹",
+  "hanja": "",
+  "en": "gold banking, gold account",
+  "one": "은행 통장에 금을 그램 단위로 적어 주는 상품이다. 예금자보호가 안 되고 매매차익은 배당소득으로 과세된다."
+ },
+ {
+  "id": "cmd-etp-kr",
+  "chapter": "commodities-2",
+  "title": "국내 상장 원자재 ETF·ETN",
+  "hanja": "國內 上場 原資材 ETF·ETN",
+  "en": "domestic commodity ETF/ETN",
+  "one": "한국거래소에 상장되어 원자재 가격이나 지수를 따라가는 증권이다. 많은 상품이 선물을 담아 따라가고, 매매차익은 배당소득으로 과세된다.",
+  "econ": "t316"
+ },
+ {
+  "id": "cmd-etf-ovs",
+  "chapter": "commodities-2",
+  "title": "해외 상장 원자재 ETF",
+  "hanja": "海外 上場 原資材 ETF",
+  "en": "overseas-listed commodity ETF",
+  "one": "외국 거래소에 상장된 원자재 ETF이다. 매매차익은 해외 주식과 묶여 양도소득세로 과세된다."
+ },
+ {
+  "id": "cmd-futures-ovs",
+  "chapter": "commodities-2",
+  "title": "해외 원자재 선물",
+  "hanja": "海外 原資材 先物",
+  "en": "overseas commodity futures",
+  "one": "해외 거래소에 상장된 원자재 선물을 직접 사고파는 것이다. 증거금보다 큰 계약을 다루며 파생상품 양도소득세가 붙는다.",
+  "econ": "t331"
+ },
+ {
+  "id": "resource-stock",
+  "chapter": "commodities-2",
+  "title": "원자재 기업 주식",
+  "hanja": "原資材 企業 株式",
+  "en": "resource stocks",
+  "one": "광산·정유처럼 원자재를 캐거나 가공하는 회사의 주식이다. 원가와 경영, 주식시장 위험이 더해져 원자재 가격과 다르게 움직인다."
+ },
+ {
+  "id": "cmd-roll-schedule",
+  "chapter": "commodities-3",
+  "title": "롤 일정",
+  "hanja": "롤 日程",
+  "en": "roll schedule",
+  "one": "원자재 지수나 ETF가 들고 있는 선물을 다음 월물로 옮기는 날과 비율을 미리 정해 둔 것이다."
+ },
+ {
+  "id": "cmd-term-structure",
+  "chapter": "commodities-3",
+  "title": "선물 곡선",
+  "hanja": "先物曲線",
+  "en": "futures curve, term structure",
+  "one": "같은 원자재의 선물 가격을 만기 순서대로 늘어놓은 모양이다. 롤오버 손익은 곡선의 기울기가 정한다.",
+  "econ": "t331"
+ },
+ {
+  "id": "cmd-carry",
+  "chapter": "commodities-3",
+  "title": "원자재의 보유비용",
+  "hanja": "原資材의 保有費用",
+  "en": "cost of carry",
+  "one": "원자재 현물을 들고 있는 데 드는 보관비, 보험료, 묶인 돈의 이자이다. 선물 곡선이 기우는 기본 이유이다.",
+  "econ": "t161"
+ },
+ {
+  "id": "cmd-contango",
+  "chapter": "commodities-3",
+  "title": "콘탱고",
+  "hanja": "",
+  "en": "contango",
+  "one": "먼 만기의 선물이 가까운 만기보다 비싸 곡선이 오른쪽으로 올라가는 상태이다. 롤오버 때마다 비싼 계약으로 갈아타게 된다."
+ },
+ {
+  "id": "cmd-backwardation",
+  "chapter": "commodities-3",
+  "title": "백워데이션",
+  "hanja": "",
+  "en": "backwardation",
+  "one": "가까운 만기의 선물이 먼 만기보다 비싸 곡선이 오른쪽으로 내려가는 상태이다. 재고가 모자라 지금의 물건이 귀할 때 나타난다."
+ },
+ {
+  "id": "cmd-roll-yield",
+  "chapter": "commodities-3",
+  "title": "롤 수익률",
+  "hanja": "롤收益率",
+  "en": "roll yield",
+  "one": "현물 가격이 그대로여도 선물을 옮겨 가며 들고 있는 것만으로 생기는 손익의 비율이다. 콘탱고에서는 음수, 백워데이션에서는 양수가 된다."
+ },
+ {
+  "id": "cmd-return-decomp",
+  "chapter": "commodities-3",
+  "title": "총수익의 분해",
+  "hanja": "總收益의 分解",
+  "en": "decomposition of total return",
+  "one": "선물로 원자재를 들고 간 수익을 현물 가격 변화, 롤 수익, 담보 이자로 나누어 보는 것이다."
+ },
+ {
+  "id": "cmd-negative-wti",
+  "chapter": "commodities-3",
+  "title": "마이너스 유가",
+  "hanja": "마이너스油價",
+  "en": "negative oil futures price",
+  "one": "2020년 4월 20일 미국 원유 선물 5월물이 보관 공간 부족 속에 배럴당 −37.63달러로 마감한 일이다.",
+  "econ": "t095"
+ },
+ {
+  "id": "cmd-oil-etn-2020",
+  "chapter": "commodities-3",
+  "title": "원유 레버리지 ETN 괴리 사태",
+  "hanja": "原油 레버리지 ETN 乖離 事態",
+  "en": "2020 leveraged oil ETN premium episode",
+  "one": "2020년 4월 국내 원유 선물 2배 ETN의 시장 가격이 지표가치보다 몇 배 높게 거래되어 경보와 거래정지가 이어진 일이다."
+ },
+ {
+  "id": "gold-carry-cost",
+  "chapter": "commodities-4",
+  "title": "금의 기회비용",
+  "hanja": "金의 機會費用",
+  "en": "opportunity cost of holding gold",
+  "one": "이자도 배당도 없는 금을 들고 있느라 포기하는 다른 자산의 수익으로, 흔히 실질금리로 잰다.",
+  "econ": "t161"
+ },
+ {
+  "id": "gold-real-rate",
+  "chapter": "commodities-4",
+  "title": "실질금리와 금값",
+  "hanja": "實質金利와 金값",
+  "en": "real interest rates and gold",
+  "one": "실질금리가 오르면 금값이 눌리고 내리면 받쳐지는 경향으로, 2022년 이후 약해졌다.",
+  "econ": "t234"
+ },
+ {
+  "id": "gold-usd",
+  "chapter": "commodities-4",
+  "title": "달러와 금",
+  "hanja": "",
+  "en": "US dollar and gold",
+  "one": "국제 금값이 달러로 매겨지므로 달러가 강해지면 금값이 눌리는 경향이다.",
+  "econ": "t246"
+ },
+ {
+  "id": "gold-demand-mix",
+  "chapter": "commodities-4",
+  "title": "금 수요의 구성",
+  "hanja": "金 需要의 構成",
+  "en": "composition of gold demand",
+  "one": "한 해 금 수요를 장신구, 기술, 투자, 중앙은행으로 나눈 것이다."
+ },
+ {
+  "id": "gold-cb-buying",
+  "chapter": "commodities-4",
+  "title": "중앙은행의 금 매입",
+  "hanja": "中央銀行의 金 買入",
+  "en": "central bank gold purchases",
+  "one": "각국 중앙은행이 외환보유액의 일부를 금으로 늘리는 것으로, 2022년부터 크게 늘었다.",
+  "econ": "t458"
+ },
+ {
+  "id": "gold-crisis-demand",
+  "chapter": "commodities-4",
+  "title": "위기 때의 금 수요",
+  "hanja": "危機 때의 金 需要",
+  "en": "safe-haven demand for gold",
+  "one": "앞날이 흐릴 때 투자 목적의 금 매입이 늘어나는 현상이다."
+ },
+ {
+  "id": "gold-silver-ratio",
+  "chapter": "commodities-4",
+  "title": "금은비율",
+  "hanja": "金銀比率",
+  "en": "gold/silver ratio",
+  "one": "금값을 은값으로 나눈 값으로, 금 1온스가 은 몇 온스와 같은지를 나타낸다."
+ },
+ {
+  "id": "gold-krw-price",
+  "chapter": "commodities-4",
+  "title": "원화로 본 금값",
+  "hanja": "",
+  "en": "gold price in Korean won",
+  "one": "달러 금값에 원·달러 환율을 곱한 값으로, 금값과 환율의 변화가 함께 들어 있다."
+ },
+ {
+  "id": "gold-krx-premium",
+  "chapter": "commodities-4",
+  "title": "국내 금 괴리율",
+  "hanja": "國內 金 乖離率",
+  "en": "KRX gold premium",
+  "one": "한국거래소 금시장 가격이 원화로 환산한 국제 금값보다 몇 % 높거나 낮은지를 나타낸 값이다."
+ },
+ {
+  "id": "base-metals",
+  "chapter": "commodities-5",
+  "title": "산업금속",
+  "hanja": "産業金屬",
+  "en": "industrial metals, base metals",
+  "one": "공장과 건설 현장에서 소재로 쓰여 없어지는 구리, 아연, 니켈, 알루미늄 같은 금속이다. 값이 경기와 함께 오르내리는 경향이 있다."
+ },
+ {
+  "id": "metal-concentrate",
+  "chapter": "commodities-5",
+  "title": "정광",
+  "hanja": "精鑛",
+  "en": "concentrate",
+  "one": "캐낸 광석에서 쓸모없는 돌을 걸러 내 금속 성분을 높인 중간 원료이다. 구리 정광에는 보통 구리가 28%쯤 담긴다."
+ },
+ {
+  "id": "tc-rc",
+  "chapter": "commodities-5",
+  "title": "제련 수수료",
+  "hanja": "製鍊手數料",
+  "en": "treatment and refining charges, TC/RC",
+  "one": "광산이 정광을 넘길 때 제련소가 가공의 대가로 떼어 가는 돈이다. 정광이 귀할수록 낮아진다."
+ },
+ {
+  "id": "smelting-concentration",
+  "chapter": "commodities-5",
+  "title": "제련 집중",
+  "hanja": "製鍊集中",
+  "en": "concentration of smelting and refining",
+  "one": "광산은 여러 나라에 흩어져 있는데 금속을 만드는 제련은 중국 같은 몇 나라에 몰려 있는 구조이다."
+ },
+ {
+  "id": "china-metal-demand",
+  "chapter": "commodities-5",
+  "title": "중국 수요",
+  "hanja": "中國需要",
+  "en": "Chinese demand",
+  "one": "세계 산업금속 소비에서 중국이 차지하는 몫과 그 흐름이다. 2025년 정련 구리 소비의 약 59%가 중국이었다.",
+  "econ": "t024"
+ },
+ {
+  "id": "supply-disruption",
+  "chapter": "commodities-5",
+  "title": "공급 차질",
+  "hanja": "供給蹉跌",
+  "en": "supply disruption",
+  "one": "파업, 사고, 정책, 에너지 비용 때문에 광산이나 제련소가 계획만큼 금속을 내놓지 못하는 일이다."
+ },
+ {
+  "id": "dr-copper",
+  "chapter": "commodities-5",
+  "title": "닥터 코퍼",
+  "hanja": "",
+  "en": "Dr. Copper",
+  "one": "구리 값이 경기의 앞날을 잘 짚는다는 뜻의 별명이다. 중국 사정과 공급 충격 때문에 늘 맞지는 않는다.",
+  "econ": "t335"
+ },
+ {
+  "id": "lme-stocks",
+  "chapter": "commodities-5",
+  "title": "LME 재고",
+  "hanja": "LME 在庫",
+  "en": "LME stocks, on-warrant and cancelled warrants",
+  "one": "런던금속거래소 승인 창고에 든 금속의 양이다. 인도에 쓸 수 있는 등록 재고와 꺼내 가려고 취소한 취소 재고로 나뉜다."
+ },
+ {
+  "id": "lme-nickel-2022",
+  "chapter": "commodities-5",
+  "title": "니켈 거래 취소 사건",
+  "hanja": "니켈 去來取消事件",
+  "en": "2022 LME nickel trade cancellation",
+  "one": "2022년 3월 8일 니켈 값이 하루에 두 배 넘게 뛰자 런던금속거래소가 거래를 멈추고 그날의 거래를 모두 취소한 일이다.",
+  "econ": "t594"
+ },
+ {
+  "id": "grain-bushel",
+  "chapter": "commodities-6",
+  "title": "부셸",
+  "hanja": "",
+  "en": "bushel",
+  "one": "미국에서 곡물의 양을 재는 단위로, 곡물마다 정해진 무게로 바꾸어 쓴다."
+ },
+ {
+  "id": "grain-crush",
+  "chapter": "commodities-6",
+  "title": "대두 압착",
+  "hanja": "大豆壓搾",
+  "en": "soybean crush",
+  "one": "대두를 짜서 사료용 대두박과 식용유인 대두유로 나누는 일이다."
+ },
+ {
+  "id": "grain-marketing-year",
+  "chapter": "commodities-6",
+  "title": "판매연도",
+  "hanja": "販賣年度",
+  "en": "marketing year",
+  "one": "한 해 수확한 곡물을 팔고 쓰는 열두 달을 묶은 수급 통계의 기준 기간이다."
+ },
+ {
+  "id": "grain-wasde",
+  "chapter": "commodities-6",
+  "title": "WASDE 보고서",
+  "hanja": "",
+  "en": "World Agricultural Supply and Demand Estimates",
+  "one": "미국 농무부가 매달 내는 세계 농산물 수급 전망 보고서이다."
+ },
+ {
+  "id": "grain-stocks-to-use",
+  "chapter": "commodities-6",
+  "title": "재고/사용 비율",
+  "hanja": "在庫使用比率",
+  "en": "stocks-to-use ratio",
+  "one": "기말재고를 한 해 총사용량으로 나눈 비율로, 수급이 얼마나 빠듯한지 보여 준다."
+ },
+ {
+  "id": "grain-crop-progress",
+  "chapter": "commodities-6",
+  "title": "작황 보고서",
+  "hanja": "作況報告書",
+  "en": "Crop Progress",
+  "one": "미국 농업통계청이 생육기에 매주 내는 작물의 진척과 상태 보고서이다."
+ },
+ {
+  "id": "grain-soy-corn-ratio",
+  "chapter": "commodities-6",
+  "title": "대두/옥수수 가격 비율",
+  "hanja": "",
+  "en": "soybean/corn price ratio",
+  "one": "대두 값을 옥수수 값으로 나눈 것으로, 두 작물을 심을 때의 상대적 벌이를 대략 보여 준다.",
+  "econ": "t191"
+ },
+ {
+  "id": "grain-biofuel",
+  "chapter": "commodities-6",
+  "title": "바이오연료",
+  "hanja": "",
+  "en": "biofuel",
+  "one": "곡물이나 식물성 기름으로 만든 연료로, 옥수수 에탄올과 대두유 바이오디젤이 대표적이다."
+ },
+ {
+  "id": "grain-export-restriction",
+  "chapter": "commodities-6",
+  "title": "수출 제한",
+  "hanja": "輸出制限",
+  "en": "export restriction",
+  "one": "한 나라가 자국 식량 가격을 지키려고 곡물 수출을 막거나 줄이는 것이다.",
+  "econ": "t413"
+ },
+ {
+  "id": "crude-quality",
+  "chapter": "commodities-7",
+  "title": "유종",
+  "hanja": "油種",
+  "en": "crude grade",
+  "one": "원유를 무게(경질·중질)와 황의 양(저유황·고유황)에 따라 나눈 종류이다. 가볍고 황이 적을수록 대개 비싸다."
+ },
+ {
+  "id": "oil-benchmark-gap",
+  "chapter": "commodities-7",
+  "title": "기준 유가 차이",
+  "hanja": "基準油價差異",
+  "en": "crude benchmark spread",
+  "one": "같은 날 WTI, 브렌트, 두바이 같은 기준 원유 사이에 생기는 가격 간격이다. 품질, 위치와 운송비, 지역 수급이 담긴다.",
+  "econ": "t095"
+ },
+ {
+  "id": "opec-plus",
+  "chapter": "commodities-7",
+  "title": "OPEC+",
+  "en": "OPEC+",
+  "one": "석유수출국기구 회원국과 러시아 같은 비회원 산유국이 함께 생산 목표를 정하는 협의체이다. 일부 나라는 목표와 별도로 자발적 감산을 한다."
+ },
+ {
+  "id": "shale-oil",
+  "chapter": "commodities-7",
+  "title": "셰일오일",
+  "en": "shale oil, tight oil",
+  "one": "단단한 셰일 암석층에서 수평 시추와 수압 파쇄로 뽑는 원유이다. 유정의 생산이 빨리 줄어 계속 새로 뚫어야 하고, 시추 결정에 따라 몇 달 안에 생산이 바뀐다."
+ },
+ {
+  "id": "eia-crude-stocks",
+  "chapter": "commodities-7",
+  "title": "주간 원유 재고",
+  "hanja": "週間原油在庫",
+  "en": "EIA weekly crude inventories",
+  "one": "미국 에너지정보청이 매주 발표하는 미국 내 원유와 석유제품 저장량이다. 증감, 쿠싱 재고, 시장 예상과의 차이를 함께 본다."
+ },
+ {
+  "id": "crack-spread",
+  "chapter": "commodities-7",
+  "title": "크랙 스프레드",
+  "en": "crack spread",
+  "one": "정제해 만든 제품의 값에서 원유 값을 뺀 차이로, 정제 마진의 대략적인 크기이다. 3-2-1은 원유 3배럴로 휘발유 2배럴과 경유 1배럴을 만든다고 보고 계산한다."
+ },
+ {
+  "id": "oil-chokepoint",
+  "chapter": "commodities-7",
+  "title": "해상 요충지",
+  "hanja": "海上要衝地",
+  "en": "maritime chokepoint",
+  "one": "많은 원유·가스 운반선이 한꺼번에 지나는 좁은 바닷길이다. 호르무즈 해협과 홍해 입구가 대표적이며, 막히면 공급과 운임이 함께 흔들린다."
+ },
+ {
+  "id": "gas-hub-price",
+  "chapter": "commodities-7",
+  "title": "천연가스 지역 가격",
+  "hanja": "天然가스地域價格",
+  "en": "regional gas benchmarks (Henry Hub, TTF, JKM)",
+  "one": "미국 헨리허브, 유럽 TTF, 동북아 JKM처럼 지역마다 따로 정해지는 천연가스 기준 가격이다. 액화·운송 비용과 설비 한계 때문에 지역 사이 값 차이가 오래 남는다."
+ },
+ {
+  "id": "fuel-tax",
+  "chapter": "commodities-7",
+  "title": "유류세",
+  "hanja": "油類稅",
+  "en": "fuel taxes",
+  "one": "휘발유와 경유에 붙는 교통·에너지·환경세, 교육세, 주행세, 부가가치세를 묶어 부르는 말이다. 대부분 리터당 정해진 금액이라 유가 변동보다 주유소 값의 변동이 작다.",
+  "econ": "t298"
+ },
+ {
+  "id": "corr-coef",
+  "chapter": "commodities-8",
+  "title": "상관계수",
+  "hanja": "相關係數",
+  "en": "correlation coefficient",
+  "one": "두 값이 같은 방향으로 움직이는 정도를 −1에서 1 사이로 나타낸 숫자이다."
+ },
+ {
+  "id": "diversification-effect",
+  "chapter": "commodities-8",
+  "title": "분산 효과",
+  "hanja": "分散效果",
+  "en": "diversification effect",
+  "one": "함께 움직이지 않는 자산을 섞으면 전체의 흔들림이 각 자산의 흔들림을 평균한 것보다 작아지는 현상이다."
+ },
+ {
+  "id": "common-factor",
+  "chapter": "commodities-8",
+  "title": "공통 요인",
+  "hanja": "共通要因",
+  "en": "common factor",
+  "one": "달러, 세계 경기, 금리, 물가처럼 여러 원자재 가격을 한꺼번에 같은 방향으로 움직이는 바깥의 힘이다.",
+  "econ": "t246"
+ },
+ {
+  "id": "substitute-link",
+  "chapter": "commodities-8",
+  "title": "대체재 연결",
+  "hanja": "代替財連結",
+  "en": "substitution link",
+  "one": "서로 바꿔 쓸 수 있는 원자재끼리 수요가 옮겨 가며 가격이 함께 움직이는 관계이다.",
+  "econ": "t191"
+ },
+ {
+  "id": "biofuel-link",
+  "chapter": "commodities-8",
+  "title": "바이오연료 연결",
+  "hanja": "바이오燃料連結",
+  "en": "biofuel link",
+  "one": "곡물이 에탄올과 바이오디젤의 원료가 되면서 원유와 곡물 값이 이어지는 관계이다."
+ },
+ {
+  "id": "oil-gas-decoupling",
+  "chapter": "commodities-8",
+  "title": "원유와 가스의 탈동조화",
+  "hanja": "原油와 가스의 脫同調化",
+  "en": "oil-gas decoupling",
+  "one": "셰일가스 증산 이후 원유와 미국 천연가스의 가격 수준이 서로 따로 움직이게 된 현상이다."
+ },
+ {
+  "id": "safe-haven",
+  "chapter": "commodities-8",
+  "title": "안전자산",
+  "hanja": "安全資産",
+  "en": "safe-haven asset",
+  "one": "시장이 불안할 때 사람들이 돈을 옮겨 두는 자산이다. 금이 대표적이다."
+ },
+ {
+  "id": "crisis-correlation",
+  "chapter": "commodities-8",
+  "title": "위기 때의 상관 상승",
+  "hanja": "危機 때의 相關 上昇",
+  "en": "correlation breakdown in crises",
+  "one": "시장이 크게 흔들릴 때 평소 따로 움직이던 자산들이 한꺼번에 같은 방향으로 움직이는 현상이다."
+ },
+ {
+  "id": "rolling-corr",
+  "chapter": "commodities-8",
+  "title": "이동 상관계수",
+  "hanja": "移動相關係數",
+  "en": "rolling correlation",
+  "one": "일정한 길이의 기간을 한 칸씩 옮겨 가며 다시 계산한 상관계수이다."
  }
 ];

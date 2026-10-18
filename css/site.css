@@ -427,3 +427,5 @@ h1 .title-gloss { display: block; margin-left: 0; margin-top: 4px; }
 .landing { max-width: 860px; }
 .landing .note { margin-top: 28px; }
 .rules-table.cols-1 td { width: 100%; } .rules-table.cols-2 td { width: 50%; } .rules-table.cols-3 td { width: 33.3%; }
+.article .table-wrap th, .article .table-wrap td, .article table th, .article table td { white-space: normal; }
+.rules-table.cols-4 td { width: 25%; }
