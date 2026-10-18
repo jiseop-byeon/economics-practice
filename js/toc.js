@@ -14,9 +14,9 @@ window.PARTS = [
 
 window.CHAPTERS = [
   { id: "common-1", part: "common", status: "ready", title: "주식 한 주를 사면 일어나는 일", dek: "주문 버튼을 누른 순간부터 판 돈을 찾기까지. 거래 시간, 가격의 울타리, 결제일, 그리고 팔 때 빠져나가는 세금을 한 거래로 따라간다." },
-  { id: "common-2", part: "common", status: "planned", title: "주문의 종류와 체결 순서", dek: "지정가와 시장가, 가격 우선과 시간 우선, 단일가매매와 접속매매." },
-  { id: "common-3", part: "common", status: "planned", title: "수수료와 세금을 빼고 남는 돈", dek: "거래 비용이 수익률을 얼마나 깎는지, 자주 사고팔 때 어떻게 쌓이는지." },
-  { id: "common-4", part: "common", status: "planned", title: "보호가 미치는 곳과 미치지 않는 곳", dek: "예금보험, 투자자예탁금 보호, 설명 의무와 적합성 원칙. 원금을 지켜 주는 것과 아닌 것." },
+  { id: "common-2", part: "common", status: "ready", title: "주문의 종류와 체결 순서", dek: "지정가와 시장가, 가격 우선과 시간 우선, 단일가매매와 접속매매." },
+  { id: "common-3", part: "common", status: "ready", title: "수수료와 세금을 빼고 남는 돈", dek: "거래 비용이 수익률을 얼마나 깎는지, 자주 사고팔 때 어떻게 쌓이는지." },
+  { id: "common-4", part: "common", status: "ready", title: "보호가 미치는 곳과 미치지 않는 곳", dek: "예금보험, 투자자예탁금 보호, 설명 의무와 적합성 원칙. 원금을 지켜 주는 것과 아닌 것." },
 
   { id: "stocks-1", part: "stocks", status: "planned", title: "가격의 울타리: 가격제한폭, 변동성완화장치, 서킷브레이커", dek: "주가가 한쪽으로 쏠릴 때 거래소가 거는 장치들." },
   { id: "stocks-2", part: "stocks", status: "planned", title: "공시 읽기", dek: "전자공시시스템에서 사업보고서와 주요사항보고서를 찾고 읽는 순서." },
@@ -40,7 +40,7 @@ window.CHAPTERS = [
   { id: "derivatives-6", part: "derivatives", status: "planned", title: "개인 투자자가 들어가기 전의 요건", dek: "사전 교육, 모의거래, 기본 예탁금 제도." },
 
   { id: "realestate-1", part: "realestate", status: "planned", title: "등기부 읽기", dek: "갑구와 을구, 소유권과 근저당. 계약 전에 반드시 보는 칸." },
-  { id: "realestate-2", part: "realestate", status: "planned", title: "건축물대장과 토지이용계획", dek: "위반건축물, 용도, 지을 수 있는 것과 없는 것." },
+  { id: "realestate-2", part: "realestate", status: "planned", title: "건축물대장과 토지이용계획", dek: "용도지역, 건폐율과 용적률, 위반건축물. 그 땅에 무엇을 얼마나 지을 수 있는지." },
   { id: "realestate-3", part: "realestate", status: "planned", title: "매매 계약 절차", dek: "가계약, 계약금, 중도금, 잔금, 등기 이전까지." },
   { id: "realestate-4", part: "realestate", status: "planned", title: "임대차와 보증금 보호", dek: "전입신고와 확정일자, 대항력과 우선변제, 보증보험." },
   { id: "realestate-5", part: "realestate", status: "planned", title: "대출 규제", dek: "LTV, DSR, 스트레스 DSR이 실제 대출 한도를 어떻게 정하는지." },

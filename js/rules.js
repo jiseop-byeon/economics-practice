@@ -6,7 +6,8 @@ window.RULE_TOPICS = [
   { id: "limits", name: "가격 변동을 막는 장치" },
   { id: "settle", name: "결제" },
   { id: "tick", name: "호가 단위" },
-  { id: "tax", name: "세금" }
+  { id: "tax", name: "세금" },
+  { id: "protect", name: "투자자 보호" }
 ];
 
 window.RULES = {
@@ -126,5 +127,61 @@ window.RULES = {
     checked: "2026-10-17", level: "press",
     note: "한미 조세조약에 따른 세율이다. 한국 배당세율(지방세 포함 15.4%)과의 차이만큼 한국에서 더 낼 수 있고, 이자와 배당이 연 2천만 원을 넘으면 종합과세 대상이 된다.",
     sources: [{ name: "KB국민은행 KB Think, 해외주식 세금", url: "https://kbthink.com/stock/foreign-tax.html" }]
+  },
+  "kr-vi-dynamic": {
+    topic: "limits", market: "KR", label: "동적 변동성완화장치(VI)",
+    value: "직전 체결가 대비 코스피200 종목 ±3%, 그 밖의 종목 ±6%", short: "바로 앞 체결가에서 3%(대형주) 또는 6% 넘게 튈 때",
+    effective: "2014-09-01", checked: "2026-10-18", level: "press",
+    note: "주문 하나로 가격이 순간적으로 크게 움직이면 한국거래소에서는 2분 동안 단일가매매로 바꾸고, 넥스트레이드에서는 그 2분 동안 거래를 멈춘다. 시간대에 따라 기준이 다른 경우가 있다.",
+    sources: [{ name: "KB국민은행 KB Think, VI 발동 기준", url: "https://kbthink.com/stock/vi.html" }, { name: "뉴시스, 2026.7.24", url: "https://mobile.newsis.com/view/NISX20260724_0003722742" }]
+  },
+  "kr-vi-static": {
+    topic: "limits", market: "KR", label: "정적 변동성완화장치(VI)",
+    value: "기준가격 대비 ±10%", short: "그날 기준가격에서 10% 넘게 움직일 때",
+    effective: "2014-09-01", checked: "2026-10-18", level: "press",
+    note: "여러 주문에 걸쳐 가격이 누적으로 크게 움직였을 때 2분 동안 단일가매매로 바꾼다.",
+    sources: [{ name: "KB국민은행 KB Think, VI 발동 기준", url: "https://kbthink.com/stock/vi.html" }]
+  },
+  "kr-tax-div": {
+    topic: "tax", market: "KR", label: "배당소득세 (원천징수)",
+    value: "15.4%", short: "배당금의 15.4%",
+    checked: "2026-10-18", level: "press",
+    note: "소득세 14%와 지방소득세 1.4%이다. 증권회사가 떼고 나머지를 입금한다.",
+    sources: [{ name: "KB국민은행 KB Think, 해외주식 세금", url: "https://kbthink.com/stock/foreign-tax.html" }]
+  },
+  "kr-tax-comprehensive": {
+    topic: "tax", market: "KR", label: "금융소득 종합과세 기준",
+    value: "이자와 배당 합계 연 2,000만 원 초과", short: "한 해 이자와 배당이 2,000만 원을 넘을 때",
+    checked: "2026-10-18", level: "press",
+    note: "넘는 부분은 다른 소득과 합쳐 누진세율로 다시 계산하므로 15.4%보다 세금이 늘 수 있다. 다음 해 5월에 신고한다.",
+    sources: [{ name: "KB국민은행 KB Think, 2026년 달라지는 세법", url: "https://kbthink.com/tax/expert/gw/251230.html" }]
+  },
+  "kr-tax-div-sep": {
+    topic: "tax", market: "KR", label: "고배당기업 배당 분리과세 (한시)",
+    value: "2천만 원 이하 14% · 3억 원 이하 20% · 50억 원 이하 25% · 그 이상 30%", short: "고배당기업의 배당을 다른 소득과 합치지 않고 14~30%로 따로 과세",
+    effective: "2026-01-01", checked: "2026-10-18", level: "press",
+    note: "2026년 받는 배당부터 2028년 사업연도 배당분까지 적용하는 한시 제도이다. 배당성향 같은 요건을 갖춘 상장사의 배당만 해당하고, 지방소득세는 따로 붙는다. 대상 여부와 신고 방법은 국세청 안내로 확인한다.",
+    sources: [{ name: "KB국민은행 KB Think, 2026년 달라지는 세법", url: "https://kbthink.com/tax/expert/gw/251230.html" }, { name: "다음뉴스(더파이낸스), 2025.12.17", url: "https://v.daum.net/v/20251217160504663" }]
+  },
+  "kr-major-shareholder": {
+    topic: "tax", market: "KR", label: "상장주식 양도소득세 대주주 기준",
+    value: "한 종목 보유액 50억 원 이상 (또는 일정 지분율 이상)", short: "한 종목을 50억 원 넘게 가진 경우",
+    checked: "2026-10-18", level: "press",
+    note: "이 기준 아래의 일반 투자자는 거래소에서 사고판 상장주식 이익에 양도소득세를 내지 않는다. 정부가 10억 원으로 낮추려다 50억 원 유지로 돌아선 적이 있어, 바뀌기 쉬운 숫자이다.",
+    sources: [{ name: "인사이트, 2026.7.26", url: "https://www.insight.co.kr/news/520049" }, { name: "파이낸셜뉴스, 2025.8.24", url: "https://www.fnnews.com/news/202508241819434186" }]
+  },
+  "kr-deposit-insurance": {
+    topic: "protect", market: "KR", label: "예금자보호 한도 (투자자예탁금 포함)",
+    value: "금융회사 한 곳당 1인 1억 원", short: "금융회사 한 곳당 1억 원까지",
+    effective: "2025-09-01", checked: "2026-10-18", level: "official",
+    note: "증권회사에 맡긴 투자자예탁금도 원금과 예탁금 이용료를 합쳐 1억 원까지 보호한다. 주식, 펀드, 채권처럼 값이 오르내리는 상품은 보호하지 않는다.",
+    sources: [{ name: "금융위원회, 2025.9.1부터 예금을 1억 원까지 보호 안내", url: "https://www.fsc.go.kr/po020201/84975" }]
+  },
+  "us-sipc": {
+    topic: "protect", market: "US", label: "미국 증권회사 파산 시 보호 (SIPC)",
+    value: "1인당 50만 달러 (현금은 그중 25만 달러)", short: "증권회사가 무너졌을 때 1인당 50만 달러까지",
+    checked: "2026-10-18", level: "pending",
+    note: "미국 증권회사가 파산해 고객 자산이 모자랄 때 메워 주는 제도이다. 주가가 떨어져 생긴 손실은 보호하지 않는다. 한국 증권회사를 통해 산 미국 주식에는 한국의 제도가 먼저 적용된다.",
+    sources: [{ name: "SIPC, What SIPC Protects", url: "https://www.sipc.org/for-investors/what-sipc-protects" }]
   }
 };
