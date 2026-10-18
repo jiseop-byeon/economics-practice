@@ -3832,5 +3832,217 @@ window.GLOSSARY = [
   "hanja": "海外金融計座申告",
   "en": "foreign financial account reporting",
   "one": "해외 금융회사나 해외 가상자산 거래소에 둔 계좌 잔액이 기준을 넘는 거주자가 계좌 정보를 세무서에 알리는 의무이다."
+ },
+ {
+  "id": "mis-selling",
+  "chapter": "cases-1",
+  "title": "불완전판매",
+  "hanja": "不完全販賣",
+  "en": "mis-selling",
+  "one": "금융회사가 적합성 원칙, 설명의무, 부당권유 금지 같은 판매 원칙을 어기고 상품을 판 것이다. 손실이 났다는 사실만으로는 불완전판매가 되지 않는다.",
+  "econ": "t563"
+ },
+ {
+  "id": "base-comp-ratio",
+  "chapter": "cases-1",
+  "title": "기본배상비율",
+  "hanja": "基本賠償比率",
+  "en": "base compensation ratio",
+  "one": "분쟁조정에서 판매사가 어긴 원칙의 종류에 따라 먼저 정하는 배상 비율이다. 여기에 투자자별 사정을 더하고 빼서 최종 비율을 정한다."
+ },
+ {
+  "id": "comp-adjust",
+  "chapter": "cases-1",
+  "title": "배상비율 가감",
+  "hanja": "賠償比率 加減",
+  "en": "investor-specific adjustment",
+  "one": "기본배상비율에 고령, 예금 목적 방문, 서류·녹취 부실 같은 사정은 더하고 투자 경험, 큰 가입액 같은 사정은 빼는 일이다."
+ },
+ {
+  "id": "dlf",
+  "chapter": "cases-1",
+  "title": "DLF",
+  "hanja": "派生結合펀드",
+  "en": "derivative-linked fund, DLF",
+  "one": "금리나 주가 같은 기초자산에 따라 수익이 정해지는 파생결합증권을 담은 펀드이다. 2019년 해외금리 연계 DLF에서 원금 대부분을 잃는 손실이 났다."
+ },
+ {
+  "id": "mistake-rescission",
+  "chapter": "cases-1",
+  "title": "착오에 의한 계약취소",
+  "hanja": "錯誤에 의한 契約取消",
+  "en": "rescission for mistake",
+  "one": "계약의 중요한 내용을 잘못 알고 맺은 계약을 처음부터 없던 것으로 돌리는 일이다. 분쟁조정에서 인정되면 판매사가 원금 전부를 돌려준다."
+ },
+ {
+  "id": "post-settlement",
+  "chapter": "cases-1",
+  "title": "사후정산",
+  "hanja": "事後精算",
+  "en": "post-settlement",
+  "one": "손실이 확정되기 전에 돌려받지 못한 금액을 손해로 보고 먼저 배상한 뒤, 나중에 회수되는 돈에 맞춰 다시 정산하는 방식이다."
+ },
+ {
+  "id": "hscei-els",
+  "chapter": "cases-1",
+  "title": "홍콩 H지수 ELS",
+  "hanja": "香港 H指數 ELS",
+  "en": "HSCEI-linked ELS",
+  "one": "홍콩에 상장된 중국 기업 주가지수를 기초자산으로 삼은 주가연계증권이다. 2024년 만기에 큰 손실이 나 분쟁조정 기준이 따로 마련되었다.",
+  "econ": "t579"
+ },
+ {
+  "id": "voluntary-comp",
+  "chapter": "cases-1",
+  "title": "자율배상",
+  "hanja": "自律賠償",
+  "en": "voluntary compensation",
+  "one": "분쟁조정위원회가 대표 사례만 결정하고, 나머지 투자자는 그 기준에 따라 판매사와 직접 합의하는 방식이다."
+ },
+ {
+  "id": "complex-product",
+  "chapter": "cases-1",
+  "title": "고난도금융투자상품",
+  "hanja": "高難度金融投資商品",
+  "en": "complex financial investment product",
+  "one": "구조를 이해하기 어렵고 최대 원금 손실 가능 금액이 원금의 일정 비율을 넘는 상품이다. 팔 때 녹취, 숙려기간, 요약설명서가 따른다."
+ },
+ {
+  "id": "quasi-advisory",
+  "chapter": "cases-2",
+  "title": "유사투자자문업",
+  "hanja": "類似投資諮問業",
+  "en": "quasi-investment advisory business",
+  "one": "돈을 받고 불특정 다수에게 일방향으로 투자 조언을 하는 일로, 금융위원회에 신고만 하면 되는 영업이다."
+ },
+ {
+  "id": "invest-advisory",
+  "chapter": "cases-2",
+  "title": "투자자문업",
+  "hanja": "投資諮問業",
+  "en": "investment advisory business",
+  "one": "고객 개인의 사정에 맞춘 투자 조언을 하는 일로, 금융위원회에 등록해야 하는 금융투자업이다."
+ },
+ {
+  "id": "profit-proof",
+  "chapter": "cases-2",
+  "title": "수익 인증",
+  "hanja": "收益認證",
+  "en": "profit screenshots",
+  "one": "리딩방이 계좌 화면이나 후기를 올려 수익을 냈다고 보여 주는 일로, 고른 결과만 보여 주기 쉽다."
+ },
+ {
+  "id": "fake-trading-app",
+  "chapter": "cases-2",
+  "title": "가짜 거래 앱",
+  "hanja": "",
+  "en": "fake trading app",
+  "one": "증권회사나 거래소처럼 꾸몄지만 실제 거래 없이 화면 숫자만 바뀌는 앱이나 사이트이다."
+ },
+ {
+  "id": "listing-bait-scam",
+  "chapter": "cases-2",
+  "title": "상장 미끼 사기",
+  "hanja": "上場 미끼 詐欺",
+  "en": "pre-listing investment scam",
+  "one": "곧 상장해 값이 오른다며 공모주, 비상장주식, 코인을 정식 절차 밖에서 사게 하는 사기이다."
+ },
+ {
+  "id": "romance-scam",
+  "chapter": "cases-2",
+  "title": "로맨스 스캠",
+  "hanja": "",
+  "en": "romance scam",
+  "one": "SNS나 데이팅 앱에서 친밀한 관계를 만든 뒤 투자를 권해 돈을 받아 내는 사기이다."
+ },
+ {
+  "id": "refund-scam",
+  "chapter": "cases-2",
+  "title": "환불 사기",
+  "hanja": "還拂詐欺",
+  "en": "recovery scam",
+  "one": "이미 피해를 본 사람에게 회비 환불이나 피해금 회수를 내세워 다시 돈을 받아 내는 사기이다."
+ },
+ {
+  "id": "licensed-check",
+  "chapter": "cases-2",
+  "title": "제도권 금융회사 조회",
+  "hanja": "制度圈金融會社照會",
+  "en": "licensed financial institution lookup",
+  "one": "금융감독원 파인에서 거래 상대가 인가나 등록을 받은 금융회사인지 확인하는 일이다."
+ },
+ {
+  "id": "payment-stop",
+  "chapter": "cases-2",
+  "title": "지급정지",
+  "hanja": "支給停止",
+  "en": "payment suspension",
+  "one": "사기에 쓰인 계좌에서 돈이 빠져나가지 못하게 금융회사가 묶는 조치이다."
+ },
+ {
+  "id": "trs",
+  "title": "총수익스와프",
+  "hanja": "總收益스와프",
+  "en": "total return swap, TRS",
+  "one": "주식을 직접 사지 않고 그 주식의 손익만 금융회사와 주고받는 계약이다. 적은 증거금으로 큰 노출을 만들 수 있고 투자자 이름이 주주명부에 드러나지 않는다.",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "cfd",
+  "title": "차액결제거래",
+  "hanja": "差額決濟去來",
+  "en": "contract for difference, CFD",
+  "one": "주식을 실제로 사고팔지 않고 산 값과 판 값의 차이만 현금으로 정산하는 장외파생상품이다.",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "forced-sale-cascade",
+  "title": "연쇄 반대매매",
+  "hanja": "連鎖 反對賣買",
+  "en": "forced-selling cascade",
+  "one": "빚으로 산 주식의 강제 매도가 값을 떨어뜨리고, 그 하락이 다른 계좌의 담보 부족을 불러 다시 강제 매도가 나오는 고리이다.",
+  "econ": "t208",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "forced-sale-stat",
+  "title": "반대매매 통계",
+  "hanja": "反對賣買 統計",
+  "en": "forced-sale statistics",
+  "one": "금융투자협회가 매일 발표하는 위탁매매 미수금과 그 가운데 실제 반대매매된 금액이다. 신용융자 정리분은 들어 있지 않다.",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "fx-margin",
+  "title": "FX마진거래",
+  "hanja": "FX마진去來",
+  "en": "retail FX margin trading",
+  "one": "증거금을 맡기고 두 외국 통화의 환율 차이에 거는 장외 거래이다. 한 계약이 기준 통화 10만 단위로 크다.",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "ovs-deriv",
+  "title": "해외파생상품",
+  "hanja": "海外派生商品",
+  "en": "overseas exchange-traded derivatives",
+  "one": "외국 거래소에 상장된 선물과 옵션이다. 국내 증권회사를 통해 거래할 수 있고 원금보다 크게 잃을 수 있다.",
+  "econ": "t693",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "crypto-liq-chain",
+  "title": "가상자산 강제청산",
+  "hanja": "假想資産 強制淸算",
+  "en": "crypto liquidation",
+  "one": "빚이나 증거금으로 잡은 가상자산 포지션의 담보가 모자랄 때 거래소나 대여 회사가 자동으로 정리하는 것이다.",
+  "chapter": "cases-3"
+ },
+ {
+  "id": "crypto-lending",
+  "title": "가상자산 대여",
+  "hanja": "假想資産 貸與",
+  "en": "crypto lending",
+  "one": "거래소가 원화나 코인을 담보로 받고 코인이나 돈을 빌려주는 서비스이다. 코인을 빌려 팔면 값이 오를 때 잃는다.",
+  "chapter": "cases-3"
  }
 ];

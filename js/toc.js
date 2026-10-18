@@ -72,9 +72,9 @@ window.CHAPTERS = [
   { id: "reading-1", part: "reading", status: "ready", title: "경제지표 발표 일정", dek: "언제 무엇이 발표되고, 시장은 무엇과 비교해 움직이는지." },
   { id: "reading-2", part: "reading", status: "ready", title: "리포트 읽는 순서", dek: "목표주가와 의견보다 먼저 보는 가정과 숫자." },
 
-  { id: "cases-1", part: "cases", status: "planned", title: "불완전판매", dek: "설명을 제대로 듣지 못하고 산 상품, 분쟁조정에서 무엇이 갈렸나." },
-  { id: "cases-2", part: "cases", status: "planned", title: "리딩방과 투자 사기", dek: "되풀이되는 수법과 확인 방법." },
-  { id: "cases-3", part: "cases", status: "planned", title: "레버리지 손실 사례", dek: "빚과 파생상품으로 원금보다 크게 잃은 과정." },
+  { id: "cases-1", part: "cases", status: "ready", title: "불완전판매", dek: "설명을 제대로 듣지 못하고 산 상품, 분쟁조정에서 무엇이 갈렸나." },
+  { id: "cases-2", part: "cases", status: "ready", title: "리딩방과 투자 사기", dek: "되풀이되는 수법과 확인 방법." },
+  { id: "cases-3", part: "cases", status: "ready", title: "레버리지 손실 사례", dek: "빚과 파생상품으로 원금보다 크게 잃은 과정." },
 
   { id: "us-1", part: "us", status: "ready", market: "US", title: "미국 주식을 사면 일어나는 일", dek: "환전, 거래 시간, 결제, 그리고 한국에서 내는 세금. 1장의 한국 거래와 나란히 놓고 본다." },
   { id: "us-2", part: "us", status: "ready", market: "US", title: "미국의 가격 장치", dek: "하루 가격제한폭이 없는 대신 있는 장치들." },
