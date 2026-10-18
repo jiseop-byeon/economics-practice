@@ -24,6 +24,7 @@ window.CHAPTERS = [
   { id: "common-4", part: "common", status: "ready", title: "보호가 미치는 곳과 미치지 않는 곳", dek: "예금보험, 투자자예탁금 보호, 설명 의무와 적합성 원칙. 원금을 지켜 주는 것과 아닌 것." },
   { id: "common-5", part: "common", status: "planned", title: "한 해 세금 모아 보기", dek: "이자, 배당, 매매차익, 연금이 한 사람에게 모일 때. 금융소득 종합과세 기준, 5월 신고, 건강보험료와 피부양자 자격." },
   { id: "common-6", part: "common", status: "planned", title: "현금과 외화를 두는 곳", dek: "예금, CMA, RP, MMF, 발행어음, 외화예금. 보호 범위와 꺼내는 시간, 환전 비용." },
+  { id: "common-7", part: "common", status: "planned", title: "증권 계좌 다루기", dek: "계좌의 종류, 비대면 개설, 증권회사 사이 주식 옮기기, 휴면 계좌와 가족이 계좌를 찾는 법." },
 
   { id: "stocks-1", part: "stocks", status: "ready", title: "가격의 울타리: 가격제한폭, 변동성완화장치, 서킷브레이커", dek: "주가가 한쪽으로 쏠릴 때 거래소가 거는 장치들." },
   { id: "stocks-2", part: "stocks", status: "ready", title: "공시 읽기", dek: "전자공시시스템에서 사업보고서와 주요사항보고서를 찾고 읽는 순서." },
@@ -32,6 +33,8 @@ window.CHAPTERS = [
   { id: "stocks-5", part: "stocks", status: "ready", title: "배당, 증자, 분할이 주가에 남기는 흔적", dek: "배당락과 권리락, 유상증자와 무상증자, 액면분할." },
   { id: "stocks-6", part: "stocks", status: "ready", title: "ETF의 구조", dek: "지수를 따라가는 방법, 괴리와 추적 오차, 레버리지와 인버스 상품이 오래 들고 있으면 어긋나는 이유." },
   { id: "stocks-7", part: "stocks", status: "ready", title: "공매도와 신용거래", dek: "빌려서 파는 거래와 빌려서 사는 거래의 규칙과 위험." },
+  { id: "stocks-8", part: "stocks", status: "planned", title: "공모주 청약", dek: "수요예측과 공모가, 균등·비례 배정, 청약 증거금과 환불, 의무보유 확약, 상장일의 가격 범위." },
+  { id: "stocks-9", part: "stocks", status: "planned", title: "주주의 권리", dek: "주주총회와 의결권, 소액주주권, 합병·분할 때의 주식매수청구권, 공개매수." },
   { id: "analysis-1", part: "analysis", status: "planned", title: "차트가 보여 주는 것", dek: "캔들, 거래량, 이동평균, 수정주가. 그림이 어떤 숫자로 그려지는지." },
   { id: "analysis-2", part: "analysis", status: "planned", title: "기술적 지표와 그 근거", dek: "RSI, MACD, 볼린저 밴드의 계산. 모멘텀과 반전에 대해 연구가 보인 것과 보이지 못한 것." },
   { id: "analysis-3", part: "analysis", status: "planned", title: "종목을 거르는 기준", dek: "재무 기준으로 거르는 스크리닝, 공개 자료로 직접 해 보는 법, 거른 결과를 읽을 때의 함정." },
@@ -49,6 +52,7 @@ window.CHAPTERS = [
   { id: "funds-3", part: "funds", status: "planned", title: "ELS와 DLS의 구조", dek: "기초자산, 녹인, 조기상환, 쿠폰. 원금 손실이 나는 경로와 발행사 신용." },
   { id: "funds-4", part: "funds", status: "planned", title: "ETN과 상장 파생결합증권", dek: "ETN과 ETF의 차이, 유동성공급자, 괴리율, 조기청산과 상장폐지." },
   { id: "funds-5", part: "funds", status: "planned", title: "랩어카운트, 신탁, 리츠", dek: "남에게 맡겨 굴리는 계좌와 부동산에 나눠 투자하는 상장 회사. 비용과 보호의 차이." },
+  { id: "funds-6", part: "funds", status: "planned", title: "보험과 투자형 보험", dek: "변액보험과 저축성 보험의 구조, 사업비와 해지환급금, 보험차익 비과세 요건, 예금자보호의 범위." },
 
   { id: "derivatives-1", part: "derivatives", status: "ready", title: "선물 계약 하나의 크기", dek: "거래 단위와 승수. 작은 증거금 뒤에 있는 큰 계약 금액." },
   { id: "derivatives-2", part: "derivatives", status: "ready", title: "증거금과 매일의 정산", dek: "개시증거금, 유지증거금, 추가 증거금 요구, 반대매매." },
