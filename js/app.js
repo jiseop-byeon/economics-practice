@@ -104,17 +104,20 @@ function home() {
         ${next ? `<a class="btn" href="#/read/${esc(next.id)}">${readDates(s, next.id).length ? "이어서 읽기" : "1장부터 읽기"}</a>` : ""}
         <a class="btn-quiet" href="#/toc">전체 목차</a>
       </div>
-      <ol class="ladder">
-        ${parts().map((p) => {
+      <h2 class="home-h">열 개의 영역</h2>
+      <div class="parts-grid">
+        ${parts().map((p, k) => {
           const cs = chapters().filter((c) => c.part === p.id);
           const r = cs.filter((c) => c.status === "ready").length;
           const first = cs.find((c) => c.status === "ready");
-          return `<li><a href="${first ? `#/read/${esc(first.id)}` : "#/toc"}">
-            <span class="ladder-body"><strong>${esc(p.name)}</strong><span>${esc(p.line)}</span></span>
-            <span class="ladder-count">${r}/${cs.length}</span>
-          </a></li>`;
+          return `<a class="part-card${r ? "" : " is-planned"}" href="${first ? `#/read/${esc(first.id)}` : "#/toc"}">
+            <span class="part-no">${String(k + 1).padStart(2, "0")}</span>
+            <strong>${esc(p.name)}</strong>
+            <span class="part-line">${esc(p.line)}</span>
+            <span class="part-progress"><span class="bar"><i style="width:${cs.length ? Math.round((r / cs.length) * 100) : 0}%"></i></span><span>${r ? `${r}/${cs.length}장` : `${cs.length}장 준비 중`}</span></span>
+          </a>`;
         }).join("")}
-      </ol>
+      </div>
       <div class="note"><p class="note-kicker">경제학습과 함께</p><p>금리, 물가, 환율처럼 거래 뒤에 있는 경제 개념은 형제 사이트 <a href="${ECON}">경제학습</a>에서 다룬다. 이 사이트의 본문에서 ↗ 표시가 붙은 용어를 누르면 그 개념의 카드로 간다.</p></div>
     </section>`;
 }

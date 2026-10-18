@@ -77,7 +77,7 @@ body {
 a { color: var(--accent-text); }
 button, input { font: inherit; color: inherit; }
 .skip {
-  position: absolute; left: 12px; top: -40px; background: var(--text); color: var(--bg);
+  position: absolute; left: 12px; top: -80px; background: var(--text); color: var(--bg);
   padding: 8px 12px; z-index: 5;
 }
 .skip:focus { top: 12px; }
@@ -411,3 +411,18 @@ h1 .title-gloss { display: block; margin-left: 0; margin-top: 4px; }
 .work { border-left: 3px solid var(--accent); }
 .note { border-left: 3px solid var(--warm); }
 .landing h1 { font-size: clamp(34px, 6vw, 52px); }
+
+/* 첫 화면: 영역 카드 */
+.home-h { font-size: 20px; margin: 48px 0 14px; }
+.parts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.part-card { display: flex; flex-direction: column; gap: 6px; padding: 16px 16px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--text); text-decoration: none; transition: border-color .15s, transform .15s; }
+.part-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.part-card strong { font-size: 18px; letter-spacing: -0.02em; }
+.part-no { font-family: var(--mono); font-size: 12px; color: var(--accent-text); letter-spacing: 0.08em; }
+.part-line { color: var(--muted); font-size: 14px; line-height: 1.55; flex: 1; }
+.part-progress { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 6px; }
+.part-progress .bar { flex: 1; height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.part-progress .bar i { display: block; height: 100%; background: var(--accent); }
+.part-card.is-planned strong { color: var(--muted); }
+.landing { max-width: 860px; }
+.landing .note { margin-top: 28px; }
