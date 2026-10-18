@@ -34,12 +34,12 @@ window.CHAPTERS = [
   { id: "bonds-5", part: "bonds", status: "ready", title: "채권의 세금", dek: "이자에 붙는 세금과 매매차익의 처리." },
   { id: "bonds-6", part: "bonds", status: "ready", title: "미국 국채와 일본 국채", dek: "해외 국채를 사는 길(직접 매수, ETF), 만기별 종류, 세계의 기준이 되는 10년물 금리, 환율 위험과 환헤지, 세금." },
 
-  { id: "derivatives-1", part: "derivatives", status: "planned", title: "선물 계약 하나의 크기", dek: "거래 단위와 승수. 작은 증거금 뒤에 있는 큰 계약 금액." },
-  { id: "derivatives-2", part: "derivatives", status: "planned", title: "증거금과 매일의 정산", dek: "개시증거금, 유지증거금, 추가 증거금 요구, 반대매매." },
-  { id: "derivatives-3", part: "derivatives", status: "planned", title: "만기와 최종 결제", dek: "만기일에 무슨 일이 일어나는지, 다음 만기로 옮기는 비용." },
-  { id: "derivatives-4", part: "derivatives", status: "planned", title: "옵션의 손익 구조", dek: "콜과 풋, 산 쪽과 판 쪽. 판 쪽의 손실이 열려 있는 이유." },
-  { id: "derivatives-5", part: "derivatives", status: "planned", title: "원금보다 크게 잃는 과정", dek: "레버리지가 손익을 키우는 계산을 한 거래로 따라간다." },
-  { id: "derivatives-6", part: "derivatives", status: "planned", title: "개인 투자자가 들어가기 전의 요건", dek: "사전 교육, 모의거래, 기본 예탁금 제도." },
+  { id: "derivatives-1", part: "derivatives", status: "ready", title: "선물 계약 하나의 크기", dek: "거래 단위와 승수. 작은 증거금 뒤에 있는 큰 계약 금액." },
+  { id: "derivatives-2", part: "derivatives", status: "ready", title: "증거금과 매일의 정산", dek: "개시증거금, 유지증거금, 추가 증거금 요구, 반대매매." },
+  { id: "derivatives-3", part: "derivatives", status: "ready", title: "만기와 최종 결제", dek: "만기일에 무슨 일이 일어나는지, 다음 만기로 옮기는 비용." },
+  { id: "derivatives-4", part: "derivatives", status: "ready", title: "옵션의 손익 구조", dek: "콜과 풋, 산 쪽과 판 쪽. 판 쪽의 손실이 열려 있는 이유." },
+  { id: "derivatives-5", part: "derivatives", status: "ready", title: "원금보다 크게 잃는 과정", dek: "레버리지가 손익을 키우는 계산을 한 거래로 따라간다." },
+  { id: "derivatives-6", part: "derivatives", status: "ready", title: "개인 투자자가 들어가기 전의 요건", dek: "사전 교육, 모의거래, 기본 예탁금 제도." },
 
   { id: "commodities-1", part: "commodities", status: "planned", title: "원자재 시장의 지도", dek: "에너지, 귀금속, 산업금속, 농산물. 어느 거래소에서 어떤 기준 가격으로 거래되는지(WTI와 브렌트, LME와 COMEX, 시카고의 곡물)." },
   { id: "commodities-2", part: "commodities", status: "planned", title: "개인이 원자재에 돈을 넣는 길", dek: "금 실물과 한국거래소 금시장, 선물, 원자재 ETF와 ETN, 원자재 기업 주식. 길마다 다른 비용과 세금." },

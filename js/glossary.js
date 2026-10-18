@@ -1148,5 +1148,453 @@ window.GLOSSARY = [
   "hanja": "海外債券 課稅",
   "en": "taxation of foreign bonds",
   "one": "외국 채권의 이자, 매매차익, 환차익에 한국 거주자가 내는 세금의 체계이다. 직접 보유한 개인은 이자에만 세금이 붙는 것이 보통이다."
+ },
+ {
+  "id": "futures",
+  "chapter": "derivatives-1",
+  "title": "선물",
+  "hanja": "先物",
+  "en": "futures",
+  "one": "정해진 날에 정해진 값으로 기초자산을 사고팔기로 지금 약속하는 계약이다.",
+  "econ": "t331"
+ },
+ {
+  "id": "futures-multiplier",
+  "chapter": "derivatives-1",
+  "title": "거래승수",
+  "hanja": "去來乘數",
+  "en": "contract multiplier",
+  "one": "선물 가격 1단위가 원화로 얼마인지를 정한 숫자로, 가격에 곱하면 계약 하나의 금액이 된다."
+ },
+ {
+  "id": "futures-tick",
+  "chapter": "derivatives-1",
+  "title": "최소가격변동폭",
+  "hanja": "最小價格變動幅",
+  "en": "minimum price fluctuation, tick size",
+  "one": "선물 가격이 한 번에 움직일 수 있는 가장 작은 폭이며, 여기에 승수를 곱하면 한 틱의 금액이 된다."
+ },
+ {
+  "id": "index-futures",
+  "chapter": "derivatives-1",
+  "title": "주가지수선물",
+  "hanja": "株價指數先物",
+  "en": "stock index futures",
+  "one": "코스피200 같은 주가지수를 기초자산으로 하고 만기에 현금으로 차액을 정산하는 선물이다.",
+  "econ": "t581"
+ },
+ {
+  "id": "stock-futures",
+  "chapter": "derivatives-1",
+  "title": "개별주식선물",
+  "hanja": "個別株式先物",
+  "en": "single stock futures",
+  "one": "거래소가 정한 개별 상장 종목을 기초자산으로 하는 선물로, 한 계약은 주식 10주이다."
+ },
+ {
+  "id": "ktb-futures",
+  "chapter": "derivatives-1",
+  "title": "국채선물",
+  "hanja": "國債先物",
+  "en": "Korea Treasury Bond futures",
+  "one": "거래소가 정한 표준 국고채를 기초자산으로 하는 선물로, 가격이 금리와 반대로 움직인다.",
+  "econ": "t102"
+ },
+ {
+  "id": "usd-futures",
+  "chapter": "derivatives-1",
+  "title": "미국달러선물",
+  "hanja": "美國달러先物",
+  "en": "US dollar futures",
+  "one": "정해진 날에 정해진 원·달러 환율로 달러를 주고받기로 약속하는 선물이다."
+ },
+ {
+  "id": "notional",
+  "chapter": "derivatives-1",
+  "title": "명목계약금액",
+  "hanja": "名目契約金額",
+  "en": "notional value",
+  "one": "선물 가격에 거래승수를 곱한 계약 하나의 크기로, 손익은 이 금액을 기준으로 생긴다."
+ },
+ {
+  "id": "basis",
+  "chapter": "derivatives-1",
+  "title": "베이시스",
+  "hanja": "",
+  "en": "basis",
+  "one": "같은 기초자산의 선물 가격과 현물 가격의 차이로, 한국에서는 보통 선물에서 현물을 뺀 값이다."
+ },
+ {
+  "id": "fut-init-margin",
+  "chapter": "derivatives-2",
+  "title": "위탁증거금",
+  "hanja": "委託證據金",
+  "en": "initial margin",
+  "one": "선물·옵션 주문을 낼 때 투자자가 증권회사에 미리 맡겨야 하는 돈으로, 계약 금액에 위탁증거금률을 곱해 구한다.",
+  "econ": "t594"
+ },
+ {
+  "id": "fut-maint-margin",
+  "chapter": "derivatives-2",
+  "title": "유지증거금",
+  "hanja": "維持證據金",
+  "en": "maintenance margin",
+  "one": "계약을 들고 있는 동안 계좌에 최소한 남아 있어야 하는 돈으로, 이 아래로 내려가면 추가증거금을 요구받는다."
+ },
+ {
+  "id": "fut-margin-rate",
+  "chapter": "derivatives-2",
+  "title": "증거금률",
+  "hanja": "證據金率",
+  "en": "margin rate",
+  "one": "계약 금액 가운데 증거금으로 맡겨야 하는 비율로, 한국거래소가 기초자산의 가격 변동을 보고 매달 점검해 정한다."
+ },
+ {
+  "id": "daily-settlement",
+  "chapter": "derivatives-2",
+  "title": "일일정산",
+  "hanja": "日日精算",
+  "en": "daily settlement (mark-to-market)",
+  "one": "매 거래일 장이 끝난 뒤 정산가격으로 계약을 다시 평가해 그날의 손익을 현금으로 주고받는 것이다."
+ },
+ {
+  "id": "fut-margin-call",
+  "chapter": "derivatives-2",
+  "title": "추가증거금",
+  "hanja": "追加證據金",
+  "en": "margin call",
+  "one": "계좌의 돈이 유지증거금 아래로 내려갔을 때 위탁증거금 수준까지 더 넣으라고 요구받는 돈이다.",
+  "econ": "t224"
+ },
+ {
+  "id": "fut-forced-close",
+  "chapter": "derivatives-2",
+  "title": "선물 반대매매",
+  "hanja": "先物反對賣買",
+  "en": "forced close-out",
+  "one": "추가증거금을 기한까지 넣지 않았을 때 증권회사가 투자자의 동의 없이 선물·옵션 계약을 정리하는 것이다."
+ },
+ {
+  "id": "gap-loss",
+  "chapter": "derivatives-2",
+  "title": "갭 손실",
+  "hanja": "갭損失",
+  "en": "gap risk",
+  "one": "가격이 한 번에 건너뛰어 대응할 틈 없이 생기는 큰 손실로, 선물에서는 손실이 맡긴 증거금을 넘게 만드는 원인이다."
+ },
+ {
+  "id": "substitute-sec",
+  "chapter": "derivatives-2",
+  "title": "대용증권",
+  "hanja": "代用證券",
+  "en": "collateral securities",
+  "one": "현금 대신 증거금으로 맡길 수 있도록 정해진 주식·채권 같은 증권으로, 시가에서 일정 비율을 깎은 대용가격으로 쳐 준다."
+ },
+ {
+  "id": "ccp",
+  "chapter": "derivatives-2",
+  "title": "중앙청산",
+  "hanja": "中央淸算",
+  "en": "central counterparty clearing",
+  "one": "거래소가 모든 매수자와 매도자의 상대방이 되어 계약 이행을 보증하는 것이다.",
+  "econ": "t633"
+ },
+ {
+  "id": "last-trading-day",
+  "chapter": "derivatives-3",
+  "title": "최종거래일",
+  "hanja": "最終去來日",
+  "en": "last trading day",
+  "one": "한 결제월의 선물·옵션을 사고팔 수 있는 마지막 날이다. 그날 남은 계약은 최종결제가격으로 정리된다."
+ },
+ {
+  "id": "weekly-option",
+  "chapter": "derivatives-3",
+  "title": "위클리옵션",
+  "hanja": "",
+  "en": "weekly option",
+  "one": "만기가 일주일 뒤에 오도록 매주 새로 상장되는 옵션이다. 코스피200 위클리옵션은 월요일 만기와 목요일 만기가 있다."
+ },
+ {
+  "id": "final-settle-price",
+  "chapter": "derivatives-3",
+  "title": "최종결제가격",
+  "hanja": "最終決濟價格",
+  "en": "final settlement price",
+  "one": "만기에 남은 선물·옵션 계약을 정리하는 기준 가격이다. 지수선물은 최종거래일의 지수 종가를 쓴다."
+ },
+ {
+  "id": "cash-settlement",
+  "chapter": "derivatives-3",
+  "title": "현금결제",
+  "hanja": "現金決濟",
+  "en": "cash settlement",
+  "one": "만기에 기초자산을 주고받지 않고 가격 차이만 돈으로 주고받는 정리 방식이다.",
+  "econ": "t019"
+ },
+ {
+  "id": "physical-delivery",
+  "chapter": "derivatives-3",
+  "title": "실물인수도",
+  "hanja": "實物引受渡",
+  "en": "physical delivery",
+  "one": "만기에 기초자산 자체를 넘겨주고 대금을 받는 정리 방식이다. 미국달러선물이 이 방식을 쓴다."
+ },
+ {
+  "id": "quad-witching",
+  "chapter": "derivatives-3",
+  "title": "네 마녀의 날",
+  "hanja": "",
+  "en": "quadruple witching day",
+  "one": "주가지수선물·주가지수옵션·주식선물·주식옵션의 만기가 겹치는 날이다. 우리나라는 3·6·9·12월 둘째 목요일이다.",
+  "econ": "t700"
+ },
+ {
+  "id": "open-interest",
+  "chapter": "derivatives-3",
+  "title": "미결제약정",
+  "hanja": "未決濟約定",
+  "en": "open interest",
+  "one": "체결된 뒤 반대 거래나 만기로 아직 정리되지 않고 남아 있는 계약의 수이다. 산 쪽과 판 쪽을 합쳐 한 번만 센다."
+ },
+ {
+  "id": "rollover",
+  "chapter": "derivatives-3",
+  "title": "롤오버",
+  "hanja": "",
+  "en": "rollover",
+  "one": "만기가 다가온 선물을 정리하고 같은 방향의 다음 결제월 계약을 새로 잡는 일이다."
+ },
+ {
+  "id": "calendar-spread",
+  "chapter": "derivatives-3",
+  "title": "스프레드 거래",
+  "hanja": "",
+  "en": "calendar spread",
+  "one": "결제월이 다른 두 선물을 한 주문으로 동시에 사고파는 거래이다. 가격은 두 결제월의 가격 차이로 부른다."
+ },
+ {
+  "id": "ssf-underlying",
+  "chapter": "derivatives-3",
+  "title": "기초주권",
+  "hanja": "基礎株券",
+  "en": "underlying stock",
+  "one": "주식선물·주식옵션의 대상이 되는 개별 주식이다. 거래소가 정기적으로 넣고 뺀다."
+ },
+ {
+  "id": "opt-call-put",
+  "chapter": "derivatives-4",
+  "title": "콜옵션과 풋옵션",
+  "hanja": "",
+  "en": "call option, put option",
+  "one": "정해진 날에 정해진 값으로 기초자산을 살 수 있는 권리가 콜옵션, 팔 수 있는 권리가 풋옵션이다.",
+  "econ": "t660"
+ },
+ {
+  "id": "opt-premium",
+  "chapter": "derivatives-4",
+  "title": "프리미엄",
+  "hanja": "",
+  "en": "option premium",
+  "one": "옵션을 산 쪽이 판 쪽에게 처음에 내는 권리의 값이다. 산 쪽이 잃을 수 있는 최대 금액이기도 하다."
+ },
+ {
+  "id": "opt-payoff",
+  "chapter": "derivatives-4",
+  "title": "만기 손익",
+  "hanja": "滿期損益",
+  "en": "payoff at expiration",
+  "one": "만기일의 기초자산 값에 따라 옵션 포지션이 최종적으로 얻거나 잃는 금액이다."
+ },
+ {
+  "id": "opt-writing",
+  "chapter": "derivatives-4",
+  "title": "옵션 매도",
+  "hanja": "옵션賣渡",
+  "en": "option writing",
+  "one": "프리미엄을 받고 옵션을 팔아, 산 쪽이 권리를 쓰면 응해야 하는 의무를 지는 것이다. 이익은 프리미엄에서 멈추고 손실은 열려 있다.",
+  "econ": "t594"
+ },
+ {
+  "id": "opt-moneyness",
+  "chapter": "derivatives-4",
+  "title": "내가격·등가격·외가격",
+  "hanja": "內價格·等價格·外價格",
+  "en": "in / at / out of the money",
+  "one": "지금 당장 행사하면 이득이 있는지에 따라 옵션을 나눈 말이다."
+ },
+ {
+  "id": "opt-intrinsic-time",
+  "chapter": "derivatives-4",
+  "title": "내재가치와 시간가치",
+  "hanja": "內在價値·時間價値",
+  "en": "intrinsic value, time value",
+  "one": "프리미엄 가운데 지금 행사하면 얻는 부분이 내재가치, 남은 기간의 가능성에 매긴 나머지가 시간가치이다."
+ },
+ {
+  "id": "opt-value-factors",
+  "chapter": "derivatives-4",
+  "title": "옵션 가격의 다섯 요인",
+  "hanja": "",
+  "en": "option pricing factors",
+  "one": "옵션 프리미엄을 움직이는 기초자산 가격, 행사가격, 남은 기간, 변동성, 금리이다."
+ },
+ {
+  "id": "k200-option",
+  "chapter": "derivatives-4",
+  "title": "코스피200옵션",
+  "hanja": "",
+  "en": "KOSPI 200 Options",
+  "one": "코스피200 지수를 기초자산으로 한국거래소에 상장된 유럽형·현금결제 옵션이다.",
+  "econ": "t582"
+ },
+ {
+  "id": "opt-structures",
+  "chapter": "derivatives-4",
+  "title": "보호적 풋과 커버드콜",
+  "hanja": "",
+  "en": "protective put, covered call",
+  "one": "기초자산을 가진 채 풋을 사거나 콜을 팔아 손익의 아래쪽에 바닥을, 또는 위쪽에 천장을 만드는 구조이다."
+ },
+ {
+  "id": "lev-multiple",
+  "chapter": "derivatives-5",
+  "title": "레버리지 배수",
+  "hanja": "레버리지倍數",
+  "en": "leverage multiple",
+  "one": "움직이는 계약 금액이 내 원금의 몇 배인지를 나타낸 값이다. 지수가 1% 움직이면 계좌는 이 배수만큼 움직인다.",
+  "econ": "t215"
+ },
+ {
+  "id": "margin-usage",
+  "chapter": "derivatives-5",
+  "title": "증거금 사용률",
+  "hanja": "證據金使用率",
+  "en": "margin utilization",
+  "one": "계좌에 맡긴 돈 가운데 위탁증거금으로 묶인 돈의 비율이다. 100%에 가까울수록 작은 손실에도 추가 증거금을 요구받는다."
+ },
+ {
+  "id": "slippage",
+  "chapter": "derivatives-5",
+  "title": "슬리피지",
+  "hanja": "",
+  "en": "slippage",
+  "one": "주문을 낼 때 예상한 가격과 실제로 체결된 가격의 차이이다. 주문이 한쪽으로 몰리거나 가격이 건너뛰면 커진다."
+ },
+ {
+  "id": "fut-deficit",
+  "chapter": "derivatives-5",
+  "title": "선물 계좌 미수금",
+  "hanja": "先物計座未收金",
+  "en": "account deficit",
+  "one": "반대매매로 계약을 정리하고도 손실이 예탁금보다 커서 계좌에 남은 마이너스 금액이다. 투자자가 증권회사에 갚아야 하는 빚이다."
+ },
+ {
+  "id": "tail-risk",
+  "chapter": "derivatives-5",
+  "title": "꼬리 위험",
+  "hanja": "꼬리危險",
+  "en": "tail risk",
+  "one": "자주 일어나지 않지만 일어나면 손실이 매우 큰 위험이다. 옵션을 판 쪽이 이 위험을 진다.",
+  "econ": "t165"
+ },
+ {
+  "id": "option-shock",
+  "chapter": "derivatives-5",
+  "title": "옵션 쇼크",
+  "hanja": "",
+  "en": "November 11, 2010 option expiry shock",
+  "one": "2010년 11월 11일 옵션 만기일 장 마감 직전 대량 매도로 지수가 급락해 옵션 포지션을 가진 쪽이 큰 손실을 본 사건이다."
+ },
+ {
+  "id": "fat-finger",
+  "chapter": "derivatives-5",
+  "title": "착오 주문",
+  "hanja": "錯誤注文",
+  "en": "erroneous order, fat-finger error",
+  "one": "사람이나 프로그램의 실수로 의도와 다른 가격이나 수량의 주문이 나가는 것이다. 체결되면 되돌리기 어렵다."
+ },
+ {
+  "id": "short-vol",
+  "chapter": "derivatives-5",
+  "title": "변동성 매도",
+  "hanja": "變動性賣渡",
+  "en": "short volatility",
+  "one": "시장이 조용할수록 이익을 보고 크게 흔들리면 손실을 보는 쪽에 서는 거래이다. 옵션 매도가 대표적이다."
+ },
+ {
+  "id": "deriv-pre-edu",
+  "chapter": "derivatives-6",
+  "title": "파생상품 사전교육",
+  "hanja": "派生商品 事前敎育",
+  "en": "mandatory pre-trading education for derivatives",
+  "one": "개인이 선물·옵션을 처음 거래하기 전에 금융투자협회에서 들어야 하는 의무 교육이다.",
+  "econ": "t693"
+ },
+ {
+  "id": "deriv-mock",
+  "chapter": "derivatives-6",
+  "title": "파생상품 모의거래",
+  "hanja": "派生商品 模擬去來",
+  "en": "mock trading for derivatives",
+  "one": "가상의 돈으로 실제 시세에 맞춰 선물·옵션 주문을 연습하는 의무 과정이다."
+ },
+ {
+  "id": "deriv-basic-deposit",
+  "chapter": "derivatives-6",
+  "title": "기본예탁금",
+  "hanja": "基本預託金",
+  "en": "basic deposit for derivatives trading",
+  "one": "미결제약정이 없는 상태에서 파생상품 주문을 새로 낼 때 계좌에 최소한 있어야 하는 돈이다.",
+  "econ": "t594"
+ },
+ {
+  "id": "qualified-retail",
+  "chapter": "derivatives-6",
+  "title": "적격 개인투자자",
+  "hanja": "適格 個人投資者",
+  "en": "qualified retail investor",
+  "one": "교육, 모의거래, 기본예탁금 요건을 갖춰 파생상품 거래가 허용된 개인을 가리키는 말이다."
+ },
+ {
+  "id": "deriv-night",
+  "chapter": "derivatives-6",
+  "title": "야간 파생상품시장",
+  "hanja": "夜間 派生商品市場",
+  "en": "KRX derivatives night session",
+  "one": "한국거래소가 정규시장이 끝난 뒤 밤에 직접 여는 선물·옵션 시장이다."
+ },
+ {
+  "id": "ovs-deriv-req",
+  "chapter": "derivatives-6",
+  "title": "해외파생상품 진입 요건",
+  "hanja": "海外派生商品 進入要件",
+  "en": "entry requirements for overseas derivatives",
+  "one": "개인이 해외 거래소의 선물·옵션을 처음 거래하기 전에 거쳐야 하는 교육과 모의거래 절차이다."
+ },
+ {
+  "id": "lev-etp-gate",
+  "chapter": "derivatives-6",
+  "title": "레버리지 ETP 거래 요건",
+  "hanja": "레버리지 ETP 去來要件",
+  "en": "entry requirements for leveraged ETPs",
+  "one": "하루 수익률을 두 배 이상 따라가는 ETF·ETN을 개인이 사기 전에 갖춰야 하는 교육, 모의거래, 기본예탁금 조건이다.",
+  "econ": "t215"
+ },
+ {
+  "id": "deriv-cg-tax",
+  "chapter": "derivatives-6",
+  "title": "파생상품 양도소득세",
+  "hanja": "派生商品 讓渡所得稅",
+  "en": "capital gains tax on derivatives",
+  "one": "정해진 파생상품 거래로 한 해 동안 번 순이익에 매기는 세금이다."
+ },
+ {
+  "id": "deriv-tax-deduct",
+  "chapter": "derivatives-6",
+  "title": "기본공제와 손익통산",
+  "hanja": "基本控除 · 損益通算",
+  "en": "basic deduction and loss netting",
+  "one": "파생상품 소득에서 한 해 250만 원을 빼 주고, 국내외 파생상품의 이익과 손실을 합쳐 순이익에만 세금을 매기는 방식이다."
  }
 ];

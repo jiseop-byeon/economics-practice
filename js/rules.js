@@ -53,6 +53,10 @@ window.RULE_TOPICS = [
   {
     "id": "govbond",
     "name": "국채 발행과 중앙은행"
+  },
+  {
+    "id": "deriv",
+    "name": "선물과 옵션"
   }
 ];
 
@@ -2123,6 +2127,1123 @@ window.RULES = {
       {
         "name": "KB국민은행 KB Think, 미국채 사는 법, 2024.8",
         "url": "https://kbthink.com/main/asset-management/wealth-manage-tip/kbthink-original/202408/howtobuyUSbonds.html"
+      }
+    ]
+  },
+  "kr-fut-k200-mult": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물 거래승수",
+    "value": "1포인트당 25만 원",
+    "short": "지수 1포인트에 25만 원",
+    "effective": "2017-03-27",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "계약 금액 = 선물 가격 × 250,000원. 2017년 3월 27일 50만 원에서 25만 원으로 낮췄다(미니코스피200 선물·옵션 승수도 함께 절반으로).",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      },
+      {
+        "name": "서울경제, 2017-03-13",
+        "url": "https://m.sedaily.com/article/11554129"
+      }
+    ]
+  },
+  "kr-fut-k200-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물 최소가격변동폭",
+    "value": "0.05포인트(12,500원)",
+    "short": "0.05포인트, 한 틱에 12,500원",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "0.05 × 250,000원 = 12,500원.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      }
+    ]
+  },
+  "kr-fut-k200-months": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물 결제월",
+    "value": "분기월 4개·반기월 2개·연월 1개, 모두 7개",
+    "short": "3·6·9·12월을 중심으로 7개 결제월",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "가까운 분기월(3·6·9·12월) 4개, 그 뒤의 반기월(6·12월) 2개, 연월(12월) 1개가 동시에 상장된다.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      }
+    ]
+  },
+  "kr-fut-mini-mult": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미니코스피200선물 거래승수",
+    "value": "1포인트당 5만 원",
+    "short": "지수 1포인트에 5만 원",
+    "effective": "2017-03-27",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "코스피200선물의 5분의 1 크기.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Mini KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040204/GLB0201040204.jsp"
+      }
+    ]
+  },
+  "kr-fut-mini-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미니코스피200선물 최소가격변동폭",
+    "value": "0.02포인트(1,000원)",
+    "short": "0.02포인트, 한 틱에 1,000원",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "0.02 × 50,000원 = 1,000원.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Mini KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040204/GLB0201040204.jsp"
+      }
+    ]
+  },
+  "kr-fut-mini-months": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미니코스피200선물 결제월",
+    "value": "연속 6개 월",
+    "short": "매달 하나씩 이어지는 6개 결제월",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "분기월이 아닌 달도 결제월이 된다. 분기월물의 일일정산가격은 코스피200선물의 정산가격을 쓴다.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Mini KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040204/GLB0201040204.jsp"
+      }
+    ]
+  },
+  "kr-fut-kq150-mult": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스닥150선물 거래승수",
+    "value": "1포인트당 1만 원",
+    "short": "지수 1포인트에 1만 원",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "계약 금액 = 선물 가격 × 10,000원.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSDAQ 150 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040208/GLB0201040208.jsp"
+      }
+    ]
+  },
+  "kr-fut-kq150-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스닥150선물 최소가격변동폭",
+    "value": "0.1포인트(1,000원)",
+    "short": "0.1포인트, 한 틱에 1,000원",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "0.1 × 10,000원 = 1,000원.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSDAQ 150 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040208/GLB0201040208.jsp"
+      }
+    ]
+  },
+  "kr-fut-kq150-months": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스닥150선물 결제월",
+    "value": "분기월 2개·반기월 2개·연월 3개, 모두 7개",
+    "short": "분기월 중심의 7개 결제월",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "영문 명세의 two quarterly, two half-yearly, three yearly months.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSDAQ 150 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040208/GLB0201040208.jsp"
+      }
+    ]
+  },
+  "kr-fut-last-index": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "주가지수선물·개별주식선물 최종거래일",
+    "value": "결제월의 둘째 목요일",
+    "short": "결제월 둘째 주 목요일",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "최종결제일은 최종거래일의 다음 날. 최종거래일에는 정규 거래가 15:20에 끝난다. 현금결제.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      },
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Single Stock Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040401/GLB0201040401.jsp"
+      }
+    ]
+  },
+  "kr-fut-ssf-size": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "개별주식선물 거래단위",
+    "value": "주식 10주",
+    "short": "기초 주식 10주",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "계약 금액 = 선물 가격 × 10. 현금결제.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Single Stock Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040401/GLB0201040401.jsp"
+      }
+    ]
+  },
+  "kr-fut-ssf-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "개별주식선물 최소가격변동폭",
+    "value": "가격대별 1원~1,000원",
+    "short": "가격대에 따라 1원(2천 원 미만)부터 1,000원(50만 원 이상)까지",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2천 원 미만 1원, 2천~5천 원 5원, 5천~2만 원 10원, 2만~5만 원 50원, 5만~20만 원 100원, 20만~50만 원 500원, 50만 원 이상 1,000원. 한 틱의 가치는 여기에 10주를 곱한다.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Single Stock Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040401/GLB0201040401.jsp"
+      }
+    ]
+  },
+  "kr-fut-ssf-months": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "개별주식선물 결제월",
+    "value": "분기월 4개 + 비분기월 2개",
+    "short": "분기월(3·6·9·12월) 4개와 그 밖의 달 2개",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "대상 종목 목록은 거래소가 정해 수시로 바꾼다.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - Single Stock Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040401/GLB0201040401.jsp"
+      }
+    ]
+  },
+  "kr-fut-ktb3-size": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "3년 국채선물 거래단위",
+    "value": "액면 1억 원, 표면금리 연 5%(6개월 이자 지급), 만기 3년",
+    "short": "액면 1억 원, 표면금리 5%인 3년 만기 표준 국채",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "실제 발행된 채권이 아닌 거래소가 정한 표준물이 기초자산. 5년·10년·30년 국채선물도 있다.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - 3-Year KTB Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040501/GLB0201040501.jsp"
+      }
+    ]
+  },
+  "kr-fut-ktb3-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "3년 국채선물 최소가격변동폭",
+    "value": "0.01(1만 원)",
+    "short": "0.01, 한 틱에 1만 원",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "액면 100 기준 가격 0.01 = 1억 원 × 0.01 ÷ 100 = 1만 원. 가격이 액면 100 기준이라는 점은 틱 가치에서 역산한 것이다(영문 명세에 표시 방식이 따로 적혀 있지 않음).",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - 3-Year KTB Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040501/GLB0201040501.jsp"
+      }
+    ]
+  },
+  "kr-fut-ktb3-months": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "3년 국채선물 결제월과 최종거래일",
+    "value": "분기월 2개, 결제월 셋째 화요일",
+    "short": "분기월 2개, 최종거래일은 결제월 셋째 화요일",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "최종거래일 정규 거래는 08:45~11:30. 최종결제일은 다음 날. 현금결제.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - 3-Year KTB Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040501/GLB0201040501.jsp"
+      }
+    ]
+  },
+  "kr-fut-usd-size": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미국달러선물 거래단위",
+    "value": "1만 달러",
+    "short": "1만 미국 달러",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "만기에 달러와 원화를 실제로 주고받는 인수도결제.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - US Dollar Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040601/GLB0201040601.jsp"
+      }
+    ]
+  },
+  "kr-fut-usd-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미국달러선물 최소가격변동폭",
+    "value": "1달러당 0.10원(1,000원)",
+    "short": "0.1원, 한 틱에 1,000원",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "0.1원 × 10,000달러 = 1,000원.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - US Dollar Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040601/GLB0201040601.jsp"
+      }
+    ]
+  },
+  "kr-fut-usd-months": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미국달러선물 결제월과 최종거래일",
+    "value": "연속 12개 월 + 분기월 8개, 결제월 셋째 월요일",
+    "short": "매달 이어지는 12개와 분기월 8개, 최종거래일은 결제월 셋째 월요일",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "최종거래일 정규 거래는 08:45~11:30. 최종결제일은 최종거래일부터 셋째 날(T+2). 인수도결제.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - US Dollar Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040601/GLB0201040601.jsp"
+      }
+    ]
+  },
+  "kr-fut-hours-regular": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "파생상품 정규 거래 시간 (한국거래소)",
+    "value": "08:45~15:45",
+    "short": "오전 8시 45분부터 오후 3시 45분",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "최종거래일에는 주가지수선물·개별주식선물이 15:20, 국채선물·미국달러선물이 11:30에 끝난다.",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      },
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - US Dollar Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040601/GLB0201040601.jsp"
+      }
+    ]
+  },
+  "kr-fut-hours-night": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "파생상품 야간 거래 시간 (한국거래소)",
+    "value": "18:00~다음 날 06:00",
+    "short": "오후 6시부터 다음 날 오전 6시",
+    "effective": "2025-06-09",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2025년 6월 9일 유렉스 연계 방식을 끝내고 한국거래소가 직접 연다. 대상 10종: 코스피200선물·미니코스피200선물·코스닥150선물·3년/10년 국채선물·미국달러선물과 코스피200·위클리·미니코스피200·코스닥150 옵션. 개별주식선물은 대상이 아니다. 야간 체결분은 다음 정규 거래일과 합쳐 정산된다(보도).",
+    "sources": [
+      {
+        "name": "한국거래소(KRX) 영문 상품 명세 - KOSPI 200 Futures, 2026-10 확인",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      },
+      {
+        "name": "파이낸셜뉴스, 2025-06-08",
+        "url": "https://www.fnnews.com/news/202506080801401186"
+      },
+      {
+        "name": "파이낸셜뉴스, 2025-06-09",
+        "url": "https://www.fnnews.com/news/202506091108409820"
+      }
+    ]
+  },
+  "us-fut-es": {
+    "topic": "deriv",
+    "market": "US",
+    "label": "E-mini S&P 500 선물 계약 크기 (CME)",
+    "value": "지수 × 50달러, 최소 0.25포인트(12.50달러)",
+    "short": "지수 1포인트에 50달러, 한 틱 0.25포인트에 12.50달러",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "CME 계약 명세 페이지는 자동 접속이 막혀 검색 결과 요약과 중개회사 안내로 확인했다.",
+    "sources": [
+      {
+        "name": "CME Group, E-mini S&P 500 Contract Specs (검색 결과 요약)",
+        "url": "https://cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html"
+      },
+      {
+        "name": "NinjaTrader, What are E-mini S&P 500 (ES) Futures?",
+        "url": "https://ninjatrader.com/futures/blogs/what-are-e-mini-s-p-500-es-futures/"
+      }
+    ]
+  },
+  "us-fut-mes": {
+    "topic": "deriv",
+    "market": "US",
+    "label": "Micro E-mini S&P 500 선물 계약 크기 (CME)",
+    "value": "지수 × 5달러, 최소 0.25포인트(1.25달러)",
+    "short": "지수 1포인트에 5달러, 한 틱에 1.25달러",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "E-mini의 10분의 1 크기.",
+    "sources": [
+      {
+        "name": "CME Group, Micro E-mini Equity Index futures products overview",
+        "url": "https://www.cmegroup.com/education/courses/micro-e-mini-futures/micro-e-mini-futures-products-overview.html"
+      }
+    ]
+  },
+  "us-fut-es-months": {
+    "topic": "deriv",
+    "market": "US",
+    "label": "E-mini S&P 500 선물 결제월과 만기 (CME)",
+    "value": "3·6·9·12월, 결제월 셋째 금요일 현금결제",
+    "short": "3·6·9·12월 분기물, 결제월 셋째 금요일에 현금으로 정산",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "최종 정산 시각은 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "CME Group, Micro E-mini Equity Index futures products overview",
+        "url": "https://www.cmegroup.com/education/courses/micro-e-mini-futures/micro-e-mini-futures-products-overview.html"
+      },
+      {
+        "name": "NinjaTrader, What are E-mini S&P 500 (ES) Futures?",
+        "url": "https://ninjatrader.com/futures/blogs/what-are-e-mini-s-p-500-es-futures/"
+      }
+    ]
+  },
+  "us-fut-es-hours": {
+    "topic": "hours",
+    "market": "US",
+    "label": "E-mini S&P 500 선물 거래 시간 (CME Globex)",
+    "value": "일요일 18:00~금요일 17:00(미국 동부시간), 평일 매일 1시간 쉼",
+    "short": "일요일 저녁부터 금요일 오후까지 거의 하루 종일(매일 1시간 쉼)",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "미국 중부시간 기준으로는 17:00~다음 날 16:00. 15:15~15:30(중부) 짧은 정지가 따로 있다는 안내도 있다.",
+    "sources": [
+      {
+        "name": "NinjaTrader, What are E-mini S&P 500 (ES) Futures?",
+        "url": "https://ninjatrader.com/futures/blogs/what-are-e-mini-s-p-500-es-futures/"
+      },
+      {
+        "name": "CME Group, Micro E-mini Equity Index futures products overview",
+        "url": "https://www.cmegroup.com/education/courses/micro-e-mini-futures/micro-e-mini-futures-products-overview.html"
+      }
+    ]
+  },
+  "kr-fut-k200-im": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물 위탁증거금률",
+    "value": "21.75%",
+    "short": "계약 금액의 21.75%",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "주문 때 맡기는 증거금 비율(개시증거금에 해당). 거래소 표에서 위탁증거금률은 거래증거금률의 1.5배로 정해진다. 2026년 들어 여러 차례 올랐다(5월 19.20%, 8월 21.00%, 9월 21.75%). 9월 정기 점검부터 이 값이고, 10월 6일 시행분에서 그대로 유지되었다. 미니코스피200선물·코스피200옵션·코스닥150선물도 같은 비율. 매달 바뀔 수 있다.",
+    "sources": [
+      {
+        "name": "한국거래소 청산결제본부, '26년 10월 장내 파생상품시장 증거금률 변경결과(2026-09-30 공지, 유안타증권 게시본)",
+        "url": "https://www.myasset.com/myasset/static/notice/261002_01.pdf"
+      },
+      {
+        "name": "한국거래소 청산결제본부, '26년 8월 장내 파생상품시장 증거금률 변경결과(유안타증권 게시본)",
+        "url": "https://www.myasset.com/myasset/static/notice/260731_03.pdf"
+      }
+    ]
+  },
+  "kr-fut-k200-mm": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물 유지위탁증거금률",
+    "value": "14.50%",
+    "short": "계약 금액의 14.50%",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "계좌의 돈이 이 비율로 계산한 금액 아래로 내려가면 추가증거금이 생긴다. 거래소 표에서 유지위탁증거금률은 거래증거금률과 같다. 9월 정기 점검부터 이 값이고 10월 6일 시행분에서 유지되었다.",
+    "sources": [
+      {
+        "name": "한국거래소 청산결제본부, '26년 10월 장내 파생상품시장 증거금률 변경결과(2026-09-30 공지, 유안타증권 게시본)",
+        "url": "https://www.myasset.com/myasset/static/notice/261002_01.pdf"
+      }
+    ]
+  },
+  "kr-fut-k200-clearing": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물 거래증거금률 (회원이 거래소에 내는 증거금)",
+    "value": "14.50%",
+    "short": "계약 금액의 14.50%",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "증권회사(회원)가 거래소에 내는 증거금의 비율. 투자자가 증권회사에 내는 위탁증거금률은 이것의 1.5배이다.",
+    "sources": [
+      {
+        "name": "한국거래소 청산결제본부, '26년 10월 장내 파생상품시장 증거금률 변경결과(2026-09-30 공지, 유안타증권 게시본)",
+        "url": "https://www.myasset.com/myasset/static/notice/261002_01.pdf"
+      }
+    ]
+  },
+  "kr-fut-margin-review": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "파생상품 증거금률 정기 점검 주기",
+    "value": "매월 첫째 월요일(휴장일이면 다음 거래일) 정기 점검",
+    "short": "매달 첫째 월요일(휴장이면 다음 거래일)마다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "「증권·파생상품시장 증거금 관리지침」에 따른 정기 점검. 기초자산 가격 변동성을 바탕으로 결제 안정성과 상품 특성을 감안해 조정한다. 공지는 시행일 며칠 전에 나오고, 2026년 10월분은 9월 30일 공지·10월 6일 시행이었다.",
+    "sources": [
+      {
+        "name": "한국거래소 청산결제본부, '26년 10월 장내 파생상품시장 증거금률 변경결과(2026-09-30 공지, 유안타증권 게시본)",
+        "url": "https://www.myasset.com/myasset/static/notice/261002_01.pdf"
+      }
+    ]
+  },
+  "kr-fut-call-deadline": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "선물·옵션 추가증거금 납부 기한",
+    "value": "부족이 생긴 거래일의 다음 영업일 12시까지",
+    "short": "다음 영업일 정오까지",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "장 종료 시점에 예탁총액이 유지위탁증거금보다 적거나 예탁현금이 유지현금예탁필요액보다 적으면 생긴다. 위탁증거금 수준까지 채워야 하며, 12시 전에 계약을 줄여 증거금 수준을 맞추어도 된다. 증권회사는 결제불이행 우려가 있는 고객에게 기한을 앞당길 수 있다. 기한을 넘기면 통지 없이 반대매매할 수 있다.",
+    "sources": [
+      {
+        "name": "한국투자증권 파생상품계좌설정약관(2025-06-09 시행) 및 별첨",
+        "url": "https://file.koreainvestment.com/updata/namo/파생상품계좌설정약관.pdf"
+      },
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(2026-05-11 심사필)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      }
+    ]
+  },
+  "kr-fut-intraday-call": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "장중 추가증거금 부과 조건",
+    "value": "코스피200이 전날 종가보다 코스피200선물 유지증거금률의 80% 이상 움직인 날",
+    "short": "지수가 유지증거금률의 80% 이상 움직인 날",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "9시 1분, 10시~14시 정각에 확인한다(15시는 제외, 야간거래에는 적용하지 않음). 유지증거금률 14.50%이면 기준은 11.6%. 예탁총액이 장중유지위탁증거금보다 적은 계좌에 부과하고, 기한은 그날 장 종료 시점(회사에 따라 다음 거래일 호가 접수 전까지 연장 가능). 채우지 않으면 신규 주문과 증거금을 늘리는 주문이 거부된다.",
+    "sources": [
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(2026-05-11 심사필)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "한국투자증권 파생상품계좌설정약관(2025-06-09 시행) 및 별첨",
+        "url": "https://file.koreainvestment.com/updata/namo/파생상품계좌설정약관.pdf"
+      }
+    ]
+  },
+  "kr-fut-cash-req": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "선물 신규 주문의 현금예탁필요액",
+    "value": "위탁증거금의 2분의 1",
+    "short": "위탁증거금의 절반은 현금",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "한국거래소 파생상품시장 업무규정에 따른 것으로 증권회사 약관 별첨에 '위탁금액 × 위탁증거금률 × 1/2'로 적혀 있다. 나머지는 대용증권·외화로 낼 수 있다. 옵션을 살 때는 대금 전액이 현금이고, 선물 스프레드 거래는 0이다.",
+    "sources": [
+      {
+        "name": "한국투자증권 파생상품계좌설정약관(2025-06-09 시행) 및 별첨",
+        "url": "https://file.koreainvestment.com/updata/namo/파생상품계좌설정약관.pdf"
+      },
+      {
+        "name": "다올투자증권 선물옵션 증거금 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex04.jsp"
+      }
+    ]
+  },
+  "kr-drv-final-settle-day": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "지수·주식 선물·옵션 최종결제일",
+    "value": "최종거래일 다음 거래일",
+    "short": "최종거래일 다음 거래일",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "미국달러선물은 최종거래일 이틀 뒤에 인수도한다.",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Futures 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      },
+      {
+        "name": "한국거래소 KOSPI 200 Options 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      },
+      {
+        "name": "한국거래소 Single Stock Futures 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040401/GLB0201040401.jsp"
+      }
+    ]
+  },
+  "kr-drv-hours-lastday": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "최종거래일 도래 종목의 거래 시간 (지수·주식 선물·옵션)",
+    "value": "08:45~15:20",
+    "short": "오전 8시 45분부터 오후 3시 20분",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "평소 정규거래는 08:45~15:45이다. 만기 종목은 그날 정규거래로 끝나고 야간 거래에는 나오지 않는다.",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Futures 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040201/GLB0201040201.jsp"
+      },
+      {
+        "name": "한국거래소 Single Stock Futures 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040401/GLB0201040401.jsp"
+      }
+    ]
+  },
+  "kr-drv-weekly-k200": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200 위클리옵션 만기",
+    "value": "월요일 만기와 목요일 만기 (둘째 목요일 제외)",
+    "short": "매주 월요일과 목요일에 상장되어 다음 주 같은 요일에 끝나는 두 종류(월물 옵션 만기인 둘째 목요일에는 위클리옵션이 없다)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "월요일 만기는 휴장일이면 다음 거래일로, 목요일 만기는 앞 거래일로 옮긴다. 코스닥150 위클리옵션도 월·목 만기로 있다(2025.10 시행 보도). 개별주식 위클리옵션은 2026년 6월 29일 상장 예정이었으나 무기한 연기되었다.",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Options 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      },
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201041003/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      },
+      {
+        "name": "헤럴드경제, 2026.6.24",
+        "url": "https://www.heraldk.com/article/2026062417550980028"
+      }
+    ]
+  },
+  "kr-drv-fsp-k200": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물·옵션 최종결제가격",
+    "value": "최종거래일의 코스피200 종가지수",
+    "short": "최종거래일의 코스피200 종가지수",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "주식선물은 최종거래일 기초주권 종가를 쓰는 것으로 알려져 있으나 원문 확인 전이다. 파생상품시장 업무규정 원문은 열어 보지 못했다.",
+    "sources": [
+      {
+        "name": "KB증권 코스피200 선물·옵션 상품 비교 안내",
+        "url": "https://www.kbsec.com/go.able?linkcd=s040308010002"
+      }
+    ]
+  },
+  "kr-drv-ktb-expiry": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "국채선물 최종거래일",
+    "value": "결제월 셋째 화요일, 11:30 거래 종료, 현금결제",
+    "short": "결제월 셋째 화요일(그날은 오전 11시 30분에 거래 종료)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "최종결제가격은 거래소가 고른 바스켓 국채들의 11:30 수익률(금융투자협회 제공)로 계산한다. 최종결제일은 다음 거래일.",
+    "sources": [
+      {
+        "name": "한국거래소 3-Year KTB Futures 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040501/GLB0201040501.jsp"
+      }
+    ]
+  },
+  "kr-drv-usd-expiry": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "미국달러선물 최종거래일과 인수도",
+    "value": "결제월 셋째 월요일, 11:30 거래 종료, 이틀 뒤 인수도",
+    "short": "결제월 셋째 월요일(그날은 오전 11시 30분에 거래 종료)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "1계약 10,000달러. 최종결제가격은 최종거래일 거래 종료 뒤 거래소가 정해 알린다.",
+    "sources": [
+      {
+        "name": "한국거래소 US Dollar Futures 상품명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040601/GLB0201040601.jsp"
+      }
+    ]
+  },
+  "us-drv-es-expiry": {
+    "topic": "deriv",
+    "market": "US",
+    "label": "미국 E-mini S&P 500 선물 만기와 최종결제",
+    "value": "3·6·9·12월 셋째 금요일, 특별 시가(SOQ)로 현금결제",
+    "short": "3·6·9·12월 셋째 금요일에 끝나고, 그날 아침 구성 종목 시가로 계산한 특별 시가(SOQ)로 현금결제한다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "CME 안내 자료 기준. 규정 원문(CME Rulebook)은 열어 보지 않았다.",
+    "sources": [
+      {
+        "name": "CME Group, Understanding Equity Index Daily & Final Settlement",
+        "url": "https://www.cmegroup.com/education/courses/introduction-to-equity-index-products/understanding-equity-index-daily-and-final-settlement"
+      }
+    ]
+  },
+  "kr-k200opt-multiplier": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200옵션 거래승수",
+    "value": "250,000원",
+    "short": "지수 1포인트당 25만 원",
+    "effective": "2017-03-27",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "계약 금액은 옵션 가격(포인트) × 250,000원이다. 2012년 6월 10만 원에서 50만 원으로 올렸다가 2017년 3월 27일 25만 원으로 낮췄다(변경일은 증권회사 안내로 확인).",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Options 상품명세(영문)",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      },
+      {
+        "name": "Interactive Brokers, Eurex/KRX 상품 안내",
+        "url": "https://interactivebrokers.com.au/en/trading/eurex-krx.php"
+      },
+      {
+        "name": "다올투자증권 지수옵션 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex03.jsp"
+      }
+    ]
+  },
+  "kr-k200opt-style": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200옵션 행사 방식과 결제",
+    "value": "유럽형 · 현금결제",
+    "short": "만기일에만 행사할 수 있는 유럽형이고, 차액을 현금으로 주고받는다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "최종결제일은 최종거래일의 다음 거래일이다.",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Options 상품명세(영문)",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      }
+    ]
+  },
+  "kr-k200opt-expiry": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200옵션 최종거래일",
+    "value": "결제월 두 번째 목요일",
+    "short": "결제월의 두 번째 목요일(휴일이면 앞당김)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "위클리옵션은 매주 월요일·목요일 만기 상품이 따로 있다(목요일물 2019.9.23, 월요일물 2023.7.31 상장). 두 번째 목요일에는 월물이 만기이므로 목요일 위클리를 두지 않는다. 정규 거래시간은 08:45~15:45(최종거래일 15:20까지), 야간 18:00~06:00.",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Options 상품명세(영문)",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      }
+    ]
+  },
+  "kr-k200opt-tick": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200옵션 호가가격단위",
+    "value": "10p 미만 0.01p(2,500원) / 10p 이상 0.05p(12,500원)",
+    "short": "프리미엄 10포인트 미만에서 0.01포인트(2,500원), 10포인트 이상에서 0.05포인트(12,500원)",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "",
+    "sources": [
+      {
+        "name": "한국거래소 KOSPI 200 Options 상품명세(영문)",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      },
+      {
+        "name": "다올투자증권 지수옵션 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex03.jsp"
+      }
+    ]
+  },
+  "kr-fut-price-limit": {
+    "topic": "deriv",
+    "market": "KR",
+    "label": "코스피200선물·옵션 단계별 가격제한폭",
+    "value": "기준가격 대비 ±8% → ±15% → ±20%",
+    "short": "1단계 8%, 2단계 15%, 3단계 20%",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "앞 단계 한도에 닿은 뒤 일정 조건(기준 종목이 한도에 닿고 5분 경과 등)이 되면 같은 방향으로 다음 단계가 열린다. 야간 거래에는 1단계만 적용한다.",
+    "sources": [
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서 (2026.5 심사)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "다올투자증권 KOSPI200선물 상품 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex01.jsp"
+      }
+    ]
+  },
+  "kr-deriv-edu": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "국내 장내파생상품 사전교육 (일반개인투자자)",
+    "value": "최저 1시간 이상 (금융투자협회 사전교육)",
+    "short": "금융투자협회의 사전교육을 최저 1시간 이상 들어야 한다",
+    "effective": "2019-12-02",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2019년 12월 2일 30시간(20+10)에서 낮췄다. 증권회사가 투자성향·나이·거래 경험을 보고 늘린다. 한 증권회사 기준은 1단계 1시간, 2단계 3시간, 3단계 10시간이며, 공격투자형 미만이거나 만 65세 이상이면 10시간 과정에 해당할 수 있다. 수강료는 3,000원으로 보도되었다. 2019.12.2 이전 종전 제도로 이수했으면 인정한다. 다른 회사 거래확인서나 자격증으로 면제하는 증권회사도 있다.",
+    "sources": [
+      {
+        "name": "금융위원회 보도자료, 파생상품시장 발전방안, 2019.5.30",
+        "url": "https://www.fsc.go.kr/no010101/73717"
+      },
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(심사필 2026.5.11)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "다올투자증권 선물옵션 기본예탁금·교육 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex05.jsp"
+      },
+      {
+        "name": "비즈워치, 2025.11.17",
+        "url": "https://news.bizwatch.co.kr/article/market/2025/11/17/0025"
+      }
+    ]
+  },
+  "kr-deriv-mock": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "국내 장내파생상품 모의거래 (일반개인투자자)",
+    "value": "최저 3시간 이상",
+    "short": "모의거래를 최저 3시간 이상 마쳐야 한다",
+    "effective": "2019-12-02",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2019년 12월 2일 50시간에서 낮췄다. 한국거래소나 증권회사가 무료로 제공한다. 증권회사가 투자자에 따라 늘리며, 한 증권회사 기준은 1단계 3시간, 2단계 5시간, 3단계 10시간이다.",
+    "sources": [
+      {
+        "name": "금융위원회 보도자료, 파생상품시장 발전방안, 2019.5.30",
+        "url": "https://www.fsc.go.kr/no010101/73717"
+      },
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(심사필 2026.5.11)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "다올투자증권 선물옵션 기본예탁금·교육 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex05.jsp"
+      },
+      {
+        "name": "비즈워치, 2025.11.17",
+        "url": "https://news.bizwatch.co.kr/article/market/2025/11/17/0025"
+      }
+    ]
+  },
+  "kr-deriv-deposit-1": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "파생상품 기본예탁금 1단계 (선물·옵션 매수)",
+    "value": "1,000만 원 이상 (증권회사가 정함)",
+    "short": "1,000만 원 이상으로 증권회사가 정한 금액",
+    "effective": "2019-12-02",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "변동성지수선물을 뺀 선물과 옵션 매수만 할 수 있다. 근거는 한국거래소 파생상품시장 업무규정 제127조와 시행세칙 제122조이다. 증권회사가 반대매매·추가증거금 이력 등에 따라 더 높게 정한다(예: 1,000만/1,500만/3,000만 원). 금선물·돈육선물만 거래하면 50만 원이다. 자본시장법상 전문투자자는 납부 의무가 없다.",
+    "sources": [
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01041401/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      },
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(심사필 2026.5.11)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "다올투자증권 선물옵션 기본예탁금·교육 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex05.jsp"
+      },
+      {
+        "name": "금융위원회 보도자료, 파생상품시장 발전방안, 2019.5.30",
+        "url": "https://www.fsc.go.kr/no010101/73717"
+      }
+    ]
+  },
+  "kr-deriv-deposit-2": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "파생상품 기본예탁금 2단계 (모든 거래)",
+    "value": "2,000만 원 이상 (증권회사가 정함), 미결제약정 10거래일 이상 보유 경험",
+    "short": "2,000만 원 이상이고, 미결제약정을 10거래일 이상 들고 있었던 경험이 있어야 한다",
+    "effective": "2019-12-02",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "옵션 매도와 변동성지수선물을 포함한 모든 장내파생상품을 거래할 수 있다. 2019년 개편 때 '1단계 진입 후 1년 경과' 조건을 없앴고, 거래 경험 요건은 계좌 개설 후 미결제약정 10거래일 이상 보유로 정했다. 증권회사가 더 높게 정할 수 있다(예: 2,000만/2,500만/5,000만 원).",
+    "sources": [
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01041401/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      },
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(심사필 2026.5.11)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "다올투자증권 선물옵션 기본예탁금·교육 안내",
+        "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex05.jsp"
+      },
+      {
+        "name": "금융위원회 보도자료, 파생상품시장 발전방안, 2019.5.30",
+        "url": "https://www.fsc.go.kr/no010101/73717"
+      }
+    ]
+  },
+  "kr-deriv-deposit-when": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "기본예탁금을 확인하는 때",
+    "value": "미결제약정이 없는 상태에서 새로 주문할 때(계좌를 처음 열었을 때 포함) 확인하며, 현금·대용증권·외화·외화증권으로 낼 수 있다",
+    "short": "미결제약정이 없는 상태에서 새로 주문할 때",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "기존 계좌에서 미결제약정을 모두 정리한 뒤 다시 주문할 때도 확인한다. 야간 거래에도 같은 기준이 적용되며, 정규시장에서 이미 예탁하고 미결제약정을 가진 투자자는 야간에 따로 더 내지 않는다.",
+    "sources": [
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01041401/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      }
+    ]
+  },
+  "kr-deriv-entry-history": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "2019년 완화 전 개인 파생상품 진입 요건",
+    "value": "사전교육 30시간(20+10), 모의거래 50시간, 기본예탁금 1단계 2,000만~5,000만 원 이상·2단계 3,000만~1억 원 이상",
+    "short": "2019년 완화 전에는 사전교육 30시간, 모의거래 50시간, 1단계 기본예탁금이 최소 2,000만 원이었다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2014년 6월 파생상품시장 발전방안이 '실질적인 투자능력을 갖춘 적격 개인투자자'만 단계적으로 들어오게 한다는 원칙 아래 교육 30시간, 모의거래 50시간, 1단계 3,000만 원, 2단계 5,000만 원과 1년 거래 경험을 제시했다. 2019년 5월 발전방안이 교육 1시간, 모의거래 3시간, 예탁금 1,000만/2,000만 원 이상으로 낮추었고 2019년 12월 2일 시행되었다.",
+    "sources": [
+      {
+        "name": "금융위원회, 파생상품시장 발전방안, 2014.6.17",
+        "url": "https://www.fsc.go.kr/po010101/71164"
+      },
+      {
+        "name": "금융위원회 보도자료, 파생상품시장 발전방안, 2019.5.30",
+        "url": "https://www.fsc.go.kr/no010101/73717"
+      },
+      {
+        "name": "한국투자증권 장내파생상품 거래설명서(심사필 2026.5.11)",
+        "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      }
+    ]
+  },
+  "kr-deriv-night": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "한국거래소 야간 파생상품시장",
+    "value": "18:00~다음 날 06:00 (10개 상품)",
+    "short": "오후 6시부터 다음 날 오전 6시까지",
+    "effective": "2025-06-09",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "호가 접수는 17:50부터이고, 밤 거래는 다음 거래일 거래로 본다. 대상은 코스피200선물·옵션, 미니코스피200선물·옵션, 코스피200위클리옵션(월·목), 코스닥150선물·옵션, 미국달러선물, 3년·10년 국채선물이다. 유렉스 연계 방식을 대신해 정규 파생상품 계좌로 거래하며, 기본예탁금과 위탁증거금 기준은 정규시장과 같다. 주식 관련 파생상품은 1단계 가격제한(8%)만 적용한다. 정규시장은 08:45~15:45이다. 거래소는 2027년 말 24시간 거래를 목표로 한다고 보도되었다.",
+    "sources": [
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01041401/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      },
+      {
+        "name": "파이낸셜뉴스, 2025.6.9",
+        "url": "https://www.fnnews.com/news/202506091108409820"
+      }
+    ]
+  },
+  "kr-deriv-weekly": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "위클리옵션 현황",
+    "value": "코스피200·코스닥150 위클리옵션(월요일·목요일 만기) 상장, 개별주식 위클리옵션은 상장 연기",
+    "short": "코스피200과 코스닥150 위클리옵션이 월요일·목요일 만기로 거래되고, 개별주식 위클리옵션은 2026년 6월 상장 직전에 연기되었다",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "코스닥150 위클리옵션은 2025년 10월 말(보도상 27일) 정규·야간 시장에 상장되었다. 삼성전자·SK하이닉스·현대차·LG에너지솔루션을 기초로 한 개별주식 위클리옵션은 2026년 6월 29일 상장 예정이었으나 거래소가 6월 25일 시장 여건을 이유로 연기했다. 위클리옵션도 다른 옵션과 같은 기본예탁금 단계를 적용받는다(매수 1단계, 매도 2단계).",
+    "sources": [
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01041401/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      },
+      {
+        "name": "뉴데일리, 2025.10.22",
+        "url": "https://biz.newdaily.co.kr/site/data/html/2025/10/22/2025102200029.amp.html"
+      },
+      {
+        "name": "비즈워치, 2026.6.25",
+        "url": "https://news.bizwatch.co.kr/article/market/2026/06/25/0021"
+      }
+    ]
+  },
+  "kr-ovs-deriv-req": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "해외파생상품 진입 요건 (일반개인투자자)",
+    "value": "처음 거래할 때 사전교육 1시간 이상과 모의거래 3시간 이상",
+    "short": "처음 거래하는 개인은 사전교육 1시간 이상과 모의거래 3시간 이상을 마쳐야 한다",
+    "effective": "2025-12-15",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "금융감독원이 2025년 11월 16일 발표했고 금융투자협회 규정 개정으로 시행되었다. 증권회사가 투자성향·나이·경험에 따라 시간을 늘리며, 경험 없는 만 65세 이상에게는 교육 10시간·모의거래 7시간을 권고한다고 보도되었다. 국내와 같은 기본예탁금은 도입되지 않았다(보도 기준). 금융감독원 집계로 개인의 해외파생상품 손실은 2020년~2025년 상반기 연평균 약 4,580억 원이다.",
+    "sources": [
+      {
+        "name": "한국투자증권 해외파생상품시장거래총괄계좌설정약관 신구조문(2025.12.15 시행)",
+        "url": "https://file.koreainvestment.com/updata/namo/12132251해외파생상품시장거래총괄계좌설정약관_신구조문.pdf"
+      },
+      {
+        "name": "경향신문, 2025.11.16",
+        "url": "https://www.khan.co.kr/article/202511161310001/"
+      },
+      {
+        "name": "비즈워치, 2025.11.17",
+        "url": "https://news.bizwatch.co.kr/article/market/2025/11/17/0025"
+      },
+      {
+        "name": "데일리안, 2025.5.25",
+        "url": "https://www.dailian.co.kr/news/view/1502047/"
+      }
+    ]
+  },
+  "kr-etp-single-lev-mock": {
+    "topic": "protect",
+    "market": "KR",
+    "label": "단일종목 레버리지·인버스 ETF·ETN 모의거래",
+    "value": "5거래일 이상, 거래일마다 1시간 이상 (총 5시간 이상)",
+    "short": "5거래일 이상, 하루 1시간 이상씩 총 5시간 이상의 모의거래",
+    "effective": "2026-08-19",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "국내·해외 상장 단일종목 레버리지·인버스 상품에 새로 투자하는 개인 일반투자자가 대상이다. 한국거래소가 홈페이지에서 무료로 운영하며 가상 자금으로 그날 시세에 맞춰 거래한다. 매일 이어서 할 필요는 없다. 현금 3,000만 원 기본예탁금과 사전교육(보도상 기본 1시간·심화 2시간)도 함께 요구된다.",
+    "sources": [
+      {
+        "name": "정책브리핑(금융위원회), 2026.8.12",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148969967"
+      },
+      {
+        "name": "비즈워치, 2026.8.12",
+        "url": "https://news.bizwatch.co.kr/article/market/2026/08/12/0036"
+      }
+    ]
+  },
+  "kr-tax-deriv-rate": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "파생상품 양도소득세율",
+    "value": "20% (탄력세율 10%)",
+    "short": "법정 세율은 20%이지만 탄력세율 10%",
+    "effective": "2018-04-01",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "소득세법 제104조, 시행령 제167조의9. 2016.1.1~2018.3.31 양도분은 5%였다. 개인지방소득세가 양도소득세의 10%만큼 따로 붙어 실제 부담은 11%이다. 장기보유특별공제와 비과세·감면은 없다. 2026년 10월 현재 세율 변경은 확인되지 않았다.",
+    "sources": [
+      {
+        "name": "국세청, 파생상품에 대한 양도소득세 신고납부 안내",
+        "url": "https://www.nts.go.kr/tax/sub/1.5.4.파생상품에 대한 양도소득세 신고납부 안내.html"
+      },
+      {
+        "name": "국세청, 양도소득세율 변천표(2020)",
+        "url": "https://www.nts.go.kr/upload/ti_tax/01/%EC%96%91%EB%8F%84%EC%86%8C%EB%93%9D%EC%84%B8%EC%9C%A8.pdf"
+      }
+    ]
+  },
+  "kr-tax-deriv-scope": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "양도소득세 과세 대상 파생상품",
+    "value": "국내 주가지수 관련 장내파생상품(ELW·CFD 포함), 해외 장내파생상품 전부, 주가지수 관련 장외파생상품 일부",
+    "short": "국내에서는 시장을 대표하는 지수를 기초로 한 장내파생상품, 해외에서는 거래소에 상장된 파생상품 전부",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "코스피200선물·옵션(2016.1)부터 시작해 미니코스피200(2016.7), 코스피200 ELW(2017.4), 코스닥150·KRX300·변동성지수 등 모든 주가지수 관련 상품(2019.4), 주식 차액결제거래(CFD, 2021.4)로 넓혀 왔다. 장외파생상품은 국내 장내상품과 경제적 실질이 같은 것만 과세한다. 국내 개별주식선물·국채선물·통화선물은 국세청 과세 대상 목록에 없다.",
+    "sources": [
+      {
+        "name": "국세청, 파생상품에 대한 양도소득세 신고납부 안내",
+        "url": "https://www.nts.go.kr/tax/sub/1.5.4.파생상품에 대한 양도소득세 신고납부 안내.html"
+      },
+      {
+        "name": "국세청, 양도소득세율 변천표(2020)",
+        "url": "https://www.nts.go.kr/upload/ti_tax/01/%EC%96%91%EB%8F%84%EC%86%8C%EB%93%9D%EC%84%B8%EC%9C%A8.pdf"
+      }
+    ]
+  },
+  "kr-tax-deriv-deduct": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "파생상품 양도소득 기본공제와 손익통산",
+    "value": "연 250만 원 (국내·해외 파생상품 합산)",
+    "short": "국내와 해외 파생상품 소득을 합쳐 한 해 250만 원",
+    "effective": "2017-01-01",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2017년 1월 1일 양도분부터 국내·해외 파생상품 손익을 통산한다. 주식·부동산 등 다른 양도소득과는 통산하지 않고, 손실의 이월공제는 없다. 주가지수 ELW 손익은 파생상품 소득과 통산한다.",
+    "sources": [
+      {
+        "name": "국세청, 파생상품에 대한 양도소득세 신고납부 안내",
+        "url": "https://www.nts.go.kr/tax/sub/1.5.4.파생상품에 대한 양도소득세 신고납부 안내.html"
+      }
+    ]
+  },
+  "kr-tax-deriv-filing": {
+    "topic": "tax",
+    "market": "KR",
+    "label": "파생상품 양도소득세 신고·납부 기간",
+    "value": "다음 해 5월 1일~5월 31일",
+    "short": "다음 해 5월 한 달 동안",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "홈택스·손택스로 신고하며, 증권회사가 국세청에 낸 자료로 모두채움 서비스가 제공된다. 개인지방소득세는 시·군·구에 따로 신고·납부한다(홈택스는 위택스와 연계). 무신고 가산세는 20%이다.",
+    "sources": [
+      {
+        "name": "국세청, 파생상품에 대한 양도소득세 신고납부 안내",
+        "url": "https://www.nts.go.kr/tax/sub/1.5.4.파생상품에 대한 양도소득세 신고납부 안내.html"
       }
     ]
   }
