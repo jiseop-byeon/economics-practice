@@ -63,11 +63,11 @@ window.CHAPTERS = [
   { id: "crypto-4", part: "crypto", status: "planned", title: "사라질 수 있는 위험", dek: "상장폐지, 해킹, 프로젝트 중단." },
   { id: "crypto-5", part: "crypto", status: "planned", title: "가상자산의 세금", dek: "과세 제도의 현재 상태와 일정." },
 
-  { id: "risk-1", part: "risk", status: "planned", title: "수익률을 제대로 재기", dek: "단순 수익률과 연환산, 복리, 세후, 물가를 뺀 실질 수익률." },
-  { id: "risk-2", part: "risk", status: "planned", title: "변동성과 최대 낙폭", dek: "얼마나 흔들리는지, 최악에 얼마나 떨어졌는지." },
-  { id: "risk-3", part: "risk", status: "planned", title: "분산의 효과와 한계", dek: "함께 움직이는 정도와, 위기 때 함께 떨어지는 이유." },
-  { id: "risk-4", part: "risk", status: "planned", title: "한 자산에 넣는 비중", dek: "잃어도 버틸 수 있는 크기를 먼저 정하는 계산." },
-  { id: "risk-5", part: "risk", status: "planned", title: "재조정과 기록", dek: "비중을 다시 맞추는 이유, 매매 일지와 복기." },
+  { id: "risk-1", part: "risk", status: "ready", title: "수익률을 제대로 재기", dek: "단순 수익률과 연환산, 복리, 세후, 물가를 뺀 실질 수익률." },
+  { id: "risk-2", part: "risk", status: "ready", title: "변동성과 최대 낙폭", dek: "얼마나 흔들리는지, 최악에 얼마나 떨어졌는지." },
+  { id: "risk-3", part: "risk", status: "ready", title: "분산의 효과와 한계", dek: "함께 움직이는 정도와, 위기 때 함께 떨어지는 이유." },
+  { id: "risk-4", part: "risk", status: "ready", title: "한 자산에 넣는 비중", dek: "잃어도 버틸 수 있는 크기를 먼저 정하는 계산." },
+  { id: "risk-5", part: "risk", status: "ready", title: "재조정과 기록", dek: "비중을 다시 맞추는 이유, 매매 일지와 복기." },
 
   { id: "reading-1", part: "reading", status: "planned", title: "경제지표 발표 일정", dek: "언제 무엇이 발표되고, 시장은 무엇과 비교해 움직이는지." },
   { id: "reading-2", part: "reading", status: "planned", title: "리포트 읽는 순서", dek: "목표주가와 의견보다 먼저 보는 가정과 숫자." },

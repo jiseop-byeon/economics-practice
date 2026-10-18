@@ -2685,5 +2685,351 @@ window.GLOSSARY = [
   "hanja": "再當籤制限",
   "en": "re-winning restriction",
   "one": "특정 주택에 당첨된 세대가 정해진 기간 동안 다른 분양주택에 당첨될 수 없게 하는 규제이다."
+ },
+ {
+  "id": "simple-return",
+  "chapter": "risk-1",
+  "title": "단순 수익률",
+  "hanja": "單純收益率",
+  "en": "simple return",
+  "one": "판 값이나 지금 값에서 산 값을 빼고 산 값으로 나눈 비율이다. 기간을 따지지 않는다."
+ },
+ {
+  "id": "annualized-return",
+  "chapter": "risk-1",
+  "title": "연환산 수익률",
+  "hanja": "年換算收益率",
+  "en": "annualized return",
+  "one": "기간이 다른 수익률을 1년 기준으로 바꾼 값이다. 1년이 넘으면 복리로 바꾼 연평균 복리 수익률(CAGR)을 쓴다.",
+  "econ": "t179"
+ },
+ {
+  "id": "geo-mean",
+  "chapter": "risk-1",
+  "title": "기하평균 수익률",
+  "hanja": "幾何平均收益率",
+  "en": "geometric mean return",
+  "one": "해마다의 (1 + 수익률)을 곱해 햇수만큼 제곱근을 씌우고 1을 뺀 값이다. 실제로 돈이 불어난 속도이며 산술평균보다 낮거나 같다."
+ },
+ {
+  "id": "time-weighted",
+  "chapter": "risk-1",
+  "title": "시간가중 수익률",
+  "hanja": "時間加重收益率",
+  "en": "time-weighted return",
+  "one": "돈을 넣고 뺄 때마다 기간을 끊어 구한 수익률을 이어 곱한 값이다. 넣고 뺀 시점과 크기까지 담아 실제 계좌 성적을 보여 주는 것은 금액가중 수익률(내부수익률)이다."
+ },
+ {
+  "id": "total-return",
+  "chapter": "risk-1",
+  "title": "총수익률",
+  "hanja": "總收益率",
+  "en": "total return",
+  "one": "값의 변화에 그동안 받은 배당이나 이자를 더해 계산한 수익률이다. 값의 변화만 본 것은 가격 수익률이다."
+ },
+ {
+  "id": "net-return",
+  "chapter": "risk-1",
+  "title": "비용·세후 수익률",
+  "hanja": "費用·稅後收益率",
+  "en": "net-of-fees after-tax return",
+  "one": "거래 비용, 운용 보수, 세금을 모두 빼고 손에 남는 돈으로 다시 계산한 수익률이다."
+ },
+ {
+  "id": "real-return",
+  "chapter": "risk-1",
+  "title": "실질수익률",
+  "hanja": "實質收益率",
+  "en": "real return",
+  "one": "명목수익률에서 물가 상승을 빼 실제 구매력이 얼마나 늘었는지 나타낸 값으로, (1 + 명목) ÷ (1 + 물가상승률) − 1이다.",
+  "econ": "t234"
+ },
+ {
+  "id": "fx-return",
+  "chapter": "risk-1",
+  "title": "원화 환산 수익률",
+  "hanja": "원貨換算收益率",
+  "en": "currency-adjusted return",
+  "one": "외화 자산의 현지 통화 수익률에 환율 변화를 곱해 원화 기준으로 다시 계산한 수익률이다."
+ },
+ {
+  "id": "benchmark",
+  "chapter": "risk-1",
+  "title": "벤치마크",
+  "hanja": "",
+  "en": "benchmark",
+  "one": "내 수익률이 잘한 것인지 판단하려고 나란히 놓는 잣대 수익률이다. 내 수익률에서 이를 뺀 값이 초과수익이다."
+ },
+ {
+  "id": "volatility",
+  "chapter": "risk-2",
+  "title": "변동성",
+  "hanja": "變動性",
+  "en": "volatility",
+  "one": "수익률이 평균에서 얼마나 멀리 흩어지는지를 나타내는 값이다. 보통 표준편차로 잰다."
+ },
+ {
+  "id": "ann-vol",
+  "chapter": "risk-2",
+  "title": "연환산 변동성",
+  "hanja": "年換算 變動性",
+  "en": "annualized volatility",
+  "one": "월간이나 일간 표준편차를 한 해 단위로 바꾼 값이다. 기간이 서로 독립이라는 가정 아래 월간 값에는 √12, 일간 값에는 √252를 곱한다."
+ },
+ {
+  "id": "fat-tail",
+  "chapter": "risk-2",
+  "title": "두꺼운 꼬리",
+  "hanja": "",
+  "en": "fat tails",
+  "one": "아주 큰 움직임이 정규분포가 예상하는 것보다 훨씬 자주 일어나는 성질이다. 표준편차만으로 위험을 요약하면 드문 큰 손실을 작게 보게 된다.",
+  "econ": "t165"
+ },
+ {
+  "id": "mdd",
+  "chapter": "risk-2",
+  "title": "최대 낙폭",
+  "hanja": "最大 落幅",
+  "en": "maximum drawdown, MDD",
+  "one": "어느 기간 동안 앞선 최고점에서 그 뒤의 최저점까지 가장 크게 떨어진 비율이다."
+ },
+ {
+  "id": "recovery-gain",
+  "chapter": "risk-2",
+  "title": "회복 수익률",
+  "hanja": "回復 收益率",
+  "en": "recovery return",
+  "one": "떨어진 값이 원래 값으로 돌아가는 데 필요한 상승률이다. 손실이 L이면 1 ÷ (1 − L) − 1이어서, 50% 손실은 100% 상승이 있어야 되찾는다."
+ },
+ {
+  "id": "underwater",
+  "chapter": "risk-2",
+  "title": "회복 기간",
+  "hanja": "回復 期間",
+  "en": "drawdown duration, time to recovery",
+  "one": "최고점에서 떨어지기 시작한 날부터 그 최고점을 다시 넘을 때까지 걸린 시간이다."
+ },
+ {
+  "id": "vol-drag",
+  "chapter": "risk-2",
+  "title": "변동성 끌림",
+  "hanja": "變動性 끌림",
+  "en": "volatility drag",
+  "one": "산술평균 수익률이 같아도 흔들림이 클수록 복리로 쌓인 실제 수익률이 낮아지는 현상이다. 대략 산술평균에서 분산의 절반을 뺀 만큼이 된다.",
+  "econ": "t179"
+ },
+ {
+  "id": "sharpe",
+  "chapter": "risk-2",
+  "title": "샤프 비율",
+  "hanja": "샤프 比率",
+  "en": "Sharpe ratio",
+  "one": "위험 없는 수익률을 넘는 초과 수익을 변동성으로 나눈 값이다. 흔들림 한 단위당 받은 대가를 나타내지만 드문 큰 손실을 보지 못한다."
+ },
+ {
+  "id": "var-risk",
+  "chapter": "risk-2",
+  "title": "VaR",
+  "hanja": "危險價値",
+  "en": "value at risk, VaR",
+  "one": "정해 둔 기간과 확률 안에서 손실이 넘지 않을 것으로 보는 한도를 금액으로 나타낸 것이다. 그 선을 넘었을 때 얼마나 더 잃는지는 말하지 않는다.",
+  "econ": "t787"
+ },
+ {
+  "id": "portfolio-vol",
+  "chapter": "risk-3",
+  "title": "포트폴리오 변동성",
+  "hanja": "포트폴리오變動性",
+  "en": "portfolio volatility",
+  "one": "여러 자산을 함께 담은 묶음 전체의 수익률이 흔들리는 정도이다. 각 자산의 변동성뿐 아니라 자산끼리의 상관에 따라 달라진다."
+ },
+ {
+  "id": "covariance",
+  "chapter": "risk-3",
+  "title": "공분산",
+  "hanja": "共分散",
+  "en": "covariance",
+  "one": "두 자산의 수익률이 각자의 평균에서 함께 벗어나는 정도이다. 두 변동성의 곱으로 나누면 상관계수가 된다."
+ },
+ {
+  "id": "unsystematic-risk",
+  "chapter": "risk-3",
+  "title": "비체계적 위험",
+  "hanja": "非體系的危險",
+  "en": "unsystematic risk",
+  "one": "한 회사나 한 업종에만 생기는 일 때문에 생기는 흔들림이다. 서로 다른 종목을 여럿 담으면 크게 줄어든다."
+ },
+ {
+  "id": "systematic-risk",
+  "chapter": "risk-3",
+  "title": "체계적 위험",
+  "hanja": "體系的危險",
+  "en": "systematic risk",
+  "one": "경기, 금리, 전쟁처럼 시장 전체를 함께 흔드는 힘 때문에 생겨, 종목을 늘려도 없어지지 않는 흔들림이다.",
+  "econ": "t380"
+ },
+ {
+  "id": "asset-class-div",
+  "chapter": "risk-3",
+  "title": "자산군 분산",
+  "hanja": "資産群分散",
+  "en": "asset class diversification",
+  "one": "주식, 채권, 원자재처럼 값을 움직이는 원인이 다른 자산의 무리를 섞는 것이다. 위기 때는 무리 사이의 상관도 높아질 수 있다."
+ },
+ {
+  "id": "stock-bond-corr",
+  "chapter": "risk-3",
+  "title": "주식과 채권의 상관",
+  "hanja": "株式과 債券의 相關",
+  "en": "stock-bond correlation",
+  "one": "주식 수익률과 채권 수익률이 함께 움직이는 정도이다. 미국 자료에서 2000~2020년에는 음수였고 2022년에는 양수였다."
+ },
+ {
+  "id": "currency-div",
+  "chapter": "risk-3",
+  "title": "통화 분산",
+  "hanja": "通貨分散",
+  "en": "currency diversification",
+  "one": "여러 나라 통화로 값이 매겨지는 자산을 함께 들어 한 통화의 가치 변화에 묶이지 않게 하는 것이다. 환율은 손실을 덜기도 이익을 깎기도 한다.",
+  "econ": "t734"
+ },
+ {
+  "id": "portfolio-return",
+  "chapter": "risk-3",
+  "title": "포트폴리오 기대수익률",
+  "hanja": "포트폴리오期待收益率",
+  "en": "portfolio expected return",
+  "one": "묶음 전체에서 기대하는 수익률로, 각 자산의 기대수익률을 비중대로 평균한 값이다. 분산으로 높아지지 않는다."
+ },
+ {
+  "id": "emergency-fund",
+  "chapter": "risk-4",
+  "title": "비상자금",
+  "hanja": "非常資金",
+  "en": "emergency fund",
+  "one": "갑자기 생기는 지출에 대비해 값이 흔들리지 않고 바로 꺼낼 수 있는 곳에 따로 둔 돈이다. 투자금은 이 돈과 생활비를 뺀 나머지이다.",
+  "econ": "t476"
+ },
+ {
+  "id": "loss-budget",
+  "chapter": "risk-4",
+  "title": "손실 한도",
+  "hanja": "損失限度",
+  "en": "loss limit, risk budget",
+  "one": "계좌 전체에서 잃어도 생활과 계획이 무너지지 않는다고 미리 정한 금액이나 비율이다. 이를 가정한 최대 낙폭으로 나누면 비중의 상한이 나온다."
+ },
+ {
+  "id": "concentration-risk",
+  "chapter": "risk-4",
+  "title": "집중 위험",
+  "hanja": "集中危險",
+  "en": "concentration risk",
+  "one": "계좌의 큰 몫이 한 종목이나 한 자산에 몰려, 그 하나에 생긴 사고가 계좌 전체를 흔드는 위험이다."
+ },
+ {
+  "id": "effective-exposure",
+  "chapter": "risk-4",
+  "title": "실질 노출",
+  "hanja": "實質露出",
+  "en": "effective exposure",
+  "one": "계좌가 실제로 가격 움직임에 걸려 있는 금액을 자기 돈으로 나눈 값이다. 신용이나 증거금을 쓰면 넣은 돈보다 커진다.",
+  "econ": "t215"
+ },
+ {
+  "id": "stop-loss-rule",
+  "chapter": "risk-4",
+  "title": "손절 기준",
+  "hanja": "損切基準",
+  "en": "stop-loss rule",
+  "one": "손실이 어느 선에 닿으면 팔아 손실을 확정할지 미리 정한 규칙이다. 가격 기준과 계좌 기준이 있고, 비중과 짝을 이룬다."
+ },
+ {
+  "id": "kelly-criterion",
+  "chapter": "risk-4",
+  "title": "켈리 공식",
+  "hanja": "켈리 公式",
+  "en": "Kelly criterion",
+  "one": "이길 확률과 손익 크기를 안다고 할 때 같은 내기를 되풀이해 자산이 가장 빨리 불어나는 비중을 주는 식이다. 추정이 틀리기 쉬워 실제로는 상한의 참고로 쓰인다."
+ },
+ {
+  "id": "conc-div-tradeoff",
+  "chapter": "risk-4",
+  "title": "집중과 분산의 맞바꿈",
+  "hanja": "集中·分散",
+  "en": "concentration–diversification trade-off",
+  "one": "종목 수를 늘리면 한 회사의 사고가 주는 영향은 줄지만 결과가 시장 평균에 가까워지는 관계이다."
+ },
+ {
+  "id": "rebalancing",
+  "chapter": "risk-5",
+  "title": "재조정",
+  "hanja": "再調整",
+  "en": "rebalancing",
+  "one": "시장 움직임으로 달라진 자산 비중을 처음 정한 목표 비중으로 되돌리는 일이다."
+ },
+ {
+  "id": "rebal-calendar",
+  "chapter": "risk-5",
+  "title": "정기 재조정",
+  "hanja": "定期再調整",
+  "en": "calendar rebalancing",
+  "one": "비중 변화와 상관없이 미리 정한 날짜마다 목표 비중으로 맞추는 방식이다."
+ },
+ {
+  "id": "rebal-band",
+  "chapter": "risk-5",
+  "title": "범위 재조정",
+  "hanja": "範圍再調整",
+  "en": "threshold rebalancing",
+  "one": "목표 비중 둘레에 허용 범위를 두고 그 범위를 벗어났을 때만 맞추는 방식이다."
+ },
+ {
+  "id": "rebal-cost",
+  "chapter": "risk-5",
+  "title": "재조정 비용",
+  "hanja": "再調整費用",
+  "en": "rebalancing cost",
+  "one": "비중을 맞추려고 사고팔 때 드는 거래 비용과, 판 자산의 이익에 붙는 세금을 합친 것이다."
+ },
+ {
+  "id": "dca",
+  "chapter": "risk-5",
+  "title": "적립식 투자",
+  "hanja": "積立式投資",
+  "en": "dollar-cost averaging",
+  "one": "같은 금액을 정해진 간격으로 나누어 계속 사는 방식으로, 평균 매수 단가는 가격의 조화평균이 된다."
+ },
+ {
+  "id": "tax-account",
+  "chapter": "risk-5",
+  "title": "세제 혜택 계좌",
+  "hanja": "稅制惠澤計座",
+  "en": "tax-advantaged account",
+  "one": "조건을 지키는 대신 세금을 깎거나 미뤄 주는 계좌로, ISA와 연금계좌가 대표적이다."
+ },
+ {
+  "id": "trade-journal",
+  "chapter": "risk-5",
+  "title": "매매 일지",
+  "hanja": "賣買日誌",
+  "en": "trading journal",
+  "one": "거래마다 산 이유, 예상, 틀렸다고 인정할 기준, 결과를 적어 두는 기록이다."
+ },
+ {
+  "id": "trade-review",
+  "chapter": "risk-5",
+  "title": "복기",
+  "hanja": "復棋",
+  "en": "post-trade review",
+  "one": "끝난 거래를 다시 펼쳐 결과가 아니라 판단 과정과 기준을 지켰는지를 따져 보는 일이다.",
+  "econ": "t228"
+ },
+ {
+  "id": "behavioral-bias",
+  "chapter": "risk-5",
+  "title": "행동 편향",
+  "hanja": "行動偏向",
+  "en": "behavioral bias",
+  "one": "이익과 손실, 확률을 판단할 때 사람이 한쪽으로 되풀이해 치우치는 경향이다."
  }
 ];
