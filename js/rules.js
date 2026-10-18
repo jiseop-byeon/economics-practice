@@ -101,6 +101,14 @@ window.RULE_TOPICS = [
   {
     "id": "account",
     "name": "세제 혜택 계좌"
+  },
+  {
+    "id": "release",
+    "name": "경제지표 발표"
+  },
+  {
+    "id": "research",
+    "name": "조사분석자료"
   }
 ];
 
@@ -6381,6 +6389,244 @@ window.RULES = {
       {
         "name": "소득세법 제129조 (법령 사본, CaseNote)",
         "url": "https://casenote.kr/법령/소득세법/제129조"
+      }
+    ]
+  },
+  "kr-rel-cpi": {
+    "topic": "release",
+    "market": "KR",
+    "label": "소비자물가동향 발표 시기",
+    "value": "다음 달 초(대개 2~6일)",
+    "short": "대상 달의 다음 달 첫 주 무렵, 대개 2일에서 6일 사이에 국가데이터처가 발표한다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2025년 공표 일정표 기준 발표일은 2.5, 3.6, 4.2, 5.2, 6.3, 7.2, 8.5, 9.2, 10.2, 11.4, 12.2였고 12월분과 연간 자료는 12.31에 나왔다. 2026년 9월분은 2026.10.2(금)에 나왔다. 정확한 날짜는 해마다 공개되는 공표 일정으로 확인한다. 발표 시각은 원문으로 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "통계청(현 국가데이터처), 2025년 물가·고용·산업활동동향 보도계획",
+        "url": "https://mods.go.kr/ansk/file/schedule_2025.pdf"
+      },
+      {
+        "name": "국가데이터처 2026년 9월 소비자물가동향(KDI 경제교육·정보센터 게재), 2026.10.2",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=287770"
+      }
+    ]
+  },
+  "kr-rel-employment": {
+    "topic": "release",
+    "market": "KR",
+    "label": "고용동향 발표 시기",
+    "value": "다음 달 중순(대개 수요일)",
+    "short": "대상 달의 다음 달 중순, 대개 둘째나 셋째 주 수요일에 국가데이터처가 발표한다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2025년 공표 일정표 기준 발표일은 대부분 수요일(9~17일)이었고, 2.14와 10.17은 금요일이었다. 2026년 8월분은 2026.9.9(수)에 나왔다. 산업활동동향은 다음 달 말 무렵에 나온다.",
+    "sources": [
+      {
+        "name": "통계청(현 국가데이터처), 2025년 물가·고용·산업활동동향 보도계획",
+        "url": "https://mods.go.kr/ansk/file/schedule_2025.pdf"
+      },
+      {
+        "name": "국가데이터처 2026년 8월 고용동향(KDI 경제교육·정보센터 게재), 2026.9.9",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286555"
+      }
+    ]
+  },
+  "kr-rel-trade": {
+    "topic": "release",
+    "market": "KR",
+    "label": "수출입 동향 발표 시기",
+    "value": "매월 1일(전월 실적, 잠정)",
+    "short": "매월 1일 산업통상부가 전월 수출입 실적을 잠정치로 발표한다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "휴일에도 1일에 낸다(예: 2026.8.1 토요일). 확정치는 다음 달 중순 관세청이 발표하며, 수출입 신고의 철회·수정으로 잠정치와 차이가 날 수 있다. 발표 시각은 오전 9시라는 보도가 있으나 원문으로 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "e-나라지표, 수출입 동향 지표 정보(산업통상부 수출입과)",
+        "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1066"
+      },
+      {
+        "name": "산업통상부, 2026년 8월 수출입동향, 2026.9.1",
+        "url": "https://www.motir.go.kr/kor/article/ATCL4fcf3d8c6/794/view"
+      }
+    ]
+  },
+  "kr-rel-gdp": {
+    "topic": "release",
+    "market": "KR",
+    "label": "실질 국내총생산 속보·잠정 발표 시기",
+    "value": "속보: 분기 종료 후 약 3~4주(1·4·7·10월 하순) 08:00 · 잠정: 약 10주 뒤 08:00",
+    "short": "분기가 끝나고 3~4주 뒤(1·4·7·10월 하순) 오전 8시에 속보로 나오고, 약 10주 뒤 잠정치로 고쳐진다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "한국은행 SDDS 공표 일정 기준 2026년 속보는 1.22, 4.23, 7.23, 10.27, 잠정은 3.10, 6.9, 9.8, 12.9였고 시각은 모두 08:00(한국 시각)이다. 머리기사 성장률은 계절조정 전기 대비(연율 아님)이다.",
+    "sources": [
+      {
+        "name": "한국은행, IMF SDDS 대상 통계 공표 일정",
+        "url": "https://www.bok.or.kr/eng/stats/sddsTrgetStats/listStats.do?menuNo=400361"
+      }
+    ]
+  },
+  "kr-rel-mpc": {
+    "topic": "release",
+    "market": "KR",
+    "label": "금융통화위원회 기준금리 결정 회의",
+    "value": "연 8회(일정은 연 단위로 미리 공개)",
+    "short": "연 8회 정례 본회의에서 정하고, 회의 날짜는 해마다 미리 공개한다. 본회의는 보통 오전 9시에 시작하고, 직후 총재가 기자간담회를 연다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "경제 여건 급변 등으로 정책 대응이 필요하면 임시회의를 열 수 있다. 의결문(통화정책방향)은 본회의 뒤 발표된다.",
+    "sources": [
+      {
+        "name": "한국은행, 통화정책의 실제운영",
+        "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200293"
+      }
+    ]
+  },
+  "us-rel-jobs": {
+    "topic": "release",
+    "market": "US",
+    "label": "고용보고서(Employment Situation) 발표 시기",
+    "value": "기준 주(12일이 든 주) 종료 후 셋째 금요일 08:30 (미국 동부시간)",
+    "short": "기준 주(그달 12일이 든 주)가 끝난 뒤 셋째 금요일, 미국 동부시간 오전 8시 30분에 발표한다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "그 결과 대개 다음 달 첫째 금요일이 되지만 둘째 금요일로 밀리는 달도 있다. 그 금요일이 연방 공휴일이면 앞당겨진다. 2025년 연방정부 업무 중단 때는 일정이 크게 바뀌었다. 한국 시각으로는 서머타임 기간 밤 9시 30분, 그 밖에는 밤 10시 30분이다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), CES News Release Dates",
+        "url": "https://www.bls.gov/ces/publications/news-release-schedule.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), Employment Situation 발표 일정",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+      }
+    ]
+  },
+  "us-rel-cpi": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 소비자물가지수(CPI) 발표 시기",
+    "value": "다음 달 중순 무렵(동부시간 오전 8시 30분)",
+    "short": "대상 달의 다음 달 중순 무렵, 미국 동부시간 오전 8시 30분에 노동통계국이 발표한다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "고정된 날짜 규칙은 없고 연간 일정으로 미리 공개한다(예: 2026.11.10, 12.10, 2027.1.13 모두 08:30). 한국 시각으로는 서머타임 기간 밤 9시 30분, 그 밖에는 밤 10시 30분이다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), CPI 발표 일정",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+      }
+    ]
+  },
+  "us-rel-gdp": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 국내총생산(GDP) 발표 순서",
+    "value": "속보: 분기 종료 후 약 1개월 · 2차·3차 추정: 그 뒤 매달 · 08:30 (미국 동부시간)",
+    "short": "분기가 끝나고 약 한 달 뒤 속보를 내고, 이어 매달 2차·3차 추정으로 고친다. 발표는 미국 동부시간 오전 8시 30분이다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "분기 성장률은 계절조정 연율로 발표한다. 2026년 3분기는 속보 10.29, 2차 11.25, 3차 12.23 일정이 공개되어 있다.",
+    "sources": [
+      {
+        "name": "미국 경제분석국(BEA), Release Schedule",
+        "url": "https://www.bea.gov/news/schedule"
+      },
+      {
+        "name": "미국 경제분석국(BEA), What to know about GDP",
+        "url": "https://www.bea.gov/resources/learning-center/what-to-know-gdp"
+      }
+    ]
+  },
+  "us-rel-fomc": {
+    "topic": "release",
+    "market": "US",
+    "label": "연방공개시장위원회(FOMC) 회의와 발표 시각",
+    "value": "연 8회 · 성명 14:00, 기자회견 약 14:30 (미국 동부시간) · 의사록 3주 뒤",
+    "short": "연 8회 정례회의에서 정한다. 결정 성명은 회의 마지막 날 미국 동부시간 오후 2시에 나오고, 의장 기자회견이 약 30분 뒤 이어지며, 의사록은 3주 뒤에 공개된다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "필요하면 정례회의 밖의 회의를 연다. 3·6·9·12월 회의에는 경제전망 요약(SEP)이 함께 나온다. 2013년 3월 발표로 모든 정례회의 성명이 오후 2시로 정해졌다. 한국 시각으로는 서머타임 기간 다음 날 새벽 3시, 그 밖에는 새벽 4시이다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, FOMC Meeting calendars",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      },
+      {
+        "name": "미국 연방준비제도 보도자료, 2013.3.13",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20130313a.htm"
+      }
+    ]
+  },
+  "us-dst": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 서머타임 기간",
+    "value": "3월 둘째 일요일부터 11월 첫째 일요일까지",
+    "short": "3월 둘째 일요일부터 11월 첫째 일요일까지(현지 오전 2시에 바뀜)",
+    "effective": "2007-03-11",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "2005년 에너지정책법으로 정해져 2007년부터 적용되었다. 이 기간 미국 동부와 한국의 시차는 13시간, 그 밖에는 14시간이다. 한국은 서머타임을 쓰지 않는다.",
+    "sources": [
+      {
+        "name": "미국 국립표준기술연구소(NIST), Daylight Saving Time",
+        "url": "https://www.nist.gov/node/395311"
+      }
+    ]
+  },
+  "kr-research-trade-ban": {
+    "topic": "research",
+    "market": "KR",
+    "label": "조사분석자료 공표 전후 자기계산 매매 금지 (자본시장법 제71조 제2호)",
+    "value": "조사분석자료 내용이 사실상 확정된 때부터 공표 후 24시간이 지나기 전까지 대상 금융투자상품의 자기계산 매매 금지",
+    "short": "리포트 내용이 사실상 정해진 때부터 공표 후 24시간이 지나기 전까지 그 종목을 자기 돈으로 사고팔 수 없다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "불건전 영업행위 금지 조항이다. 대통령령으로 정한 예외가 있다. 조문은 법령 원문 수록 사이트에서 대조했다.",
+    "sources": [
+      {
+        "name": "자본시장법 제71조 조문 (케이스노트 수록)",
+        "url": "https://casenote.kr/법령/자본시장과_금융투자업에_관한_법률/제71조"
+      }
+    ]
+  },
+  "kr-research-ib-pay": {
+    "topic": "research",
+    "market": "KR",
+    "label": "조사분석 담당자에 대한 기업금융 연동 성과보수 금지 (자본시장법 제71조 제3호)",
+    "value": "조사분석자료 작성 담당자에게 대통령령으로 정하는 기업금융업무와 연동된 성과보수 지급 금지",
+    "short": "애널리스트에게 기업금융 업무와 연동된 성과보수를 줄 수 없다",
+    "checked": "2026-10-18",
+    "level": "official",
+    "note": "기업금융업무의 범위는 시행령이 정한다. 조문은 법령 원문 수록 사이트에서 대조했다.",
+    "sources": [
+      {
+        "name": "자본시장법 제71조 조문 (케이스노트 수록)",
+        "url": "https://casenote.kr/법령/자본시장과_금융투자업에_관한_법률/제71조"
+      }
+    ]
+  },
+  "kr-research-gap": {
+    "topic": "research",
+    "market": "KR",
+    "label": "목표주가 괴리율 공시",
+    "value": "조사분석자료에 목표주가와 실제 주가(해당 기간 평균주가 등)의 차이를 백분율로 표시",
+    "short": "목표주가와 실제 주가의 차이인 괴리율을 함께 적어야 한다",
+    "effective": "2017-09-01",
+    "checked": "2026-10-18",
+    "level": "press",
+    "note": "2017년 금융감독원의 리서치 관행 개선에 따라 도입되었다. 목표주가를 중간에 바꾸면 새 보고서 발간 전날까지 괴리율을 공시한다고 보도되었다. 근거 조항(금융투자협회 규정 등)의 원문은 대조하지 못했다.",
+    "sources": [
+      {
+        "name": "시대경제, 2017-08-10",
+        "url": "https://www.sidae.com/article/2017080216278044615"
+      },
+      {
+        "name": "시사경제(sateconomy), 2019-01-20",
+        "url": "https://www.sateconomy.co.kr/news/view/179589241193687"
       }
     ]
   }

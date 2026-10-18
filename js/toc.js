@@ -69,8 +69,8 @@ window.CHAPTERS = [
   { id: "risk-4", part: "risk", status: "ready", title: "한 자산에 넣는 비중", dek: "잃어도 버틸 수 있는 크기를 먼저 정하는 계산." },
   { id: "risk-5", part: "risk", status: "ready", title: "재조정과 기록", dek: "비중을 다시 맞추는 이유, 매매 일지와 복기." },
 
-  { id: "reading-1", part: "reading", status: "planned", title: "경제지표 발표 일정", dek: "언제 무엇이 발표되고, 시장은 무엇과 비교해 움직이는지." },
-  { id: "reading-2", part: "reading", status: "planned", title: "리포트 읽는 순서", dek: "목표주가와 의견보다 먼저 보는 가정과 숫자." },
+  { id: "reading-1", part: "reading", status: "ready", title: "경제지표 발표 일정", dek: "언제 무엇이 발표되고, 시장은 무엇과 비교해 움직이는지." },
+  { id: "reading-2", part: "reading", status: "ready", title: "리포트 읽는 순서", dek: "목표주가와 의견보다 먼저 보는 가정과 숫자." },
 
   { id: "cases-1", part: "cases", status: "planned", title: "불완전판매", dek: "설명을 제대로 듣지 못하고 산 상품, 분쟁조정에서 무엇이 갈렸나." },
   { id: "cases-2", part: "cases", status: "planned", title: "리딩방과 투자 사기", dek: "되풀이되는 수법과 확인 방법." },

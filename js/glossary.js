@@ -3031,5 +3031,156 @@ window.GLOSSARY = [
   "hanja": "行動偏向",
   "en": "behavioral bias",
   "one": "이익과 손실, 확률을 판단할 때 사람이 한쪽으로 되풀이해 치우치는 경향이다."
+ },
+ {
+  "id": "release-calendar",
+  "chapter": "reading-1",
+  "title": "경제지표 발표 일정",
+  "hanja": "經濟指標 發表 日程",
+  "en": "economic release calendar",
+  "one": "통계 기관이 어느 지표를 언제 어느 시각에 발표할지 미리 공개해 둔 달력이다."
+ },
+ {
+  "id": "jobs-report",
+  "chapter": "reading-1",
+  "title": "고용보고서",
+  "hanja": "雇用報告書",
+  "en": "Employment Situation report",
+  "one": "미국 노동통계국이 매달 일자리 증감, 실업률, 임금을 묶어 내는 고용 현황 발표이다.",
+  "econ": "t403"
+ },
+ {
+  "id": "policy-meeting",
+  "chapter": "reading-1",
+  "title": "통화정책 회의",
+  "hanja": "通貨政策 會議",
+  "en": "monetary policy meeting",
+  "one": "중앙은행이 기준금리를 정하려고 미리 정한 일정에 따라 여는 정례 회의이다.",
+  "econ": "t139"
+ },
+ {
+  "id": "data-consensus",
+  "chapter": "reading-1",
+  "title": "시장 예상치",
+  "hanja": "市場 豫想値",
+  "en": "consensus forecast",
+  "one": "발표 전에 여러 분석가의 전망을 모아 정리한 대표값으로, 컨센서스라고도 한다."
+ },
+ {
+  "id": "data-surprise",
+  "chapter": "reading-1",
+  "title": "서프라이즈",
+  "hanja": "",
+  "en": "surprise",
+  "one": "발표된 지표가 시장 예상치에서 벗어난 정도이다."
+ },
+ {
+  "id": "advance-estimate",
+  "chapter": "reading-1",
+  "title": "속보치와 수정치",
+  "hanja": "速報値 · 修正値",
+  "en": "advance estimate and revision",
+  "one": "자료가 다 모이기 전 먼저 내는 첫 추정과, 자료가 더 모인 뒤 고쳐 낸 숫자이다.",
+  "econ": "t074"
+ },
+ {
+  "id": "mom-yoy",
+  "chapter": "reading-1",
+  "title": "전월비·전년비",
+  "hanja": "前月比 · 前年比",
+  "en": "month-over-month, year-over-year",
+  "one": "지난달과 비교한 변화율과 지난해 같은 달과 비교한 변화율이다.",
+  "econ": "t347"
+ },
+ {
+  "id": "seasonal-adj",
+  "chapter": "reading-1",
+  "title": "계절조정",
+  "hanja": "季節調整",
+  "en": "seasonal adjustment",
+  "one": "해마다 같은 때 되풀이되는 움직임을 통계적으로 걷어 내는 일이다.",
+  "econ": "t038"
+ },
+ {
+  "id": "us-dst",
+  "chapter": "reading-1",
+  "title": "서머타임",
+  "hanja": "",
+  "en": "daylight saving time",
+  "one": "여름철에 시계를 한 시간 앞당기는 제도로, 미국 발표의 한국 시각을 철마다 바꾼다."
+ },
+ {
+  "id": "research-report",
+  "chapter": "reading-2",
+  "title": "조사분석자료",
+  "hanja": "調査分析資料",
+  "en": "research report",
+  "one": "증권회사가 특정 종목이나 산업의 가치를 분석해 투자의견과 목표주가 등을 담아 내놓는 자료이다."
+ },
+ {
+  "id": "target-price",
+  "chapter": "reading-2",
+  "title": "목표주가",
+  "hanja": "目標株價",
+  "en": "target price",
+  "one": "애널리스트가 일정 기간 뒤 적정하다고 보는 주가로, 흔히 추정 EPS에 목표 PER을 곱해 계산한다.",
+  "econ": "t583"
+ },
+ {
+  "id": "earnings-estimate",
+  "chapter": "reading-2",
+  "title": "실적 추정",
+  "hanja": "實績推定",
+  "en": "earnings estimate",
+  "one": "판매량, 가격, 이익률 같은 가정을 바탕으로 앞으로의 매출과 이익을 미리 계산한 값이다."
+ },
+ {
+  "id": "conflict-of-interest",
+  "chapter": "reading-2",
+  "title": "이해상충",
+  "hanja": "利害相衝",
+  "en": "conflict of interest",
+  "one": "리포트를 쓰는 증권회사의 이익과 읽는 투자자의 이익이 어긋날 수 있는 상태이다.",
+  "econ": "t563"
+ },
+ {
+  "id": "earnings-consensus",
+  "chapter": "reading-2",
+  "title": "컨센서스",
+  "hanja": "",
+  "en": "consensus estimate",
+  "one": "여러 증권회사의 실적 추정이나 목표주가를 모아 낸 평균값 또는 중간값이다."
+ },
+ {
+  "id": "earnings-surprise",
+  "chapter": "reading-2",
+  "title": "실적 서프라이즈",
+  "hanja": "實績서프라이즈",
+  "en": "earnings surprise",
+  "one": "발표된 실적이 컨센서스와 다른 정도이다."
+ },
+ {
+  "id": "assumption-check",
+  "chapter": "reading-2",
+  "title": "원자료 대조",
+  "hanja": "原資料對照",
+  "en": "checking against primary sources",
+  "one": "리포트의 가정을 사업보고서, 분기보고서, 잠정실적 공시 같은 회사의 법정 숫자와 맞춰 보는 일이다."
+ },
+ {
+  "id": "source-tier",
+  "chapter": "reading-2",
+  "title": "출처 등급",
+  "hanja": "出處等級",
+  "en": "source hierarchy",
+  "one": "정보가 원본에서 몇 단계 떨어져 있는지에 따라 원자료, 공식 발표, 보도, 의견으로 믿는 정도를 나누는 방법이다."
+ },
+ {
+  "id": "fact-interpretation",
+  "chapter": "reading-2",
+  "title": "사실과 해석",
+  "hanja": "事實과 解釋",
+  "en": "fact vs. interpretation",
+  "one": "기사 문장을 확인할 수 있는 일과 그 일에 대한 누군가의 판단으로 나누어 읽는 방법이다."
  }
 ];
