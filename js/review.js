@@ -1,7 +1,7 @@
 // 점검 묶음. 규칙마다 처음 맞는 묶음을 따른다(ids → pattern → topics 순). days는 다시 확인할 추천 주기이다.
 window.REVIEW_GROUPS = [
   { id: "mortgage", name: "주택 대출 규제", days: 90, why: "대책이 나올 때마다 LTV·DSR·스트레스 금리·한도가 바뀐다.", topics: ["mortgage"] },
-  { id: "margin", name: "파생상품 증거금률", days: 90, why: "한국거래소가 매달 재산정한다. 본문 예시는 가정 숫자로 계산한다.", ids: ["kr-fut-k200-im", "kr-fut-k200-mm", "kr-fut-k200-clearing"] },
+  { id: "margin", name: "파생상품 증거금률", days: 90, why: "한국거래소가 매달 재산정한다. 본문 예시는 계산에 쓴 증거금률과 날짜를 밝혀 두었다.", ids: ["kr-fut-k200-im", "kr-fut-k200-mm", "kr-fut-k200-clearing"] },
   { id: "entry", name: "레버리지 상품·공매도·파생 진입 요건", days: 180, why: "2025~2026년에 여러 번 바뀌었다.", pattern: "^kr-(etp|short|deriv-(edu|mock|deposit)|ovs-deriv)" },
   { id: "re-tax", name: "부동산 세금", days: 180, why: "여름 세제개편안과 연말·연초 개정 시행 때 바뀐다.", topics: ["re-tax"] },
   { id: "re-rules", name: "청약·임대차·거래 절차", days: 180, why: "시행령과 규칙 개정이 해마다 몇 번씩 있다.", topics: ["subscription", "lease", "re-deal"] },
