@@ -153,6 +153,18 @@ window.RULE_TOPICS = [
   {
     "id": "pension",
     "name": "연금"
+  },
+  {
+    "id": "indicator",
+    "name": "경제지표의 구성"
+  },
+  {
+    "id": "fed-liquidity",
+    "name": "중앙은행 유동성 운영"
+  },
+  {
+    "id": "signal",
+    "name": "시장 신호 지표"
   }
 ];
 
@@ -11585,6 +11597,1161 @@ window.RULES = {
       {
         "name": "국가법령정보센터, 소득세법 (법률 제21221호, 2025.12.23 공포, 2026.1.1 시행본, 법령 원문 XML)",
         "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=XML&ID=001565"
+      }
+    ]
+  },
+  "us-emp-ces-sample": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "사업체 조사(CES) 표본과 기준 기간",
+    "value": "사업체·정부기관 약 11만 9천 곳(사업장 약 62만 2천 곳) · 12일이 든 급여 기간",
+    "short": "사업체와 정부기관 약 11만 9천 곳, 사업장으로는 약 62만 2천 곳이고, 그달 12일이 든 급여 기간에 급여를 받은 사람을 센다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "기술 설명 기준. 표본 수는 해마다 조금씩 바뀐다. 일자리를 여럿 가진 사람은 급여 장부마다 따로 잡히고, 법인이 아닌 자영업자, 농업 종사자, 무급 가족 종사자, 가사 근로자, 무급 휴직자는 빠진다. 나이 제한은 없다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), The Employment Situation 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/empsit.tn.htm"
+      }
+    ]
+  },
+  "us-emp-cps-sample": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "가계 조사(CPS) 표본과 기준 주",
+    "value": "가구 약 6만 · 12일이 든 주 · 16세 이상",
+    "short": "가계 조사는 약 6만 가구를 대상으로, 그달 12일이 든 한 주 동안의 활동을 16세 이상에게 묻는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "자영업자(법인이 아닌 경우), 농업 종사자, 무급 가족 종사자, 가사 근로자, 무급 휴직자를 취업자로 넣고, 일자리가 여럿이어도 한 사람은 한 번만 센다. 경제활동참가율은 인구 가운데 경제활동인구의 비율이다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), The Employment Situation 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/empsit.tn.htm"
+      }
+    ]
+  },
+  "us-emp-ces-ci": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "비농업 고용 전월 대비 증감의 90% 신뢰구간",
+    "value": "약 ±12만 2천 개",
+    "short": "노동통계국 기술 설명에 따르면 한 달 증감의 90% 신뢰구간은 약 ±12만 2천 개이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "기술 설명의 예: 5만 개 증가가 발표되면 범위는 −7.2만~+17.2만 개. 표본 오차만 따진 값이며, 출생·소멸 모형 등에서 생기는 비표본 오차는 들어 있지 않다. 표본 설계가 바뀌면 값도 바뀐다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), The Employment Situation 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/empsit.tn.htm"
+      }
+    ]
+  },
+  "us-emp-cps-ci": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "실업률 전월 대비 변화의 90% 신뢰구간",
+    "value": "약 ±0.3%포인트",
+    "short": "노동통계국 기술 설명에 따르면 실업률 한 달 변화의 90% 신뢰구간은 약 ±0.3%포인트이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "기술 설명은 실업률이 약 6%일 때 실업자 수 전월 변화의 신뢰구간을 약 ±42만 5천 명으로 든다. 실업률 0.1%포인트 변화는 대개 통계로 구분되지 않는다. 표본 설계가 바뀌면 값도 바뀐다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), The Employment Situation 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/empsit.tn.htm"
+      }
+    ]
+  },
+  "us-emp-cps-popcontrol": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "가계 조사 인구 추정 조정 시점",
+    "value": "해마다 1월 자료에 반영 · 12월 이전 숫자는 고치지 않음",
+    "short": "새 인구 추정은 해마다 1월 자료에 들어가고 그 이전 달은 고치지 않으므로, 12월과 1월 사이의 취업자·경제활동인구 수준 변화에는 조정분이 섞인다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "노동통계국은 조정 효과를 보여 주려고 새 인구 기준으로 다시 계산한 12월 숫자를 따로 내고, 2025·2026년에는 수준 단절을 걷어 낸 실험 계열도 냈다. 비율(실업률, 참가율)에 주는 영향은 해마다 다르고 대개 수준보다 작다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), Experimental series accounting for January 2026 population control effects",
+        "url": "https://www.bls.gov/cps/methods/population-controls/experimental-series-accounting-for-january-2026-population-control-effects.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), CPS 2025 population controls 공지",
+        "url": "https://www.bls.gov/cps/notices/2025/population-controls.htm"
+      }
+    ]
+  },
+  "us-emp-ahe": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "평균 시간당 임금의 범위",
+    "value": "민간 비농업 전체 근로자 · 생산·비관리직 근로자 두 계열",
+    "short": "사업체 조사에서 민간 부문만 대상으로, 전체 근로자와 생산·비관리직 근로자 두 계열을 따로 낸다. 머리기사는 대개 전체 근로자 계열이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "정부 부문은 시간과 임금 자료에 들어가지 않는다. 평균이므로 일자리 구성이 바뀌면 개인 시급이 그대로여도 움직인다. 구성 효과를 덜 받는 임금 지표로는 같은 노동통계국의 고용비용지수(분기)가 있다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), The Employment Situation 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/empsit.tn.htm"
+      }
+    ]
+  },
+  "us-emp-ces-revision": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "비농업 고용의 정기 수정과 벤치마크 수정",
+    "value": "매달 앞선 두 달 수정 · 해마다 3월 기준 벤치마크(이듬해 2월 1월분 발표 때 반영, 예비치는 8~9월)",
+    "short": "매달 앞선 두 달 치를 고치고, 해마다 한 번 3월 수준을 실업보험 납부 기록의 일자리 수에 맞춰 고친다. 예비 추정은 그해 8~9월에 나오고, 실제 계열은 이듬해 2월 1월분 고용보고서와 함께 바뀐다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "한 달 숫자는 두 차례 수정을 거쳐야 확정된다. 예비 발표일은 2024.8.21, 2025.9.9, 2026.8.28이었다. 예비 발표 때 기존 계열은 고치지 않는다. 계절조정 계열은 해마다 5년 치를 다시 계산한다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), The Employment Situation 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/empsit.tn.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), CES National Benchmark Article",
+        "url": "https://www.bls.gov/web/empsit/cesbmart.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), 2024 preliminary benchmark revision 공지",
+        "url": "https://www.bls.gov/ces/notices/2024/2024-preliminary-benchmark-revision.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), CES Preliminary Benchmark",
+        "url": "https://www.bls.gov/web/empsit/cesprelbmk.htm"
+      }
+    ]
+  },
+  "us-emp-benchmark-avg": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "벤치마크 수정의 평소 크기",
+    "value": "최근 10년 평균 절댓값 0.2%(범위 0.05% 미만~0.4%)",
+    "short": "노동통계국에 따르면 2025년 벤치마크 직전 10년 동안 총 비농업 고용의 연간 벤치마크 수정은 절댓값으로 평균 0.2%였고, 0.05% 미만에서 0.4%까지였다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "2025년 3월 벤치마크 기사 기준. 계절조정 전 수정(천 개): 2015 −172, 2016 −81, 2017 +135, 2018 −16, 2019 −489, 2020 −121, 2021 −7, 2022 +506, 2023 −187, 2024 −598, 2025 −861. 계절조정 기준 최종 수정은 2024년 −589, 2025년 −898이었다. 2025년의 −0.6%(계절조정)는 2009년 이후 가장 컸다는 보도가 있다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), CES National Benchmark Article (March 2025 benchmark)",
+        "url": "https://www.bls.gov/web/empsit/cesbmart.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), CES benchmark announcement (March 2024 final)",
+        "url": "https://www.bls.gov/ces/notices/2025/ces-benchmark-announcement-revisions-to-total-nonfarm-employment.htm"
+      }
+    ]
+  },
+  "us-emp-claims-release": {
+    "topic": "release",
+    "market": "US",
+    "label": "주간 실업수당 청구 발표",
+    "value": "매주 목요일 08:30 (미국 동부시간) · 직전 토요일로 끝난 주의 신규 청구 속보",
+    "short": "매주 목요일 미국 동부시간 오전 8시 30분에 직전 토요일로 끝난 주의 신규 청구를 속보로 낸다. 계속 청구는 그보다 한 주 앞선 주의 숫자이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "계절조정 숫자와 원계열을 함께 싣고, 4주 이동평균과 전주 수정치를 붙인다. 목요일이 연방 공휴일이면 날짜가 옮겨진다. 한국 시각으로는 서머타임 기간 밤 9시 30분, 그 밖에는 밤 10시 30분이다. 2026.10.29(목) 발표문의 구성으로 확인했다.",
+    "sources": [
+      {
+        "name": "미국 노동부(DOL), Unemployment Insurance Weekly Claims 보도자료",
+        "url": "https://www.dol.gov/ui/data.pdf"
+      }
+    ]
+  },
+  "us-emp-jolts-def": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "구인·이직 조사(JOLTS)의 기준",
+    "value": "사업장 약 2만 1천 곳 · 구인: 그달 마지막 영업일 기준 · 채용·이직: 그달 한 달 동안",
+    "short": "약 2만 1천 곳의 사업장에 묻고, 구인은 그달 마지막 영업일에 열려 있는 자리를, 채용과 이직은 그달 한 달 동안의 건수를 센다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "구인으로 세려면 자리가 실제로 있고, 30일 안에 일을 시작할 수 있으며, 사업장 밖에서 적극적으로 사람을 찾고 있어야 한다. 이직은 자발적 이직, 해고, 기타로 나눈다. 구인율은 구인 ÷ (고용 + 구인), 채용·이직률은 건수 ÷ 고용이다. 수준은 매달 사업체 조사 고용에 맞추고, 해마다 1월분 발표 때 5년 치를 고친다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), JOLTS 기술 설명(Technical Note)",
+        "url": "https://www.bls.gov/news.release/jolts.tn.htm"
+      }
+    ]
+  },
+  "us-emp-jolts-release": {
+    "topic": "release",
+    "market": "US",
+    "label": "구인·이직 조사(JOLTS) 발표 시기",
+    "value": "대상 달이 끝나고 약 한 달 뒤 10:00 (미국 동부시간)",
+    "short": "대상 달이 끝나고 약 한 달 뒤, 미국 동부시간 오전 10시에 노동통계국이 낸다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "고정 날짜 규칙은 없고 연간 일정으로 미리 공개한다(예: 2026년 10월분은 2026.12.1 10:00). 한국 시각으로는 서머타임 기간 밤 11시, 그 밖에는 자정이다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), JOLTS 발표 일정",
+        "url": "https://www.bls.gov/schedule/news_release/jolts.htm"
+      }
+    ]
+  },
+  "kr-emp-survey-week": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "경제활동인구조사의 조사 대상 주간",
+    "value": "매월 15일이 든 주(일~토) · 15세 이상 · 조사는 그다음 한 주",
+    "short": "매월 15일이 든 한 주(일요일~토요일)의 활동을 그다음 한 주 동안 묻고, 대상은 그달 15일 현재 15세 이상인 사람이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "국가데이터처 2026년 통계조사 일정표에 조사 기간이 '매월 15일이 포함된 주의 다음 1주간'으로 적혀 있다. 미국 가계 조사의 기준 주(12일이 든 주)와 사흘 차이가 나므로, 같은 달이라도 기준 주가 다른 주가 될 수 있다. 표본 가구 수는 원문으로 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "국가데이터처, 2026년 통계조사 일정",
+        "url": "https://mods.go.kr/ksows/ansk/statSurv/kosSurveySch2026.pdf"
+      },
+      {
+        "name": "e-나라지표, 취업자 수/실업률 추이 지표 정보",
+        "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1063"
+      }
+    ]
+  },
+  "kr-emp-def": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "고용동향의 취업자·실업자 기준",
+    "value": "취업자: 조사 대상 주간에 수입 목적으로 1시간 이상 일한 사람 · 실업자: 지난 4주간 적극 구직, 수입 있는 일을 하지 않은 사람",
+    "short": "조사 대상 주간에 수입을 목적으로 1시간 이상 일한 사람이 취업자, 그 주간을 포함한 지난 4주 동안 적극적으로 일자리를 찾았으나 수입 있는 일을 하지 않은 사람이 실업자이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "실업률 = 실업자 ÷ 경제활동인구 × 100. 국제노동기구(ILO) 기준을 따른다. 주당 18시간 이상 일한 무급가족종사자와 일시휴직자도 취업자에 들어간다는 설명은 서울시 열린데이터광장의 통계 설명으로 확인했다(level press에 해당).",
+    "sources": [
+      {
+        "name": "e-나라지표, 취업자 수/실업률 추이 지표 정보",
+        "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1063"
+      },
+      {
+        "name": "서울 열린데이터광장, 취업시간별 취업자 통계 설명",
+        "url": "https://data.seoul.go.kr/dataList/DT201004D010010/S/2/datasetView.do"
+      }
+    ]
+  },
+  "us-cpi-weights": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "미국 CPI-U 주요 항목의 몫 (2025년 12월 상대 중요도, 2024년 가중치)",
+    "value": "주거비 35.6% (자가 등가 임대료 26.2%, 임대료 7.8%) · 식료품 13.7% · 에너지 6.4% · 식료품·에너지 제외 79.9%",
+    "short": "주거비가 약 35.6%(그 가운데 자가 등가 임대료 26.2%, 임대료 7.8%), 식료품 13.7%, 에너지 6.4%, 이 둘을 뺀 근원 품목이 79.9%이다(2025년 12월 기준)",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "BLS 상대 중요도 표 1(2025년 12월, 2024년 가중치)의 CPI-U 값이다. 상대 중요도는 가격 변화에 따라 달마다 조금씩 움직이고, 가중치는 해마다 바뀐다. 같은 표에서 근원 상품 19.2%, 에너지 제외 서비스 60.7%, 의료 서비스 6.9%였다. CPI-W의 주거비 몫은 33.6%였다. CPI-U는 미국 인구의 90% 이상을 대표한다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), Relative importance of components in the CPI, December 2025",
+        "url": "https://www.bls.gov/cpi/tables/relative-importance/2025.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), CPI Questions and Answers",
+        "url": "https://www.bls.gov/cpi/questions-and-answers.htm"
+      }
+    ]
+  },
+  "us-cpi-weight-update": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "미국 CPI 가중치 갱신 주기",
+    "value": "해마다 갱신, 2년 전 한 해의 소비 지출 기준 (2023년 1월 지수부터)",
+    "short": "2023년부터 해마다 바뀌고, 2년 전 한 해의 소비자 지출 조사로 정한다",
+    "effective": "2023-01-01",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "예: 2023년 지수는 2021년 지출을 가중치로 썼다. 가중치는 소비자지출조사(CE)에서 온다. 그 전에는 2년 묶음 지출로 2년마다 바꾸었다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), Relative importance and weight information for the CPI",
+        "url": "https://www.bls.gov/cpi/tables/relative-importance/home.htm"
+      }
+    ]
+  },
+  "us-cpi-rent-sample": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "미국 CPI 임대료·자가 등가 임대료 조사 방식",
+    "value": "표본을 6개 묶음으로 나눠 같은 집을 6개월마다 조사 · 한 달 변화 = 6개월 변화의 6제곱근 · 집값·대출이자 미사용",
+    "short": "BLS는 임대 주택 표본을 여섯 묶음으로 나눠 같은 집을 6개월마다 다시 조사하고, 6개월 동안의 변화를 6제곱근으로 나눠 한 달 변화로 삼는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "자가 등가 임대료도 실제 임대 주택의 임대료(수도·전기 등을 뺀 순임대료)로 잰다. 자가 주택의 가격, 대출 이자, 재산세는 쓰지 않는다. 자가 등가 임대료의 가중치는 소비자지출조사에서 집주인에게 '지금 남에게 빌려준다면 월 임대료가 얼마일지'를 물어 정한다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), How the CPI measures price change of Owners' equivalent rent and Rent",
+        "url": "https://www.bls.gov/cpi/factsheets/owners-equivalent-rent-and-rent.htm"
+      }
+    ]
+  },
+  "us-cpi-seasonal-revision": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "미국 CPI 계절조정 계수 수정",
+    "value": "해마다 1월 CPI 발표(2월) 때 다시 계산, 최근 5년의 계절조정 계열을 수정",
+    "short": "BLS는 해마다 1월 CPI를 발표할 때 계절조정 계수를 다시 계산해 최근 5년 치 계절조정 계열을 고친다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "그보다 오래된 계절조정 지수는 확정으로 본다. 계절조정을 하지 않은 지수는 고치지 않는다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), Seasonal adjustment in the CPI",
+        "url": "https://www.bls.gov/cpi/seasonal-adjustment/"
+      }
+    ]
+  },
+  "us-rel-pce": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 PCE 물가지수(개인소득·지출 보고서) 발표 시기",
+    "value": "대상 달의 다음 달 하순 무렵 08:30 (미국 동부시간)",
+    "short": "개인소득·지출(Personal Income and Outlays) 보고서에 실려 대상 달의 다음 달 하순 무렵, 미국 동부시간 오전 8시 30분에 나온다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "BEA 일정표 기준 2026년 10월분은 2026.11.25, 11월분은 2026.12.23에 나오며, 두 날 모두 분기 GDP 추정 발표와 같은 날 같은 시각이다. 같은 달 CPI보다 2주 남짓 늦다. 한국 시각으로는 서머타임 기간 밤 9시 30분, 그 밖에는 밤 10시 30분이다. BEA 일정표는 시각을 적되 시간대 표기는 보지 못했으나 BEA 발표는 미국 동부시간 기준이다.",
+    "sources": [
+      {
+        "name": "미국 경제분석국(BEA), Release Schedule",
+        "url": "https://www.bea.gov/news/schedule"
+      },
+      {
+        "name": "미국 경제분석국(BEA), Personal Consumption Expenditures Price Index",
+        "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+      }
+    ]
+  },
+  "us-rel-ppi": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 생산자물가지수(PPI) 발표 시기",
+    "value": "대상 달의 다음 달 중순 무렵 08:30 (미국 동부시간)",
+    "short": "대상 달의 다음 달 중순 무렵, 미국 동부시간 오전 8시 30분에 발표한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "고정된 날짜 규칙은 없고 연간 일정으로 공개한다(예: 2026년 10월분 2026.11.13, 11월분 12.15, 12월분 2027.1.14, 모두 08:30). 같은 달 CPI와 며칠 사이로 나오며, CPI보다 먼저 나오는 달도 있다.",
+    "sources": [
+      {
+        "name": "미국 노동통계국(BLS), PPI 발표 일정",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm"
+      },
+      {
+        "name": "미국 노동통계국(BLS), PPI Overview",
+        "url": "https://www.bls.gov/ppi/overview.htm"
+      }
+    ]
+  },
+  "us-rel-umich": {
+    "topic": "release",
+    "market": "US",
+    "label": "미시간 대학교 소비자 조사 발표",
+    "value": "한 달 두 번(예비치·확정치) · 10:00 (미국 동부시간)",
+    "short": "한 달에 두 번, 먼저 예비치를 내고 같은 달 뒤에 확정치를 낸다. 발표는 미국 동부시간 오전 10시이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "조사 누리집에 다음 발표가 2026.11.6(금) 오전 10시 11월 예비치로 안내되어 있다. 2024년 4~7월 전화 조사에서 웹 조사로 바꾸었고, 표본은 월 600건 남짓에서 900~1,000건 목표로 늘었다. 조사팀은 이 이행 기간의 달마다 변화에 방식 차이가 섞여 있다고 안내했다. 장기 기대는 공식 표 이름이 '앞으로 5년'이고 보도는 흔히 '5~10년'이라 쓴다. 머리기사 수치가 중앙값이라는 점은 보도로만 확인했다.",
+    "sources": [
+      {
+        "name": "University of Michigan, Surveys of Consumers",
+        "url": "https://www.sca.isr.umich.edu/"
+      },
+      {
+        "name": "University of Michigan, Methodological Improvements Begin with April 2024 Preliminary Release (2024.4.5)",
+        "url": "https://www.sca.isr.umich.edu/files/methodtransitionannouncement2024.pdf"
+      }
+    ]
+  },
+  "us-fed-pce-target": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "연방공개시장위원회의 물가 목표",
+    "value": "PCE 물가지수 연간 변화율 2% (2012.1.24 채택, 2026.1.27 재확인)",
+    "short": "장기 물가 목표를 PCE 물가지수의 연간 변화율 2%로 정해 두었다",
+    "effective": "2012-01-24",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "「장기 목표와 통화정책 전략에 관한 성명」에 적혀 있고, 해마다 1월 회의에서 다시 확인한다. 이 문서 최신본은 2026.1.27 재확인본이다. 목표는 헤드라인 PCE 기준이며 근원 PCE가 아니다. 연준은 2000년 2월 의회 보고서부터 물가 전망 기준을 CPI에서 PCE로 바꾸었다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, Statement on Longer-Run Goals and Monetary Policy Strategy",
+        "url": "https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf"
+      },
+      {
+        "name": "미국 연방준비제도, Monetary Policy Report to the Congress, 2000.2.17, Section 1 각주 1",
+        "url": "https://www.federalreserve.gov/boarddocs/hh/2000/February/ReportSection1.htm"
+      }
+    ]
+  },
+  "us-tips-ref-cpi": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "미국 물가연동국채(TIPS) 원금 조정에 쓰는 물가",
+    "value": "계절조정하지 않은 CPI-U · 매월 1일 기준값 = 석 달 전 달의 CPI · 그 밖의 날은 선형 보간",
+    "short": "계절조정하지 않은 CPI-U를 쓰고, 매월 1일의 기준값은 석 달 전 달의 CPI이며, 그 사이 날은 직선으로 이어 채운다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "예: 4월 1일의 기준값은 1월 CPI이다(2월에 발표). 만기에는 물가로 조정한 원금과 처음 원금 가운데 큰 쪽을 준다. 만기는 5·10·30년이다. 2025년 10월 CPI가 예산 공백으로 발표되지 않자 재무부는 2025.11.26 약관의 대체 규정으로 계산한 지수(325.604)를 쓰고, 뒤에 BLS가 발표하더라도 바꾸지 않는다고 공지했다. 규정 문구는 코넬대 LII의 연방규정집(31 CFR 356 부록 B) 사본으로 확인했다.",
+    "sources": [
+      {
+        "name": "31 CFR Part 356 Appendix B (Cornell LII 사본)",
+        "url": "https://www.law.cornell.edu/cfr/text/31/appendix-B_to_part_356"
+      },
+      {
+        "name": "TreasuryDirect, Treasury Inflation-Protected Securities (TIPS)",
+        "url": "https://www.treasurydirect.gov/marketable-securities/tips/"
+      },
+      {
+        "name": "미국 재무부 보도자료, Treasury uses index contingency provisions for TIPS, 2025.11.26",
+        "url": "https://www.treasurydirect.gov/instit/annceresult/press/preanre/2025/SPL_20251126_1.pdf"
+      }
+    ]
+  },
+  "kr-rel-ppi": {
+    "topic": "release",
+    "market": "KR",
+    "label": "한국 생산자물가지수 발표 시기",
+    "value": "대상 달의 다음 달 20일 무렵 06:00 (ECOS 게시 08:00)",
+    "short": "대상 달의 다음 달 20일 무렵 오전 6시에 한국은행이 발표한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "한국은행 SDDS 공표 일정 기준 2026년 9월분 10.21, 10월분 11.20, 11월분 12.22이며 시각은 06:00이다. 경제통계시스템(ECOS)에는 발표일 08:00에 올라온다.",
+    "sources": [
+      {
+        "name": "한국은행, IMF SDDS 대상 통계 공표 일정",
+        "url": "https://www.bok.or.kr/eng/stats/sddsTrgetStats/listStats.do?menuNo=400361"
+      }
+    ]
+  },
+  "kr-cpi-basket": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "한국 소비자물가지수의 기준과 품목",
+    "value": "2020=100 · 458개 품목 · 가중치 1,000분비 · 5년마다 기준 개편(중간에 가중치 조정)",
+    "short": "지금은 2020년을 100으로 한 지수이고, 458개 품목을 가계 지출에서 차지하는 몫(1,000분비)으로 묶는다. 품목과 가중치는 5년마다 전면 개편한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "국가데이터처는 2025년 기준 개편안(대표품목 잠정 455개)을 2026.7.7 내놓고, 개편 결과를 2026.12.18, 새 기준 소비자물가동향을 2026.12.31에 공표한다고 밝혔다. 2020년 기준으로 낸 2025.1~2026.11 지수와 상승률은 바뀔 수 있다. 개편 사이에도 끝자리 0·2·5·7년 자료로 가중치를 조정한다는 내용은 보도(뉴시스 2026.7.7)로 확인했다. 개편이 시행되면 이 항목의 값을 고쳐야 한다.",
+    "sources": [
+      {
+        "name": "e-나라지표, 소비자물가지수 지표 정보",
+        "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1060"
+      },
+      {
+        "name": "국가데이터처, 2025년 기준 소비자물가지수 개편 실시(KDI 경제교육·정보센터 게재), 2026.7.7",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283909"
+      },
+      {
+        "name": "뉴시스, 소비자물가 5년만 개편, 2026.7.7",
+        "url": "https://www.newsis.com/view/NISX20260707_0003698473"
+      }
+    ]
+  },
+  "kr-cpi-rent-weight": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "한국 소비자물가지수의 집세 가중치",
+    "value": "집세 1,000분의 98.3 (전세 54.0, 월세 44.3) · 자가주거비는 총지수에서 제외 (2020년 기준)",
+    "short": "전세와 월세를 합한 집세가 1,000분의 98.3(약 10%)이고, 자기 집에 사는 값(자가주거비)은 총지수에 들어가지 않는다(2020년 기준)",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "2020년 기준 개편(2021년 12월) 때 집세 가중치가 2017년 기준 93.7에서 98.3으로 올랐다는 보도로 확인했다. 자가주거비는 총지수와 별도의 보조 지표로만 작성된다는 보도와 통계개발원 자료가 있다. 국가데이터처 원문 가중치 표는 대조하지 못했다. 2025년 기준 개편 뒤 값은 바뀐다.",
+    "sources": [
+      {
+        "name": "이투데이, 물가지수 개편… '집값'은 빠져, 2021.12",
+        "url": "https://www.etoday.co.kr/news/view/2089332"
+      },
+      {
+        "name": "머니투데이, 韓 물가지표에 자가주거비 없는 이유는, 2025.8.15",
+        "url": "https://www.mt.co.kr/economy/2025/08/15/2025081416000510667"
+      }
+    ]
+  },
+  "kr-core-cpi": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "한국 근원물가 지수 두 가지",
+    "value": "농산물 및 석유류 제외 지수(401개 품목) · 식료품 및 에너지 제외 지수(OECD 방식)",
+    "short": "농산물(곡물 제외)과 석유류를 뺀 '농산물 및 석유류 제외 지수'와, 여기서 수산물·축산물·에너지 등을 더 뺀 '식료품 및 에너지 제외 지수(OECD 방식)' 두 가지를 함께 낸다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "품목 수 401개는 2020년 기준(458개 품목) 기준이다. 둘 다 소비자물가동향 보도자료에 실린다.",
+    "sources": [
+      {
+        "name": "e-나라지표, 소비자물가지수 지표 정보",
+        "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1060"
+      }
+    ]
+  },
+  "kr-bok-target": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "한국은행 물가안정목표",
+    "value": "소비자물가 상승률(전년동기대비) 2% · 2019년부터 적용 기간을 정하지 않음",
+    "short": "정부와 협의해 정한 물가안정목표는 소비자물가 상승률(전년동기대비) 2%이고, 2019년부터는 적용 기간을 따로 정하지 않고 중기적 시계에서 운영한다",
+    "effective": "2019-01-01",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "한국은행법 제6조 제1항에 따라 정부와 협의해 정한다. 그 전에는 3년 단위로 목표를 정했다. 목표는 헤드라인 소비자물가 기준이며 근원물가가 아니다.",
+    "sources": [
+      {
+        "name": "한국은행, 물가안정목표제",
+        "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200291"
+      }
+    ]
+  },
+  "us-rel-ism": {
+    "topic": "release",
+    "market": "US",
+    "label": "ISM 제조업·서비스업 PMI 발표 시기",
+    "value": "제조업: 다음 달 첫 영업일 10:00 · 서비스업: 셋째 영업일 10:00 (미국 동부시간, 1월분은 하루씩 늦음)",
+    "short": "대상 달의 다음 달 첫 영업일 미국 동부시간 오전 10시에 나오고, 서비스업 보고서는 셋째 영업일 같은 시각에 나온다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "뉴욕증권거래소가 쉬는 날이면 미뤄지고, 1월분은 제조업이 둘째, 서비스업이 넷째 영업일에 나온다. 설문은 매달 초에 보내고 응답은 그달 내내, 대개 월말에 많이 들어온다. 한국 시각으로는 서머타임 기간 밤 11시, 그 밖에는 자정이다. ISM 누리집(ismworld.org) 보고서 면이 로그인으로 막혀 있어, ISM이 PR Newswire로 배포한 보도자료 원문으로 확인했다.",
+    "sources": [
+      {
+        "name": "ISM, Manufacturing PMI Report 2026년 9월분 보도자료(PR Newswire 배포본), 2026.10.1",
+        "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html"
+      },
+      {
+        "name": "ISM, Services PMI Report 2026년 9월분 보도자료(PR Newswire 배포본), 2026.10.5",
+        "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-9-september-2026-ism-services-pmi-report-302898421.html"
+      }
+    ]
+  },
+  "us-ism-pmi-calc": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "ISM PMI 계산 방식(확산지수와 구성 항목)",
+    "value": "확산지수 = '늘었다' 비율 + '같다' 비율의 ½ · 제조업 PMI = 신규주문·생산·고용·공급자 배송·재고 5개 지수의 단순평균 · 서비스업 PMI = 업황·신규주문·고용·공급자 배송 4개 지수의 단순평균",
+    "short": "신규주문, 생산, 고용, 공급자 배송, 재고의 다섯 확산지수를 같은 무게(각 20%)로 평균해 구한다. 확산지수는 '늘었다'는 응답 비율에 '같다'는 응답 비율의 절반을 더한 값이고, 공급자 배송은 '느려졌다'를 높은 쪽으로 센다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "응답은 미국 내 사업장만 대상으로 지난달과 견준 이번 달의 변화를 묻는다. 패널은 업종(NAICS)별 국내총생산 비중으로 나누고 가중한다. 제조업에서 계절조정하는 것은 신규주문·생산·고용·재고이고 공급자 배송·가격·수주잔고·수출주문·수입·고객 재고는 원계열이다. 계절조정 계수는 X-13-ARIMA로 해마다 다시 계산하며 2026년 계수는 2026.1.29 공지로 1월분(2026.2.2 발표)부터 적용되었다.",
+    "sources": [
+      {
+        "name": "ISM, Manufacturing PMI Report 2026년 9월분 보도자료(PR Newswire 배포본), 2026.10.1",
+        "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html"
+      },
+      {
+        "name": "ISM, Services PMI Report 2026년 9월분 보도자료(PR Newswire 배포본), 2026.10.5",
+        "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-9-september-2026-ism-services-pmi-report-302898421.html"
+      },
+      {
+        "name": "ISM, 계절조정 계수 연례 조정 공지(PR Newswire 배포본), 2026.1.29",
+        "url": "https://www.prnewswire.com/news-releases/ism-makes-annual-adjustments-to-seasonal-factors-for-ism-manufacturing-pmi-and-diffusion-indexes-and-ism-services-pmi-and-diffusion-indexes-302674150.html"
+      }
+    ]
+  },
+  "us-ism-breakeven": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "ISM 지수의 경제 전체 기준점",
+    "value": "제조업 PMI 47.5% · 서비스업 PMI 48.1% (2026년 9월분 보고서 기준)",
+    "short": "2026년 9월분 보고서는 제조업 PMI가 47.5%를 웃도는 상태가 이어지면 대개 경제 전체가 커지고 있다고 적었다(서비스업은 48.1%)",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "같은 보고서는 하위지수마다 다른 통계와 맞댄 기준점도 싣는다: 신규주문 51.9%(인구조사국 제조업 주문 증가와 대응), 생산 52%(연준 산업생산), 고용 50.3%(노동통계국 제조업 고용), 재고 44.5%, 가격 52.8%(중간재 생산자물가). 기준점은 계절조정 계수와 함께 고쳐진다. 2025년 3월분 보고서에는 제조업 기준점이 42.3%로 적혀 있었다는 재게시 기사가 있다(원문 대조 전).",
+    "sources": [
+      {
+        "name": "ISM, Manufacturing PMI Report 2026년 9월분 보도자료(PR Newswire 배포본), 2026.10.1",
+        "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html"
+      },
+      {
+        "name": "ISM, Services PMI Report 2026년 9월분 보도자료(PR Newswire 배포본), 2026.10.5",
+        "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-9-september-2026-ism-services-pmi-report-302898421.html"
+      }
+    ]
+  },
+  "us-spg-pmi-calc": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "S&P Global 미국 제조업 PMI 계산 방식",
+    "value": "신규주문 30% · 생산 25% · 고용 20% · 공급자 배송시간 15%(뒤집어 넣음) · 구매 재고 10% · 패널 약 600곳 · 매달 후반부 조사",
+    "short": "신규주문 30%, 생산 25%, 고용 20%, 공급자 배송시간 15%(뒤집어 넣음), 구매 재고 10%의 무게로 평균하고, 약 600개 제조업체 패널에 매달 후반부에 묻는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "확산지수는 '늘었다' 비율에 '같다' 비율의 절반을 더한 값으로 ISM과 같고, 각 지수를 계절조정한다. 설문 원자료는 발표 뒤 고치지 않지만 계절조정 계수가 바뀌면 계절조정 계열이 달라질 수 있다. 미국 제조업 자료는 2007년 5월부터 모았다. 2026.2.2 보도자료는 미국 동부시간 오전 9시 45분 엠바고였다.",
+    "sources": [
+      {
+        "name": "S&P Global, US Manufacturing PMI 보도자료(2026.2.2, 1월분) 방법 설명",
+        "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/cdb24b3e6f9c4b3584cfab900d2c80df"
+      }
+    ]
+  },
+  "us-spg-flash": {
+    "topic": "release",
+    "market": "US",
+    "label": "S&P Global 속보 PMI(flash)",
+    "value": "그달 하순, 통상 응답의 약 85%로 산출 · 확정치는 다음 달 초",
+    "short": "대상 달 하순에 평소 응답의 약 85%로 먼저 내고, 다음 달 초 전체 응답으로 확정한다",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "약 85%라는 비율은 S&P Global의 2013년 미국 속보 PMI 해설과 증권사 안내로 확인했고, 현행 방법 문서 원문은 대조하지 못했다(S&P Global PMI 누리집이 자동 접속을 막았다). 85~90%로 적은 자료도 있다.",
+    "sources": [
+      {
+        "name": "S&P Global(옛 Markit), US Flash PMI 해설, 2013.12.16",
+        "url": "https://spglobal.com/marketintelligence/en/mi/research-analysis/16122013070000us-flash-pmi-output-growth-remains-strong-in-december.html"
+      },
+      {
+        "name": "Pepperstone, Understanding PMI Surveys",
+        "url": "https://pepperstone.com/es-es/market-analysis/understanding-pmi-surveys/"
+      }
+    ]
+  },
+  "us-rel-retail": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 소매판매(Advance Monthly Retail Trade) 발표",
+    "value": "대상 달 다음 달 중순 08:30 (미국 동부시간) · 약 4,800개 기업 표본 · 계절·휴일·영업일 조정, 물가 조정 없음",
+    "short": "대상 달이 끝나고 보름쯤 뒤 미국 동부시간 오전 8시 30분에 속보를 낸다. 약 4,800개 기업 표본으로 추정하고, 계절과 휴일·영업일 차이는 조정하지만 물가 변화는 빼지 않는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "예: 2026년 9월분은 2026.10.15(목) 08:30 EDT, 10월분은 2026.11.17 예정. 속보는 더 큰 월간 소매조사(MRTS) 표본의 부분 표본이며, 1면의 오차 범위는 90% 신뢰구간(추정치 ± 1.753 × 표준오차)이다. 구간이 0을 포함하면 별표로 표시한다. 한국 시각으로는 서머타임 기간 밤 9시 30분, 그 밖에는 밤 10시 30분이다.",
+    "sources": [
+      {
+        "name": "미국 인구조사국, Advance Monthly Sales for Retail and Food Services, September 2026 (2026.10.15)",
+        "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+      },
+      {
+        "name": "미국 인구조사국, Monthly Retail Trade 시계열 안내",
+        "url": "https://www.census.gov/retail/marts/www/timeseries.html"
+      }
+    ]
+  },
+  "us-retail-control": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "소매판매 통제그룹(control group)",
+    "value": "전체 소매·음식점 판매 − 자동차·부품 − 주유소 − 건축자재·정원용품 − 음식점",
+    "short": "전체 소매판매에서 자동차와 부품, 주유소, 건축자재, 음식점을 뺀 묶음이다",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "인구조사국 발표표에 '통제그룹'이라는 줄은 없고, 시장과 분석기관이 표의 업종을 빼서 계산하는 관행이다. 경제분석국이 국내총생산의 상품 소비 추정에 이 묶음에 가까운 자료를 쓴다는 설명은 분석기관 해설에 기댄 것이며 경제분석국 원문으로 대조하지 못했다. 정의도 기관마다 조금씩 다르게 쓰인다.",
+    "sources": [
+      {
+        "name": "미국 인구조사국, Advance Monthly Sales for Retail and Food Services, September 2026 (2026.10.15)",
+        "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+      }
+    ]
+  },
+  "us-gdpnow": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "애틀랜타 연준 GDPNow",
+    "value": "한 달 6~7회 갱신 · 공식 전망 아님 · 속보 직전 마지막 추정의 평균 절대오차 0.76%p, 평균제곱근오차 1.15%p (2011년 3분기~2026년 3분기)",
+    "short": "판단을 섞지 않은 모형 추정으로 한 달에 예닐곱 번 갱신하며, 애틀랜타 연준의 공식 전망이 아니다. 2011년 3분기부터 2026년 3분기까지 속보 직전 마지막 추정의 평균 절대오차는 0.76%포인트였다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "ISM 제조업, 무역수지, 도매, 소매판매, 주택착공, 내구재 주문 등 일곱 발표 뒤에는 꼭 갱신한다. 한 분기의 추정은 앞 분기 속보 다음 영업일 무렵 시작해 그 분기 속보 직전에 끝난다. 국내총생산을 13개 구성 항목으로 나눠 추정한다. 2025년 3월 6일 금 수출입을 뺀 대안 모형을 내고 2025년 4월 30일 표준으로 바꿨다.",
+    "sources": [
+      {
+        "name": "애틀랜타 연방준비은행, GDPNow",
+        "url": "https://www.atlantafed.org/cqer/research/gdpnow"
+      },
+      {
+        "name": "애틀랜타 연방준비은행, GDPNow and the Gold Factor, 2025.7.2",
+        "url": "https://www.atlantafed.org/research-and-data/2025/07/02/gdpnow-and-the-gold-factor"
+      }
+    ]
+  },
+  "us-rel-lei": {
+    "topic": "release",
+    "market": "US",
+    "label": "컨퍼런스보드 미국 선행종합지수(LEI) 발표와 구성",
+    "value": "매달 하순 10:00 (미국 동부시간) · 구성 지표 10개",
+    "short": "매달 하순 미국 동부시간 오전 10시에 나오며, 제조업 주당 노동시간, 실업수당 신규청구, 소비재 신규주문, ISM 신규주문지수, 항공기 뺀 비국방 자본재 주문, 주택 건축허가, S&P 500 주가, 선행신용지수, 장단기 금리차(10년 국채 − 연방기금금리), 소비자 기대의 10개 지표로 만든다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "예: 2026년 9월분은 2026.10.22 10:00 ET에 나왔고, 다음 발표는 2026.11.19 예정. 같은 발표에 동행지수(일자리, 이전소득 뺀 개인소득, 제조·판매, 산업생산)와 후행지수가 함께 나온다. 컨퍼런스보드는 민간 기관이다.",
+    "sources": [
+      {
+        "name": "The Conference Board, US Leading Indicators",
+        "url": "https://www.conference-board.org/topics/us-leading-indicators"
+      },
+      {
+        "name": "The Conference Board, US LEI 보도자료, 2026.10.22",
+        "url": "https://www.conference-board.org/pdf_free/press/US%20LEI%20PRESS%20RELEASE-%20October%202026.pdf"
+      }
+    ]
+  },
+  "us-lei-3ds": {
+    "topic": "indicator",
+    "market": "US",
+    "label": "선행종합지수 3Ds 침체 신호 규칙",
+    "value": "6개월 확산지수 50 이하 + 6개월 증가율(연율) −4.3% 미만이 동시에 성립",
+    "short": "6개월 확산지수가 50 이하이고 동시에 6개월 증가율(연율)이 −4.3%보다 낮으면 침체가 가깝거나 이미 진행 중이라는 신호로 본다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "기간(duration)·깊이(depth)는 6개월 연율 증가율로, 확산(diffusion)은 구성 지표 가운데 오른 지표의 비율로 잰다. 문턱은 바뀌어 왔다: 2024.4.18 보도자료 −4.4%(중앙값), 2026.10.22 보도자료 −4.3%. 컨퍼런스보드는 2024.2.20 가까운 침체 예상을 거뒀다(보도).",
+    "sources": [
+      {
+        "name": "The Conference Board, US LEI 보도자료, 2026.10.22",
+        "url": "https://www.conference-board.org/pdf_free/press/US%20LEI%20PRESS%20RELEASE-%20October%202026.pdf"
+      },
+      {
+        "name": "The Conference Board, US LEI 보도자료, 2024.4.18",
+        "url": "https://www.conference-board.org/pdf_free/press/US%20LEI%20PRESS%20RELEASE-Apr.2024.pdf"
+      },
+      {
+        "name": "WION, Conference Board retracts US recession prediction, 2024.2.21",
+        "url": "https://www.wionews.com/business-economy/conference-board-retracts-us-recession-prediction-economy-set-to-grow-despite-index-decline-692241/amp"
+      }
+    ]
+  },
+  "kr-rel-trade-10day": {
+    "topic": "release",
+    "market": "KR",
+    "label": "관세청 열흘 단위 수출입 현황(잠정)",
+    "value": "1~10일분은 대개 11일, 1~20일분은 대개 21일 (잠정치, 통관 기준)",
+    "short": "1~10일분을 대개 11일에, 1~20일분을 대개 21일에 통관 기준 잠정치로 낸다",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "휴일이면 하루 이틀 미뤄진다(12일·13일 발표 보도가 있다). 2026년 10월 1~20일분은 2026.10.21에 나왔고 일평균 수출을 함께 실었다. 관세청 보도자료 일정표 원문은 확인하지 못했고, KDI 경제교육·정보센터 게재본과 보도로 확인했다.",
+    "sources": [
+      {
+        "name": "관세청, 2026년 10월 1일~10월 20일 수출입 현황[잠정치] (KDI 경제교육·정보센터 게재), 2026.10.21",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288360"
+      },
+      {
+        "name": "이투데이, 9월 1~10일 수출 보도",
+        "url": "https://www.etoday.co.kr/news/view/1939615"
+      }
+    ]
+  },
+  "kr-rel-industry": {
+    "topic": "release",
+    "market": "KR",
+    "label": "산업활동동향 발표 시기",
+    "value": "대상 달의 다음 달 말일 무렵",
+    "short": "대상 달의 다음 달 말일 무렵(대개 마지막 영업일 근처)에 국가데이터처가 발표한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "2025년 보도계획 기준 발표일은 2.3(전년 12월·연간), 3.4, 3.31, 4.30, 5.30, 6.30, 7.31, 8.29, 9.30, 10.31, 11.28, 12.30이었다. 12월분은 연간 자료와 함께 이듬해 초에 나온다. 경기종합지수가 같은 발표에 실린다. 발표 시각은 원문으로 확인하지 못했다.",
+    "sources": [
+      {
+        "name": "통계청(현 국가데이터처), 2025년 물가·고용·산업활동동향 보도계획",
+        "url": "https://mods.go.kr/ansk/file/schedule_2025.pdf"
+      }
+    ]
+  },
+  "kr-cycle-index": {
+    "topic": "indicator",
+    "market": "KR",
+    "label": "경기종합지수 구성",
+    "value": "선행 7개(재고순환지표, 경제심리지수, 기계류내수출하지수, 건설수주액, 수출입물가비율, 코스피, 장단기금리차) · 동행 7개 · 후행 5개",
+    "short": "선행지수는 재고순환지표, 경제심리지수, 기계류내수출하지수, 건설수주액, 수출입물가비율, 코스피, 장단기금리차의 7개로, 동행지수는 광공업생산지수·서비스업생산지수·소매판매액지수·비농림어업취업자수 등 7개로, 후행지수는 5개 지표로 만든다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "구성 지표의 전월비 증감률을 합성해 만들고, 산업활동동향(다음 달 말 무렵)에 실린다. 순환변동치는 지수에서 추세 변동분을 걷어 낸 값이다. e-나라지표는 2012년 2월 제8차 개편으로 구성 지표가 바뀌었다고 적고 있으며, 그 뒤 개편 여부와 동행·후행 구성 지표 전체 목록은 원문으로 대조하지 못했다. 재고순환지표는 제조업 출하와 재고의 12개월 누계 증감률 차이다.",
+    "sources": [
+      {
+        "name": "e-나라지표, 경기종합지수 지표 정보",
+        "url": "https://www.index.go.kr/unify/idx-info.do?idxCd=1057"
+      },
+      {
+        "name": "e-나라지표, 경기종합지수 상세",
+        "url": "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1057"
+      }
+    ]
+  },
+  "us-sep-contents": {
+    "topic": "release",
+    "market": "US",
+    "label": "경제전망 요약(SEP)의 항목과 기간",
+    "value": "실질 GDP 성장률·실업률·PCE 물가·근원 PCE 물가·연방기금금리 · 올해와 그 뒤 2년, 장기(longer run)",
+    "short": "실질 국내총생산 성장률, 실업률, PCE 물가와 근원 PCE 물가, 적절한 연방기금금리를 올해와 그 뒤 2년, 그리고 장기로 나눠 싣는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "성장률과 물가는 전년 4분기 대비 그해 4분기 변화율, 실업률은 4분기 평균, 금리는 연말(또는 장기) 목표 범위의 가운데 값이다. 표에는 중앙값, 가장 높은 셋과 가장 낮은 셋을 뺀 중심경향, 전체 범위와 석 달 전 전망이 실린다. 3·6·9·12월 회의 때 나온다(us-rel-fomc). 2025년 6월 자료 표로 확인했다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, Summary of Economic Projections, 2025.6.18",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20250618.htm"
+      }
+    ]
+  },
+  "us-sep-dots": {
+    "topic": "release",
+    "market": "US",
+    "label": "점도표에 찍히는 값",
+    "value": "참가자 한 명당 점 하나 · 해마다 연말(또는 장기)의 적절한 목표 범위 가운데 값 · 1/8%p 단위로 반올림",
+    "short": "참가자 한 사람이 생각하는 해마다 연말(그리고 장기)의 적절한 목표 범위 가운데 값을 1/8%p 단위로 반올림해 점 하나로 찍는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "점에는 이름이 붙지 않는다. 전망은 각 참가자가 생각하는 '적절한 통화정책'을 가정한 것으로 위원회의 합의된 전망이 아니다. 전망을 내는 사람은 이사와 지역 연준 총재 전원이며 그해 표결권자보다 많다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, Summary of Economic Projections, 2025.6.18 (Figure 2 주석)",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20250618.htm"
+      },
+      {
+        "name": "미국 연방준비제도, Summary of Economic Projections, 2026.9.16",
+        "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcprojtabl20260916.pdf"
+      }
+    ]
+  },
+  "us-h41-release": {
+    "topic": "release",
+    "market": "US",
+    "label": "연준 대차대조표(H.4.1) 발표 시각",
+    "value": "매주 목요일 16:30 무렵 (미국 동부시간)",
+    "short": "매주 목요일, 대개 미국 동부시간 오후 4시 30분에 나온다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "수요일 하루의 잔액과 한 주 평균이 함께 실린다. 한국 시각으로는 서머타임 기간 금요일 새벽 5시 30분, 그 밖에는 새벽 6시 30분 무렵이다. 휴일이 끼면 날짜가 옮겨질 수 있다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, H.4.1 Factors Affecting Reserve Balances",
+        "url": "https://www.federalreserve.gov/releases/h41/"
+      }
+    ]
+  },
+  "us-h6-release": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 통화량(H.6) 발표 시기",
+    "value": "매월 넷째 화요일 13:00 무렵 (미국 동부시간)",
+    "short": "매월 넷째 화요일, 대개 미국 동부시간 오후 1시에 나온다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "연방 공휴일과 겹치면 다음 영업일로 옮길 수 있다. 2021년 2월 23일 발표부터 주간이 아닌 월간으로만 내고, 증가율 표와 계절조정 주간 평균은 더 싣지 않는다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, H.6 Money Stock Measures",
+        "url": "https://www.federalreserve.gov/releases/h6/"
+      },
+      {
+        "name": "미국 연방준비제도, H.6 Technical Q&As",
+        "url": "https://www.federalreserve.gov/RELEASES/h6/h6_technical_qa.htm"
+      }
+    ]
+  },
+  "us-m1-2020-redef": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 M1 정의 변경(저축성 예금 편입)",
+    "value": "2020년 5월 자료부터 저축성 예금을 M1에 포함(M2는 변화 없음)",
+    "short": "2020년 5월 자료부터 저축성 예금이 M1에 들어가, 그달 M1이 약 11.2조 달러 늘어난 것으로 고쳐졌다. 이 변경은 2021년 2월 23일 발표에서 처음 반영되었다",
+    "effective": "2020-05-01",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "2020년 4월 24일 규정 D에서 저축성 예금의 월 6회 이체 제한이 없어져 요구불예금과 성격이 같아졌다는 것이 이유이다. M2는 원래 저축성 예금을 포함하므로 바뀌지 않았다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, H.6 Technical Q&As",
+        "url": "https://www.federalreserve.gov/RELEASES/h6/h6_technical_qa.htm"
+      }
+    ]
+  },
+  "us-onrrp-ops": {
+    "topic": "fed-liquidity",
+    "market": "US",
+    "label": "연준 익일물 역레포(ON RRP) 운영",
+    "value": "매 영업일 12:45~13:15 (미국 동부시간) · 거래 상대 한 곳당 하루 1,600억 달러 한도 · 담보는 미국 국채",
+    "short": "매 영업일 미국 동부시간 낮 12시 45분부터 1시 15분까지 열리고, 머니마켓펀드·은행·정부지원기관·프라이머리 딜러가 거래 상대이며 한 곳당 하루 1,600억 달러까지 맡길 수 있다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "한 곳당 한도는 2021년 9월 23일부터 800억 달러에서 1,600억 달러로 올랐다. 제시 금리는 FOMC의 실행 지침(implementation note)으로 정하며, 2024년 12월 18일 결정 때 0.05%p를 더 내려 목표 범위 하단과 같게 맞췄다(뉴욕 연준은 이를 정책 기조와 무관한 기술적 조정이라고 설명했다). 이 하단 일치는 보도와 뉴욕 연준 블로그 요약으로 확인했고 실행 지침 원문은 열지 못했다.",
+    "sources": [
+      {
+        "name": "뉴욕 연방준비은행, FAQs: Reverse Repurchase Agreement Operations",
+        "url": "https://www.newyorkfed.org/markets/rrp_faq"
+      },
+      {
+        "name": "뉴욕 연방준비은행, Operating Policy, 2021.9.22",
+        "url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_210922"
+      },
+      {
+        "name": "미국 연방준비제도, Implementation Note, 2024.12.18",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a1.htm"
+      }
+    ]
+  },
+  "us-qt-path": {
+    "topic": "fed-liquidity",
+    "market": "US",
+    "label": "2022~2025년 연준 보유 증권 축소(양적긴축)의 경과",
+    "value": "2022.6 시작(월 상한 국채 300억·MBS 175억 달러, 석 달 뒤 600억·350억) → 2024.6 국채 상한 250억 → 2025.4 국채 상한 50억 → 2025.12.1 축소 종료",
+    "short": "2022년 6월 1일 만기 원금 재투자를 줄이는 방식으로 시작했다. 한 달 상한은 국채 300억, MBS 175억 달러에서 석 달 뒤 600억, 350억 달러로 올랐고, 2024년 6월부터 국채 상한을 250억 달러로, 2025년 4월부터 50억 달러로 낮췄으며, 2025년 10월 29일 결정으로 12월 1일부터 축소를 끝냈다",
+    "effective": "2022-06-01",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "MBS 상한은 끝까지 350억 달러였다. 축소를 끝내며 국채 만기 원금은 경매에서 다시 사고, MBS 원금은 단기국채에 재투자하기로 했다. 연준은 축소 시작 뒤 보유 증권이 2.2조 달러 넘게 줄었다고 밝혔다. 2025년 12월 10일에는 지급준비금을 넉넉한 수준으로 유지하려는 단기국채 매입(reserve management purchases)을 12월 12일부터 시작한다고 발표했다. 2024·2025년 상한 변경은 연준 통화정책보고서와 뉴욕 연준 운영 공지의 검색 요약으로 확인했다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, FOMC Communications Related to Policy Normalization",
+        "url": "https://www.federalreserve.gov/monetarypolicy/policy-normalization.htm"
+      },
+      {
+        "name": "뉴욕 연방준비은행, Operating Policy, 2024.5.1",
+        "url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_240501"
+      },
+      {
+        "name": "미국 연방준비제도, Monetary Policy Report, 2025.6, Part 2",
+        "url": "https://www.federalreserve.gov/monetarypolicy/2025-06-mpr-part2.htm"
+      },
+      {
+        "name": "뉴욕 연방준비은행, Operating Policy, 2025.12.10",
+        "url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_251210a"
+      }
+    ]
+  },
+  "us-reserve-req": {
+    "topic": "fed-liquidity",
+    "market": "US",
+    "label": "미국 지급준비율",
+    "value": "0% (2020년 3월 26일부터)",
+    "short": "2020년 3월 15일 발표로 3월 26일부터 모든 예금기관의 지급준비율이 0%가 되어, 의무로 쌓아야 하는 준비금이 없다",
+    "effective": "2020-03-26",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "그 전에는 거래성 예금에 구간별로 0%, 3%, 10%를 매겼다. 연준은 넉넉한 준비금(ample reserves) 체제에서는 지급준비율이 정책 운영에 큰 역할을 하지 않는다는 이유를 들었다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, Reserve Requirements",
+        "url": "https://www.federalreserve.gov/monetarypolicy/reservereq.htm"
+      },
+      {
+        "name": "Federal Register, 2020.3.24, Regulation D 임시 최종 규칙",
+        "url": "https://www.govinfo.gov/content/pkg/FR-2020-03-24/html/2020-05806.htm"
+      }
+    ]
+  },
+  "us-nber-dating": {
+    "topic": "release",
+    "market": "US",
+    "label": "미국 경기침체 판정 기준(NBER)",
+    "value": "경제 전반에 퍼져 몇 달 넘게 이어지는 경제활동의 뚜렷한 감소 · 깊이·확산·기간을 함께 봄 · 사후에 발표",
+    "short": "미국 경제연구소(NBER) 경기순환 판정위원회가 경제 전반에 퍼져 몇 달 넘게 이어지는 경제활동의 뚜렷한 감소를 침체로 보고, 자료가 충분히 쌓인 뒤 정점과 저점을 발표한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "깊이·확산·기간은 서로 어느 정도 메울 수 있다고 본다. 월간 지표로는 이전소득을 뺀 실질 개인소득, 비농업 고용, 가구 조사 고용, 실질 개인소비지출, 실질 제조·도소매 판매, 산업생산을 보며, 앞의 두 개에 가장 큰 무게를 둔다. 두 분기 연속 마이너스 성장 같은 기계적 규칙은 쓰지 않는다. 가장 최근 판정은 2020년 2월 정점, 2020년 4월 저점이다(2026.10.31 확인).",
+    "sources": [
+      {
+        "name": "NBER, Business Cycle Dating",
+        "url": "https://www.nber.org/research/business-cycle-dating"
+      }
+    ]
+  },
+  "us-hy-oas-index": {
+    "topic": "bonds",
+    "market": "US",
+    "label": "ICE BofA 미국 하이일드 지수의 편입 기준",
+    "value": "미 달러 표시 · 미국 국내시장 발행 · 무디스·S&P·피치 평균 등급 투기등급 · 남은 만기 1년 초과 · 발행 잔액 1억 달러 이상",
+    "short": "미국 국내시장에서 발행된 달러 표시 회사채 가운데 무디스·S&P·피치 평균 등급이 투기등급이고, 남은 만기가 1년을 넘고, 발행 잔액이 1억 달러 이상인 채권을 담는다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "발행 기업의 위험 국가(country of risk)가 투자등급 국가여야 한다. 스프레드는 각 채권의 옵션 가치를 걷어 낸 옵션조정 스프레드를 국채 현물 곡선과 견주어 구한다. FRED의 BAMLH0A0HYM2 계열은 2026년 4월부터 최근 3년치만 제공한다. 편입 기준은 FRED 계열 설명으로 확인했고 ICE 원문 규칙서는 열지 못했다.",
+    "sources": [
+      {
+        "name": "FRED, ICE BofA US High Yield Index Option-Adjusted Spread (BAMLH0A0HYM2)",
+        "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+      }
+    ]
+  },
+  "kr-mpc-minutes": {
+    "topic": "release",
+    "market": "KR",
+    "label": "금융통화위원회 의사록 공개 시기",
+    "value": "회의 뒤 2주가 지난 뒤 첫 화요일",
+    "short": "회의 뒤 2주가 지난 뒤 첫 화요일",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "한국은행이 해마다 공개하는 회의 일정에 의사록 공개일이 함께 실린다. 2023년 일정 발표 보도와 과거 일정표(예: 11월 13일 회의 → 12월 2일 화요일 16:00 공개)로 확인했고, 2026년 공개 일정 원문은 열지 못했다. 금융안정 회의 의사록 일부는 다음 통화정책 회의 전에 앞당겨 공개한 해가 있다.",
+    "sources": [
+      {
+        "name": "한국은행, 금융통화위원회 의사록 및 의결사항",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000245/list.do?menuNo=200761"
+      },
+      {
+        "name": "쿠키뉴스, 2022.10.28",
+        "url": "https://www.kukinews.com/article/view/kuk202210280055"
+      }
+    ]
+  },
+  "kr-money-release": {
+    "topic": "release",
+    "market": "KR",
+    "label": "한국 통화 및 유동성(M2) 발표 시기",
+    "value": "대상 달의 두 달 뒤 중순",
+    "short": "대상 달의 두 달 뒤 중순(대개 10일 무렵에서 17일 사이)",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "예: 2026년 1월분은 3월 13일, 2월분은 4월 15일, 5월분은 7월 15일에 나왔다는 보도가 있다. 한국은행 공표 일정 원문은 열지 못했다. 한국 M2에는 2년 미만 정기 예·적금, 머니마켓펀드, 양도성예금증서, 환매조건부채권 등이 들어가며 미국 M2와 범위가 다르다.",
+    "sources": [
+      {
+        "name": "아시아경제, 한은 2026년 1월 통화 및 유동성, 2026.3.13",
+        "url": "https://view.asiae.co.kr/article/2026031310125337568"
+      },
+      {
+        "name": "아시아경제, 한은 2026년 5월 통화 및 유동성, 2026.7.15",
+        "url": "https://view.asiae.co.kr/article/2026071511194610687"
+      }
+    ]
+  },
+  "us-vix-method": {
+    "topic": "signal",
+    "market": "US",
+    "label": "VIX 계산 방식",
+    "value": "S&P 500 옵션(SPX 표준 · SPXW 주간)의 외가격 콜·풋 중간호가 · 만기 30일 앞뒤 두 만기를 보간 · 결과 표준편차 × 100",
+    "short": "Cboe 옵션거래소에 상장된 S&P 500 지수 옵션 가운데 외가격 콜과 풋의 중간호가를 모아 두 만기의 분산을 구하고, 이를 30일로 보간한 뒤 제곱근에 100을 곱한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "Cboe 방법론 문서 6.0판(2026.2.26 개정). 표준 SPX(AM 정산)와 주말에 끝나는 SPXW(PM 정산)를 쓰고, 같은 날 끝나는 SPXW는 뺀다. 매수호가가 0인 옵션은 넣지 않는다. 무위험 금리는 미국 국채 고정만기 금리를 스플라인으로 이어 쓴다. 계산식의 바탕은 1999년 골드만삭스의 분산 스와프 연구 노트이다. 1993년 S&P 100 등가격 옵션으로 처음 만들었고, 2003년 9월 22일 지금의 S&P 500 방식으로 바꾸었으며, 값은 1990년 1월부터 거슬러 계산되어 있다. VIX 선물·옵션의 만기 정산값은 만기일 아침의 특별 시가(SOQ)로 따로 정하며, 보간 없이 한 만기만 쓴다.",
+    "sources": [
+      {
+        "name": "Cboe Global Indices, Cboe Volatility Index Methodology (v6.0, 2026.2.26)",
+        "url": "https://cdn.cboe.com/api/global/us_indices/governance/VIX_Methodology.pdf"
+      }
+    ]
+  },
+  "us-vix-hours": {
+    "topic": "signal",
+    "market": "US",
+    "label": "VIX 산출·공표 시간",
+    "value": "15초마다 · 정규장 09:31~16:15, 야간 03:15~09:25 (미국 동부시간)",
+    "short": "약 15초마다 계산해 내보낸다. 정규 시간에는 미국 동부시간 오전 9시 31분부터 오후 4시 15분까지, 그 앞의 국제 시간대에는 오전 3시 15분부터 9시 25분까지이다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "Cboe 방법론 문서 4장. 단축 거래일에는 시간이 바뀔 수 있다. 호가가 비정상적으로 벌어질 때 지수가 튀지 않도록 거르는 규칙(2분 안에 0.5포인트 기준 등)이 있고, 계산할 수 없을 때는 마지막 값을 다시 낸다. 한국 시각으로 정규 시간은 서머타임 기간 밤 10시 31분부터 다음 날 새벽 5시 15분까지이다.",
+    "sources": [
+      {
+        "name": "Cboe Global Indices, Cboe Volatility Index Methodology (v6.0, 2026.2.26)",
+        "url": "https://cdn.cboe.com/api/global/us_indices/governance/VIX_Methodology.pdf"
+      }
+    ]
+  },
+  "kr-vkospi": {
+    "topic": "signal",
+    "market": "KR",
+    "label": "코스피200 변동성지수(VKOSPI)",
+    "value": "한국거래소 · 코스피200 옵션 가격으로 산출 · 2009년 4월 13일부터 발표",
+    "short": "한국거래소가 코스피200 옵션 가격으로 계산해 2009년 4월 13일부터 발표한다",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "기획재정부 시사경제용어사전과 보도로 확인했다. 30일 기대 변동성을 연율로 적는다는 설명이 보도에 널리 쓰이지만, 한국거래소의 산출 방법 원문(옵션 선정, 보간 방식)은 대조하지 못했다. 변동성지수선물도 상장되어 있다.",
+    "sources": [
+      {
+        "name": "기획재정부 시사경제용어사전, 코스피200 변동성지수",
+        "url": "https://www.mofe.go.kr/sisa/dictionary/detail?idx=2857"
+      }
+    ]
+  },
+  "us-dxy-basket": {
+    "topic": "signal",
+    "market": "US",
+    "label": "ICE 달러지수(DXY)의 통화와 몫",
+    "value": "유로 57.6% · 엔 13.6% · 파운드 11.9% · 캐나다 달러 9.1% · 스웨덴 크로나 4.2% · 스위스 프랑 3.6% · 기하평균 · 1973년 3월 = 100",
+    "short": "유로 57.6%, 엔 13.6%, 영국 파운드 11.9%, 캐나다 달러 9.1%, 스웨덴 크로나 4.2%, 스위스 프랑 3.6%의 몫으로 여섯 환율을 기하평균하며, 1973년 3월을 100으로 둔다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "ICE FX Indexes 방법론. 지수 = 50.14348112 × 각 환율(달러 1에 그 통화 몇 단위)의 몫 거듭제곱의 곱. 1973년 미국 연준이 당시 주요 교역 상대국으로 만든 지수이고, 문서는 몫을 처음부터 바꾸지 않았다고 적는다(1999년 유로가 옛 유럽 통화들을 대신했다). 장중 1초마다 계산하며 화~금요일은 전날 오후 7시 45분, 월요일은 전날 오후 6시부터 오후 7시 15분(미국 동부시간)까지 낸다.",
+    "sources": [
+      {
+        "name": "ICE Data Indices, ICE FX Indexes Methodology",
+        "url": "https://www.nyse.com/publicdocs/nyse/indices/ICE_FX_Indexes_Methodology.pdf"
+      }
+    ]
+  },
+  "us-fed-broad-dollar": {
+    "topic": "signal",
+    "market": "US",
+    "label": "미국 연준 광의 달러지수(H.10)",
+    "value": "26개 통화(유로 포함, 원화 포함) · 상품·서비스 교역 비중 · 가중치 해마다 갱신 · 2006년 1월 = 100",
+    "short": "한국 원화를 포함한 26개 통화(유로 지역은 하나로 셈)를 상품과 서비스 교역 비중으로 가중하며, 가중치는 해마다 다시 정한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "연준 H.10 가중치 표와 2019년 1월 15일 FEDS Notes(von Beschwitz, Collins, Datta). 2019년 2월 4일부터 서비스 교역을 가중치에 넣고 2006년 1월을 기준으로 다시 냈다. 가중치는 해마다 고치며 특별한 때는 그 밖에도 고칠 수 있다. 원화의 몫은 해마다 바뀌므로 표에서 확인한다. FRED 계열 이름은 DTWEXBGS(일별)이다.",
+    "sources": [
+      {
+        "name": "미국 연방준비제도, H.10 Broad Index Weights",
+        "url": "https://www.federalreserve.gov/releases/h10/weights/"
+      },
+      {
+        "name": "미국 연방준비제도 FEDS Notes, Revisions to the Federal Reserve Dollar Indexes, 2019.1.15",
+        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/revisions-to-the-federal-reserve-dollar-indexes-20190115.htm"
+      }
+    ]
+  },
+  "kr-fx-hours": {
+    "topic": "signal",
+    "market": "KR",
+    "label": "서울 외환시장 원·달러 거래 시간",
+    "value": "주 5일 24시간(뉴욕 서머타임 기간 월 06:00~토 06:00, 그 밖에는 월 07:00~토 07:00, 한국 시각) · 원화와 다른 통화 거래는 09:00~15:30",
+    "short": "2026년 7월 6일부터 원·달러는 주말과 1월 1일을 뺀 모든 날 24시간 거래한다(뉴욕 서머타임 기간 월요일 오전 6시~토요일 오전 6시, 그 밖에는 오전 7시 기준). 원화와 다른 통화의 거래는 오전 9시~오후 3시 30분이다",
+    "effective": "2026-07-06",
+    "checked": "2026-10-31",
+    "level": "press",
+    "note": "서울외환시장운영협의회가 2026년 5월 29일 행동규범 개정을 의결했다는 보도로 확인했다. 그 전에는 2024년 7월 1일부터 오전 9시~다음 날 새벽 2시, 그보다 앞서는 오전 9시~오후 3시 30분이었다. 한국 공휴일에도 거래하며, 결제는 두 나라가 모두 영업하는 날에 한다. 보도된 오후 3시 30분 종가와 시장평균환율(매매기준율)은 당분간 그대로 두고, 중개회사가 오전 6시부터 다음 날 오전 6시까지의 시간가중평균환율을 따로 낸다고 했다. 시장평균환율을 시간가중 방식으로 바꿀지는 확인하지 못했다. 기획재정부·한국은행 원문 보도자료와 대조하지 못했다.",
+    "sources": [
+      {
+        "name": "헤럴드경제, 2026.5.30",
+        "url": "https://www.heraldk.com/article/2026053019000068965"
+      },
+      {
+        "name": "이투데이, 2024.6 (2024년 7월 연장 의결)",
+        "url": "https://www.etoday.co.kr/news/view/2370025"
+      }
+    ]
+  },
+  "us-ff-futures": {
+    "topic": "signal",
+    "market": "US",
+    "label": "30일 연방기금금리 선물(CBOT)의 가격",
+    "value": "가격 = 100 − 결제월 하루하루 실효 연방기금금리의 산술평균 · 계약 금액 4,167달러 × 지수(0.01%포인트에 41.67달러)",
+    "short": "가격은 100에서 결제월 하루하루의 실효 연방기금금리를 산술평균한 값을 뺀 값이고, 그달 마지막 영업일에 거래가 끝나 현금으로 정산한다",
+    "checked": "2026-10-31",
+    "level": "pending",
+    "note": "CME그룹 시카고상품거래소(CBOT) 규정 22장의 내용이다. CME 웹사이트가 응답하지 않아 원문을 직접 열지 못했고, 규정집과 CME 안내 글을 옮긴 검색 결과로만 대조했다. 주말·휴일은 직전 영업일 금리를 그대로 쓴다. FedWatch는 이 가격으로 회의 전후 금리를 꺼내고 결정이 0.25%포인트 단위라고 가정한다.",
+    "sources": [
+      {
+        "name": "CME Group, CBOT Rulebook Chapter 22: 30-Day Federal Funds Futures",
+        "url": "https://www.cmegroup.com/rulebook/CBOT/III/22.pdf"
+      },
+      {
+        "name": "CME Group, Understanding the CME Group FedWatch Tool Methodology",
+        "url": "https://www.cmegroup.com/articles/2023/understanding-the-cme-group-fedwatch-tool-methodology.html"
+      }
+    ]
+  },
+  "us-effr": {
+    "topic": "signal",
+    "market": "US",
+    "label": "실효 연방기금금리(EFFR)",
+    "value": "FR 2420 보고 익일물 연방기금 거래의 거래량 가중 중앙값 · 다음 영업일 약 09:00 (미국 동부시간) 공표",
+    "short": "뉴욕 연방준비은행이 은행들이 보고한 하루짜리 연방기금 거래를 모아 거래량으로 가중한 중앙값을 구해, 다음 영업일 오전 9시 무렵(미국 동부시간) 발표한다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "연방공개시장위원회가 정하는 것은 0.25%포인트 폭의 목표 범위이고, 실효금리는 그 안에서 시장 거래로 정해진다. 한국 시각으로는 서머타임 기간 밤 10시, 그 밖에는 밤 11시 무렵이다. FRED 계열 이름은 EFFR(일별)과 DFF(일별, 주말 포함)이다.",
+    "sources": [
+      {
+        "name": "뉴욕 연방준비은행, Effective Federal Funds Rate",
+        "url": "https://www.newyorkfed.org/markets/reference-rates/effr"
+      }
+    ]
+  },
+  "us-5y5y": {
+    "topic": "signal",
+    "market": "US",
+    "label": "5년 뒤 5년 기대 물가(FRED T5YIFR)의 계산",
+    "value": "((1 + 10년 손익분기)^10 ÷ (1 + 5년 손익분기)^5)^(1/5) − 1",
+    "short": "10년 손익분기 인플레이션을 열 번 복리로 쌓은 값을 5년 손익분기를 다섯 번 쌓은 값으로 나누고, 다섯 해 평균으로 되돌린다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "세인트루이스 연방준비은행 FRED의 T5YIFR 설명. 손익분기는 같은 만기의 일반 국채 금리에서 물가연동국채(TIPS) 금리를 뺀 값이고, 2019년 6월 21일부터 미국 재무부 금리 자료를 직접 쓴다. 10년 손익분기는 T10YIE, 5년은 T5YIE이다. 미국 연준이 자체 모형으로 내는 다른 5년 뒤 5년 지표도 있으므로 출처를 확인한다.",
+    "sources": [
+      {
+        "name": "FRED, 5-Year, 5-Year Forward Inflation Expectation Rate (T5YIFR)",
+        "url": "https://fred.stlouisfed.org/series/T5YIFR"
+      },
+      {
+        "name": "FRED, 10-Year Breakeven Inflation Rate (T10YIE)",
+        "url": "https://fred.stlouisfed.org/series/T10YIE"
       }
     ]
   }

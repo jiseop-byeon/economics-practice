@@ -5542,5 +5542,453 @@ window.GLOSSARY = [
   "hanja": "分離課稅 選擇",
   "en": "option for separate taxation",
   "one": "사적연금이 기준 금액을 넘을 때 종합과세와 정해진 세율의 분리과세 가운데 하나를 고르는 제도이다."
+ },
+ {
+  "id": "reading3-payroll",
+  "chapter": "reading-3",
+  "title": "비농업 고용",
+  "hanja": "非農業 雇傭",
+  "en": "nonfarm payroll employment",
+  "one": "미국 사업체 조사가 센, 농업 밖 급여 장부에 오른 일자리 수로, 고용보고서 머리기사의 전월 대비 증감이 이 숫자이다.",
+  "econ": "t791"
+ },
+ {
+  "id": "reading3-unemployment",
+  "chapter": "reading-3",
+  "title": "실업률",
+  "hanja": "失業率",
+  "en": "unemployment rate (household survey)",
+  "one": "미국 고용보고서에서는 사업체 조사가 아니라 가구에 묻는 가계 조사로 구하는, 경제활동인구 가운데 실업자의 비율이다.",
+  "econ": "t403"
+ },
+ {
+  "id": "reading3-ahe",
+  "chapter": "reading-3",
+  "title": "평균 시간당 임금",
+  "hanja": "平均 時間當 賃金",
+  "en": "average hourly earnings",
+  "one": "민간 비농업 근로자가 한 시간에 받는 평균 급여로, 누가 일하느냐에 따라서도 움직이는 평균값이다.",
+  "econ": "t406"
+ },
+ {
+  "id": "reading3-lfpr",
+  "chapter": "reading-3",
+  "title": "경제활동참가율",
+  "hanja": "經濟活動參加率",
+  "en": "labor force participation rate",
+  "one": "일할 나이의 인구 가운데 일하거나 일자리를 찾는 사람의 비율로, 실업률 하락이 구직 포기 때문인지를 가려 준다.",
+  "econ": "t035"
+ },
+ {
+  "id": "reading3-claims",
+  "chapter": "reading-3",
+  "title": "신규 실업수당 청구",
+  "hanja": "新規 失業手當 請求",
+  "en": "initial jobless claims",
+  "one": "실업보험 급여를 처음 신청한 건수를 매주 센 미국 노동부 숫자로, 해고의 흐름을 가장 빨리 보여 준다.",
+  "econ": "t795"
+ },
+ {
+  "id": "reading3-jolts",
+  "chapter": "reading-3",
+  "title": "구인·이직 조사",
+  "hanja": "求人·移職 調査",
+  "en": "Job Openings and Labor Turnover Survey (JOLTS)",
+  "one": "사업체에 빈자리, 채용, 떠난 사람의 수를 묻는 미국 노동통계국 조사로, 고용보고서보다 한 달쯤 늦게 나온다.",
+  "econ": "t793"
+ },
+ {
+  "id": "reading3-benchmark",
+  "chapter": "reading-3",
+  "title": "벤치마크 수정",
+  "hanja": "",
+  "en": "benchmark revision",
+  "one": "사업체 조사의 표본 추정을 해마다 한 번 실업보험 납부 기록의 일자리 수에 맞춰 고치는 일이다."
+ },
+ {
+  "id": "reading3-kr-jobs",
+  "chapter": "reading-3",
+  "title": "취업자 증감",
+  "hanja": "就業者 增減",
+  "en": "change in employed persons",
+  "one": "국가데이터처 고용동향의 머리기사 숫자로, 가구 조사로 센 취업자가 지난해 같은 달보다 몇 명 늘거나 줄었는지이다.",
+  "econ": "t041"
+ },
+ {
+  "id": "reading3-kr-emprate",
+  "chapter": "reading-3",
+  "title": "고용률",
+  "hanja": "雇傭率",
+  "en": "employment rate",
+  "one": "인구 가운데 취업자의 비율로, 고용동향은 15세 이상과 15~64세(OECD 비교 기준)를 따로 싣는다.",
+  "econ": "t041"
+ },
+ {
+  "id": "reading4-headline-core",
+  "chapter": "reading-4",
+  "title": "헤드라인과 근원",
+  "hanja": "總指數 · 根源物價",
+  "en": "headline and core inflation",
+  "one": "모든 품목으로 잰 물가 상승률과, 값이 크게 출렁이는 식료품·에너지를 뺀 상승률이다.",
+  "econ": "t108"
+ },
+ {
+  "id": "reading4-shelter-oer",
+  "chapter": "reading-4",
+  "title": "주거비와 자가 등가 임대료",
+  "hanja": "住居費 · 自家等價賃貸料",
+  "en": "shelter, owners' equivalent rent (OER)",
+  "one": "미국 CPI에서 가장 큰 몫인 주거비와, 자기 집에 사는 값을 그 집의 임대료로 환산한 항목이다. 집값은 들어가지 않는다.",
+  "econ": "t347"
+ },
+ {
+  "id": "reading4-annualized",
+  "chapter": "reading-4",
+  "title": "전월비 연율화",
+  "hanja": "前月比 年率化",
+  "en": "annualized monthly rate",
+  "one": "한 달 상승률이 1년 내내 이어진다고 가정해 1년 치 속도로 바꾼 숫자이다."
+ },
+ {
+  "id": "reading4-pce",
+  "chapter": "reading-4",
+  "title": "PCE 물가지수",
+  "hanja": "個人消費支出物價指數",
+  "en": "PCE price index",
+  "one": "미국 경제분석국이 개인소비지출로 만든 물가지수로, 연준의 2% 목표가 이 지수의 연간 변화율로 정해져 있다.",
+  "econ": "t242"
+ },
+ {
+  "id": "reading4-ppi",
+  "chapter": "reading-4",
+  "title": "생산자물가지수 최종수요",
+  "hanja": "生産者物價指數 最終需要",
+  "en": "PPI final demand",
+  "one": "국내 생산자가 상품·서비스·건설을 팔고 받은 값의 변화를 판 사람 쪽에서 잰 지수이다.",
+  "econ": "t322"
+ },
+ {
+  "id": "reading4-survey-expectations",
+  "chapter": "reading-4",
+  "title": "설문으로 잰 기대인플레이션",
+  "hanja": "設問 · 期待",
+  "en": "survey-based inflation expectations",
+  "one": "가계나 전문가에게 앞으로 물가가 얼마나 오를지 물어 모은 숫자로, 미시간 대학교 소비자 조사와 한국은행 소비자동향조사가 대표적이다.",
+  "econ": "t143"
+ },
+ {
+  "id": "reading4-bei",
+  "chapter": "reading-4",
+  "title": "손익분기 인플레이션",
+  "hanja": "損益分岐",
+  "en": "breakeven inflation rate, BEI",
+  "one": "같은 만기의 일반 국채 금리에서 물가연동국채 금리를 뺀 값으로, 시장 가격에 담긴 물가 기대에 웃돈과 유동성 요인이 섞여 있다.",
+  "econ": "t234"
+ },
+ {
+  "id": "reading4-kr-cpi",
+  "chapter": "reading-4",
+  "title": "한국 소비자물가의 바구니",
+  "hanja": "消費者物價",
+  "en": "Korean CPI basket",
+  "one": "국가데이터처가 품목과 가중치를 정해 매달 작성하는 소비자물가지수의 구성으로, 집세는 들어가고 자가주거비는 빠진다.",
+  "econ": "t347"
+ },
+ {
+  "id": "reading4-kr-core",
+  "chapter": "reading-4",
+  "title": "한국의 근원물가",
+  "hanja": "根源物價",
+  "en": "Korean core inflation measures",
+  "one": "농산물 및 석유류 제외 지수와, 식료품 및 에너지 제외 지수(OECD 방식) 두 가지이다.",
+  "econ": "t108"
+ },
+ {
+  "id": "reading5-pmi",
+  "chapter": "reading-5",
+  "title": "구매관리자지수",
+  "hanja": "購買管理者指數",
+  "en": "Purchasing Managers' Index, PMI",
+  "one": "기업 구매 담당자에게 주문·생산·고용 등이 지난달보다 늘었는지 줄었는지를 물어 한 숫자로 묶은 설문 지표이다."
+ },
+ {
+  "id": "reading5-diffusion",
+  "chapter": "reading-5",
+  "title": "확산지수",
+  "hanja": "擴散指數",
+  "en": "diffusion index",
+  "one": "'늘었다'는 응답 비율에 '같다'는 응답 비율의 절반을 더한 값으로, 50을 넘으면 늘었다는 쪽이 많다는 뜻이다.",
+  "econ": "t325"
+ },
+ {
+  "id": "reading5-ism-sub",
+  "chapter": "reading-5",
+  "title": "PMI 하위지수",
+  "hanja": "下位指數",
+  "en": "PMI subindexes",
+  "one": "신규주문, 가격, 고용처럼 PMI를 이루거나 PMI와 함께 실리는 항목별 확산지수이다."
+ },
+ {
+  "id": "reading5-spg-pmi",
+  "chapter": "reading-5",
+  "title": "S&P Global PMI",
+  "hanja": "",
+  "en": "S&P Global PMI",
+  "one": "S&P Global이 40여 개 나라에서 같은 틀로 내는 구매관리자지수로, 미국 제조업 지수는 신규주문에 가장 큰 무게를 둔다."
+ },
+ {
+  "id": "reading5-retail",
+  "chapter": "reading-5",
+  "title": "소매판매와 통제그룹",
+  "hanja": "小賣販賣 · 統制그룹",
+  "en": "retail sales and control group",
+  "one": "소매점과 음식점의 월간 판매 금액과, 거기서 자동차·주유소·건축자재·음식점을 뺀 묶음이다.",
+  "econ": "t344"
+ },
+ {
+  "id": "reading5-nowcast",
+  "chapter": "reading-5",
+  "title": "실시간 성장률 추정",
+  "hanja": "實時間 成長率 推定",
+  "en": "nowcast",
+  "one": "분기 성장률이 발표되기 전에 그동안 나온 월간 지표로 성장률을 미리 계산해 보는 일이다.",
+  "econ": "t074"
+ },
+ {
+  "id": "reading5-lei",
+  "chapter": "reading-5",
+  "title": "컨퍼런스보드 선행종합지수",
+  "hanja": "先行綜合指數",
+  "en": "Conference Board Leading Economic Index, LEI",
+  "one": "미국 민간 연구기관 컨퍼런스보드가 경기보다 먼저 움직인다는 열 개 지표를 묶어 내는 지수이다.",
+  "econ": "t335"
+ },
+ {
+  "id": "reading5-recession-dating",
+  "chapter": "reading-5",
+  "title": "경기침체 판정",
+  "hanja": "景氣沈滯 判定",
+  "en": "business cycle dating",
+  "one": "경기의 정점과 저점을 날짜로 정하는 일로, 미국은 전미경제연구소 위원회가 늦게 사후에 정한다.",
+  "econ": "t155"
+ },
+ {
+  "id": "reading5-false-signal",
+  "chapter": "reading-5",
+  "title": "맞은 신호와 틀린 신호",
+  "hanja": "信號",
+  "en": "true and false signals",
+  "one": "선행지표가 가리킨 침체가 나중에 판정된 침체와 맞았는지를 따진 기록이다."
+ },
+ {
+  "id": "reading5-kr-export",
+  "chapter": "reading-5",
+  "title": "수출 잠정치와 일평균 수출",
+  "hanja": "輸出 暫定値 · 日平均 輸出",
+  "en": "preliminary exports and average daily exports",
+  "one": "세관 신고로 먼저 집계한 수출 금액과, 그것을 조업일수로 나눈 하루치 수출이다.",
+  "econ": "t360"
+ },
+ {
+  "id": "reading5-kr-industry",
+  "chapter": "reading-5",
+  "title": "산업활동동향",
+  "hanja": "産業活動動向",
+  "en": "Industrial Activity Trends",
+  "one": "국가데이터처가 매달 생산, 소비, 투자와 경기종합지수를 묶어 내는 발표이다.",
+  "econ": "t548"
+ },
+ {
+  "id": "reading5-kr-cycle",
+  "chapter": "reading-5",
+  "title": "경기종합지수와 순환변동치",
+  "hanja": "景氣綜合指數 · 循環變動値",
+  "en": "composite indexes and cyclical components",
+  "one": "경기에 민감한 지표를 합성한 지수와, 거기서 장기 추세를 걷어 내 오르내림만 남긴 값이다.",
+  "econ": "t027"
+ },
+ {
+  "id": "reading6-fomc-statement",
+  "chapter": "reading-6",
+  "title": "FOMC 성명",
+  "hanja": "FOMC 聲明",
+  "en": "FOMC statement",
+  "one": "연방공개시장위원회가 정례회의 마지막 날 결정, 경제 평가, 앞으로의 방향, 표결 결과를 적어 내는 발표문이다.",
+  "econ": "t683"
+ },
+ {
+  "id": "reading6-sep",
+  "chapter": "reading-6",
+  "title": "경제전망 요약",
+  "hanja": "經濟展望 要約",
+  "en": "Summary of Economic Projections (SEP)",
+  "one": "연방공개시장위원회 참가자 각자의 성장·실업·물가·정책금리 전망을 모아 1년에 네 번 내는 자료이다.",
+  "econ": "t033"
+ },
+ {
+  "id": "reading6-dot-plot",
+  "chapter": "reading-6",
+  "title": "점도표",
+  "hanja": "點圖表",
+  "en": "dot plot",
+  "one": "참가자 한 사람이 생각하는 해마다의 적절한 정책금리를 점 하나로 찍어 모은 그림이다.",
+  "econ": "t154"
+ },
+ {
+  "id": "reading6-minutes",
+  "chapter": "reading-6",
+  "title": "의사록",
+  "hanja": "議事錄",
+  "en": "minutes",
+  "one": "통화정책 회의에서 오간 논의를 이름 없이 정리해 몇 주 뒤 공개하는 기록이다.",
+  "econ": "t139"
+ },
+ {
+  "id": "reading6-curve-inversion",
+  "chapter": "reading-6",
+  "title": "장단기 금리차 역전",
+  "hanja": "長短期 金利差 逆轉",
+  "en": "yield curve inversion",
+  "one": "만기가 긴 국채의 금리가 만기가 짧은 국채의 금리보다 낮아지는 일이다.",
+  "econ": "t540"
+ },
+ {
+  "id": "reading6-recession-dating",
+  "chapter": "reading-6",
+  "title": "경기침체 판정",
+  "hanja": "景氣沈滯 判定",
+  "en": "business cycle dating",
+  "one": "경기의 정점과 저점을 공식 기록으로 정하는 일로, 미국에서는 미국 경제연구소(NBER) 위원회가 뒤늦게 발표한다.",
+  "econ": "t024"
+ },
+ {
+  "id": "reading6-hy-spread",
+  "chapter": "reading-6",
+  "title": "하이일드 스프레드",
+  "en": "high-yield spread",
+  "one": "투기등급 회사채의 금리가 만기가 비슷한 국채 금리보다 얼마나 높은지를 나타낸 값이다.",
+  "econ": "t568"
+ },
+ {
+  "id": "reading6-fed-balance-sheet",
+  "chapter": "reading-6",
+  "title": "연준 대차대조표",
+  "hanja": "聯準 貸借對照表",
+  "en": "Federal Reserve balance sheet",
+  "one": "연방준비제도가 가진 국채·MBS 같은 자산과 현금·지급준비금·재무부 계정·역레포 같은 부채를 적은 표이다.",
+  "econ": "t428"
+ },
+ {
+  "id": "reading6-qe-qt",
+  "chapter": "reading-6",
+  "title": "양적완화와 양적긴축",
+  "hanja": "量的緩和와 量的緊縮",
+  "en": "quantitative easing and tightening",
+  "one": "중앙은행이 자산을 대규모로 사들여 대차대조표를 키우거나, 거꾸로 만기 원금을 재투자하지 않아 줄이는 정책이다.",
+  "econ": "t415"
+ },
+ {
+  "id": "reading6-onrrp",
+  "chapter": "reading-6",
+  "title": "역레포",
+  "hanja": "逆레포",
+  "en": "overnight reverse repurchase agreement (ON RRP)",
+  "one": "연준이 국채를 담보로 내주고 하룻밤 돈을 받아 두는 거래로, 단기금리의 바닥 구실을 한다.",
+  "econ": "t736"
+ },
+ {
+  "id": "reading6-reserves",
+  "chapter": "reading-6",
+  "title": "지급준비금",
+  "hanja": "支給準備金",
+  "en": "reserve balances",
+  "one": "은행이 중앙은행에 맡겨 둔 예금으로, 은행끼리의 결제가 이 계좌로 이루어진다.",
+  "econ": "t607"
+ },
+ {
+  "id": "reading6-m2",
+  "chapter": "reading-6",
+  "title": "통화량(M2)",
+  "hanja": "通貨量",
+  "en": "money supply (M2)",
+  "one": "현금과 입출금 예금에 정기예금, 머니마켓펀드 같은 것까지 더해 넓게 잰 돈의 양이다.",
+  "econ": "t060"
+ },
+ {
+  "id": "reading7-vix",
+  "chapter": "reading-7",
+  "title": "VIX",
+  "hanja": "變動性指數",
+  "en": "Cboe Volatility Index, VIX",
+  "one": "S&P 500 지수 옵션 값에서 거꾸로 계산한, 앞으로 30일 동안 미국 주가가 얼마나 흔들릴지에 대한 기대를 1년 기준 퍼센트로 적은 지수이다.",
+  "econ": "t797"
+ },
+ {
+  "id": "reading7-vrp",
+  "chapter": "reading-7",
+  "title": "변동성 위험 프리미엄",
+  "hanja": "變動性 危險 프리미엄",
+  "en": "variance risk premium",
+  "one": "옵션 값에 담긴 기대 변동성이 나중에 실제로 나타난 변동성보다 평균적으로 높은 부분으로, 큰 하락을 대비하는 보험료에 해당한다."
+ },
+ {
+  "id": "reading7-dxy",
+  "chapter": "reading-7",
+  "title": "달러지수",
+  "hanja": "달러指數",
+  "en": "U.S. Dollar Index, DXY",
+  "one": "유로, 엔, 파운드 등 여섯 통화에 대한 달러의 값을 고정된 몫으로 기하평균한 지수로, 원화는 들어 있지 않다.",
+  "econ": "t246"
+ },
+ {
+  "id": "reading7-usdkrw",
+  "chapter": "reading-7",
+  "title": "원·달러 환율",
+  "hanja": "원·달러 換率",
+  "en": "USD/KRW exchange rate",
+  "one": "1달러를 사는 데 드는 원화의 값으로, 숫자가 커지면 원화가 약해진 것이다. 달러지수와 견주면 달러 쪽과 원화 쪽 사정을 나눠 볼 수 있다.",
+  "econ": "t156"
+ },
+ {
+  "id": "reading7-ff-futures",
+  "chapter": "reading-7",
+  "title": "연방기금금리 선물",
+  "hanja": "聯邦基金金利 先物",
+  "en": "30-Day Federal Funds futures",
+  "one": "어느 달 하루하루의 미국 연방기금 실효금리 평균을 놓고 거래하는 선물로, 가격은 100에서 그 평균 금리를 뺀 값으로 매긴다.",
+  "econ": "t114"
+ },
+ {
+  "id": "reading7-meeting-prob",
+  "chapter": "reading-7",
+  "title": "회의별 금리 확률",
+  "hanja": "會議別 金利 確率",
+  "en": "meeting-implied rate probabilities",
+  "one": "금리선물 가격에서 회의 뒤의 금리를 꺼내 0.25%포인트 단위의 결정으로 나눠 확률처럼 적은 값으로, FedWatch가 대표적이다."
+ },
+ {
+  "id": "reading7-rate-premium",
+  "chapter": "reading-7",
+  "title": "금리선물의 위험 프리미엄",
+  "hanja": "金利先物 危險 프리미엄",
+  "en": "risk premium in fed funds futures",
+  "one": "금리선물 가격에서 꺼낸 금리가 실제로 예상하는 금리와 다른 부분으로, 금리 위험을 떠안는 대가이다."
+ },
+ {
+  "id": "reading7-5y5y",
+  "chapter": "reading-7",
+  "title": "5년 뒤 5년 기대 물가",
+  "hanja": "5年 뒤 5年 期待 物價",
+  "en": "5-year, 5-year forward inflation expectation",
+  "one": "5년과 10년 손익분기 인플레이션에서 6년째부터 10년째까지의 평균 물가 상승률 기대를 꺼낸 값이다.",
+  "econ": "t143"
+ },
+ {
+  "id": "reading7-priced-in",
+  "chapter": "reading-7",
+  "title": "가격에 반영된 기대",
+  "hanja": "價格에 反映된 期待",
+  "en": "priced-in expectations",
+  "one": "앞으로 일어날 일에 대한 시장의 예상이 이미 지금 가격에 들어가 있는 상태로, 결정이 나오면 그 예상과의 차이만큼 가격이 움직인다."
  }
 ];

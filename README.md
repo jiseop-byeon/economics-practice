@@ -23,3 +23,7 @@ python3 -m http.server 8766
 ```
 
 빌드 단계는 없다. 읽음 기록은 이 브라우저의 `localStorage`(`practice-v1`)에만 남고, 밝기 설정은 경제학습과 함께 쓴다.
+
+## 새 장 합치기
+
+장마다 `{chapter, html, glossary[], rules{}, topics[], unverified[]}` 형식의 JSON을 한 폴더에 두고 `python3 scripts/merge.py . <폴더> --dry`로 겹침과 빠진 참조를 본 뒤, `--dry` 없이 다시 돌려 `js/rules.js`, `js/glossary.js`, `js/chapters.js`, `js/toc.js`에 합친다.

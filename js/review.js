@@ -12,6 +12,7 @@ window.REVIEW_GROUPS = [
   { id: "pension", name: "연금", days: 365, why: "국민연금 보험료율이 해마다 오르고, 연금 세제는 연초 세법 개정 때 바뀐다.", topics: ["pension"] },
   { id: "estate", name: "상속·증여", days: 365, why: "공제액과 세율은 세법 개정 때만 바뀐다. 연초에 본다.", topics: ["estate"] },
   { id: "funds", name: "펀드와 구조화 상품", days: 365, why: "펀드 제도와 파생결합증권 판매 규제는 드물게 바뀐다.", topics: ["funds"] },
+  { id: "indicators", name: "경제지표의 구성과 시장 신호", days: 365, why: "지표 가중치는 해마다 바뀌고(CPI는 연초), 조사 방법과 발표 시각, 연준 운영 방식은 드물게 바뀐다.", topics: ["indicator", "fed-liquidity", "signal"] },
   { id: "bonds", name: "채권과 국채", days: 365, why: "발행 제도와 등급 체계는 드물게 바뀐다.", topics: ["bonds", "rating", "govbond"] },
   { id: "deriv", name: "파생상품 명세와 일정", days: 365, why: "계약 명세와 만기 규칙은 드물게 바뀐다.", topics: ["deriv"] },
   { id: "commodity", name: "원자재 계약과 발표 일정", days: 365, why: "거래소 명세와 정기 발표 일정.", topics: ["commodity", "metals", "energy"] },

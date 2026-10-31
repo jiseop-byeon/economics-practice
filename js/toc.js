@@ -98,11 +98,11 @@ window.CHAPTERS = [
 
   { id: "reading-1", part: "reading", status: "ready", title: "경제지표 발표 일정", dek: "언제 무엇이 발표되고, 시장은 무엇과 비교해 움직이는지." },
   { id: "reading-2", part: "reading", status: "ready", title: "리포트 읽는 순서", dek: "목표주가와 의견보다 먼저 보는 가정과 숫자." },
-  { id: "reading-3", part: "reading", status: "planned", title: "고용 지표 읽기", dek: "비농업 고용과 실업률이 엇갈리는 이유, 임금, 실업수당 청구, 구인·이직 통계, 한국 고용동향." },
-  { id: "reading-4", part: "reading", status: "planned", title: "물가 지표 읽기", dek: "CPI 헤드라인과 근원, 주거비, PCE와의 차이, 생산자물가, 기대인플레이션." },
-  { id: "reading-5", part: "reading", status: "planned", title: "경기 지표 읽기", dek: "ISM PMI와 하위지수, 소매판매, GDP 속보와 실시간 추정, 선행종합지수, 한국 수출과 산업활동." },
-  { id: "reading-6", part: "reading", status: "planned", title: "금리와 유동성 신호", dek: "FOMC 성명과 점도표, 장단기 금리차 역전의 기록, 신용 스프레드, 연준 대차대조표와 양적긴축, 통화량." },
-  { id: "reading-7", part: "reading", status: "planned", title: "시장이 내는 신호", dek: "VIX, 달러지수와 환율, 금리선물에서 읽는 기준금리 기대, 시장 가격에 담긴 물가 기대." },
+  { id: "reading-3", part: "reading", status: "ready", title: "고용 지표 읽기", dek: "비농업 고용과 실업률이 엇갈리는 이유, 임금, 실업수당 청구, 구인·이직 통계, 한국 고용동향." },
+  { id: "reading-4", part: "reading", status: "ready", title: "물가 지표 읽기", dek: "CPI 헤드라인과 근원, 주거비, PCE와의 차이, 생산자물가, 기대인플레이션." },
+  { id: "reading-5", part: "reading", status: "ready", title: "경기 지표 읽기", dek: "ISM PMI와 하위지수, 소매판매, GDP 속보와 실시간 추정, 선행종합지수, 한국 수출과 산업활동." },
+  { id: "reading-6", part: "reading", status: "ready", title: "금리와 유동성 신호", dek: "FOMC 성명과 점도표, 장단기 금리차 역전의 기록, 신용 스프레드, 연준 대차대조표와 양적긴축, 통화량." },
+  { id: "reading-7", part: "reading", status: "ready", title: "시장이 내는 신호", dek: "VIX, 달러지수와 환율, 금리선물에서 읽는 기준금리 기대, 시장 가격에 담긴 물가 기대." },
 
   { id: "cases-1", part: "cases", status: "ready", title: "불완전판매", dek: "설명을 제대로 듣지 못하고 산 상품, 분쟁조정에서 무엇이 갈렸나." },
   { id: "cases-2", part: "cases", status: "ready", title: "리딩방과 투자 사기", dek: "되풀이되는 수법과 확인 방법." },
