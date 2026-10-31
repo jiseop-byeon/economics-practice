@@ -175,8 +175,8 @@ window.RULES = {
     "label": "정규시장 매매 시간 (한국거래소)",
     "value": "09:00~15:30",
     "short": "오전 9시부터 오후 3시 30분",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "시작 전에 모은 주문으로 시작 가격을 한 번에 정하고, 마감 직전 10분(15:20~15:30)에도 같은 방식으로 마감 가격을 정한다(단일가매매). 그 사이에는 주문이 들어오는 대로 체결한다(접속매매).",
     "sources": [
       {
@@ -186,6 +186,14 @@ window.RULES = {
       {
         "name": "한국거래소 영문 매매제도 안내",
         "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602020204/GLB0602020204T6.jsp"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 매매거래제도일반(매매거래의 일반절차·매매거래시간), 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 주문유형(조건부지정가: 장종료 전 10분간 단일가매매), 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T2.jsp"
       }
     ]
   },
@@ -196,8 +204,8 @@ window.RULES = {
     "value": "16:00~20:00",
     "short": "오후 4시부터 8시",
     "effective": "2026-09-14",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 9월 14일 시작하며 기존 시간외 단일가매매를 대신한다. 오전 프리마켓(07:00~07:50 계획)은 2027년 말로 미뤄졌다.",
     "sources": [
       {
@@ -207,6 +215,14 @@ window.RULES = {
       {
         "name": "이투데이, 2026.6.19",
         "url": "https://www.etoday.co.kr/news/view/2595443"
+      },
+      {
+        "name": "한국거래소 규정/제도, 시간외종가/애프터마켓, 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010301/RGL03010301.jsp"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 매매거래시간 표, 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp"
       }
     ]
   },
@@ -217,8 +233,8 @@ window.RULES = {
     "value": "프리 08:00~08:50, 애프터 15:40~20:00",
     "short": "오전 8시~8시 50분과 오후 3시 40분~8시",
     "effective": "2025-03-04",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "정규시장 시간에는 한국거래소와 함께 거래한다. 시작·마감 단일가매매 시간에는 넥스트레이드 거래가 멈춘다. 출범 때 보도는 애프터마켓 시작을 15:30으로 적었다.",
     "sources": [
       {
@@ -228,6 +244,14 @@ window.RULES = {
       {
         "name": "뉴시스, 2025.2.14",
         "url": "https://www.newsis.com/view/NISX20250214_0003065753"
+      },
+      {
+        "name": "넥스트레이드, NXT 시장 시장개요 및 거래제도, 2026.10 확인",
+        "url": "https://www.nextrade.co.kr/marketOverview/content.do"
+      },
+      {
+        "name": "넥스트레이드, 거래제도 - 매매거래일 및 매매거래시간, 2026.10 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-2.html"
       }
     ]
   },
@@ -254,13 +278,21 @@ window.RULES = {
     "value": "기준가격 ±30%",
     "short": "전날 기준가격의 위아래 30%",
     "effective": "2015-06-15",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "하루에 이 범위 밖의 가격으로는 사고팔 수 없다. 개별 종목이 갑자기 크게 움직이면 잠시 단일가매매로 바꾸는 변동성완화장치(VI)도 있다.",
     "sources": [
       {
         "name": "삼성증권 국내주식 매매제도 안내",
         "url": "https://www.samsungpop.com/ux/kor/customer/guide/workproductguide/domesticStockTab2.do"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 가격제한폭 제도(변경 내역 '15.6.15 30%), 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T5.jsp"
+      },
+      {
+        "name": "한국거래소 규정/제도, 코스닥시장 기준가격/가격제한폭/상하한가, 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03020201/RGL03020201.jsp"
       }
     ]
   },
@@ -270,13 +302,21 @@ window.RULES = {
     "label": "하루 가격제한폭",
     "value": "없음",
     "short": "정해진 하루 상한·하한이 없다",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "대신 개별 종목이 5분 기준가격에서 5% 또는 10%(종목 등급별) 넘게 벗어난 채 15초가 지나면 5분 멈추는 LULD 장치가 있다.",
     "sources": [
       {
         "name": "Harvard Law School Forum, 2012.6.13 (LULD·서킷브레이커 승인 해설)",
         "url": "https://corpgov.law.harvard.edu/2012/06/13/limit-up-limit-down-plan-and-circuit-breakers-approved/"
+      },
+      {
+        "name": "LULD Plan 참가 거래소, Limit Up-Limit Down Plan 안내",
+        "url": "https://www.luldplan.com/"
+      },
+      {
+        "name": "NYSE, Trading Information (MWCB·LULD)",
+        "url": "https://www.nyse.com/markets/nyse/trading-info"
       }
     ]
   },
@@ -286,13 +326,21 @@ window.RULES = {
     "label": "시장 전체 서킷브레이커",
     "value": "S&P 500 −7% / −13% / −20%",
     "short": "S&P 500 지수가 전날보다 7%, 13%, 20% 떨어질 때",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "7%와 13%는 동부 시간 15:25 전이면 15분 멈추고, 20%는 그날 거래를 끝낸다.",
     "sources": [
       {
         "name": "Harvard Law School Forum, 2012.6.13",
         "url": "https://corpgov.law.harvard.edu/2012/06/13/limit-up-limit-down-plan-and-circuit-breakers-approved/"
+      },
+      {
+        "name": "NYSE American, SR-NYSEAMER-2026-83 (Release 34-106379), Rule 7.12E 개정 신고, 2026",
+        "url": "https://www.nyse.com/publicdocs/nyse/markets/nyse-american/rule-filings/sec-approvals/2026/(SR-NYSEAMER-2026-83)_34-106379.pdf"
+      },
+      {
+        "name": "NYSE, Trading Information (MWCB)",
+        "url": "https://www.nyse.com/markets/nyse/trading-info"
       }
     ]
   },
@@ -302,13 +350,17 @@ window.RULES = {
     "label": "주식 결제일",
     "value": "T+2",
     "short": "거래한 날부터 2영업일 뒤",
-    "checked": "2026-10-17",
-    "level": "pending",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "체결되면 계좌 화면에는 곧바로 보이지만, 판 돈을 실제로 찾을 수 있는 날은 2영업일 뒤이다.",
     "sources": [
       {
         "name": "한국예탁결제원",
         "url": "https://www.ksd.or.kr"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 매매거래의 일반절차(결제: 매매체결일부터 3일째 되는 날, T+2), 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp"
       }
     ]
   },
@@ -340,13 +392,17 @@ window.RULES = {
     "value": "2천 원 미만 1원 · 5천 원 미만 5원 · 2만 원 미만 10원 · 5만 원 미만 50원 · 20만 원 미만 100원 · 50만 원 미만 500원 · 그 이상 1,000원",
     "short": "가격대에 따라 1원에서 1,000원",
     "effective": "2023-01-25",
-    "checked": "2026-10-17",
-    "level": "pending",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2023년 1월 25일 개편으로 일부 가격대의 단위가 줄었다(예: 1만~2만 원 50원→10원). 구간 경계 전체는 거래소 시행세칙으로 다시 대조해야 한다.",
     "sources": [
       {
         "name": "블루밍비트, 2023.1 (개편 보도)",
         "url": "https://bloomingbit.io/feed/news/41211"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 호가(호가가격단위 표), 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T3.jsp"
       }
     ]
   },
@@ -357,8 +413,8 @@ window.RULES = {
     "value": "0.20%",
     "short": "판 금액의 0.20%",
     "effective": "2026-01-01",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "증권거래세 0.05%와 농어촌특별세 0.15%를 합친 값이다. 2025년에는 0.15%였다.",
     "sources": [
       {
@@ -368,6 +424,14 @@ window.RULES = {
       {
         "name": "세계일보, 2026.1.5",
         "url": "https://www.segye.com/newsView/20260105516769"
+      },
+      {
+        "name": "국가법령정보센터, 증권거래세법 시행령 제5조(유가증권시장 1만분의 5), 대통령령 제36001호 2025.12.31, 2026.1.1 시행",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280901&efYd=20260102&chrClsCd=010202&ancYnChk=0"
+      },
+      {
+        "name": "국가법령정보센터, 농어촌특별세법 제5조 제1항 제5호(증권시장 양도가액의 1만분의 15), 2026.5.12 시행본",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=285905&efYd=20260512&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -378,13 +442,17 @@ window.RULES = {
     "value": "0.20%",
     "short": "판 금액의 0.20%",
     "effective": "2026-01-01",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "농어촌특별세가 붙지 않고 증권거래세만 0.20%이다. 2025년에는 0.15%였다.",
     "sources": [
       {
         "name": "조세일보, 2025.12.1",
         "url": "https://www.taxtimes.co.kr/news/article.html?no=272624"
+      },
+      {
+        "name": "국가법령정보센터, 증권거래세법 시행령 제5조 제3호 가목(코스닥 1만분의 20), 대통령령 제36001호 2025.12.31, 2026.1.1 시행",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280901&efYd=20260102&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -394,8 +462,8 @@ window.RULES = {
     "label": "해외주식 매매차익 세금 (한국 거주자)",
     "value": "연 250만 원 공제 뒤 22%",
     "short": "1년 이익에서 250만 원을 빼고 22%",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "양도소득세 20%와 지방소득세 2%이다. 한 해의 이익과 손실을 합쳐 계산하고, 다음 해 5월에 스스로 신고한다. 손실은 다음 해로 넘기지 못한다.",
     "sources": [
       {
@@ -405,6 +473,10 @@ window.RULES = {
       {
         "name": "삼성증권 해외주식 양도소득세 안내",
         "url": "https://www.samsungpop.com/ux/kor/trading/overseasStock/overseasStockDealGuide/transferTax.do"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제103조(양도소득 기본공제 연 250만원)·제104조 제1항 제12호(국외주식 중소기업 10%, 그 밖 20%), 2026.1.1 시행본",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260101&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -414,13 +486,17 @@ window.RULES = {
     "label": "미국 주식 배당 세금 (한국 거주자)",
     "value": "미국에서 15% 원천징수",
     "short": "미국에서 먼저 15%를 뗀다",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한미 조세조약에 따른 세율이다. 한국 배당세율(지방세 포함 15.4%)과의 차이만큼 한국에서 더 낼 수 있고, 이자와 배당이 연 2천만 원을 넘으면 종합과세 대상이 된다.",
     "sources": [
       {
         "name": "KB국민은행 KB Think, 해외주식 세금",
         "url": "https://kbthink.com/stock/foreign-tax.html"
+      },
+      {
+        "name": "IRS, United States-Korea Income Tax Convention, Article 12 Dividends",
+        "url": "https://www.irs.gov/pub/irs-trty/korea.pdf"
       }
     ]
   },
@@ -431,9 +507,9 @@ window.RULES = {
     "value": "직전 체결가 대비 코스피200 종목 ±3%, 그 밖의 종목 ±6%",
     "short": "바로 앞 체결가에서 3%(대형주) 또는 6% 넘게 튈 때",
     "effective": "2014-09-01",
-    "checked": "2026-10-18",
-    "level": "press",
-    "note": "주문 하나로 가격이 순간적으로 크게 움직이면 한국거래소에서는 2분 동안 단일가매매로 바꾸고, 넥스트레이드에서는 그 2분 동안 거래를 멈춘다. 시간대에 따라 기준이 다른 경우가 있다.",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "주문 하나로 가격이 순간적으로 크게 움직이면 한국거래소와 넥스트레이드 모두 2분 동안 단일가매매로 바꾼다. 시간대에 따라 기준이 다른 경우가 있다.",
     "sources": [
       {
         "name": "KB국민은행 KB Think, VI 발동 기준",
@@ -442,6 +518,14 @@ window.RULES = {
       {
         "name": "뉴시스, 2026.7.24",
         "url": "https://mobile.newsis.com/view/NISX20260724_0003722742"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 종목별 변동성완화장치, 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010409/RGL03010409.jsp"
+      },
+      {
+        "name": "넥스트레이드, 거래제도 - 시장관리(종목별 변동성완화장치), 2026.10 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-5.html"
       }
     ]
   },
@@ -452,13 +536,17 @@ window.RULES = {
     "value": "기준가격 대비 ±10%",
     "short": "그날 기준가격에서 10% 넘게 움직일 때",
     "effective": "2014-09-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "여러 주문에 걸쳐 가격이 누적으로 크게 움직였을 때 2분 동안 단일가매매로 바꾼다.",
     "sources": [
       {
         "name": "KB국민은행 KB Think, VI 발동 기준",
         "url": "https://kbthink.com/stock/vi.html"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 종목별 변동성완화장치, 2026.10 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010409/RGL03010409.jsp"
       }
     ]
   },
@@ -468,13 +556,17 @@ window.RULES = {
     "label": "배당소득세 (원천징수)",
     "value": "15.4%",
     "short": "배당금의 15.4%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "소득세 14%와 지방소득세 1.4%이다. 증권회사가 떼고 나머지를 입금한다.",
     "sources": [
       {
         "name": "KB국민은행 KB Think, 해외주식 세금",
         "url": "https://kbthink.com/stock/foreign-tax.html"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제129조 제1항 제2호 나목(배당소득 원천징수세율 100분의 14), 2026.1.1 시행본",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260101&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -484,13 +576,17 @@ window.RULES = {
     "label": "금융소득 종합과세 기준",
     "value": "이자와 배당 합계 연 2,000만 원 초과",
     "short": "한 해 이자와 배당이 2,000만 원을 넘을 때",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "넘는 부분은 다른 소득과 합쳐 누진세율로 다시 계산하므로 15.4%보다 세금이 늘 수 있다. 다음 해 5월에 신고한다.",
     "sources": [
       {
         "name": "KB국민은행 KB Think, 2026년 달라지는 세법",
         "url": "https://kbthink.com/tax/expert/gw/251230.html"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제14조 제3항 제6호(이자소득등의 종합과세기준금액 2천만원), 2026.1.1 시행본",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260101&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -501,8 +597,8 @@ window.RULES = {
     "value": "2천만 원 이하 14% · 3억 원 이하 20% · 50억 원 이하 25% · 그 이상 30%",
     "short": "고배당기업의 배당을 다른 소득과 합치지 않고 14~30%로 따로 과세",
     "effective": "2026-01-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 받는 배당부터 2028년 사업연도 배당분까지 적용하는 한시 제도이다. 배당성향 같은 요건을 갖춘 상장사의 배당만 해당하고, 지방소득세는 따로 붙는다. 대상 여부와 신고 방법은 국세청 안내로 확인한다.",
     "sources": [
       {
@@ -512,6 +608,10 @@ window.RULES = {
       {
         "name": "다음뉴스(더파이낸스), 2025.12.17",
         "url": "https://v.daum.net/v/20251217160504663"
+      },
+      {
+        "name": "국가법령정보센터, 조세특례제한법 제104조의27(고배당기업 주식 배당소득 과세특례, 2025.12.23 신설), 2026.9.18 시행본",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=284389&efYd=20260918&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -520,9 +620,9 @@ window.RULES = {
     "market": "KR",
     "label": "상장주식 양도소득세 대주주 기준",
     "value": "한 종목 보유액 50억 원 이상 (또는 일정 지분율 이상)",
-    "short": "한 종목을 50억 원 넘게 가진 경우",
-    "checked": "2026-10-18",
-    "level": "press",
+    "short": "한 종목을 50억 원 이상 가진 경우",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "이 기준 아래의 일반 투자자는 거래소에서 사고판 상장주식 이익에 양도소득세를 내지 않는다. 정부가 10억 원으로 낮추려다 50억 원 유지로 돌아선 적이 있어, 바뀌기 쉬운 숫자이다.",
     "sources": [
       {
@@ -532,6 +632,10 @@ window.RULES = {
       {
         "name": "파이낸셜뉴스, 2025.8.24",
         "url": "https://www.fnnews.com/news/202508241819434186"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 시행령 제157조(주권상장법인대주주: 시가총액 50억원 이상, 지분율 유가 1%·코스닥 2%·코넥스 4%), 2026.10.1 시행본",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=290841&efYd=20261001&chrClsCd=010202&ancYnChk=0"
       }
     ]
   },
@@ -558,13 +662,21 @@ window.RULES = {
     "label": "미국 증권회사 파산 시 보호 (SIPC)",
     "value": "1인당 50만 달러 (현금은 그중 25만 달러)",
     "short": "증권회사가 무너졌을 때 1인당 50만 달러까지",
-    "checked": "2026-10-18",
-    "level": "pending",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "미국 증권회사가 파산해 고객 자산이 모자랄 때 메워 주는 제도이다. 주가가 떨어져 생긴 손실은 보호하지 않는다. 한국 증권회사를 통해 산 미국 주식에는 한국의 제도가 먼저 적용된다.",
     "sources": [
       {
         "name": "SIPC, What SIPC Protects",
         "url": "https://www.sipc.org/for-investors/what-sipc-protects"
+      },
+      {
+        "name": "Cornell LII, 15 U.S.C. 78fff-3 (SIPC advances: $500,000 per customer; standard maximum cash advance amount $250,000)",
+        "url": "https://www.law.cornell.edu/uscode/text/15/78fff-3"
+      },
+      {
+        "name": "SEC, Release No. SIPA-186 (SIPC Board decision not to adjust the standard maximum cash advance amount), 2026",
+        "url": "https://www.sec.gov/files/rules/other/2026/sipa-186.pdf"
       }
     ]
   },
@@ -895,8 +1007,8 @@ window.RULES = {
     "value": "한국거래소와 같은 가격제한폭·시장조치 적용, 매매거래정지·해제 즉시 연동",
     "short": "넥스트레이드는 한국거래소와 같은 가격제한폭과 시장조치를 쓰고, 한국거래소의 매매거래정지와 해제를 곧바로 따른다",
     "effective": "2025-03-04",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한국거래소의 서킷브레이커가 걸리면 넥스트레이드도 그 시장 종목의 거래를 멈춘다. 2025년 8월 정지 해제 시점이 어긋난 일 뒤에 9월 9일 시행세칙을 고쳐 재개 시점을 맞췄다.",
     "sources": [
       {
@@ -910,6 +1022,14 @@ window.RULES = {
       {
         "name": "아시아경제, 2025.9.10",
         "url": "https://core.asiae.co.kr/article/2025091007252013006"
+      },
+      {
+        "name": "넥스트레이드, NXT 시장 시장개요 및 거래제도(한국거래소와 동일한 가격변동폭·시장조치), 2026.10 확인",
+        "url": "https://www.nextrade.co.kr/marketOverview/content.do"
+      },
+      {
+        "name": "넥스트레이드, 거래제도 - 시장관리(매매거래정지 및 재개, CB), 2026.10 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-5.html"
       }
     ]
   },
@@ -1172,9 +1292,9 @@ window.RULES = {
     "label": "감사의견 비적정과 상장폐지",
     "value": "비적정 의견 시 상장폐지 사유, 2년 연속이면 이의신청 없이 상장폐지",
     "short": "비적정 의견을 받으면 상장폐지 사유나 관리종목 지정 사유가 생기고, 2년 연속 비적정이면 이의신청 없이 곧바로 상장폐지된다",
-    "checked": "2026-10-18",
-    "level": "press",
-    "note": "2025년 1월 금융당국의 상장폐지 제도개선 방안으로, 종전에는 이의신청으로 개선기간을 받아 다음 감사의견까지 상장을 유지할 수 있었다. 보도에 따르면 2025사업연도 감사의견부터 적용되었다. 회생·워크아웃 기업은 예외를 둔다. 한정 의견을 코스피와 코스닥에서 어떻게 다루는지(코스피에서 감사범위 제한 한정은 종전 관리종목 사유)는 규정 원문으로 대조하지 못했다.",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "2025년 1월 금융당국의 상장폐지 제도개선 방안으로, 종전에는 이의신청으로 개선기간을 받아 다음 감사의견까지 상장을 유지할 수 있었다. 회생·워크아웃 기업은 예외를 둔다. 유가증권시장에서 감사범위 제한에 따른 한정 의견은 관리종목 지정 사유이고 2년 연속이면 상장폐지 사유이다. 코스닥시장에서는 한정을 포함한 비적정 의견이 상장폐지 사유이다(한국거래소 상장 안내).",
     "sources": [
       {
         "name": "법무법인 신&김 뉴스레터, 2025",
@@ -1187,6 +1307,14 @@ window.RULES = {
       {
         "name": "메트로서울, 2023.3.12",
         "url": "https://www.metroseoul.co.kr/article/20230312500177"
+      },
+      {
+        "name": "한국거래소 상장공시, 유가증권시장 관리종목지정 및 상장폐지 기준(상장규정 제47·48조), 2026.10 확인",
+        "url": "https://listing.krx.co.kr/contents/LST/04/04010500/LST04010500.jsp"
+      },
+      {
+        "name": "한국거래소 상장공시, 코스닥시장 관리종목지정 및 상장폐지 기준, 2026.10 확인",
+        "url": "https://listing.krx.co.kr/contents/LST/04/04020500/LST04020500.jsp"
       }
     ]
   },
@@ -1197,8 +1325,8 @@ window.RULES = {
     "value": "2027-01-01 이후 시작하는 회계연도부터",
     "short": "2027년 1월 1일 이후 시작하는 회계연도부터는 새 기준(K-IFRS 1118호)에 따라 손익을 영업·투자·재무 등으로 나누게 되어, 영업이익의 범위가 바뀐다",
     "effective": "2027-01-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "기존 K-IFRS 1001호를 대체하며 조기 적용할 수 있다. 영업손익은 투자·재무·법인세·중단영업에 속하지 않는 모든 손익으로 정의되고, 경영진이 정의한 성과측정치(MPM) 공시가 새로 생긴다.",
     "sources": [
       {
@@ -1208,6 +1336,14 @@ window.RULES = {
       {
         "name": "아시아경제, 2026.4.13",
         "url": "https://view.asiae.co.kr/article/2026041316473164081"
+      },
+      {
+        "name": "금융감독원 보도자료 '2027년 K-IFRS 제1118호 시행, 준비상황을 점검하세요'(KDI 경제정보센터 게시), 2026.10.13",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288013"
+      },
+      {
+        "name": "IFRS Foundation, IFRS 18 Presentation and Disclosure in Financial Statements",
+        "url": "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/"
       }
     ]
   },
@@ -1260,8 +1396,8 @@ window.RULES = {
     "value": "현금배당: 조정하지 않음 · 주식배당: 배당부 종가 × 배당 전 주식 수 ÷ 배당 후 주식 수",
     "short": "현금배당은 기준가격을 고치지 않고, 주식배당만 비율대로 낮춘다",
     "effective": "1998-07-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "현금배당락 조치는 1998년 7월 폐지되었다고 학술 논문이 적고 있다(정확한 날짜는 월만 확인). 거래소 업무규정 시행세칙 원문은 대조하지 못했다.",
     "sources": [
       {
@@ -1271,6 +1407,10 @@ window.RULES = {
       {
         "name": "더밸류뉴스, 2016.1.15 (배당락과 권리락)",
         "url": "https://www.thevaluenews.co.kr/news/3024"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 시행세칙 제30조제1항제4호와 별표 2(배당락 또는 권리락의 기준가격), 제177차 개정 2026.9 (bookid=330011206)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1280,8 +1420,8 @@ window.RULES = {
     "label": "권리락 기준가격 계산식",
     "value": "(권리부 종가 × 증자 전 주식 수 + 신주 납입금액) ÷ 증자 후 주식 수",
     "short": "권리 붙은 마지막 날 종가와 새 주식 납입금을 합쳐 늘어난 주식 수로 나눈 값",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "무상증자는 납입금액이 0이다. 주주배정과 무상증자에만 적용하고, 일반공모와 제3자배정에는 권리락이 없다. 호가 단위로 끝자리를 어떻게 정리하는지와 계산에 쓰는 발행가격 시점은 거래소 시행세칙으로 대조하지 못했다.",
     "sources": [
       {
@@ -1291,6 +1431,10 @@ window.RULES = {
       {
         "name": "KB국민은행 KB Think, 유상증자와 무상증자",
         "url": "https://kbthink.com/stock/issue.html"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 시행세칙 제30조제1항제4호·제3항과 별표 2, 제177차 개정 2026.9 (bookid=330011206)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1300,8 +1444,8 @@ window.RULES = {
     "label": "상장회사 유상증자 발행가격 할인 한도",
     "value": "일반공모 기준주가의 30% 이내 · 제3자배정 10% 이내",
     "short": "일반공모는 30%, 제3자배정은 10%까지 할인할 수 있다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "근거는 금융위원회 고시 '증권의 발행 및 공시 등에 관한 규정' 제5-18조이다. 주주배정은 모든 주주가 같은 조건으로 받으므로 이 한도가 적용되지 않는 것으로 알려져 있으나 원문 대조는 못 했다. 회생절차 등 예외가 있다.",
     "sources": [
       {
@@ -1311,6 +1455,10 @@ window.RULES = {
       {
         "name": "비즈워치, 2022.4.7 (제3자배정 10% 이내)",
         "url": "https://news.bizwatch.co.kr/article/market/2022/04/07/0007"
+      },
+      {
+        "name": "금융위원회, 증권의 발행 및 공시 등에 관한 규정 제5-18조 (금융위원회고시 제2026-35호, 2026.7.28 시행)",
+        "url": "https://www.law.go.kr/행정규칙/증권의발행및공시등에관한규정"
       }
     ]
   },
@@ -1321,8 +1469,8 @@ window.RULES = {
     "value": "취득한 날부터 1년 안에 소각 (예외는 주주총회 승인 필요)",
     "short": "회사가 산 자기주식은 1년 안에 소각하는 것이 원칙이다",
     "effective": "2026-03-06",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 2월 25일 국회를 통과해 3월 6일 공포와 함께 시행되었다. 시행 전에 가지고 있던 자기주식은 시행일부터 6개월이 지난 날부터 1년 안에 소각하면 된다. 임직원 보상, 우리사주, 합병 등 법이 정한 예외는 주주총회 승인을 받아 보유·처분할 수 있다. 법령 원문은 대조하지 못했다.",
     "sources": [
       {
@@ -1332,6 +1480,10 @@ window.RULES = {
       {
         "name": "조세일보 (자사주 의무 소각 상법 개정)",
         "url": "https://www.taxtimes.co.kr/news/article.html?no=274003"
+      },
+      {
+        "name": "국가법령정보센터, 상법 제341조의4와 부칙(법률 제21448호, 2026.3.6) 제1조·제2조",
+        "url": "https://www.law.go.kr/법령/상법"
       }
     ]
   },
@@ -1342,8 +1494,8 @@ window.RULES = {
     "value": "국내 자산 2%, 해외 자산 5% 이내",
     "short": "마감 가격이 NAV에서 국내 자산 2%, 해외 자산 5% 넘게 벗어나지 않게",
     "effective": "2026-08-19",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 8월 19일 국내 3%→2%, 해외 6%→5%로 좁혔다. 고의·중과실이나 상습 위반 LP는 새 종목의 유동성공급 업무가 제한될 수 있다. 단일종목 레버리지 대책과 함께 발표되었으며, 모든 ETF에 같은 기준이 적용되는지는 거래소 규정 원문으로 다시 확인해야 한다. 시작·마감 단일가매매 시간 등에는 LP 호가 의무가 면제된다.",
     "sources": [
       {
@@ -1357,6 +1509,10 @@ window.RULES = {
       {
         "name": "금융위원회 보도자료(KDI 경제정보센터 게시), 2026.7.24",
         "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=284654"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 제20조의4제2항·제3항과 부칙(제2483호, 2026.8.18) (bookid=330007789)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1366,13 +1522,17 @@ window.RULES = {
     "label": "국내 상장 레버리지·인버스 ETF 배수 상한",
     "value": "하루 수익률의 ±2배",
     "short": "하루 수익률의 2배 또는 −2배",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 7월 단일종목 레버리지 대책 논의에서 배수를 1.5배로 낮추는 안은 당장 추진하지 않기로 했다고 보도되었다. 해외 상장 상품에는 3배짜리도 있다.",
     "sources": [
       {
         "name": "이코노미스트, 2026.7.28",
         "url": "https://economist.co.kr/article/view/ecn202607280014"
+      },
+      {
+        "name": "금융위원회, 금융투자업규정 제4-52조의2제1호 (금융위원회고시 제2026-38호, 2026.9.15 시행)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
       }
     ]
   },
@@ -1382,8 +1542,8 @@ window.RULES = {
     "label": "국내 레버리지 ETF·ETN 매수 요건 (개인)",
     "value": "금융투자협회 온라인 사전교육 1시간 이상 이수와 기본예탁금 1,000만 원 이상",
     "short": "사전교육을 마치고 계좌에 1,000만 원 이상을 두어야 한다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "교육은 금융투자협회 금융투자교육원에서 유료로 듣고, 이수번호를 증권사에 등록한다. 만 65세 이상이거나 투자성향이 낮으면 교육 시간이 늘 수 있다. 기본예탁금은 증권사가 투자자의 거래 경험 등에 따라 차등할 수 있다. 인버스 1배 상품의 적용 여부는 증권사 안내로 확인한다.",
     "sources": [
       {
@@ -1393,6 +1553,14 @@ window.RULES = {
       {
         "name": "파이낸셜뉴스, 2026.7.16",
         "url": "https://www.fnnews.com/news/202607161824498605"
+      },
+      {
+        "name": "금융투자협회, 금융투자회사의 영업 및 업무에 관한 규정 제2-5조의3제1항 (2026.10.15 개정본)",
+        "url": "https://law.kofia.or.kr/service/law/lawFullScreen.do?seq=136&historySeq=1814"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 제87조의2와 시행세칙 제111조의3 (bookid=330007789, 330011206)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1425,11 +1593,11 @@ window.RULES = {
     "topic": "protect",
     "market": "KR",
     "label": "해외 상장 레버리지 ETF·ETN 매수 요건 (개인)",
-    "value": "사전교육 1시간 이상 (기본예탁금 없음)",
-    "short": "사전교육을 마쳐야 새로 살 수 있다",
-    "effective": "2025-12-15",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "사전교육 이수와, 처음 거래할 때 기본예탁금 1,000만 원 이상 (국내 레버리지 거래 계좌가 이미 있으면 면제 가능, 단일종목 상품은 3,000만 원 이상)",
+    "short": "사전교육을 마치고, 처음이면 1,000만 원 이상을 맡겨야 새로 살 수 있다",
+    "effective": "2026-05-22",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2025년 12월 15일부터 해외 레버리지 상품을 처음 거래하는 투자자에게 적용한다. 이미 거래 경험이 있거나 국내 레버리지 교육을 이수한 사람은 제외된다. 교육은 국내외 통합이다. 단일종목 레버리지 상품은 해외 상장이라도 3,000만 원 기본예탁금 기준을 적용하는 방침이 2026년 7월 발표되었다.",
     "sources": [
       {
@@ -1439,6 +1607,18 @@ window.RULES = {
       {
         "name": "파이낸셜뉴스, 2026.7.16",
         "url": "https://www.fnnews.com/news/202607161824498605"
+      },
+      {
+        "name": "금융투자협회, 금융투자회사의 영업 및 업무에 관한 규정 제2-5조의3제1항제2호·제4-13조와 부칙(2026.4.10, 2026.8.19) (2026.10.15 개정본)",
+        "url": "https://law.kofia.or.kr/service/law/lawFullScreen.do?seq=136&historySeq=1814"
+      },
+      {
+        "name": "금융투자협회, 같은 규정 2026.4.29 시점 본문(제4-13조 신설 확인)",
+        "url": "https://law.kofia.or.kr/service/law/lawFullScreenContent.do?seq=136&historySeq=1790"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 시행세칙 제111조의3 (bookid=330011206)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1448,13 +1628,17 @@ window.RULES = {
     "label": "국내 상장 ETF 매도 시 증권거래세",
     "value": "면제",
     "short": "증권거래세 면제",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "주식과 달리 ETF를 팔 때는 증권거래세가 붙지 않는다. 증권회사 수수료와 호가 차이는 그대로 든다.",
     "sources": [
       {
         "name": "KB국민은행 KB Think, ETF 세금",
         "url": "https://kbthink.com/etf/etf-tax.html"
+      },
+      {
+        "name": "국가법령정보센터, 증권거래세법 제2조(과세대상)",
+        "url": "https://www.law.go.kr/법령/증권거래세법"
       }
     ]
   },
@@ -1464,8 +1648,8 @@ window.RULES = {
     "label": "국내주식형 외 국내 상장 ETF 매매차익 과세 기준",
     "value": "실제 매매차익과 보유 기간 과표기준가격 상승분 중 작은 금액에 배당소득세",
     "short": "실제 매매차익과 보유 기간 동안 과표기준가격 상승분 중 작은 금액",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "국내주식형 ETF의 매매차익은 비과세이다. 해외 주식, 채권, 원자재 등을 담은 ETF는 이 금액을 배당소득으로 보아 15.4%를 원천징수하고 금융소득종합과세 합산 대상에 넣는다. 분배금은 두 종류 모두 배당소득이다. 연금저축·퇴직연금 같은 계좌에서는 다르게 과세한다.",
     "sources": [
       {
@@ -1475,6 +1659,14 @@ window.RULES = {
       {
         "name": "KB국민은행 KB Think, ETF 세금",
         "url": "https://kbthink.com/etf/etf-tax.html"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 시행규칙 제13조제3항 (재정경제부령 제33호, 2026.7.1 시행)",
+        "url": "https://www.law.go.kr/법령/소득세법시행규칙"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 시행령 제26조의2제5항 (대통령령 제36737호, 2026.10.1 시행)",
+        "url": "https://www.law.go.kr/법령/소득세법시행령"
       }
     ]
   },
@@ -1560,7 +1752,7 @@ window.RULES = {
     "label": "개인 공매도 사전 요건",
     "value": "금융투자협회 사전교육(1시간)과 증권회사 모의거래를 마쳐야 하고, 처음에는 3,000만 원 한도 안에서만 빌릴 수 있다",
     "short": "사전교육과 모의거래 이수, 첫 한도 3,000만 원",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "사전교육은 공매도를 처음 하는 모든 개인이 대상이며 이미 이수했으면 다시 듣지 않는다. 거래 경험이 쌓이면 한도가 단계적으로 늘어난다(2021년 발표 기준 7,000만 원, 이후 제한 없음). 한도 단계의 현행 기준은 원문으로 다시 대조해야 한다.",
     "sources": [
@@ -1571,6 +1763,10 @@ window.RULES = {
       {
         "name": "조선비즈(다음뉴스), 2025.4.3",
         "url": "https://v.daum.net/v/20250403060131494"
+      },
+      {
+        "name": "금융투자협회, 금융투자회사의 영업 및 업무에 관한 규정 제2-5조의3제8항 (2026.10.15 개정본)",
+        "url": "https://law.kofia.or.kr/service/law/lawFullScreen.do?seq=136&historySeq=1814"
       }
     ]
   },
@@ -1580,8 +1776,8 @@ window.RULES = {
     "label": "신용거래융자 보증금률",
     "value": "최소 40% (증권회사·종목별로 더 높게 정함)",
     "short": "산 금액의 최소 40%를 내 돈으로",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "금융투자업규정이 최저선을 정하고 증권회사가 종목별로 40~60%대로 정한다. 2026년 6월 금융당국이 보증금률·담보비율 상향을 검토한다는 보도가 있었으나 2026년 10월까지 개정 확인은 하지 못했다.",
     "sources": [
       {
@@ -1591,6 +1787,10 @@ window.RULES = {
       {
         "name": "한국투자증권 신용거래(융자·대주) 설명서",
         "url": "https://file.koreainvestment.com/updata/namo/07125928신용거래설명서_전문.pdf"
+      },
+      {
+        "name": "금융위원회, 금융투자업규정 제4-25조제2항·제4항 (금융위원회고시 제2026-38호, 2026.9.15 시행)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
       }
     ]
   },
@@ -1598,10 +1798,10 @@ window.RULES = {
     "topic": "credit",
     "market": "KR",
     "label": "신용거래융자 담보유지비율",
-    "value": "140% (증권회사·종목별 140~160%)",
-    "short": "빌린 돈의 140%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "증권회사가 정한 비율 (규정은 융자 때 융자금의 140% 이상 담보를 받게 하고, 유지비율은 회사가 정해 금융감독원장에게 보고한다. 보통 140~160%)",
+    "short": "증권회사가 정한 비율(보통 빌린 돈의 140%)",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "담보비율은 (주식 평가액 + 현금 등) ÷ 융자금으로 계산한다. 관리종목처럼 위험한 종목에는 더 높은 비율을 적용하기도 한다. 2022년 7~9월에는 유지 의무가 한시적으로 면제된 적이 있다.",
     "sources": [
       {
@@ -1611,6 +1811,10 @@ window.RULES = {
       {
         "name": "한국투자증권 신용거래(융자·대주) 설명서",
         "url": "https://file.koreainvestment.com/updata/namo/07125928신용거래설명서_전문.pdf"
+      },
+      {
+        "name": "금융위원회, 금융투자업규정 제4-25조제1항·제3항, 제4-31조제2항 (금융위원회고시 제2026-38호, 2026.9.15 시행)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
       }
     ]
   },
@@ -1618,15 +1822,19 @@ window.RULES = {
     "topic": "credit",
     "market": "KR",
     "label": "신용거래 추가 담보 기한과 반대매매",
-    "value": "추가 담보 요구일 다음 영업일까지 채우지 못하면 그다음 영업일에 증권회사가 반대매매한다",
-    "short": "요구 다음 날까지 못 채우면 그다음 날 반대매매",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "증권회사가 정한 납입기일까지 추가 담보를 채우지 못하면 그다음 영업일에 증권회사가 담보증권 등을 처분(반대매매)할 수 있다 (납입기일은 보통 요구 다음 영업일)",
+    "short": "회사가 정한 기한(보통 요구 다음 날)까지 못 채우면 그다음 날 반대매매",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한 증권회사 설명서 기준이며 기한은 회사마다 다르다. 반대매매 수량은 전날 종가보다 15% 낮은 가격을 기준으로 계산하고, 하한가로 처분될 수도 있다.",
     "sources": [
       {
         "name": "한국투자증권 신용거래(융자·대주) 설명서",
         "url": "https://file.koreainvestment.com/updata/namo/07125928신용거래설명서_전문.pdf"
+      },
+      {
+        "name": "금융위원회, 금융투자업규정 제4-28조제1항제2호 (금융위원회고시 제2026-38호, 2026.9.15 시행)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
       }
     ]
   },
@@ -1636,8 +1844,8 @@ window.RULES = {
     "label": "신용거래융자 기간",
     "value": "증권회사가 정한다(보통 90~180일, 연장 가능)",
     "short": "증권회사가 정한 90~180일 안팎",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 7월 일부 증권회사는 180일이던 기간을 90일로 줄였다. 신용 대주는 90일 이내, 연장 포함 최장 12개월이 적용된다.",
     "sources": [
       {
@@ -1647,6 +1855,10 @@ window.RULES = {
       {
         "name": "한국투자증권 신용거래(융자·대주) 설명서",
         "url": "https://file.koreainvestment.com/updata/namo/07125928신용거래설명서_전문.pdf"
+      },
+      {
+        "name": "금융위원회, 금융투자업규정 제4-31조제1항 (금융위원회고시 제2026-38호, 2026.9.15 시행)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
       }
     ]
   },
@@ -1656,13 +1868,17 @@ window.RULES = {
     "label": "미수 반대매매 시점",
     "value": "결제일 다음 영업일(T+3)에 증권회사가 산 주식을 팔아 모자란 돈을 채운다",
     "short": "결제일 다음 영업일에 강제 매도",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "수량은 하한가(−30%) 수준을 기준으로 정해 시장가로 판다. 시각과 방식은 증권회사마다 조금씩 다르다.",
     "sources": [
       {
         "name": "다올투자증권 주식 결제·미수 안내",
         "url": "https://www.daolsecurities.com/customer/guide/stockPayment.jsp"
+      },
+      {
+        "name": "금융위원회, 금융투자업규정 제2-32조제1항제2호 (금융위원회고시 제2026-38호, 2026.9.15 시행)",
+        "url": "https://www.law.go.kr/행정규칙/금융투자업규정"
       }
     ]
   },
@@ -1673,8 +1889,8 @@ window.RULES = {
     "value": "미수 발생 다음 영업일부터 30일간 증거금 100% 현금",
     "short": "결제일 다음 영업일부터 30일 동안",
     "effective": "2007-05-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2007년 5월 금융감독원 주도로 도입되었다. 동결 정보는 모든 증권회사가 공유한다. 계좌당 미수금이 10만 원 이하이면 제외하는 증권회사가 있다.",
     "sources": [
       {
@@ -1684,6 +1900,10 @@ window.RULES = {
       {
         "name": "다올투자증권 주식 결제·미수 안내",
         "url": "https://www.daolsecurities.com/customer/guide/stockPayment.jsp"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 제89조(위탁증거금 징수의 특례) (bookid=330007789)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1713,13 +1933,17 @@ window.RULES = {
     "label": "장내 일반채권시장 매매 시간 (한국거래소)",
     "value": "09:00~15:30",
     "short": "오전 9시부터 오후 3시 30분",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "소액채권시장은 마감 무렵 정해진 시간에 단일가로 거래한다. 증권회사마다 주문 접수 시간은 조금씩 다르다.",
     "sources": [
       {
         "name": "KB증권 장내채권 매매 안내",
         "url": "https://www.kbsec.com/go.able?linkcd=s01060600P100"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 제4조제1항제6호·제3항제1호 (bookid=330007789)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1730,13 +1954,17 @@ window.RULES = {
     "value": "액면 1만 원",
     "short": "액면 1만 원 단위",
     "effective": "2026-01-12",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 1월 12일 액면 1,000원에서 1만 원으로 바뀌었다. 소액채권시장(첨가소화채권)은 액면 1,000원 단위를 유지한다. 재정경제부 국채시장 안내 페이지는 아직 1천 원으로 적고 있다.",
     "sources": [
       {
         "name": "유진투자증권 공지 '[장내채권] 일반채권시장 매매수량 단위 변경 안내', 2025.12.10",
         "url": "https://m.eugenefn.com/no20r.do?msgId=501606&pageNo=1&topFlag=0"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 시행세칙 제66조와 부칙(제2381호, 2025.12.24) (bookid=330011206)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1747,8 +1975,8 @@ window.RULES = {
     "value": "잔존만기 2년 미만 0.1원, 2년 이상 10년 미만 0.5원, 10년 이상 1원",
     "short": "남은 만기에 따라 0.1원·0.5원·1원",
     "effective": "2016-06-27",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "그 전에는 1원으로 통일되어 있었다. 국고채 10년 지표물과 물가연동국고채 지표물은 1원을 유지한다는 증권사 안내가 있다. 현행 거래소 세칙 원문은 확인하지 못했다.",
     "sources": [
       {
@@ -1758,6 +1986,10 @@ window.RULES = {
       {
         "name": "다올투자증권 채권 매매 안내",
         "url": "https://www.daolsecurities.com/customer/guide/bondTrade.jsp"
+      },
+      {
+        "name": "한국거래소, 유가증권시장 업무규정 시행세칙 제65조제2항과 부칙(제1338호, 2016.6.21) (bookid=330011206)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -1819,9 +2051,9 @@ window.RULES = {
     "label": "개인투자용 국채 종류",
     "value": "3년(이표채·복리채), 5년, 10년, 20년",
     "short": "3년·5년·10년·20년 네 가지 만기",
-    "checked": "2026-10-18",
-    "level": "press",
-    "note": "2024년 6월 10년물·20년물로 시작했고, 2025년 3월 5년물, 2026년 4월 3년물이 더해졌다. 3년물은 가산금리가 없고 분리과세 대상이 아니며, 이자를 해마다 받는 이표채와 만기에 받는 복리채 중에서 고른다. 매달 종목별 발행 한도와 금리를 새로 공고한다.",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "2024년 6월 10년물·20년물로 시작했고, 2025년 3월 5년물, 2026년 4월 3년물이 더해졌다. 3년물의 가산금리는 비슷한 상품보다 높지 않게 정하고(2025.12.30 정부 발표), 분리과세 대상이 아니며, 이자를 해마다 받는 이표채와 만기에 받는 복리채 중에서 고른다. 매달 종목별 발행 한도와 금리를 새로 공고한다.",
     "sources": [
       {
         "name": "국회예산정책처 나보포커스 제134호, 2026.2.2",
@@ -1830,6 +2062,18 @@ window.RULES = {
       {
         "name": "한국소통투데이, 2026.9.30 (10월 발행계획)",
         "url": "https://www.kbcs.kr/news/article.html?no=413854"
+      },
+      {
+        "name": "재정경제부 국채시장, 개인투자용 국채 상품 구조",
+        "url": "https://ktb.moef.go.kr/personalInvGovBonds.do"
+      },
+      {
+        "name": "정책브리핑(재정경제부), 개인만 투자할 수 있는 국채, 2026.4.9 (4월 3년물 이표채+복리채 신규 발행)",
+        "url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148962370"
+      },
+      {
+        "name": "정책브리핑(기획재정부 보도), 내년 개인투자용 국채 2조 원 발행…3년물 신설, 2025.12.30",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148957316"
       }
     ]
   },
@@ -1838,14 +2082,22 @@ window.RULES = {
     "market": "KR",
     "label": "개인투자용 국채 매입 단위와 한도",
     "value": "최소 10만 원, 전용계좌 1인당 연 2억 원",
-    "short": "10만 원부터 한 해 2억 원까지(퇴직연금 계좌는 별도 한도 없음)",
-    "checked": "2026-10-18",
-    "level": "press",
+    "short": "10만 원부터 한 해 2억 원까지",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "전용계좌는 1인 1계좌이다. 퇴직연금(DC·IRP) 계좌에는 별도의 연간 매입 한도가 없다. 청약이 한도를 넘으면 모든 청약자에게 300만 원까지 먼저 배정하고 나머지를 청약액에 비례해 나눈다. 출시 초기에는 연간 한도가 1억 원이었다는 보도가 있다.",
     "sources": [
       {
         "name": "뉴스핌, 2026.8.27",
         "url": "https://www.newspim.com/news/view/20260827001141"
+      },
+      {
+        "name": "재정경제부 국채시장, 개인투자용 국채 상품 구조(최소 10만원, 1인당 연간 최대 2억원, 1인 1계좌)",
+        "url": "https://ktb.moef.go.kr/personalInvGovBonds.do"
+      },
+      {
+        "name": "정책브리핑(기획재정부 보도), 2025.12.30 (월간 한도 초과 시 300만 원 일괄 배정 후 비례 배정)",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148957316"
       }
     ]
   },
@@ -1876,8 +2128,8 @@ window.RULES = {
     "label": "개인투자용 국채 중도환매",
     "value": "발행일부터 1년이 지난 뒤, 매달 정해진 신청 기간에 월별 한도 안에서",
     "short": "발행 1년 뒤부터 매달 신청 기간에, 원금과 표면금리 단리 이자만 받는 조건으로",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "중도환매하면 원금과 발행일부터 환매일까지 표면금리의 단리 이자만 받고, 가산금리·연복리·분리과세는 적용되지 않는다. 월별 중도환매 한도를 넘으면 신청해도 환매되지 않을 수 있다. 남에게 팔거나 넘길 수는 없다(상속 등은 예외).",
     "sources": [
       {
@@ -1887,6 +2139,14 @@ window.RULES = {
       {
         "name": "한국소통투데이, 2026.9.30",
         "url": "https://www.kbcs.kr/news/article.html?no=413854"
+      },
+      {
+        "name": "재정경제부 국채시장, 개인투자용 국채 상품 구조(매입 1년 후부터 중도환매 신청, 가산금리·복리·세제혜택 미적용, 상속·유증·강제집행 외 이전 불가)",
+        "url": "https://ktb.moef.go.kr/personalInvGovBonds.do"
+      },
+      {
+        "name": "정책브리핑(기획재정부 보도), 2025.12.30 (1월 중도환매 한도 7,131억 원, 원금과 표면금리 이자만 지급)",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148957316"
       }
     ]
   },
@@ -1896,9 +2156,9 @@ window.RULES = {
     "label": "개인투자용 국채 퇴직연금 계좌 매입",
     "value": "DC·IRP 계좌에서 10년물·20년물",
     "short": "퇴직연금 DC·IRP 계좌에서 10년물과 20년물만",
-    "checked": "2026-10-18",
-    "level": "press",
-    "note": "2026년 9월 발행분부터 허용되었다. 확정급여형(DB)은 대상이 아니다. 판매 금융회사는 은행과 증권회사 8곳으로 늘었다.",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "2026년 9월 발행분부터 허용되었다. 확정급여형(DB)은 대상이 아니다. 판매 금융회사는 증권회사 7곳과 은행 2곳, 모두 9곳(2026.2.12 보도자료)으로 늘었다.",
     "sources": [
       {
         "name": "뉴스핌, 2026.8.27",
@@ -1907,6 +2167,14 @@ window.RULES = {
       {
         "name": "SBS Biz, 2026.8",
         "url": "https://biz.sbs.co.kr/article/20000331223"
+      },
+      {
+        "name": "재정경제부 보도자료, 일반국민들이 퇴직연금 계좌를 통해 개인투자용 국채에 직접 투자하는 제도를 최초 도입, 2026.2.12 (PDF)",
+        "url": "https://www.korea.kr/common/download.do?fileId=198358551&tblKey=GMN"
+      },
+      {
+        "name": "정책브리핑, 9월부터 퇴직연금 계좌로 국채 투자, 2026.2.12",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148959500"
       }
     ]
   },
@@ -1916,8 +2184,8 @@ window.RULES = {
     "label": "이자소득 원천징수 세율(채권 이자)",
     "value": "15.4%",
     "short": "소득세 14%와 지방소득세 1.4%를 합친 15.4%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "개인이 채권을 직접 가지면 표면금리로 받는 이자에만 붙고, 값이 올라 생긴 매매차익에는 붙지 않는다. 금융소득종합과세 기준을 넘는 부분은 따로 계산한다.",
     "sources": [
       {
@@ -1927,6 +2195,14 @@ window.RULES = {
       {
         "name": "검색 결과 종합(세율 15.4% = 14% + 1.4%), 2026-10-18 확인",
         "url": "https://glasswallet.com/calculate/deposit-interest/tax"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제129조 제1항 제1호 라목(그 밖의 이자소득 100분의 14), 2025.12.23 개정 반영",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0129&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 지방세법 제103조의13 제1항(원천징수 소득세의 100분의 10 특별징수)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=282559&joNo=0103&joBrNo=13&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -1934,10 +2210,10 @@ window.RULES = {
     "topic": "rating",
     "market": "KR",
     "label": "국내 장기 신용등급(회사채) 체계",
-    "value": "AAA~D 10개 등급, AA~CCC에 +·− 부호",
-    "short": "AAA, AA, A, BBB, BB, B, CCC, CC, C, D의 10개 등급이고, AA부터 CCC까지는 같은 등급 안의 우열을 +와 −로 나눈다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "AAA~D 10개 등급, AA~B에 +·− 부호(나이스신용평가는 AA~CCC)",
+    "short": "AAA, AA, A, BBB, BB, B, CCC, CC, C, D의 10개 등급이고, AA부터 B까지(나이스신용평가는 CCC까지)는 같은 등급 안의 우열을 +와 −로 나눈다",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한국기업평가 등 국내 신용평가회사의 등급 정의를 발행회사 IR 페이지에서 확인했다. 평가회사 누리집의 등급 정의 원문은 열어 보지 못했다.",
     "sources": [
       {
@@ -1947,6 +2223,18 @@ window.RULES = {
       {
         "name": "LG전자 IR 신용등급 안내(국내 3사 회사채 등급 정의 수록)",
         "url": "https://www.lge.co.kr/company/investor/creditrating"
+      },
+      {
+        "name": "한국기업평가, 등급정의안내(장기 채무 신용등급)",
+        "url": "https://www.korearatings.com/cms/frCmnCon/index.do?MENU_ID=240"
+      },
+      {
+        "name": "한국신용평가, 신용평가 기호 및 정의(Credit Policy Handbook), 2024.12.26",
+        "url": "https://kisrating.com/fileDown.do?menuCd=R7&gubun=I&fileName=rm20241226-1.pdf&writedate=20241226"
+      },
+      {
+        "name": "NICE신용평가, 채권신용평가 등급정의",
+        "url": "https://www.nicerating.com/publish/bondCreditEvalDef.do"
       }
     ]
   },
@@ -1956,7 +2244,7 @@ window.RULES = {
     "label": "투자등급과 투기등급의 경계(장기 등급)",
     "value": "BBB− 이상 투자등급, BB+ 이하 투기등급",
     "short": "BBB−까지가 투자등급이고 BB+부터 투기등급",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "국내 등급 정의는 AAA~BBB를 투자등급, BB~C를 투기등급으로 나눈다. 법령이 정한 선이 아니라 등급 정의와 시장 관행에 따른 구분이다.",
     "sources": [
@@ -1972,13 +2260,25 @@ window.RULES = {
     "label": "국내 단기 신용등급(기업어음·전자단기사채) 체계",
     "value": "A1~D 6개 등급, A2~B에 +·− 부호",
     "short": "A1, A2, A3, B, C, D의 6개 등급이고, A2부터 B까지는 +와 −로 더 나눈다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한국기업평가와 한국신용평가의 기업어음 등급 정의(A2~B에 +,− 부여 가능)를 발행회사 IR 페이지에서 확인했다.",
     "sources": [
       {
         "name": "현대그룹 IR 신용등급(한국기업평가·한국신용평가 CP 등급 정의 수록)",
         "url": "https://www.ehyundai.com/newPortal/group/HLDS/FI000120.do?locale=ko"
+      },
+      {
+        "name": "한국기업평가, 등급정의안내(단기 채무자 신용등급: 기업어음·전자단기사채)",
+        "url": "https://www.korearatings.com/cms/frCmnCon/index.do?MENU_ID=240"
+      },
+      {
+        "name": "한국신용평가, 신용평가 기호 및 정의(Credit Policy Handbook), 2024.12.26",
+        "url": "https://kisrating.com/fileDown.do?menuCd=R7&gubun=I&fileName=rm20241226-1.pdf&writedate=20241226"
+      },
+      {
+        "name": "NICE신용평가, 단기등급 정의",
+        "url": "https://www.nicerating.com/disclosure/shortTermGrade.do"
       }
     ]
   },
@@ -2008,9 +2308,9 @@ window.RULES = {
     "label": "개인의 채권 매매차익",
     "value": "비과세",
     "short": "세금이 붙지 않는다",
-    "effective": "2024-12-10",
-    "checked": "2026-10-18",
-    "level": "press",
+    "effective": "2024-12-31",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "소득세법이 과세 소득으로 열거하지 않아 개인이 직접 가진 채권의 매매차익과 만기상환 차익(시장에서 싸게 산 경우)은 과세하지 않는다. 이를 과세하려던 금융투자소득세는 2024년 12월 10일 국회 본회의에서 폐지 법안이 통과되어 시행되지 않았다(effective는 폐지 의결일). 발행 할인액은 이자로 과세한다. 펀드·ETF를 거치면 배당소득으로 과세된다.",
     "sources": [
       {
@@ -2024,6 +2324,18 @@ window.RULES = {
       {
         "name": "머니투데이, 2022.8.2",
         "url": "https://www.mt.co.kr/stock/2022/08/02/2022080215180038317"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제16조 제1항(이자소득: 채권의 이자와 할인액)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0016&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제94조 제1항(양도소득의 범위, 채권 없음)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0094&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제87조의2(금융투자소득) 삭제 <2024. 12. 31.>",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0087&joBrNo=02&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -2104,31 +2416,6 @@ window.RULES = {
       }
     ]
   },
-  "jp-boj-rate": {
-    "topic": "govbond",
-    "market": "JP",
-    "label": "일본은행 정책금리 (무담보 콜금리 익일물 유도 목표)",
-    "value": "1.25% 정도",
-    "short": "1.25% 정도",
-    "effective": "2026-09-18",
-    "checked": "2026-10-18",
-    "level": "press",
-    "note": "2024년 3월 0~0.1%, 2024년 7월 0.25%, 2025년 1월 0.5%, 2025년 12월 0.75%, 2026년 6월 1.0%, 2026년 9월 18일 1.25%로 올렸다. 다음 결정회의 결과로 바뀔 수 있다.",
-    "sources": [
-      {
-        "name": "구마니치(교도통신), 2026.9",
-        "url": "https://kumanichi.com/articles/2037289"
-      },
-      {
-        "name": "다이와종합연구소, 2025.12.22",
-        "url": "https://www.dir.co.jp/report/research/capital-mkt/securities/20251222_025483.html"
-      },
-      {
-        "name": "미쓰비시UFJ모건스탠리, 2026.6.16",
-        "url": "https://www.am.mufg.jp/report/special/special_260616.pdf"
-      }
-    ]
-  },
   "jp-boj-jgb-purchase": {
     "topic": "govbond",
     "market": "JP",
@@ -2160,8 +2447,8 @@ window.RULES = {
     "label": "일본 국채의 만기별 종류",
     "value": "국고단기증권(1년 이하, 할인), 이표채 2·5·10·20·30·40년, 10년 물가연동채",
     "short": "2년, 5년, 10년, 20년, 30년, 40년 만기로 나오며 6개월마다 이자를 준다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "10년물 표면금리는 원칙적으로 3개월마다 시장 금리에 맞추어 조정한다. 2026년 10월 6일 입찰에서 3.1%로 정해졌다. 개인용 국채(個人向け国債)는 따로 있다.",
     "sources": [
       {
@@ -2171,6 +2458,10 @@ window.RULES = {
       {
         "name": "구마니치(교도통신), 2026.10.6",
         "url": "https://kumanichi.com/articles/2043510"
+      },
+      {
+        "name": "일본 재무성 이재국, 債務管理リポート2026 (令和8年度 발행 예정 국채: 短期 3개월·6개월·1년, 中期 2·5년, 長期 10년, 超長期 20·30·40년, 物価連動 10년; 短期 외에는 반년마다 이자)",
+        "url": "https://www.mof.go.jp/jgbs/publication/debt_management_report/2026/saimu2026.pdf"
       }
     ]
   },
@@ -2200,8 +2491,8 @@ window.RULES = {
     "label": "해외채권 이자소득 과세 (개인, 직접 보유)",
     "value": "15.4% 원천징수",
     "short": "15.4%를 원천징수한다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "소득세 14%와 지방소득세 1.4%이다. 외국에서 조약 세율만큼 먼저 떼었다면 국내 세율과의 차이만 더 뗀다. 이자와 배당 합계가 연 2,000만 원을 넘으면 금융소득종합과세 대상이다.",
     "sources": [
       {
@@ -2215,6 +2506,18 @@ window.RULES = {
       {
         "name": "토스뱅크, 채권 세금",
         "url": "https://www.tossbank.com/articles/bondstax"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제129조 제1항 제1호 라목(14%) 및 제4항(외국소득세액 차감)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0129&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제16조 제1항 제6호(외국법인 발행 채권의 이자와 할인액)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0016&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 지방세법 제103조의13 제1항",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=282559&joNo=0103&joBrNo=13&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -2224,8 +2527,8 @@ window.RULES = {
     "label": "해외채권 매매차익·환차익 과세 (개인, 직접 보유)",
     "value": "비과세",
     "short": "세금이 붙지 않는다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "소득세법이 정한 소득만 과세하는 구조에서 개인의 채권 매매차익과 환차익은 과세 대상 소득에 들지 않는다. 할인채의 할인액은 이자로 볼 수 있다. ETF나 펀드로 산 경우에는 해당하지 않는다.",
     "sources": [
       {
@@ -2235,6 +2538,14 @@ window.RULES = {
       {
         "name": "KB국민은행 KB Think, 미국채 사는 법, 2024.8",
         "url": "https://kbthink.com/main/asset-management/wealth-manage-tip/kbthink-original/202408/howtobuyUSbonds.html"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제16조 제1항(이자소득 열거: 외국법인 채권의 이자와 할인액)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0016&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제94조 제1항(양도소득의 범위)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0094&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -2603,7 +2914,7 @@ window.RULES = {
     "label": "E-mini S&P 500 선물 계약 크기 (CME)",
     "value": "지수 × 50달러, 최소 0.25포인트(12.50달러)",
     "short": "지수 1포인트에 50달러, 한 틱 0.25포인트에 12.50달러",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "CME 계약 명세 페이지는 자동 접속이 막혀 검색 결과 요약과 중개회사 안내로 확인했다.",
     "sources": [
@@ -2623,7 +2934,7 @@ window.RULES = {
     "label": "Micro E-mini S&P 500 선물 계약 크기 (CME)",
     "value": "지수 × 5달러, 최소 0.25포인트(1.25달러)",
     "short": "지수 1포인트에 5달러, 한 틱에 1.25달러",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "E-mini의 10분의 1 크기.",
     "sources": [
@@ -2639,7 +2950,7 @@ window.RULES = {
     "label": "E-mini S&P 500 선물 결제월과 만기 (CME)",
     "value": "3·6·9·12월, 결제월 셋째 금요일 현금결제",
     "short": "3·6·9·12월 분기물, 결제월 셋째 금요일에 현금으로 정산",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "최종 정산 시각은 확인하지 못했다.",
     "sources": [
@@ -2659,7 +2970,7 @@ window.RULES = {
     "label": "E-mini S&P 500 선물 거래 시간 (CME Globex)",
     "value": "일요일 18:00~금요일 17:00(미국 동부시간), 평일 매일 1시간 쉼",
     "short": "일요일 저녁부터 금요일 오후까지 거의 하루 종일(매일 1시간 쉼)",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "미국 중부시간 기준으로는 17:00~다음 날 16:00. 15:15~15:30(중부) 짧은 정지가 따로 있다는 안내도 있다.",
     "sources": [
@@ -2745,10 +3056,10 @@ window.RULES = {
     "topic": "deriv",
     "market": "KR",
     "label": "선물·옵션 추가증거금 납부 기한",
-    "value": "부족이 생긴 거래일의 다음 영업일 12시까지",
-    "short": "다음 영업일 정오까지",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "부족액이 생긴 날의 다음 거래일 12시까지",
+    "short": "다음 거래일 정오까지",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "장 종료 시점에 예탁총액이 유지위탁증거금보다 적거나 예탁현금이 유지현금예탁필요액보다 적으면 생긴다. 위탁증거금 수준까지 채워야 하며, 12시 전에 계약을 줄여 증거금 수준을 맞추어도 된다. 증권회사는 결제불이행 우려가 있는 고객에게 기한을 앞당길 수 있다. 기한을 넘기면 통지 없이 반대매매할 수 있다.",
     "sources": [
       {
@@ -2758,6 +3069,10 @@ window.RULES = {
       {
         "name": "한국투자증권 장내파생상품 거래설명서(2026-05-11 심사필)",
         "url": "https://file.koreainvestment.com/updata/namo/13092626장내파생상품 래설명서_전문.pdf"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 파생상품시장 업무규정 제137조(위탁증거금의 일별 추가예탁) 제3항·제5항, 제42차 개정 2026.6.29 (regulationViewPop.do, bookid=210199976)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -2767,8 +3082,8 @@ window.RULES = {
     "label": "장중 추가증거금 부과 조건",
     "value": "코스피200이 전날 종가보다 코스피200선물 유지증거금률의 80% 이상 움직인 날",
     "short": "지수가 유지증거금률의 80% 이상 움직인 날",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "9시 1분, 10시~14시 정각에 확인한다(15시는 제외, 야간거래에는 적용하지 않음). 유지증거금률 14.50%이면 기준은 11.6%. 예탁총액이 장중유지위탁증거금보다 적은 계좌에 부과하고, 기한은 그날 장 종료 시점(회사에 따라 다음 거래일 호가 접수 전까지 연장 가능). 채우지 않으면 신규 주문과 증거금을 늘리는 주문이 거부된다.",
     "sources": [
       {
@@ -2778,6 +3093,10 @@ window.RULES = {
       {
         "name": "한국투자증권 파생상품계좌설정약관(2025-06-09 시행) 및 별첨",
         "url": "https://file.koreainvestment.com/updata/namo/파생상품계좌설정약관.pdf"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 파생상품시장 업무규정 시행세칙 제151조의2(위탁증거금의 장중 추가예탁), 제164차 개정 2026.7.6 (regulationViewPop.do, bookid=210228709)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -2785,10 +3104,10 @@ window.RULES = {
     "topic": "deriv",
     "market": "KR",
     "label": "선물 신규 주문의 현금예탁필요액",
-    "value": "위탁증거금의 2분의 1",
-    "short": "위탁증거금의 절반은 현금",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "위탁증거금의 2분의 1 이상(거래소 최저율 50%, 100% 이내에서 회원이 정함)",
+    "short": "위탁증거금의 절반 이상은 현금",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한국거래소 파생상품시장 업무규정에 따른 것으로 증권회사 약관 별첨에 '위탁금액 × 위탁증거금률 × 1/2'로 적혀 있다. 나머지는 대용증권·외화로 낼 수 있다. 옵션을 살 때는 대금 전액이 현금이고, 선물 스프레드 거래는 0이다.",
     "sources": [
       {
@@ -2798,6 +3117,10 @@ window.RULES = {
       {
         "name": "다올투자증권 선물옵션 증거금 안내",
         "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex04.jsp"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 파생상품시장 업무규정 시행세칙 제145조(사전현금예탁필요액) 제1항 제1호·제2항, 제164차 개정 2026.7.6 (bookid=210228709)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -2875,13 +3198,17 @@ window.RULES = {
     "label": "코스피200선물·옵션 최종결제가격",
     "value": "최종거래일의 코스피200 종가지수",
     "short": "최종거래일의 코스피200 종가지수",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "주식선물은 최종거래일 기초주권 종가를 쓰는 것으로 알려져 있으나 원문 확인 전이다. 파생상품시장 업무규정 원문은 열어 보지 못했다.",
     "sources": [
       {
         "name": "KB증권 코스피200 선물·옵션 상품 비교 안내",
         "url": "https://www.kbsec.com/go.able?linkcd=s040308010002"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 파생상품시장 업무규정 시행세칙 제5조 제3항(주가지수선물 최종결제가격: 최종거래일의 해당 주가지수 최종 수치) 및 주가지수옵션 권리행사결제기준가격 조항, 제164차 개정 2026.7.6 (bookid=210228709)",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -2923,13 +3250,17 @@ window.RULES = {
     "label": "미국 E-mini S&P 500 선물 만기와 최종결제",
     "value": "3·6·9·12월 셋째 금요일, 특별 시가(SOQ)로 현금결제",
     "short": "3·6·9·12월 셋째 금요일에 끝나고, 그날 아침 구성 종목 시가로 계산한 특별 시가(SOQ)로 현금결제한다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "CME 안내 자료 기준. 규정 원문(CME Rulebook)은 열어 보지 않았다.",
     "sources": [
       {
         "name": "CME Group, Understanding Equity Index Daily & Final Settlement",
         "url": "https://www.cmegroup.com/education/courses/introduction-to-equity-index-products/understanding-equity-index-daily-and-final-settlement"
+      },
+      {
+        "name": "CME Group, E-mini S&P 500 Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html"
       }
     ]
   },
@@ -3016,8 +3347,8 @@ window.RULES = {
     "label": "코스피200선물·옵션 단계별 가격제한폭",
     "value": "기준가격 대비 ±8% → ±15% → ±20%",
     "short": "1단계 8%, 2단계 15%, 3단계 20%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "앞 단계 한도에 닿은 뒤 일정 조건(기준 종목이 한도에 닿고 5분 경과 등)이 되면 같은 방향으로 다음 단계가 열린다. 야간 거래에는 1단계만 적용한다.",
     "sources": [
       {
@@ -3027,6 +3358,14 @@ window.RULES = {
       {
         "name": "다올투자증권 KOSPI200선물 상품 안내",
         "url": "https://www.daolsecurities.com/customer/guide/FuturesIndex01.jsp"
+      },
+      {
+        "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01041401/Guide_to_Night_Session_in_KRX_Derivatives_Market.pdf"
+      },
+      {
+        "name": "한국거래소 Global, KOSDAQ 150 Options 상품 명세",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040210/GLB0201040210.jsp"
       }
     ]
   },
@@ -3211,11 +3550,11 @@ window.RULES = {
     "topic": "protect",
     "market": "KR",
     "label": "위클리옵션 현황",
-    "value": "코스피200·코스닥150 위클리옵션(월요일·목요일 만기) 상장, 개별주식 위클리옵션은 상장 연기",
-    "short": "코스피200과 코스닥150 위클리옵션이 월요일·목요일 만기로 거래되고, 개별주식 위클리옵션은 2026년 6월 상장 직전에 연기되었다",
-    "checked": "2026-10-18",
-    "level": "press",
-    "note": "코스닥150 위클리옵션은 2025년 10월 말(보도상 27일) 정규·야간 시장에 상장되었다. 삼성전자·SK하이닉스·현대차·LG에너지솔루션을 기초로 한 개별주식 위클리옵션은 2026년 6월 29일 상장 예정이었으나 거래소가 6월 25일 시장 여건을 이유로 연기했다. 위클리옵션도 다른 옵션과 같은 기본예탁금 단계를 적용받는다(매수 1단계, 매도 2단계).",
+    "value": "코스피200·코스닥150 위클리옵션(월요일·목요일 만기) 상장",
+    "short": "코스피200과 코스닥150 위클리옵션이 월요일·목요일 만기로 거래된다",
+    "checked": "2026-10-31",
+    "level": "official",
+    "note": "코스닥150 위클리옵션은 2025년 10월 말(보도상 27일) 정규·야간 시장에 상장되었다. 대형주 네 종목을 기초로 한 개별주식 위클리옵션은 2026년 6월 상장이 계획되었다가 거래소가 6월 25일 시장 여건을 이유로 연기했다(보도). 다시 상장할 날짜는 정해지지 않았다. 위클리옵션도 다른 옵션과 같은 기본예탁금 단계를 적용받는다(매수 1단계, 매도 2단계).",
     "sources": [
       {
         "name": "한국거래소, Guide to Night Session in KRX Derivatives Market, 2025.4",
@@ -3228,6 +3567,10 @@ window.RULES = {
       {
         "name": "비즈워치, 2026.6.25",
         "url": "https://news.bizwatch.co.kr/article/market/2026/06/25/0021"
+      },
+      {
+        "name": "한국거래소 Global, KOSDAQ 150 Options 상품 명세(Weekly: 월·목 만기, 상장 2025.10.27)",
+        "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201040210/GLB0201040210.jsp"
       }
     ]
   },
@@ -3238,8 +3581,8 @@ window.RULES = {
     "value": "처음 거래할 때 사전교육 1시간 이상과 모의거래 3시간 이상",
     "short": "처음 거래하는 개인은 사전교육 1시간 이상과 모의거래 3시간 이상을 마쳐야 한다",
     "effective": "2025-12-15",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "금융감독원이 2025년 11월 16일 발표했고 금융투자협회 규정 개정으로 시행되었다. 증권회사가 투자성향·나이·경험에 따라 시간을 늘리며, 경험 없는 만 65세 이상에게는 교육 10시간·모의거래 7시간을 권고한다고 보도되었다. 국내와 같은 기본예탁금은 도입되지 않았다(보도 기준). 금융감독원 집계로 개인의 해외파생상품 손실은 2020년~2025년 상반기 연평균 약 4,580억 원이다.",
     "sources": [
       {
@@ -3257,6 +3600,10 @@ window.RULES = {
       {
         "name": "데일리안, 2025.5.25",
         "url": "https://www.dailian.co.kr/news/view/1502047/"
+      },
+      {
+        "name": "금융투자협회, 금융투자회사의 영업 및 업무에 관한 규정 제2-5조의3 제3항(2025.9.11 신설) 및 부칙(2025.12.15 시행)",
+        "url": "https://law.kofia.or.kr/service/law/lawFullScreenContent.do?seq=136&historySeq=1814"
       }
     ]
   },
@@ -3361,13 +3708,17 @@ window.RULES = {
     "label": "WTI 원유 선물 1계약의 크기 (NYMEX)",
     "value": "1,000배럴",
     "short": "1,000배럴로, 값은 배럴당 달러로 부른다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "최소 가격 변동 배럴당 0.01달러(1계약 10달러). 실물 인도 장소는 오클라호마주 쿠싱. CME 공식 페이지가 자동 접속을 막아(403·시간 초과) 검색 결과에 나온 CME 페이지 내용으로 확인했다.",
     "sources": [
       {
         "name": "CME Group, Light Sweet Crude Oil Futures contract specs (검색 결과로 확인)",
         "url": "https://cmegroup.com/trading/energy/crude-oil/light-sweet-crude_contractSpecs_futures.html"
+      },
+      {
+        "name": "CME Group, Crude Oil Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.contractSpecs.html"
       }
     ]
   },
@@ -3393,13 +3744,17 @@ window.RULES = {
     "label": "금 선물 1계약의 크기 (COMEX)",
     "value": "100트로이온스",
     "short": "100트로이온스로, 값은 온스당 달러로 부른다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "최소 가격 변동 온스당 0.10달러. CME 공식 페이지 직접 열기 실패, 검색 결과의 CME 자료로 확인.",
     "sources": [
       {
         "name": "CME Group, Gold futures and options fact card",
         "url": "https://www.cmegroup.com/trading/metals/files/fact-card-gold-futures-options.pdf"
+      },
+      {
+        "name": "CME Group, Gold Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/metals/precious/gold.contractSpecs.html"
       }
     ]
   },
@@ -3409,13 +3764,17 @@ window.RULES = {
     "label": "은 선물 1계약의 크기 (COMEX)",
     "value": "5,000트로이온스",
     "short": "5,000트로이온스",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "최소 가격 변동 온스당 0.005달러(1계약 25달러). Barchart 계약 명세표(2026.3)로 확인, CME 원문은 열지 못했다.",
     "sources": [
       {
         "name": "Barchart, Metals contract specifications",
         "url": "https://www.barchart.com/futures/contract-specifications/metals"
+      },
+      {
+        "name": "CME Group, Silver Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/metals/precious/silver.contractSpecs.html"
       }
     ]
   },
@@ -3425,8 +3784,8 @@ window.RULES = {
     "label": "옥수수·밀·대두 선물 1계약의 크기 (CBOT)",
     "value": "5,000부셸",
     "short": "5,000부셸",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "세 곡물 모두 부셸당 센트로 호가. 옥수수 최소 변동 1/4센트(1계약 12.50달러). CME 밀 상품 페이지 내용이 검색 결과로 확인됨.",
     "sources": [
       {
@@ -3436,6 +3795,18 @@ window.RULES = {
       {
         "name": "Virginia Tech, Feeder grain CME",
         "url": "https://aaec.vt.edu/extension/va-commodity-market/feedergraincme.html"
+      },
+      {
+        "name": "CME Group, Corn Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/agriculture/grains/corn/specs"
+      },
+      {
+        "name": "CME Group, Chicago SRW Wheat Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/agriculture/grains/wheat/specs"
+      },
+      {
+        "name": "CME Group, Soybean Futures Contract Specs (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean/specs"
       }
     ]
   },
@@ -3511,13 +3882,21 @@ window.RULES = {
     "value": "순도 99.99% 금지금 1kg·100g",
     "short": "순도 99.99퍼센트의 금괴(1kg와 100g 두 종목)",
     "effective": "2014-03-24",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2014.3.24 개설. 100g 종목은 뒤에 추가됐다. 증권회사 안내 페이지로 확인, 한국거래소 원문은 열지 못했다.",
     "sources": [
       {
         "name": "유안타증권(myasset), 금현물 거래 안내",
         "url": "https://www.myasset.com/myasset/static/trading/TR_1401000_P1.jsp"
+      },
+      {
+        "name": "한국거래소, 금시장 거래제도 - 매매대상 금지금",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010101/RGL04010101.jsp"
+      },
+      {
+        "name": "한국거래소, KRX금시장 개요와 장점(설립 '14.3.24)",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01050206/OPN01050206.jsp"
       }
     ]
   },
@@ -3527,13 +3906,17 @@ window.RULES = {
     "label": "KRX 금시장 매매·호가 수량 단위",
     "value": "1g",
     "short": "1그램",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "호가 가격 단위 10원, 가격제한폭 기준가격의 ±10%, 1회 주문 한도 5,000g, 지정가 주문만, 당일 결제.",
     "sources": [
       {
         "name": "유안타증권(myasset), 금현물 거래 안내",
         "url": "https://www.myasset.com/myasset/static/trading/TR_1401000_P1.jsp"
+      },
+      {
+        "name": "한국거래소, 금시장 거래제도 - 매매거래단위 및 호가",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010104/RGL04010104.jsp"
       }
     ]
   },
@@ -3543,13 +3926,17 @@ window.RULES = {
     "label": "KRX 금시장 매매 시간",
     "value": "09:00~15:30",
     "short": "오전 9시부터 오후 3시 30분(시작 전 8시 30분부터 단일가 주문 접수, 마감 10분은 단일가)",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "08:30~09:00 시가 단일가, 09:00~15:20 접속매매, 15:20~15:30 종가 단일가. 2014년 개장 때는 10:00~15:00이었다.",
     "sources": [
       {
         "name": "유안타증권(myasset), 금현물 거래 안내",
         "url": "https://www.myasset.com/myasset/static/trading/TR_1401000_P1.jsp"
+      },
+      {
+        "name": "한국거래소, 금시장 거래제도 - 매매거래시간 및 휴장일",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010102/RGL04010102.jsp"
       }
     ]
   },
@@ -3559,8 +3946,8 @@ window.RULES = {
     "label": "금 실물(골드바) 장외 구입 시 부가가치세",
     "value": "10%",
     "short": "구입 가격의 10% 부가가치세",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "금지금 공급은 부가가치세 과세 대상이다. 개인은 살 때 낸 부가가치세를 되팔 때 돌려받지 못한다. 판매처의 가공비·마진(5% 안팎으로 보도)이 별도로 붙는다. 한국거래소 금시장 안의 매매만 조세특례제한법 제126조의7에 따라 면제된다.",
     "sources": [
       {
@@ -3574,6 +3961,14 @@ window.RULES = {
       {
         "name": "한국거래소 KRX금시장 안내 리플렛, 2023.12",
         "url": "https://regulation.krx.co.kr/contents/RGL/04/04010108/KRX_GOLD_Leaflet_20231226.pdf"
+      },
+      {
+        "name": "국가법령정보센터, 부가가치세법 제30조(세율 10퍼센트), 2026.1.2 시행본",
+        "url": "https://www.law.go.kr/법령/부가가치세법/제30조"
+      },
+      {
+        "name": "한국거래소, 금시장 세제혜택 - 부가가치세(조세특례제한법 제126조의7)",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010201/RGL04010201.jsp"
       }
     ]
   },
@@ -3583,13 +3978,17 @@ window.RULES = {
     "label": "KRX 금시장 가격제한폭",
     "value": "기준가격(전날 종가) ±10%",
     "short": "전날 종가에서 위아래 10%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "전날 종가가 없으면 최근 매매거래일 종가가 기준가격이다.",
     "sources": [
       {
         "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
         "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      },
+      {
+        "name": "한국거래소, 금시장 거래제도 - 매매거래단위 및 호가(기준가격 및 가격제한폭)",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010104/RGL04010104.jsp"
       }
     ]
   },
@@ -3599,13 +3998,17 @@ window.RULES = {
     "label": "KRX 금시장 결제일",
     "value": "당일결제(T+0)",
     "short": "체결된 당일에 이루어진다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "매수 대금은 현금으로 전액 미리 맡겨야 한다(현금위탁증거금률 100%). 결제 뒤 매수자는 한국예탁결제원에 혼합보관된 금지금의 지분을 갖는다.",
     "sources": [
       {
         "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
         "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      },
+      {
+        "name": "한국거래소, 금시장 거래제도 - 결제 및 보관",
+        "url": "https://regulation.krx.co.kr/contents/RGL/04/04010105/RGL04010105.jsp"
       }
     ]
   },
@@ -3671,7 +4074,7 @@ window.RULES = {
     "label": "KRX 금시장 매매 수수료 (증권회사)",
     "value": "증권회사마다 다름, 온라인 0.2~0.3% 안팎 (부가가치세 별도)",
     "short": "증권회사마다 다르지만 온라인 0.2~0.3% 안팎",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "한국거래소 안내는 '0.3% 내외', 한 증권회사 설명서(2026.10)는 온라인 0.2%·모바일 0.3%·영업점 0.5%(부가세 별도)로 적는다. 일부 증권회사는 보관수수료를 받는다.",
     "sources": [
@@ -3682,6 +4085,10 @@ window.RULES = {
       {
         "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
         "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      },
+      {
+        "name": "한국거래소, KRX금시장 개요와 장점(증권사 온라인수수료 0.3% 내외)",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01050206/OPN01050206.jsp"
       }
     ]
   },
@@ -3691,8 +4098,8 @@ window.RULES = {
     "label": "골드뱅킹(금 통장) 매매차익 과세",
     "value": "배당소득으로 15.4% 원천징수",
     "short": "배당소득으로 보아 출금·해지할 때 15.4%를 원천징수한다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "배당소득세 14%와 지방소득세 1.4%이다. 금융소득종합과세 합산 대상이다. 2010년 과세 방침과 이후 소송을 거쳐 소득세법 개정으로 배당소득 과세가 명확해졌다(2018년부터라는 보도).",
     "sources": [
       {
@@ -3706,6 +4113,18 @@ window.RULES = {
       {
         "name": "한국경제, 2017.12.15",
         "url": "https://www.hankyung.com/amp/2017121576431"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 시행령 제26조의3 제1항 제1호(파생결합증권 이익은 배당소득), 2026.10.1 시행본",
+        "url": "https://www.law.go.kr/법령/소득세법시행령/제26조의3"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제129조 제1항 제2호 나목(배당소득 원천징수 14%)",
+        "url": "https://www.law.go.kr/법령/소득세법/제129조"
+      },
+      {
+        "name": "한국거래소, KRX금시장 개요와 장점(골드뱅킹 매매차익 배당소득세 15.4%)",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01050206/OPN01050206.jsp"
       }
     ]
   },
@@ -3715,8 +4134,8 @@ window.RULES = {
     "label": "골드뱅킹(금 통장) 예금자보호",
     "value": "보호되지 않음",
     "short": "예금자보호법에 따라 보호되지 않는다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "은행 상품이지만 금 시세에 연동된 투자 상품이다. KRX 금현물 거래도 예금자보호 대상이 아니다.",
     "sources": [
       {
@@ -3726,6 +4145,10 @@ window.RULES = {
       {
         "name": "유안타증권 금현물시장매매거래설명서, 2026.10.12",
         "url": "https://www.myasset.com/myasset/static/agreement/c_20_rule.pdf"
+      },
+      {
+        "name": "예금보험공사, 보호대상 금융상품 개요",
+        "url": "https://www.kdic.or.kr/sp/dpstrprot/selectProtSystProtTrgtPrdctSumr.do"
       }
     ]
   },
@@ -3735,7 +4158,7 @@ window.RULES = {
     "label": "골드뱅킹 거래 비용",
     "value": "사고팔 때 각 1% 안팎 · 실물 인출 시 4~5% 수수료 + 부가가치세 10%",
     "short": "사고팔 때 각각 시세의 1% 안팎이고, 실물로 받으면 4~5% 수수료와 부가가치세 10%가 붙는다",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "은행마다 다르다. 거래 단위는 0.01g이다. 실물 인출에는 약 1주일이 걸린다는 안내가 있다.",
     "sources": [
@@ -3746,6 +4169,10 @@ window.RULES = {
       {
         "name": "KB국민은행 KB Think, 금 통장 장단점, 2026.4.20",
         "url": "https://kbthink.com/investment/101/gold-banking.html"
+      },
+      {
+        "name": "한국거래소, KRX금시장 개요와 장점(골드뱅킹 통장거래 1%, 실물거래 5%, VAT 10%, 인출 약 1주)",
+        "url": "https://open.krx.co.kr/contents/OPN/01/01050206/OPN01050206.jsp"
       }
     ]
   },
@@ -3755,13 +4182,25 @@ window.RULES = {
     "label": "국내주식형 외 ETN 매매차익 과세",
     "value": "보유기간과세로 배당소득세 15.4%",
     "short": "국내주식형이 아니면 매매차익을 보유 기간 기준으로 계산해 배당소득세를 뗀다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "분배금과 중도상환·만기 상환금도 배당소득이다. 매매차익은 합산하되 매매차손은 빼지 않는다. 금융소득종합과세 합산 대상이 될 수 있다. ETN은 발행 증권회사의 신용위험을 진다.",
     "sources": [
       {
         "name": "키움증권 ETN 투자 유의사항 안내",
         "url": "https://download.kiwoom.com/web/ETN_NOTE.pdf"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 시행규칙 제14조(상장지수증권으로부터의 이익에 대한 과세표준 계산방식 등), 2026.7.1 시행본",
+        "url": "https://www.law.go.kr/법령/소득세법시행규칙"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 시행령 제26조의3(배당소득의 범위)",
+        "url": "https://www.law.go.kr/법령/소득세법시행령/제26조의3"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제129조(원천징수세율)",
+        "url": "https://www.law.go.kr/법령/소득세법/제129조"
       }
     ]
   },
@@ -3772,8 +4211,8 @@ window.RULES = {
     "value": "매도 금액의 10%",
     "short": "이익과 상관없이 매도 금액의 10%를 원천징수한다",
     "effective": "2023-01-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "미국 세법 1446(f) 규정이다. 규정 조문의 적용일은 2022-01-01이지만 브로커 원천징수는 IRS 고시로 2023-01-01부터 시작되었다. 일부 원자재 선물 상품이 PTP 형태이다. 해당 여부는 상품 설명서로 확인한다.",
     "sources": [
       {
@@ -3783,6 +4222,10 @@ window.RULES = {
       {
         "name": "SIX Group, IRS Section 1446(f), 2022",
         "url": "https://www.six-group.com/de/newsroom/news/financial-information/2022/irs-section-1446f-how-to-tackle-the-challenges.html"
+      },
+      {
+        "name": "IRS, Notice 2021-51 (2021.8)",
+        "url": "https://www.irs.gov/pub/irs-drop/n-21-51.pdf"
       }
     ]
   },
@@ -3792,8 +4235,8 @@ window.RULES = {
     "label": "미국 WTI 원유 선물 최종거래일",
     "value": "인도 월 전달 25일의 3영업일 전 (25일이 영업일이 아니면 4영업일 전)",
     "short": "인도 월 전달 25일의 3영업일 전(25일이 휴일이면 4영업일 전)에",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "예를 들어 2020년 5월물은 4월 21일에 거래가 끝났다. CME 상품 명세 페이지가 자동 접속을 막아 검색 결과로 확인했으며 규정 원문(NYMEX Rulebook 200장) 대조가 남았다.",
     "sources": [
       {
@@ -3803,6 +4246,10 @@ window.RULES = {
       {
         "name": "CFTC 중간 보고서 보도자료, 2020.11.23",
         "url": "https://www.cftc.gov/node/234886"
+      },
+      {
+        "name": "CME Group, Crude Oil Futures Contract Specs - Termination of Trading (2026.10.31 열람)",
+        "url": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.contractSpecs.html"
       }
     ]
   },
@@ -3812,8 +4259,8 @@ window.RULES = {
     "label": "S&P GSCI 원자재 지수의 정기 롤 기간",
     "value": "매달 5~9번째 영업일, 하루 20%씩",
     "short": "매달 5번째부터 9번째 영업일까지 하루 20%씩 나누어",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "계약 수량 기준으로 첫 근월물에서 다음 월물로 옮긴다. 모든 품목이 매달 옮기는 것은 아니다(일부 품목은 정해진 달에만). 2020년 4월에는 6월물을 7월물로 즉시 옮기는 비정기 롤을 했다. S&P 방법론 원문은 자동 접속이 막혀 요약 자료로 확인했다.",
     "sources": [
       {
@@ -3827,6 +4274,10 @@ window.RULES = {
       {
         "name": "Bloomberg, 2020.4.28",
         "url": "https://www.bloomberg.com/news/articles/2020-04-28/biggest-commodity-index-moves-all-wti-exposure-away-from-june"
+      },
+      {
+        "name": "S&P Dow Jones Indices, S&P GSCI Methodology (Contract Roll Weights and Monthly Roll Period), 2026.8",
+        "url": "https://www.spglobal.com/spdji/en/documents/methodologies/methodology-sp-gsci.pdf"
       }
     ]
   },
@@ -3868,8 +4319,8 @@ window.RULES = {
     "label": "LME 하루 가격 제한 (구리·알루미늄·아연, 3개월물)",
     "value": "12%",
     "short": "전날 3개월물 종가에서 위아래 12%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2022년 니켈 사태 뒤 도입. 전날 밤 3개월물 종가를 기준으로 모든 만기에 적용한다. 2022년 보도에는 다른 금속이 15%였다고 되어 있어 이후 바뀐 것으로 보이며 변경 날짜는 확인하지 못했다. LME 페이지는 접속 차단으로 검색 요약만 확인.",
     "sources": [
       {
@@ -3885,8 +4336,8 @@ window.RULES = {
     "value": "15%",
     "short": "전날 3개월물 종가에서 위아래 15%",
     "effective": "2022-03-21",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2022년 3월 16일 재개 때 5%로 시작해 8%, 12%를 거쳐 3월 21일 15%가 되었다(LME 공지 22/080, '추후 공지까지').",
     "sources": [
       {
@@ -3906,7 +4357,7 @@ window.RULES = {
     "value": "연 4,500만 톤",
     "short": "연 4,500만 톤",
     "effective": "2017-01-01",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "2017년 도입. 새 제련소를 지으려면 같은 능력의 기존 설비를 닫아야 한다. 효율 개선으로 2026년 실제 생산은 연율 약 4,670만 톤으로 상한을 넘었다는 보도가 있다. 2017년 안의 정확한 시행일은 확인하지 못해 1월 1일로 적었다.",
     "sources": [
@@ -3917,6 +4368,10 @@ window.RULES = {
       {
         "name": "Engineering News(Reuters), 2026.9.15",
         "url": "https://www.engineeringnews.co.za/article/china-aluminium-output-hits-record-high-in-august-with-capacity-cap-in-sight-2026-09-15"
+      },
+      {
+        "name": "국가발전개혁위원회(NDRC), 전해알루미늄 업종 에너지절약·탄소감축 행동계획 해설, 2024.7.30",
+        "url": "https://www.ndrc.gov.cn/fggz/fgzy/xmtjd/202407/t20240730_1392077.html"
       }
     ]
   },
@@ -3927,8 +4382,8 @@ window.RULES = {
     "value": "2020년 1월 1일 시행",
     "short": "2020년 1월부터",
     "effective": "2020-01-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "원래 2022년 예정이던 금지를 2019년 9월 발표로 2년 앞당겼다. 나라 안 제련·가공 투자를 끌어들이려는 정책이다. 대상 광석 품위 범위는 보도마다 다르다.",
     "sources": [
       {
@@ -3938,17 +4393,25 @@ window.RULES = {
       {
         "name": "Argus, 2019",
         "url": "https://www.argusmedia.com/en/news/1969668-indonesia-to-stop-nickel-ore-exports-in-2020"
+      },
+      {
+        "name": "인도네시아 에너지광물자원부령(Permen ESDM) 2019년 제11호, 2019.8.28 제정·2020.1.1 시행 (BPK 법령 데이터베이스)",
+        "url": "https://peraturan.bpk.go.id/Details/142232/permen-esdm-no-11-tahun-2019"
+      },
+      {
+        "name": "Permen ESDM 2019년 제11호 원문 PDF",
+        "url": "https://peraturan.bpk.go.id/Download/133650/Permen%20ESDM%20Nomor%2011%20Tahun%202019.pdf"
       }
     ]
   },
   "us-cbot-grain-tick": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "US",
     "label": "CBOT 밀·옥수수·대두 선물 최소 가격 단위",
     "value": "부셸당 1/4센트(한 계약 12.50달러)",
     "short": "부셸당 1/4센트, 한 계약에 12.50달러",
-    "level": "press",
+    "level": "official",
     "note": "가격은 부셸당 센트로 부르므로 1센트 움직이면 한 계약에 50달러가 오간다.",
     "sources": [
       {
@@ -3958,18 +4421,30 @@ window.RULES = {
       {
         "name": "CME Group 옥수수 선물 계약 명세",
         "url": "https://cmegroup.com/content/cmegroup/en//trading/agricultural/grain-and-oilseed/corn_contract_specifications.html"
+      },
+      {
+        "name": "CME Group, Corn Futures Contract Specs (2026.10 열람)",
+        "url": "https://www.cmegroup.com/markets/agriculture/grains/corn.contractSpecs.html"
+      },
+      {
+        "name": "CME Group, Chicago SRW Wheat Futures Contract Specs",
+        "url": "https://www.cmegroup.com/markets/agriculture/grains/wheat.contractSpecs.html"
+      },
+      {
+        "name": "CME Group, Soybean Futures Contract Specs",
+        "url": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean.contractSpecs.html"
       }
     ]
   },
   "us-cbot-grain-limit": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "US",
     "label": "CBOT 곡물 선물 하루 가격제한폭 재설정",
     "value": "매년 5월·11월 재설정, 기준 가격의 약 7%(최저 한도 있음)",
     "short": "해마다 5월과 11월에 최근 가격의 약 7%로 다시 정한다",
     "effective": "2026-05-01",
-    "level": "press",
+    "level": "official",
     "note": "7%로 계산한 값과 품목별 최저 한도 가운데 큰 쪽을 쓴다. 제한폭까지 움직인 다음 거래일에는 한도를 넓힌다. 2026년 5월 1일 거래일부터 적용된 한도는 11월 첫 거래일까지 쓴다. 구체적인 센트 값은 CME 공지 원문으로 확인하지 못했다.",
     "sources": [
       {
@@ -3979,38 +4454,54 @@ window.RULES = {
       {
         "name": "Manitoba Co-operator (CME 가변 가격제한폭 도입 보도)",
         "url": "https://www.manitobacooperator.ca/?p=120856"
+      },
+      {
+        "name": "CME Group, Grain and Oilseed Price Limit FAQ",
+        "url": "https://www.cmegroup.com/articles/faqs/grain-oilseed-and-lumber-price-limit-faq.html"
+      },
+      {
+        "name": "CME Group SER-9852, 2026.10.26",
+        "url": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2026/10/ser-9852.pdf"
       }
     ]
   },
   "grain-bushel-weight": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "US",
     "label": "곡물 1부셸의 표준 무게와 톤 환산",
     "value": "옥수수 56파운드(1톤 = 39.368부셸), 밀·대두 60파운드(1톤 = 36.744부셸)",
     "short": "옥수수는 56파운드, 밀과 대두는 60파운드",
-    "level": "press",
+    "level": "official",
     "note": "1톤 = 2,204.62파운드. 미국 농업통계청 웹사이트에 실린 캔자스 밀 위원회 환산표 기준이다.",
     "sources": [
       {
         "name": "Kansas Wheat Quality 보고서 환산표 (USDA NASS 게재)",
         "url": "https://nass.usda.gov/statistics_by_state/Kansas/Publications/Cooperative_Projects/Wheat_Quality/wq02pdf.pdf"
+      },
+      {
+        "name": "USDA NASS 캔자스 사무소, Kansas Wheat Quality 2002 환산표(Bushel Weights)",
+        "url": "https://www.nass.usda.gov/Statistics_by_State/Kansas/Publications/Cooperative_Projects/Wheat_Quality/wq02pdf.pdf"
       }
     ]
   },
   "soy-crush-yield": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "US",
     "label": "대두 1부셸 압착 수율 (선물 압착 마진 계산 기준)",
     "value": "대두박 44파운드(0.022숏톤), 대두유 11파운드",
     "short": "대두박 44파운드와 대두유 11파운드",
-    "level": "press",
+    "level": "official",
     "note": "CME가 압착 마진(board crush) 계산에 쓰는 표준값이다. 실제 수율은 대두 품질과 공장에 따라 다르며, 나머지는 껍질과 손실이다.",
     "sources": [
       {
         "name": "CME Group, The Soybean Crush",
         "url": "https://cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-crush-spreads.html"
+      },
+      {
+        "name": "CME Group, The Soybean Crush (Crush Calculation)",
+        "url": "https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-crush-spreads.html"
       }
     ]
   },
@@ -4036,12 +4527,12 @@ window.RULES = {
   },
   "us-wasde-schedule": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "US",
     "label": "WASDE(세계 농산물 수급 전망) 발표 일정",
     "value": "매달 8~12일 무렵, 미국 동부 시간 정오",
     "short": "매달 한 번, 8~12일 무렵 정오(미국 동부 시간)",
-    "level": "press",
+    "level": "official",
     "note": "미국 농무부 세계농업전망위원회(WAOB)가 낸다. 미국 농무부 WASDE 페이지는 접속이 막혀 검색 결과의 일정표와 CME 해설로 확인했다.",
     "sources": [
       {
@@ -4051,6 +4542,10 @@ window.RULES = {
       {
         "name": "CME Group, Understanding Major USDA Reports in 2026",
         "url": "https://www.cmegroup.com/articles/2026/understanding-major-usda-reports-in-2026.html"
+      },
+      {
+        "name": "USDA, WASDE Report 페이지 (2026·2027 발표일)",
+        "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report"
       }
     ]
   },
@@ -4072,30 +4567,34 @@ window.RULES = {
   },
   "india-wheat-ban-2022": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "WORLD",
     "label": "인도 밀 수출 금지 (2022)",
     "value": "2022-05-13 고시, 즉시 시행",
     "short": "인도가 폭염으로 작황이 나빠지자 밀 수출을 금지했다",
     "effective": "2022-05-13",
-    "level": "press",
+    "level": "official",
     "note": "식량 안보와 물가를 이유로 들었다. 그 이전에 발행된 신용장 물량 등은 예외로 했다.",
     "sources": [
       {
         "name": "farmdoc Farm Policy News, 2022.5",
         "url": "https://farmpolicynews.illinois.edu/2022/05/india-bans-wheat-exports/"
+      },
+      {
+        "name": "인도 정부 PIB(상공부), Government announces some relaxation in wheat export notification, 2022.5.17",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1825991&reg=3&lang=2"
       }
     ]
   },
   "black-sea-grain-initiative": {
     "topic": "commodity",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "WORLD",
     "label": "흑해곡물협정 기간",
     "value": "2022-07-22 서명 ~ 2023-07-17 만료(러시아 연장 거부)",
     "short": "2022년 7월 22일부터 러시아가 빠진 2023년 7월 17일까지",
     "effective": "2022-07-22",
-    "level": "press",
+    "level": "official",
     "note": "러시아, 튀르키예, 우크라이나, 유엔이 이스탄불에서 서명했다. 우크라이나 세 항구에서 약 3,300만 톤의 곡물·식품이 나갔다.",
     "sources": [
       {
@@ -4110,13 +4609,13 @@ window.RULES = {
   },
   "brent-basket": {
     "topic": "energy",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "GL",
     "label": "브렌트 기준 가격에 들어가는 원유",
     "value": "Brent, Forties, Oseberg, Ekofisk, Troll + WTI Midland(2023.6 인도분부터)",
     "short": "브렌트, 포티스, 오세베르그, 에코피스크, 트롤에 2023년 6월 인도분부터 미국의 WTI 미들랜드까지 들어 있다",
     "effective": "2023-06-01",
-    "level": "press",
+    "level": "official",
     "note": "S&P Global Platts의 Dated Brent 평가 기준. 북해 생산 감소로 바구니를 넓혔다. 북해 밖 원유가 들어간 것은 처음이다.",
     "sources": [
       {
@@ -4126,6 +4625,10 @@ window.RULES = {
       {
         "name": "Kitco/Reuters 해설, 2023.4.25",
         "url": "https://www.kitco.com/news/off-the-wire/2023-04-25/explainer-will-wti-midlandaposs-inclusion-dated-brent-affect-oil"
+      },
+      {
+        "name": "S&P Global Commodity Insights, Platts EMEA Crude Oil Specifications Guide, 2026.8",
+        "url": "https://www.spglobal.com/commodityinsights/plattscontent/_assets/_files/en/our-methodology/methodology-specifications/emea-crude-methodology.pdf"
       }
     ]
   },
@@ -4147,12 +4650,12 @@ window.RULES = {
   },
   "us-api-wsb": {
     "topic": "energy",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "US",
     "label": "미국석유협회(API) 주간 통계 발표 시각",
     "value": "매주 화요일 16:30 무렵 (미국 동부시간)",
     "short": "매주 화요일 오후 4시 30분 무렵(미국 동부시간)",
-    "level": "press",
+    "level": "official",
     "note": "유료 구독 자료. 월요일이 연방 공휴일이면 수요일 오후로 미뤄진다.",
     "sources": [
       {
@@ -4179,28 +4682,40 @@ window.RULES = {
   },
   "kr-fuel-tax-structure": {
     "topic": "energy",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "KR",
     "label": "유류세의 구성 (휘발유·경유)",
     "value": "교통·에너지·환경세 + 교육세(교통세의 15%) + 주행세(교통세의 26%) + 부가가치세 10%",
     "short": "교통·에너지·환경세, 그 15%인 교육세, 그 26%인 주행세, 그리고 부가가치세 10%",
-    "level": "press",
+    "level": "official",
     "note": "교통·에너지·환경세는 법정세율의 30% 범위에서 시행령(탄력세율)으로 조정한다. 휘발유 탄력세율 리터당 529원 기준 세 세금 합계 745.9원(=529×1.41)에 부가세 10%를 더하면 약 820원으로, 인하 전 금액 보도와 맞는다. 주행세 비율은 법령 원문으로 대조하지 못했다.",
     "sources": [
       {
         "name": "택스워치, 2023.6.22",
         "url": "https://www.taxwatch.co.kr/article/tax/2023/06/22/0001"
+      },
+      {
+        "name": "국가법령정보센터, 교통·에너지·환경세법 제2조 (시행 2026.1.2)",
+        "url": "https://www.law.go.kr/법령/교통·에너지·환경세법"
+      },
+      {
+        "name": "국가법령정보센터, 교육세법 제5조 제1항 제3호 (시행 2026.1.1)",
+        "url": "https://www.law.go.kr/법령/교육세법"
+      },
+      {
+        "name": "국가법령정보센터, 지방세법 시행령 제131조 (시행 2026.10.1)",
+        "url": "https://www.law.go.kr/법령/지방세법시행령"
       }
     ]
   },
   "kr-fuel-tax-amount": {
     "topic": "energy",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "market": "KR",
     "label": "한시 인하 전 기준 리터당 유류세",
     "value": "휘발유 약 820원, 경유 약 581원 (부가세 포함, 한시 인하 적용 전)",
     "short": "부가가치세를 포함해 리터당 휘발유 약 820원, 경유 약 581원",
-    "level": "press",
+    "level": "official",
     "note": "재정경제부가 한시 인하를 발표하면 실제 세액은 이보다 낮아진다. 인하율과 기간은 자주 바뀌므로 재정경제부 발표로 확인한다. 금액은 2026.9.18 보도의 인하 후 세액(휘발유 698원, 경유 436원)과 인하액(122원, 145원)을 더해 계산했고, 휘발유는 탄력세율 529원 × 1.41 × 1.1 ≈ 820원과도 맞는다.",
     "sources": [
       {
@@ -4210,6 +4725,10 @@ window.RULES = {
       {
         "name": "택스워치, 2023.6.22",
         "url": "https://www.taxwatch.co.kr/article/tax/2023/06/22/0001"
+      },
+      {
+        "name": "국가법령정보센터, 교통·에너지·환경세법 시행령 제3조의2 (시행 2026.9.30)",
+        "url": "https://www.law.go.kr/법령/교통·에너지·환경세법시행령"
       }
     ]
   },
@@ -4219,8 +4738,8 @@ window.RULES = {
     "label": "등기기록 인터넷 열람 수수료 (인터넷등기소)",
     "value": "1건 700원",
     "short": "1건에 700원",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "등기사항증명서 등 수수료규칙 제3조 제2항. 방문 열람은 1건 1,200원. 대법원 법원행정처가 2026년 9월 28일 인터넷 열람 수수료를 1,100원으로 올리는 개정안을 입법예고했으며(2026년 10월 14일 보도 기준 확정 전), 시행되면 바꾼다.",
     "sources": [
       {
@@ -4230,6 +4749,10 @@ window.RULES = {
       {
         "name": "SBS Biz, 2026-10-14",
         "url": "https://biz.sbs.co.kr/amp/article/20000339862"
+      },
+      {
+        "name": "국가법령정보센터, 등기사항증명서 등 수수료규칙 제3조 제2항 (대법원규칙 제3222호, 시행 2025.8.1)",
+        "url": "https://www.law.go.kr/LSW//lsInfoP.do?lsiSeq=272961&chrClsCd=010202&urlMode=lsInfoP&efYd=20250801&ancYnChk=0"
       }
     ]
   },
@@ -4239,8 +4762,8 @@ window.RULES = {
     "label": "등기사항증명서 인터넷·무인발급기 발급 수수료",
     "value": "1통 1,000원",
     "short": "1통에 1,000원",
-    "checked": "2026-10-17",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "등기사항증명서 등 수수료규칙 제2조 제2항. 창구 발급은 20장까지 1,200원. 2026년 9월 28일 입법예고된 개정안은 1,400원으로 올리는 내용이며 확정 전이다.",
     "sources": [
       {
@@ -4250,6 +4773,10 @@ window.RULES = {
       {
         "name": "SBS Biz, 2026-10-14",
         "url": "https://biz.sbs.co.kr/amp/article/20000339862"
+      },
+      {
+        "name": "국가법령정보센터, 등기사항증명서 등 수수료규칙 제2조 제2항 (대법원규칙 제3222호, 시행 2025.8.1)",
+        "url": "https://www.law.go.kr/LSW//lsInfoP.do?lsiSeq=272961&chrClsCd=010202&urlMode=lsInfoP&efYd=20250801&ancYnChk=0"
       }
     ]
   },
@@ -4259,7 +4786,7 @@ window.RULES = {
     "label": "근저당권 채권최고액 설정 관행",
     "value": "대출 원금의 120~130%",
     "short": "대출 원금의 1.2~1.3배",
-    "checked": "2026-10-17",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "법령이 정한 비율이 아니라 금융회사의 설정 관행이다. 금융회사와 상품에 따라 다를 수 있다. 은행 공식 기준 문서로는 확인하지 못했다.",
     "sources": [
@@ -4688,8 +5215,8 @@ window.RULES = {
     "label": "자금조달계획서 제출 대상(주택)",
     "value": "투기과열지구·조정대상지역의 주택은 금액과 관계없이, 그 밖의 지역은 실거래가 6억 원 이상 주택, 법인이 사는 주택은 지역·금액과 관계없이 낸다",
     "short": "규제지역 주택은 금액 무관, 비규제지역은 6억 원 이상, 법인 매수는 모두",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "부동산 거래신고 등에 관한 법률 시행령 별표 1에 근거한다. 별표 원문은 열어 보지 못했고 법률 해설과 보도로 확인했다. 토지 거래에는 별도 기준이 있다.",
     "sources": [
       {
@@ -4699,6 +5226,10 @@ window.RULES = {
       {
         "name": "경향신문, 2026-02-09",
         "url": "https://www.khan.co.kr/article/202602091559001/"
+      },
+      {
+        "name": "국가법령정보센터, 부동산 거래신고 등에 관한 법률 시행령 [별표 1] (개정 2025.12.9, 현행 시행 2026.10.1본)",
+        "url": "https://www.law.go.kr/LSW//flDownload.do?gubun=&flSeq=169799127&bylClsCd=110201"
       }
     ]
   },
@@ -4709,8 +5240,8 @@ window.RULES = {
     "value": "투기과열지구 주택, 2026-02-10 계약분부터 토지거래허가를 받은 주택",
     "short": "투기과열지구 주택, 그리고 2026년 2월 10일 계약분부터는 토지거래허가를 받은 주택",
     "effective": "2026-02-10",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2026년 2월 10일 시행 개정으로 중개 거래의 거래신고 때 계약금 지급을 입증하는 서류도 첨부하게 되었다고 보도되었다. 시행령·시행규칙 원문은 대조하지 못했다.",
     "sources": [
       {
@@ -4720,6 +5251,14 @@ window.RULES = {
       {
         "name": "로톡 법률 해설",
         "url": "https://www.lawtalk.co.kr/posts/170312"
+      },
+      {
+        "name": "국가법령정보센터, 부동산 거래신고 등에 관한 법률 시행령 [별표 1] (개정 2025.12.9)",
+        "url": "https://www.law.go.kr/LSW//flDownload.do?gubun=&flSeq=169799127&bylClsCd=110201"
+      },
+      {
+        "name": "국가법령정보센터, 부동산 거래신고 등에 관한 법률 시행령 부칙 <대통령령 제35899호, 2025.12.9>",
+        "url": "https://www.law.go.kr/법령/부동산거래신고등에관한법률시행령"
       }
     ]
   },
@@ -4940,12 +5479,12 @@ window.RULES = {
   "kr-lease-report-fine": {
     "topic": "lease",
     "market": "KR",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "label": "임대차 신고 위반 과태료",
     "value": "지연 신고 최대 30만 원, 거짓 신고 최대 100만 원",
     "short": "늦은 신고는 최대 30만 원, 거짓 신고는 최대 100만 원",
-    "effective": "2025-06-01",
-    "level": "press",
+    "effective": "2025-04-29",
+    "level": "official",
     "note": "법률 상한은 100만 원 이하(부동산거래신고법 제28조 제5항 제3호). 시행령 별표의 세부 금액은 원문(별표 파일)을 열지 못해 보도로 확인했다. 계도기간은 2025년 5월 31일에 끝나 6월 1일 이후 계약부터 과태료가 부과된다.",
     "sources": [
       {
@@ -4959,6 +5498,14 @@ window.RULES = {
       {
         "name": "국가법령정보센터, 부동산 거래신고 등에 관한 법률",
         "url": "https://www.law.go.kr/법령/부동산거래신고등에관한법률"
+      },
+      {
+        "name": "국가법령정보센터, 부동산 거래신고 등에 관한 법률 시행령 [별표 3] 과태료의 부과기준(개정 2025. 4. 29.)",
+        "url": "https://www.law.go.kr/LSW/flDownload.do?gubun=&flSeq=169799147&bylClsCd=110201"
+      },
+      {
+        "name": "국가법령정보센터, 부동산 거래신고 등에 관한 법률 시행령 (시행 2026. 10. 1., 대통령령 제36740호) 본문·부칙",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=290839&chrClsCd=010202&urlMode=lsInfoP&efYd=20261001&ancYnChk=0"
       }
     ]
   },
@@ -5017,7 +5564,7 @@ window.RULES = {
   "kr-lease-hug-ratio": {
     "topic": "lease",
     "market": "KR",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "label": "HUG 전세보증금반환보증 전세가율 요건",
     "value": "보증금과 선순위채권의 합이 주택가격의 90% 이하",
     "short": "보증금과 앞선 빚의 합이 주택가격의 90% 이하",
@@ -5036,13 +5583,17 @@ window.RULES = {
       {
         "name": "아주경제, 2026.10.15 (HUG 국정감사)",
         "url": "https://www.ajunews.com/view/20261015145045392"
+      },
+      {
+        "name": "국토교통부 보도자료, 범정부 차원의 전세사기 예방 및 피해 지원방안 발표, 2023.2.2",
+        "url": "https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews/mobile/file&fileName=230202%28%EC%84%9D%EA%B0%84%29_%EC%A0%84%EC%84%B8%EC%82%AC%EA%B8%B0_%EC%98%88%EB%B0%A9_%EB%B0%8F_%ED%94%BC%ED%95%B4_%EC%A7%80%EC%9B%90%EB%B0%A9%EC%95%88_%EB%B0%9C%ED%91%9C%28%EC%A3%BC%ED%83%9D%EC%9E%84%EC%B0%A8%EC%9D%B8%EB%B3%B4%ED%98%B8%EA%B3%BC%29.pdf"
       }
     ]
   },
   "kr-lease-hug-price": {
     "topic": "lease",
     "market": "KR",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "label": "HUG 보증의 공시가격 적용 비율",
     "value": "공시가격 × 140% (보증 한도로는 공시가격의 126%)",
     "short": "공시가격의 140%를 주택가격으로 보므로, 보증금과 앞선 빚의 합은 공시가격의 126%까지 인정된다",
@@ -5063,7 +5614,7 @@ window.RULES = {
   "kr-lease-hug-limit": {
     "topic": "lease",
     "market": "KR",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "label": "HUG 전세보증금반환보증 보증금 상한",
     "value": "수도권 7억 원, 그 밖의 지역 5억 원 이하",
     "short": "수도권 7억 원, 그 밖 5억 원",
@@ -5079,7 +5630,7 @@ window.RULES = {
   "kr-lease-hug-deadline": {
     "topic": "lease",
     "market": "KR",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "label": "HUG 전세보증금반환보증 신청 기한",
     "value": "계약 기간의 절반이 지나기 전",
     "short": "계약 기간의 절반이 지나기 전",
@@ -5279,15 +5830,23 @@ window.RULES = {
     "topic": "mortgage",
     "market": "KR",
     "label": "DTI 상한: 규제지역",
-    "value": "40%",
-    "short": "40%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "투기지역·투기과열지구 40%, 조정대상지역 50%(아파트)",
+    "short": "40%(조정대상지역으로만 지정된 곳의 아파트는 50%)",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "공식 원문에서 현행 수치를 직접 대조하지 못했다. 보금자리론·디딤돌 같은 정책대출은 DTI 60%를 쓰고 규제지역에서는 10%p를 뺀다.",
     "sources": [
       {
         "name": "글래스월렛 규제지역 LTV·DTI 정리",
         "url": "https://glasswallet.com/calculate/ltv-dti/regulated-area-ltv"
+      },
+      {
+        "name": "국가법령정보센터, 은행업감독규정 [별표 6] 주택 관련 담보대출 등에 대한 리스크관리기준 (개정 2026.1.2., 고시 제2026-40호 기준 수록)",
+        "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=169824033&bylClsCd=200201"
+      },
+      {
+        "name": "국가법령정보센터, 은행업감독규정 본문 (시행 2026. 10. 2.)",
+        "url": "https://www.law.go.kr/LSW/admRulLsInfoR.do?admRulSeq=2100000285624&admRulId=21829&joTpYn=Y&languageType=KO&chrClsCd=010201&prmlNo=2026-40&prmlYd=20260929&efYd=20261002"
       }
     ]
   },
@@ -5295,15 +5854,19 @@ window.RULES = {
     "topic": "mortgage",
     "market": "KR",
     "label": "DTI 상한: 비규제지역",
-    "value": "60%",
-    "short": "60%",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "수도권(규제지역 밖) 아파트 60%, 지방 비규제지역은 DTI 미적용",
+    "short": "60%(수도권 아파트 기준이며, 지방 비규제지역은 DTI를 적용하지 않는다)",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "공식 원문에서 현행 수치를 직접 대조하지 못했다.",
     "sources": [
       {
         "name": "글래스월렛 규제지역 LTV·DTI 정리",
         "url": "https://glasswallet.com/calculate/ltv-dti/regulated-area-ltv"
+      },
+      {
+        "name": "국가법령정보센터, 은행업감독규정 [별표 6] 주택 관련 담보대출 등에 대한 리스크관리기준 (개정 2026.1.2.)",
+        "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=169824033&bylClsCd=200201"
       }
     ]
   },
@@ -5346,8 +5909,8 @@ window.RULES = {
     "value": "총대출액 1억 원 초과 차주",
     "short": "모든 대출을 합친 금액이 1억 원을 넘는 사람",
     "effective": "2022-07-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "중도금대출, 이주비대출, 서민금융상품, 소액 대출 등은 DSR 계산에서 빠진다.",
     "sources": [
       {
@@ -5357,6 +5920,10 @@ window.RULES = {
       {
         "name": "금융위원회 카드뉴스, 2026.8.13 (부동산 시장 안정을 위한 금융 종합대책)",
         "url": "https://fsc.go.kr/no040000?cnId=3374"
+      },
+      {
+        "name": "국가법령정보센터, 은행업감독규정 [별표 6] 제4장 제4호 가목 (개정 2026.1.2.)",
+        "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=169824033&bylClsCd=200201"
       }
     ]
   },
@@ -5655,8 +6222,8 @@ window.RULES = {
     "label": "주택 재산세 세율 (지방세법 제111조, 제111조의2)",
     "value": "표준세율: 과세표준 6천만 원 이하 0.1%, 1억 5천만 원 이하 0.15%, 3억 원 이하 0.25%, 3억 원 초과 0.4% (누진) / 1세대 1주택(시가표준액 9억 원 이하) 특례세율: 0.05%, 0.1%, 0.2%, 0.35% (한시 특례, 2026. 12. 28.까지 성립하는 납세의무에 적용)",
     "short": "과세표준 구간에 따라 0.1~0.4%(공시가격 9억 원 이하 1세대 1주택은 2026년 12월 28일까지 성립하는 납세의무에 한해 한시로 0.05~0.35%)",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "세율 표는 법령 본문에서 그림으로 제공되어 숫자를 2차 안내로 대조했다. 1세대 1주택 특례세율 조문(제111조의2)은 2026. 12. 28.까지 성립하는 납세의무에만 유효하다고 법령에 적혀 있어, 2027년 이후 연장 여부를 다시 확인해야 한다. 이와 별도로 도시지역분과 지방교육세가 붙는다.",
     "sources": [
       {
@@ -5666,6 +6233,10 @@ window.RULES = {
       {
         "name": "glasswallet, 1세대 1주택 재산세 특례 가이드",
         "url": "https://glasswallet.com/calculate/property-tax/single-house/"
+      },
+      {
+        "name": "국가법령정보센터, 지방세법 제111조·제111조의2 본문 (시행 2026. 7. 1., 법률 제21308호)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282559&chrClsCd=010202&urlMode=lsInfoP&efYd=20260701&ancYnChk=0"
       }
     ]
   },
@@ -6024,13 +6595,17 @@ window.RULES = {
     "value": "연 2.3~3.1%(가입 기간별)",
     "short": "가입 기간에 따라 연 2.3%에서 3.1%",
     "effective": "2024-09-23",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2024년 9월 23일 0.3%p 올린 값이다. 가장 높은 3.1%는 2년 이상 가입분에 적용한다. 2025~2026년에 다시 바뀌었다는 자료는 찾지 못했다. 이자율은 국토교통부 고시로 정하므로 은행 안내에서 확인한다.",
     "sources": [
       {
         "name": "파이낸셜뉴스, 2024.9.25",
         "url": "https://www.fnnews.com/news/202409250925372545"
+      },
+      {
+        "name": "국토교통부 참고자료, 청약 예·부금 등 가입자 종합저축 전환기회 1년 더, 2026.9.23",
+        "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092454"
       }
     ]
   },
@@ -6378,8 +6953,8 @@ window.RULES = {
     "label": "ISA 비과세 한도와 초과분 세율 (조세특례제한법 제91조의18)",
     "value": "순이익 200만 원(서민형·농어민형 400만 원)까지 비과세, 초과분 9% 분리과세(지방소득세 포함 9.9%)",
     "short": "200만 원(서민형·농어민형 400만 원)까지 세금을 매기지 않고, 넘는 부분은 9.9%로 따로 과세한다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "계좌 안 이익과 손실을 합친 순이익 기준. 서민형은 직전 연도 총급여 5,000만 원 이하 등. 넘는 부분은 다른 소득과 합산하지 않는다. 2026년 8월 정부 세제개편안의 변경 내용은 국회 의결 전이라 넣지 않았다. 법령 원문(law.go.kr)은 동적 페이지라 열지 못해 법령 사본과 은행 안내로 대조했다.",
     "sources": [
       {
@@ -6389,6 +6964,10 @@ window.RULES = {
       {
         "name": "하나은행 ISA 안내",
         "url": "https://kebhana.com/cont/news/news01/1506964_115430.jsp"
+      },
+      {
+        "name": "국가법령정보센터, 조세특례제한법 제91조의18 (시행 2026. 9. 18., 법률 제21467호)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=284389&chrClsCd=010202&urlMode=lsInfoP&efYd=20260918&ancYnChk=0"
       }
     ]
   },
@@ -6398,8 +6977,8 @@ window.RULES = {
     "label": "ISA 의무 계약기간과 납입 한도 (조세특례제한법 제91조의18)",
     "value": "계약기간 3년 이상 / 연 2,000만 원(미사용분 이월), 총 1억 원",
     "short": "3년 이상 유지해야 하고, 한 해 2,000만 원(총 1억 원)까지만 넣을 수 있다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "3년 전에 해지하면 감면 세액을 추징한다(사망·해외이주 등 예외). 법령 원문은 law.go.kr에서 열지 못해 법령 사본으로 대조했다.",
     "sources": [
       {
@@ -6409,6 +6988,10 @@ window.RULES = {
       {
         "name": "디지털타임스",
         "url": "https://www.dt.co.kr/article/11560673"
+      },
+      {
+        "name": "국가법령정보센터, 조세특례제한법 제91조의18 제3항·제7항 (시행 2026. 9. 18.)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=284389&chrClsCd=010202&urlMode=lsInfoP&efYd=20260918&ancYnChk=0"
       }
     ]
   },
@@ -6418,8 +7001,8 @@ window.RULES = {
     "label": "연금계좌 세액공제 (소득세법 제59조의3)",
     "value": "연금저축 연 600만 원, 퇴직연금(IRP 등) 합산 연 900만 원 한도 / 공제율 12%(총급여 5,500만 원 또는 종합소득금액 4,500만 원 이하 15%), 지방소득세 포함 13.2%·16.5%",
     "short": "연금저축 600만 원, 퇴직연금과 합쳐 900만 원까지 넣은 돈의 13.2%(총급여 5,500만 원 이하이면 16.5%)만큼 세금을 깎아 준다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "ISA 만기 자금을 연금계좌로 옮기면 그 10%(300만 원 한도)만큼 한도가 늘어난다. 공제액은 산출세액을 넘지 못한다. 법령 원문은 law.go.kr에서 열지 못해 법령 사본과 금융회사 안내로 대조했다.",
     "sources": [
       {
@@ -6429,6 +7012,10 @@ window.RULES = {
       {
         "name": "KB자산운용 연금 세액공제 안내",
         "url": "https://kbam.co.kr/pension/guide/pension-tax-deduction-refund-guide"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제59조의3 (시행 2026. 7. 1., 법률 제21221호)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&chrClsCd=010202&urlMode=lsInfoP&efYd=20260701&ancYnChk=0"
       }
     ]
   },
@@ -6438,13 +7025,17 @@ window.RULES = {
     "label": "연금계좌 연금수령 시 원천징수 세율 (소득세법 제129조)",
     "value": "70세 미만 5%, 70세 이상 80세 미만 4%, 80세 이상 3% (지방소득세 포함 5.5%·4.4%·3.3%)",
     "short": "나이에 따라 5.5~3.3%의 연금소득세를 뗀다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "세액공제를 받은 납입액과 운용 수익을 연금으로 받을 때의 세율. 퇴직소득을 연금으로 받는 경우와 연금 외 수령(기타소득세)은 따로 정한다. 법령 사본(시행 2026. 7. 1. 기준 조문)으로 대조했다.",
     "sources": [
       {
         "name": "소득세법 제129조 (법령 사본, CaseNote)",
         "url": "https://casenote.kr/법령/소득세법/제129조"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제129조제1항제5호의2 (시행 2026. 7. 1.)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&chrClsCd=010202&urlMode=lsInfoP&efYd=20260701&ancYnChk=0"
       }
     ]
   },
@@ -6672,7 +7263,7 @@ window.RULES = {
     "value": "조사분석자료에 목표주가와 실제 주가(해당 기간 평균주가 등)의 차이를 백분율로 표시",
     "short": "목표주가와 실제 주가의 차이인 괴리율을 함께 적어야 한다",
     "effective": "2017-09-01",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "2017년 금융감독원의 리서치 관행 개선에 따라 도입되었다. 목표주가를 중간에 바꾸면 새 보고서 발간 전날까지 괴리율을 공시한다고 보도되었다. 근거 조항(금융투자협회 규정 등)의 원문은 대조하지 못했다.",
     "sources": [
@@ -7151,8 +7742,8 @@ window.RULES = {
     "value": "증여받은 날부터 1년 이내 양도하면 증여자의 취득가액으로 양도차익 계산",
     "short": "증여받은 지 1년 안에 팔면 증여한 사람이 산 가격을 취득가액으로 본다",
     "effective": "2025-01-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "소득세법 제97조의2 이월과세 대상에 같은 법 제94조제1항제3호 자산(주식등)이 2024년 12월 31일 개정으로 들어갔고, 주식의 기간은 1년이다(부동산은 10년). 2025년 1월 1일 이후 증여받은 분부터 적용된다는 것이 일반적 해석이다. 납부한 증여세 상당액은 필요경비에 넣는다. 2025년 12월 개정으로 사망 등 일부 제외 사유가 정비되었다(2026년 1월 1일 시행).",
     "sources": [
       {
@@ -7162,6 +7753,10 @@ window.RULES = {
       {
         "name": "전북일보 기고, 2025.1.16",
         "url": "https://www.jjan.kr/articleAmp/20250116580119"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제97조의2 및 부칙(법률 제20615호, 2024. 12. 31.) (시행 2026. 7. 1. 본)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&chrClsCd=010202&urlMode=lsInfoP&efYd=20260701&ancYnChk=0"
       }
     ]
   },
@@ -7486,8 +8081,8 @@ window.RULES = {
     "value": "2024년 7월 19일부터 적용, 개정은 DAXA가 공지",
     "short": "2024년 7월 19일 법 시행에 맞춰 적용되었고, 개정은 DAXA가 공지한다",
     "effective": "2024-07-19",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "법령이 아닌 자율규제. 금융위 보도자료(2024.7.17)가 거래소 20개사와 DAXA의 모범사례 마련을 확인했다. 2025년 5월 개정안이 공개되어 보안사고·적시 공시가 종료 판단 요소에 더해졌다고 보도되었다(원문 미확인).",
     "sources": [
       {
@@ -7523,7 +8118,7 @@ window.RULES = {
     "label": "가상자산 거래지원 종료 뒤 출금 지원 기간",
     "value": "거래지원 종료일부터 30일",
     "short": "거래지원 종료일부터 30일 동안",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "법령이 정한 기간이 아니라 국내 원화 거래소들의 거래지원 종료 정책과 공지에 나온 관행이다. 2025년 6월 2일 종료된 코인은 7월 2일까지, 2025년 11월 3일 종료된 코인은 12월 3일까지 출금을 지원했다. 기간 뒤에는 반환에 오랜 시간이 걸릴 수 있다고 공지한다. 개별 일정은 각 거래소 공지가 정한다.",
     "sources": [
@@ -8023,8 +8618,8 @@ window.RULES = {
     "label": "피싱 사기 신고 (경찰)",
     "value": "국번 없이 112",
     "short": "국번 없이 112",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "경찰청에 전기통신금융사기 통합신고대응센터가 있다(통신사기피해환급법 제2조의7, 2024.2.27 신설). 112 신고가 이 센터로 이어진다고 안내된다.",
     "sources": [
       {
@@ -8034,6 +8629,14 @@ window.RULES = {
       {
         "name": "보안뉴스, 전기통신금융사기 통합신고대응센터 출범 200일",
         "url": "https://m.boannews.com/html/detail.html?idx=129793"
+      },
+      {
+        "name": "국가법령정보센터, 전기통신금융사기 피해 방지 및 피해자산 환급에 관한 특별법 제2조의7 (시행 2026. 10. 2., 법률 제22047호)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=290245&chrClsCd=010202&urlMode=lsInfoP&efYd=20261002&ancYnChk=0"
+      },
+      {
+        "name": "정책브리핑, 보이스피싱 신고·제보는 '112', 2024.6.14",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148930266"
       }
     ]
   },
@@ -8099,7 +8702,7 @@ window.RULES = {
     "value": "개시 증거금 10%(계약당 1만 달러), 유지 증거금 5%(5,000달러)",
     "short": "거래 금액의 10%를 맡겨야 시작하고, 5% 아래로 떨어지면 강제청산된다",
     "effective": "2012-03-31",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "2009년 9월 2%에서 5%로, 2011년 12월 발표에 따라 2012년 1분기 개시 10%·유지 5%로 올렸다(레버리지 10배 이내). effective는 2012년 1분기 말로 적었고 정확한 시행일은 확인하지 못했다. 현재 값은 증권회사 안내로 확인했다.",
     "sources": [
@@ -8190,7 +8793,7 @@ window.RULES = {
     "label": "단기간 다수 계좌 개설 제한 (행정지도·업권 관행)",
     "value": "20영업일 안에 전 금융권에서 입출금 계좌 1개만 개설 (증권회사마다 적용 범위와 예외가 다름)",
     "short": "20영업일 안에 전 금융권에서 입출금 계좌 하나만 열게 하는 것이다",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "2011년 무렵 금융감독원 행정지도로 시작한 관행으로 법 조문은 아니다. 증권회사마다 다른 회사 개설 이력을 보는지, 증빙을 받고 예외를 두는지가 다르다.",
     "sources": [
@@ -8211,13 +8814,21 @@ window.RULES = {
     "value": "불법재산 은닉, 자금세탁, 강제집행 면탈 등 탈법 목적의 차명 거래: 5년 이하 징역 또는 5천만 원 이하 벌금 (알선·중개한 금융회사 임직원도 같음)",
     "short": "5년 이하의 징역 또는 5천만 원 이하의 벌금이다",
     "effective": "2014-11-29",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "국가법령정보센터 조문 페이지가 열리지 않아 보도로 확인했다. 불법 목적을 알고 명의를 빌려준 사람도 처벌될 수 있다.",
     "sources": [
       {
         "name": "이투데이, 2014.11.25 (차명거래금지법 29일 시행)",
         "url": "https://www.etoday.co.kr/news/view/1025957"
+      },
+      {
+        "name": "국가법령정보센터, 금융실명거래 및 비밀보장에 관한 법률 제3조 (시행 2025.4.1.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=270423&joNo=0003&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 금융실명거래 및 비밀보장에 관한 법률 제6조 (시행 2025.4.1.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=270423&joNo=0006&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -8227,7 +8838,7 @@ window.RULES = {
     "label": "증권 타사 대체 출고의 명의 요건",
     "value": "다른 금융회사 계좌로는 본인 명의 계좌로만 출고 (수수료와 신청 시간은 회사가 정함)",
     "short": "본인 명의 계좌로만 보낼 수 있다",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "증권회사 안내로 확인했다. 한 회사는 영업일 08:00~15:00 신청, 종목당 2,000원 수수료를 안내했으나 회사마다 다르다. 같은 회사 안에서는 타인 명의 계좌로 옮길 수 있는 경우가 있으며, 이는 증여 등이 될 수 있다.",
     "sources": [
@@ -8516,8 +9127,8 @@ window.RULES = {
     "label": "공모주 일반청약 증거금률 (관행)",
     "value": "청약 금액의 50%",
     "short": "청약 금액의 50%가 관행이다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "법정 비율이 아니라 주관회사가 증권신고서에 정하는 값이다. 공모에 따라 다를 수 있다. 증거금은 회사별로 따로 예치하고 담보로 쓰지 못한다(협회 규정 제8조).",
     "sources": [
       {
@@ -8527,6 +9138,10 @@ window.RULES = {
       {
         "name": "KIND 증권신고서 정정, 2023.8.4",
         "url": "https://kind.krx.co.kr/external/2023/08/04/000194/20230804000486/10601.htm"
+      },
+      {
+        "name": "금융투자협회 법규정보시스템, 증권 인수업무 등에 관한 규정 제8조",
+        "url": "https://law.kofia.or.kr/service/law/lawFullScreenContent.do?seq=140&historySeq=1700"
       }
     ]
   },
@@ -8536,8 +9151,8 @@ window.RULES = {
     "label": "공모주 초과 증거금 환불 시점 (관행)",
     "value": "청약 마감 2영업일 뒤(납입일)",
     "short": "보통 청약 마감 2영업일 뒤 납입일에 돌려준다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "협회 규정은 납입금을 넘는 증거금을 지체 없이 돌려주라고만 정한다. 실제 환불일은 공모마다 증권신고서와 배정 공고에 적힌다.",
     "sources": [
       {
@@ -8547,6 +9162,10 @@ window.RULES = {
       {
         "name": "금융투자협회 법규정보시스템, 증권 인수업무 등에 관한 규정(2025.3.13 개정본) 제8조·제9조",
         "url": "https://law.kofia.or.kr/service/law/lawFullScreenContent.do?seq=140&historySeq=1700"
+      },
+      {
+        "name": "KIND 증권신고서 정정(빅토리콘텐츠), 2023.8.4",
+        "url": "https://kind.krx.co.kr/external/2023/08/04/000194/20230804000486/10601.htm"
       }
     ]
   },
@@ -8599,8 +9218,8 @@ window.RULES = {
     "value": "공모가의 60~400%",
     "short": "공모가의 60%에서 400% 사이",
     "effective": "2023-06-26",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "상장일에는 공모가를 기준가격으로 두고 이 범위 안에서 거래한다. 이전에는 공모가의 90~200%에서 시초가를 정한 뒤 ±30%를 적용했다. 둘째 날부터는 일반 가격제한폭이 적용된다.",
     "sources": [
       {
@@ -8614,6 +9233,10 @@ window.RULES = {
       {
         "name": "파이낸셜뉴스, 2023.6.25",
         "url": "https://www.fnnews.com/news/202306251818424814"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 업무규정 시행세칙(제177차 개정 2026.9.14) 가격제한폭 조항 제3항·별표 1의4, 부칙 제2123호(2023.4.12, 2023.6.26 시행). 열람은 POST bookid=330011206",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -8674,12 +9297,12 @@ window.RULES = {
   "kr-sh-cumulative": {
     "topic": "shareholder",
     "market": "KR",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "label": "대규모 상장회사 집중투표 (상법 제542조의7)",
     "value": "자산총액 2조 원 이상 상장회사: 의결권 있는 발행주식 1% 이상 주주가 총회일 6주 전까지 청구 가능, 정관으로 배제 불가",
     "short": "자산 2조 원 이상 상장회사는 정관으로 집중투표를 배제할 수 없고, 1% 이상 주주가 총회 6주 전까지 청구한다",
     "effective": "2026-09-10",
-    "level": "press",
+    "level": "official",
     "note": "2025년 9월 9일 공포된 개정(법률 제21044호)으로 정관 배제 금지가 더해졌고 2026년 9월 10일 시행되었다. 조문은 원문으로 확인했으나, 대상 회사를 정하는 대통령령 기준(최근 사업연도 말 자산총액 2조 원 이상)은 보도와 법무법인 자료로만 확인했다. 그 밖의 회사는 상법 제382조의2를 따르며 정관으로 집중투표를 배제할 수 있다.",
     "sources": [
       {
@@ -8689,6 +9312,14 @@ window.RULES = {
       {
         "name": "뉴데일리, 2025.9.3 (자산 2조 이상 상장사 집중투표제 적용)",
         "url": "https://biz.newdaily.co.kr/site/data/html/2025/09/03/2025090300243.html"
+      },
+      {
+        "name": "국가법령정보센터, 상법 제542조의7 (시행 2026.9.10.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=273629&joNo=0542&joBrNo=07&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 상법 시행령 제33조",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=288205&joNo=0033&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -8941,7 +9572,7 @@ window.RULES = {
     "value": "연 2회(6월, 12월)",
     "short": "해마다 6월과 12월 두 차례",
     "effective": "2020-06-01",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "한국거래소가 2019년 발표로 연 1회(6월)에서 연 2회로 늘렸고 2020년 6월부터 적용했다. 변경은 6월·12월 선물·옵션 동시만기일 다음 거래일부터 반영되는 흐름이다. 편입·제외 종목은 한국거래소가 발표한다. effective는 적용된 달만 확인되어 1일로 적었다.",
     "sources": [
@@ -8961,8 +9592,8 @@ window.RULES = {
     "label": "국내 상장 ETF 분산투자 요건",
     "value": "10종목 이상, 종목당 30% 이하",
     "short": "10종목 이상을 담고 한 종목이 30%를 넘지 않게",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "자본시장법 시행령과 금융투자업규정에 따른 일반 원칙으로 보도·금융회사 자료에서 확인했다(ETN은 5종목 이상). 2022년 하반기 규정 변경으로 주식·채권 구분 없이 10종목을 채울 수 있게 되었다. 2026년 시행령·규정 개정으로 단일종목 ETF(레버리지 ±2배 이내)의 국내 상장이 허용되어 예외가 생겼다. 법령 조문 원문은 열어 보지 못했다.",
     "sources": [
       {
@@ -8976,6 +9607,14 @@ window.RULES = {
       {
         "name": "법무법인 세종 Financial Regulation Review, 2026.2.6",
         "url": "https://www.shinkim.com/kor/media/newsletter/pdf/3109"
+      },
+      {
+        "name": "국가법령정보센터, 금융투자업규정 제7-26조 (시행 2026.9.15., 금융위원회고시 제2026-38호)",
+        "url": "https://www.law.go.kr/LSW/admRulLsInfoR.do?admRulSeq=2100000285020&chrClsCd=010201"
+      },
+      {
+        "name": "국가법령정보센터, 자본시장법 시행령 제246조 (시행 2026.10.13.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=291081&joNo=0246&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -8986,8 +9625,8 @@ window.RULES = {
     "value": "1,400만 원 이하 6% · 5,000만 원 이하 15% · 8,800만 원 이하 24% · 1억 5천만 원 이하 35% · 3억 원 이하 38% · 5억 원 이하 40% · 10억 원 이하 42% · 10억 원 초과 45%",
     "short": "과세표준 구간에 따라 6%부터 45%까지 여덟 단계",
     "effective": "2023-01-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "과세표준 전체에 한 세율을 곱하는 것이 아니라 구간마다 그 구간의 세율을 매기는 누진 구조이다. 개인지방소득세가 소득세의 10%만큼 따로 붙는다. 법률 제19196호(2022.12.31. 개정)로 2023년 1월 1일부터 적용된 표이다. law.go.kr 원문은 열지 못해 법령 사본으로 대조했다.",
     "sources": [
       {
@@ -8997,6 +9636,10 @@ window.RULES = {
       {
         "name": "종합소득세 세율표와 누진공제 가이드 (2026)",
         "url": "https://www.moneynestlab.com/comprehensive-income-tax/guide/tax-rate-table"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제55조 (시행 2026.1.1., 법률 제21221호)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0055&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -9006,13 +9649,17 @@ window.RULES = {
     "label": "배당가산율 (소득세법 제17조제3항 단서)",
     "value": "10%",
     "short": "배당의 10%를 더해 소득으로 잡는다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "금융소득 종합과세 기준을 넘어 다른 소득과 합쳐지는 배당 가운데 법인세가 과세된 국내 법인의 배당에만 적용하고, 더한 금액은 배당세액공제(소득세법 제56조)로 산출세액에서 뺀다. 해외 배당 등에는 적용하지 않는다. 법령 사본(2025.7.1. 시행 조문)으로 대조했다. 2027년 시행 개정이 같은 법에 있으나 이 조항의 변경 여부는 확인하지 못해 현행 값만 적었다.",
     "sources": [
       {
         "name": "소득세법 제17조 (법령 사본, CaseNote)",
         "url": "https://casenote.kr/법령/소득세법/제17조"
+      },
+      {
+        "name": "국가법령정보센터, 소득세법 제17조 (시행 2026.1.1.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=280405&joNo=0017&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -9063,13 +9710,21 @@ window.RULES = {
     "label": "직장가입자 소득월액보험료 부과 기준 (국민건강보험법 제71조, 시행령 제41조제4항)",
     "value": "보수 외 소득 연 2,000만 원 초과분",
     "short": "월급(보수) 밖의 소득이 연 2,000만 원을 넘는 직장가입자",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "(보수 외 소득 − 2,000만 원) ÷ 12에 보험료율을 곱한다. 이자·배당·사업·기타소득은 전액, 근로·연금소득은 50%를 소득으로 본다(시행규칙 제44조). 법령 사본(2026.10.1. 시행 시행령)으로 대조했다.",
     "sources": [
       {
         "name": "국민건강보험법 시행령 (법령 사본, CaseNote)",
         "url": "https://casenote.kr/법령/국민건강보험법_시행령"
+      },
+      {
+        "name": "국가법령정보센터, 국민건강보험법 시행령 제41조 (시행 2026.10.1.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=289701&joNo=0041&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
+      },
+      {
+        "name": "국가법령정보센터, 국민건강보험법 시행규칙 제44조 (시행 2026.9.28.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=290599&joNo=0044&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -9079,13 +9734,17 @@ window.RULES = {
     "label": "건강보험 소득 산정 때 금융소득 반영 (국민건강보험법 시행규칙 제44조제1항 단서)",
     "value": "이자·배당 합계 연 1,000만 원 이하 미반영, 초과 시 전액 반영",
     "short": "이자와 배당의 합계가 연 1,000만 원 이하이면 넣지 않고, 넘으면 전부 넣는다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "넘는 부분만이 아니라 전액이 들어간다. 소득월액과 지역가입자 보험료 산정에 쓰인다. 피부양자 판정에도 같이 쓰인다는 설명은 보도와 안내 자료로만 확인했다. 법령 사본(2026.9.28. 시행 시행규칙)으로 대조했다.",
     "sources": [
       {
         "name": "국민건강보험법 시행규칙 (법령 사본, CaseNote)",
         "url": "https://casenote.kr/법령/국민건강보험법_시행규칙"
+      },
+      {
+        "name": "국가법령정보센터, 국민건강보험법 시행규칙 제44조 (시행 2026.9.28.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=290599&joNo=0044&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -9095,13 +9754,17 @@ window.RULES = {
     "label": "건강보험료에 소득 자료가 반영되는 시기 (국민건강보험법 시행령 제41조제3항)",
     "value": "1~10월분은 전전년도 소득, 11~12월분은 전년도 소득",
     "short": "1~10월에는 전전년도, 11~12월에는 전년도 소득 자료를 쓴다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한 해의 소득이 보험료에 반영되는 것은 다음 해 11월부터이다. 연금소득 자료는 예외 규정이 있다. 법령 사본으로 대조했다.",
     "sources": [
       {
         "name": "국민건강보험법 시행령 (법령 사본, CaseNote)",
         "url": "https://casenote.kr/법령/국민건강보험법_시행령"
+      },
+      {
+        "name": "국가법령정보센터, 국민건강보험법 시행령 제41조 (시행 2026.10.1.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=289701&joNo=0041&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -9264,7 +9927,7 @@ window.RULES = {
     "label": "개인 외화예금의 환차익 과세",
     "value": "이자는 이자소득(원천징수 15.4%), 환율 변동으로 생긴 환차익은 과세 대상 소득에 없음",
     "short": "외화 원금이 환율 때문에 원화로 불어난 몫(환차익)은 소득세법이 열거한 소득에 들지 않아 세금이 붙지 않는다",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "소득세법은 열거된 소득만 과세하며, 개인 외화예금의 환차익은 이자·배당·양도소득 어디에도 들지 않는다는 해설로 확인했다. 국세청 원문 해석은 열어 보지 못했다. 선물환을 끼운 예금 등은 이자소득으로 본 사례가 있으므로 상품 구조에 따라 다르다.",
     "sources": [
@@ -10559,8 +11222,8 @@ window.RULES = {
     "label": "ETN 신규상장 요건 (종목)",
     "value": "모집·매출로 발행, 발행원본액 70억 원 이상, 발행증권 10만 증권 이상, 만기 1년 이상 20년 이하, 유동성공급자 계약 또는 유동성공급 계획 제출",
     "short": "발행원본액 70억 원 이상, 발행증권 10만 증권 이상, 만기 1년 이상 20년 이하",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한국거래소 유가증권시장 상장규정 원문(law.krx.co.kr)은 접속되지 않아 증권회사 안내로 확인했다. 발행원본액은 상장증권수 × 증권당 지표가치이다. 2020년 7월 개정 때 병합·분할 뒤 발행원본액도 70억 원 이상이어야 한다고 정했다(자본시장연구원 제도동향 2020.8).",
     "sources": [
       {
@@ -10570,6 +11233,10 @@ window.RULES = {
       {
         "name": "자본시장연구원, 자본시장 제도동향 2020년 8월",
         "url": "https://www.kcmi.re.kr/common/downloadw.php?fid=23899&fgu=002001&fty=004003"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 상장규정(제55차 개정 2026.9.23) 제149조의3. 열람은 POST bookid=330014540",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -10577,10 +11244,10 @@ window.RULES = {
     "topic": "funds",
     "market": "KR",
     "label": "ETN 발행사 자격 (신규상장)",
-    "value": "투자매매업 인가를 받은 증권회사로서 자기자본 5,000억 원 이상, 신용등급 투자적격 이상, 순자본비율 150% 이상, 최근 3사업연도 감사의견 적정",
-    "short": "자기자본 5,000억 원 이상, 투자적격 신용등급, 순자본비율 150% 이상",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "증권·장외파생상품 투자매매업 인가를 받은 금융투자회사로서 자기자본 5,000억 원 이상, 신용등급 AA- 이상(국내 신용평가회사 기준, 외국은 S&P·Fitch A-, Moody's A3), 순자본비율 150% 이상, 최근 3사업연도 감사의견 적정",
+    "short": "자기자본 5,000억 원 이상, AA- 이상 신용등급, 순자본비율 150% 이상",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "유가증권시장 상장규정 제149조의3. 종목별 발행총액 합계는 자기자본의 50% 이내여야 한다. 2014년 시장 개설 때는 자기자본 1조 원 이상이었고, 일부 증권회사 안내(다올투자증권)에는 아직 1조 원·AA-·NCR 200%가 남아 있어 거래소 규정 원문으로 다시 확인할 필요가 있다.",
     "sources": [
       {
@@ -10590,6 +11257,14 @@ window.RULES = {
       {
         "name": "메트로신문, 2023.2.21",
         "url": "https://www.metroseoul.co.kr/article/20230221500053"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 상장규정(제55차 개정 2026.9.23) 제149조의3. 열람은 POST bookid=330014540",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
+      },
+      {
+        "name": "국가법령정보센터, 자본시장법 제166조의2 (시행 2026.10.2.)",
+        "url": "https://www.law.go.kr/LSW//lsSideInfoP.do?lsiSeq=288615&joNo=0166&joBrNo=02&docCls=jo&urlMode=lsScJoRltInfoR"
       }
     ]
   },
@@ -10599,8 +11274,8 @@ window.RULES = {
     "label": "ETN 발행사 부적격에 따른 상장폐지 기준",
     "value": "인가 취소·영업정지, 자기자본 2,500억 원 미달, 신용등급 투자적격 미달, 순자본비율 기준 미달(3개월 계속 등), 감사의견 부적정·의견거절, 해산, 최종부도, 회생·파산 신청 등",
     "short": "자기자본이 2,500억 원 아래로 줄거나 신용등급이 투자적격 아래로 내려가는 경우 등",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "유가증권시장 상장규정 제149조의7. 보증인이 있으면 자기자본은 보증인 기준으로 본다. 상장폐지되어도 발행사의 상환 의무는 남는다.",
     "sources": [
       {
@@ -10610,6 +11285,10 @@ window.RULES = {
       {
         "name": "한국투자증권, ETN 관련제도 안내 (유가증권시장 상장규정 제149조의3·제149조의7 요약)",
         "url": "https://securities.koreainvestment.com/trueetn/nkis/edu/eduEtn.jsp?cmd=FR12600"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 상장규정(제55차 개정 2026.9.23) 제149조의7. 열람은 POST bookid=330014540",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -10619,8 +11298,8 @@ window.RULES = {
     "label": "ETN 규모 미달 관리종목·상장폐지",
     "value": "반기 말 발행원본액과 지표가치금액이 모두 50억 원 미만이면 관리종목 지정, 다음 반기 말에도 계속되면 상장폐지",
     "short": "반기 말 규모가 50억 원 미만이 두 번 이어지면 상장폐지",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "유가증권시장 상장규정 제149조의6(관리종목지정)과 제149조의7. 상장일부터 1년이 지나지 않은 종목은 관리종목 지정에서 뺀다. 지표가치금액은 상장증권수 × 증권당 지표가치이다.",
     "sources": [
       {
@@ -10630,6 +11309,10 @@ window.RULES = {
       {
         "name": "아주경제, 2024.9.10",
         "url": "https://www.ajunews.com/view/20240909142554165"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 상장규정(제55차 개정 2026.9.23) 제149조의6·제149조의7제5호. 열람은 POST bookid=330014540",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -10639,7 +11322,7 @@ window.RULES = {
     "label": "ETN 조기청산 사유 (2020년 8월 이후 상장 상품의 일반적 조건)",
     "value": "장 종료 때 실시간 지표가치가 전날보다 80% 이상 떨어지거나 1,000원 미만이 되는 경우",
     "short": "하루 80% 이상 하락 또는 지표가치 1,000원 미만",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "거래소 규정은 2020년 7월 개정(7.27 시행)으로 '투자설명서에 적은 조기청산 사유'가 생기면 상장폐지할 수 있게 했고, 구체적 수치는 상품별 투자설명서에 있다. 그 밖에 투자자 보호에 필요하다고 인정되는 경우도 사유이다. 상환 가격은 대개 사유 발생 다음 날(T+1)의 지표가치이고, 투자설명서 예에서는 5영업일 안에 지급한다. 발행사는 사유 발생 당일 거래소에 신고한다(상장규정 제149조의9).",
     "sources": [
@@ -10664,8 +11347,8 @@ window.RULES = {
     "value": "국내 기초자산 2%, 해외 기초자산 5% 이내",
     "short": "마감 가격이 지표가치에서 국내 2%, 해외 5% 넘게 벗어나지 않게",
     "effective": "2026-08-19",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "ETF 기준(kr-etf-lp-gap)과 같이 2026년 8월 19일 국내 3%→2%, 해외 6%→5%로 좁혔다. ETN에도 적용된다는 것은 정리 기사로 확인했고, 금융위원회 보도자료 본문은 ETF·ETN을 나누지 않고 '3%→2%'만 적었다. 시작·마감 단일가매매 시간 등에는 LP 호가 의무가 면제된다.",
     "sources": [
       {
@@ -10675,6 +11358,10 @@ window.RULES = {
       {
         "name": "금융위원회 보도자료(KDI 경제정보센터 게시), 2026.7.24",
         "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=284654"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 업무규정(제61차 개정 2026.9.14) 제20조의4제3항, 부칙 제2483호(2026.8.18, 2026.8.19 시행). 열람은 POST bookid=330007789",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -10683,14 +11370,18 @@ window.RULES = {
     "market": "KR",
     "label": "ETN 괴리율 초과 발생 공시 기준",
     "value": "국내 자산 지수는 1%, 해외 자산이 섞인 지수는 2%",
-    "short": "괴리율이 국내 1%, 해외 2%를 넘으면 공시",
-    "checked": "2026-10-18",
-    "level": "press",
+    "short": "괴리율이 국내 1%, 해외 2% 이상이면 공시",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "한국거래소 공시시스템(KIND)의 '상장지수증권 괴리율 초과 발생' 공시 양식에 적힌 기준(2026년 6월 공시로 확인). 공시에는 시장 가격, 실시간 지표가치, 괴리율, 발생 원인이 들어간다. 8월 19일 관리 기준 변경 뒤 공시 기준도 바뀌었는지는 확인하지 못했다.",
     "sources": [
       {
         "name": "한국거래소 KIND, 상장지수증권 괴리율 초과 발생 공시, 2026.6.1",
         "url": "https://kind.krx.co.kr/external/2026/06/02/000078/20260601002266/68319.htm"
+      },
+      {
+        "name": "한국거래소 KRX 법무포털, 유가증권시장 상장규정 시행세칙(제135차 개정 2026.10.2) 제123조의9제8호. 열람은 POST bookid=330020420",
+        "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do"
       }
     ]
   },
@@ -10701,7 +11392,7 @@ window.RULES = {
     "value": "괴리율이 관리 기준의 두 배(국내 4%, 해외 10%)를 넘는 일이 되풀이되면 투자유의종목으로 지정되어 3거래일 동안 단일가매매로 바뀔 수 있다",
     "short": "관리 기준의 두 배를 넘는 괴리가 되풀이되면 투자유의종목 지정과 단일가매매",
     "effective": "2026-08-19",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "2026년 8월 19일부터 절차를 '적출·예고→지정'의 2단계로 줄였다. 예고 뒤 10거래일 안에 다시 넘으면 지정할 수 있고, 이틀 연속 넘으면 최단 2일 안에 지정될 수 있다고 보도되었다. 정리 기사 하나로만 확인했으므로 거래소 업무규정 원문 확인이 필요하다.",
     "sources": [
@@ -10717,7 +11408,7 @@ window.RULES = {
     "label": "ELW 매수 요건 (개인)",
     "value": "금융투자교육원 사전교육 이수와 기본예탁금 1,500만 원 이상(신규 고객 기준, 증권회사가 정함)",
     "short": "사전교육을 마치고 기본예탁금 1,500만 원 이상",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "투자성향 진단도 거친다. 기본예탁금은 증권회사가 거래 경험에 따라 단계를 두어 낮춰 주기도 한다. 교육 시간은 확인하지 못했다.",
     "sources": [
@@ -10993,8 +11684,8 @@ window.RULES = {
     "value": "2026년 7월~2027년 6월: 하한 41만 원, 상한 659만 원",
     "short": "2026년 7월부터 1년 동안 월 41만 원보다 적으면 41만 원으로, 659만 원보다 많으면 659만 원으로 본다",
     "effective": "2026-07-01",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "보건복지부가 해마다 전체 가입자 평균소득(A값) 변동률을 반영해 정하고 7월부터 1년 적용한다. 2025년 7월~2026년 6월은 40만 원·637만 원이었다. 고시 원문은 열지 못했고 보도로 확인했다.",
     "sources": [
       {
@@ -11004,6 +11695,10 @@ window.RULES = {
       {
         "name": "비즈폼, 2026.7.1 적용 안내",
         "url": "https://www.bizforms.co.kr/smartblock/jul2026_npscap.asp"
+      },
+      {
+        "name": "국민연금공단, 알기쉬운 국민연금 > 연금보험료 (기준소득월액 상·하한액 표)",
+        "url": "https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do"
       }
     ]
   },
@@ -11338,17 +12033,26 @@ window.RULES = {
     "topic": "pension",
     "market": "KR",
     "label": "퇴직연금 위험자산 분류 기준 (퇴직연금감독규정)",
-    "value": "주식 편입 비중 40% 이하인 채권형·채권혼합형 펀드는 비위험자산(한도 밖), 주식 비중이 그보다 높은 펀드는 위험자산",
-    "short": "주식 비중이 40% 이하인 채권형·채권혼합형 펀드는 위험자산으로 세지 않는다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "value": "약관상 주식 투자한도가 자산총액의 50% 미만인 증권형 펀드(투자적격등급이 아닌 채권 한도가 30%를 넘는 것은 제외)는 '투자위험을 낮춘 운용방법'으로 보아 위험자산 총투자한도 밖에 둔다. 그 밖의 주식형 펀드 등은 위험자산으로 한도 안에 든다",
+    "short": "주식 투자한도가 50% 미만인 채권혼합형 등의 펀드는 위험자산으로 세지 않는다",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2015년 퇴직연금감독규정 개정 때 정한 분류로, 금융위원회 보도자료로 확인했다. 감독규정 고시 원문은 열지 못했다. 세부 분류와 개별 상품의 해당 여부는 퇴직연금사업자가 상품 화면에 표시한다.",
     "sources": [
       {
         "name": "금융위원회 보도자료, 2015. 7. 9. (퇴직연금 자산운용 규제 개선)",
         "url": "https://fsc.go.kr/no010101/71642"
+      },
+      {
+        "name": "국가법령정보센터, 퇴직연금감독규정 제11조제1항제5호 (금융위원회고시 제2023-56호, 2023. 11. 16. 시행)",
+        "url": "https://www.law.go.kr/LSW/admRulLsInfoR.do?admRulSeq=2100000231486&chrClsCd=010201"
+      },
+      {
+        "name": "국가법령정보센터, 근로자퇴직급여 보장법 시행령 제26조제1항제2호가목 (2026. 3. 24. 시행)",
+        "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=284693&chrClsCd=010202&efYd=20260324&ancYnChk=0"
       }
-    ]
+    ],
+    "effective": "2023-11-16"
   },
   "kr-pension-tdf": {
     "topic": "pension",
@@ -11356,14 +12060,18 @@ window.RULES = {
     "label": "적격 TDF의 퇴직연금 100% 편입 (퇴직연금감독규정)",
     "value": "DC·IRP: 금융감독원장이 정한 기준을 충족한 TDF는 적립금의 100%까지 투자 가능 (DB 제외)",
     "short": "DC와 IRP에서는 기준을 맞춘 적격 TDF에 적립금 전부를 넣을 수 있다",
-    "effective": "2018-08-31",
-    "checked": "2026-10-18",
-    "level": "press",
+    "effective": "2018-09-07",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "2018. 8. 31. 금융위원회가 퇴직연금감독규정 개정안을 의결했다. 기준의 예시는 가입기간 주식 비중 80% 이내, 예상 은퇴 시점 이후 40% 이내, 투자부적격 채권 한도 제한이며, 구체적 기준은 감독규정 시행세칙에 둔다. 시행세칙 원문은 열지 못했다. 시행일은 고시일로 적었다.",
     "sources": [
       {
         "name": "금융위원회 보도참고, 2018. 8. 31. (퇴직연금감독규정 개정안 의결)",
         "url": "https://www.fsc.go.kr/no010101/73294"
+      },
+      {
+        "name": "국가법령정보센터, 퇴직연금감독규정 제11조제1항제9호와 부칙(금융위원회고시 제2018-23호, 2018. 9. 7.)",
+        "url": "https://www.law.go.kr/LSW/admRulLsInfoR.do?admRulSeq=2100000231486&chrClsCd=010201"
       }
     ]
   },
@@ -11373,8 +12081,8 @@ window.RULES = {
     "label": "연금계좌 편입 제외 상품과 거래 제한",
     "value": "레버리지·인버스 ETF 편입 불가, 미수거래·신용거래 불가",
     "short": "레버리지·인버스 ETF는 연금계좌에서 살 수 없고, 미수나 신용으로 사는 것도 막혀 있다",
-    "checked": "2026-10-18",
-    "level": "press",
+    "checked": "2026-10-31",
+    "level": "official",
     "note": "연금저축계좌는 2017년 11월 ETF 편입을 허용할 때 금융위원회·금융감독원·금융투자협회 업무지침으로 레버리지·인버스 ETF를 제외하고 미수·신용을 금지했다. 퇴직연금계좌도 파생상품 위험평가액이 큰 펀드를 담을 수 없어 레버리지·인버스 ETF가 막혀 있다고 금융회사들이 안내한다. 해외 거래소에 상장된 ETF도 연금계좌에서 살 수 없다고 안내된다. 업무지침과 감독규정 원문은 열지 못했다.",
     "sources": [
       {
@@ -11384,6 +12092,10 @@ window.RULES = {
       {
         "name": "더체크, 2026. 4. 23. (퇴직연금 레버리지 ETF 투자 제한)",
         "url": "https://thecheck.co.kr/?p=4599"
+      },
+      {
+        "name": "국가법령정보센터, 퇴직연금감독규정 제9조제1항제2호마목·제3호가목 (금융위원회고시 제2023-56호)",
+        "url": "https://www.law.go.kr/LSW/admRulLsInfoR.do?admRulSeq=2100000231486&chrClsCd=010201"
       }
     ]
   },
@@ -11410,7 +12122,7 @@ window.RULES = {
     "value": "같은 제도(DB·DC·IRP) 안에서 다른 퇴직연금사업자로 상품을 팔지 않고 이전 / 받는 사업자가 같은 상품을 취급해야 함 / 사전지정운용 상품·보험계약 형태 계약은 제외",
     "short": "2024년 10월 31일부터 퇴직연금은 같은 제도 안에서 다른 금융회사로 옮길 때 펀드·ETF·원리금보장 상품을 팔지 않고 옮길 수 있다",
     "effective": "2024-10-31",
-    "checked": "2026-10-18",
+    "checked": "2026-10-31",
     "level": "press",
     "note": "시행 당시 44개 사업자 가운데 37개사가 참여했다. 연금저축계좌의 상품 그대로 이전은 확인하지 못했다. 이전 가능 여부는 받는 금융회사에서 사전 조회한다.",
     "sources": [
@@ -11421,6 +12133,10 @@ window.RULES = {
       {
         "name": "KB Think, 2024. 10. 30.",
         "url": "https://kbthink.com/main/asset-management/pension-n-old-age/gw-goldenlife/2024/gw-golden-life-241030.html"
+      },
+      {
+        "name": "금융위원회·금융감독원, 퇴직연금 실물이전 고도화로 소비자 편익을 제고하겠습니다 (KDI 경제교육·정보센터 게재), 2026. 8. 24.",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=285718"
       }
     ]
   },
@@ -12054,10 +12770,10 @@ window.RULES = {
     "topic": "indicator",
     "market": "KR",
     "label": "한국 소비자물가지수의 집세 가중치",
-    "value": "집세 1,000분의 98.3 (전세 54.0, 월세 44.3) · 자가주거비는 총지수에서 제외 (2020년 기준)",
-    "short": "전세와 월세를 합한 집세가 1,000분의 98.3(약 10%)이고, 자기 집에 사는 값(자가주거비)은 총지수에 들어가지 않는다(2020년 기준)",
+    "value": "집세 1,000분의 99.1 · 자가주거비는 총지수에서 제외(보조지표인 자가주거비포함지수에만 1,257.6 가운데 257.6) (지수 기준연도 2020년, 가중치 기준연도 2022년)",
+    "short": "전세와 월세를 합한 집세가 1,000분의 99.1(약 10%)이고, 자기 집에 사는 값(자가주거비)은 총지수에 들어가지 않는다(2022년 가중치 기준)",
     "checked": "2026-10-31",
-    "level": "press",
+    "level": "official",
     "note": "2020년 기준 개편(2021년 12월) 때 집세 가중치가 2017년 기준 93.7에서 98.3으로 올랐다는 보도로 확인했다. 자가주거비는 총지수와 별도의 보조 지표로만 작성된다는 보도와 통계개발원 자료가 있다. 국가데이터처 원문 가중치 표는 대조하지 못했다. 2025년 기준 개편 뒤 값은 바뀐다.",
     "sources": [
       {
@@ -12067,6 +12783,14 @@ window.RULES = {
       {
         "name": "머니투데이, 韓 물가지표에 자가주거비 없는 이유는, 2025.8.15",
         "url": "https://www.mt.co.kr/economy/2025/08/15/2025081416000510667"
+      },
+      {
+        "name": "국가데이터처, 2026년 9월 소비자물가동향 보도자료, 2026. 10. 2.",
+        "url": "https://mods.go.kr/boardDownload.es?bid=213&list_no=447322&seq=2"
+      },
+      {
+        "name": "국가데이터처(당시 통계청), 2025년 10월 소비자물가동향 보도자료, 2025. 11. 4.",
+        "url": "https://mods.go.kr/boardDownload.es?bid=213&list_no=439120&seq=2"
       }
     ]
   },
@@ -12230,12 +12954,16 @@ window.RULES = {
     "value": "전체 소매·음식점 판매 − 자동차·부품 − 주유소 − 건축자재·정원용품 − 음식점",
     "short": "전체 소매판매에서 자동차와 부품, 주유소, 건축자재, 음식점을 뺀 묶음이다",
     "checked": "2026-10-31",
-    "level": "press",
+    "level": "official",
     "note": "인구조사국 발표표에 '통제그룹'이라는 줄은 없고, 시장과 분석기관이 표의 업종을 빼서 계산하는 관행이다. 경제분석국이 국내총생산의 상품 소비 추정에 이 묶음에 가까운 자료를 쓴다는 설명은 분석기관 해설에 기댄 것이며 경제분석국 원문으로 대조하지 못했다. 정의도 기관마다 조금씩 다르게 쓰인다.",
     "sources": [
       {
         "name": "미국 인구조사국, Advance Monthly Sales for Retail and Food Services, September 2026 (2026.10.15)",
         "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+      },
+      {
+        "name": "Federal Reserve Bank of Richmond, Macro Minute: What Are 'Core Retail Sales?', 2023. 5. 30.",
+        "url": "https://www.richmondfed.org/research/national_economy/macro_minute/2023/mm_05_30_23"
       }
     ]
   },
@@ -12310,7 +13038,7 @@ window.RULES = {
     "value": "1~10일분은 대개 11일, 1~20일분은 대개 21일 (잠정치, 통관 기준)",
     "short": "1~10일분을 대개 11일에, 1~20일분을 대개 21일에 통관 기준 잠정치로 낸다",
     "checked": "2026-10-31",
-    "level": "press",
+    "level": "official",
     "note": "휴일이면 하루 이틀 미뤄진다(12일·13일 발표 보도가 있다). 2026년 10월 1~20일분은 2026.10.21에 나왔고 일평균 수출을 함께 실었다. 관세청 보도자료 일정표 원문은 확인하지 못했고, KDI 경제교육·정보센터 게재본과 보도로 확인했다.",
     "sources": [
       {
@@ -12320,6 +13048,18 @@ window.RULES = {
       {
         "name": "이투데이, 9월 1~10일 수출 보도",
         "url": "https://www.etoday.co.kr/news/view/1939615"
+      },
+      {
+        "name": "관세청, 2026년 9월 1일~9월 10일 수출입 현황[잠정치] (정책브리핑), 2026. 9. 11.",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156781266"
+      },
+      {
+        "name": "관세청, 2026년 10월 1일~10월 10일 수출입 현황[잠정치] (정책브리핑), 2026. 10. 12.",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784799"
+      },
+      {
+        "name": "관세청, 2026년 10월 1일~10월 20일 수출입 현황[잠정치] (정책브리핑), 2026. 10. 21.",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785926&pWise=sub&pWiseSub=C3"
       }
     ]
   },
@@ -12561,7 +13301,7 @@ window.RULES = {
     "value": "회의 뒤 2주가 지난 뒤 첫 화요일",
     "short": "회의 뒤 2주가 지난 뒤 첫 화요일",
     "checked": "2026-10-31",
-    "level": "press",
+    "level": "official",
     "note": "한국은행이 해마다 공개하는 회의 일정에 의사록 공개일이 함께 실린다. 2023년 일정 발표 보도와 과거 일정표(예: 11월 13일 회의 → 12월 2일 화요일 16:00 공개)로 확인했고, 2026년 공개 일정 원문은 열지 못했다. 금융안정 회의 의사록 일부는 다음 통화정책 회의 전에 앞당겨 공개한 해가 있다.",
     "sources": [
       {
@@ -12571,6 +13311,14 @@ window.RULES = {
       {
         "name": "쿠키뉴스, 2022.10.28",
         "url": "https://www.kukinews.com/article/view/kuk202210280055"
+      },
+      {
+        "name": "한국은행, 금융통화위원회 소개 페이지 관련 자료(2026년 제16~18차 의사록 게시일)",
+        "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=201696"
+      },
+      {
+        "name": "한국은행, 2026년 금융통화위원회 정기회의 개최 및 의사록 공개 예정일정, 2025. 10. 30.",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000502/view.do?menuNo=201265&nttId=10094300"
       }
     ]
   },
@@ -12581,7 +13329,7 @@ window.RULES = {
     "value": "대상 달의 두 달 뒤 중순",
     "short": "대상 달의 두 달 뒤 중순(대개 10일 무렵에서 17일 사이)",
     "checked": "2026-10-31",
-    "level": "press",
+    "level": "official",
     "note": "예: 2026년 1월분은 3월 13일, 2월분은 4월 15일, 5월분은 7월 15일에 나왔다는 보도가 있다. 한국은행 공표 일정 원문은 열지 못했다. 한국 M2에는 2년 미만 정기 예·적금, 머니마켓펀드, 양도성예금증서, 환매조건부채권 등이 들어가며 미국 M2와 범위가 다르다.",
     "sources": [
       {
@@ -12591,6 +13339,10 @@ window.RULES = {
       {
         "name": "아시아경제, 한은 2026년 5월 통화 및 유동성, 2026.7.15",
         "url": "https://view.asiae.co.kr/article/2026071511194610687"
+      },
+      {
+        "name": "한국은행, 월간통계 공표일정(2026년)",
+        "url": "https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?menuNo=200775"
       }
     ]
   },
@@ -12696,6 +13448,10 @@ window.RULES = {
       {
         "name": "이투데이, 2024.6 (2024년 7월 연장 의결)",
         "url": "https://www.etoday.co.kr/news/view/2370025"
+      },
+      {
+        "name": "재정경제부, 외환시장 24시간 개장…구 부총리 \"원화 글로벌 도약 출발점\" (정책브리핑), 2026. 7. 6.",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148967672"
       }
     ]
   },
