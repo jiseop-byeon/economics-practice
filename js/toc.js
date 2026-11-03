@@ -19,7 +19,7 @@ window.PARTS = [
 
 window.CHAPTERS = [
   { id: "common-1", part: "common", status: "ready", title: "주식 한 주를 사면 일어나는 일", dek: "주문 버튼을 누른 순간부터 판 돈을 찾기까지. 거래 시간, 가격의 울타리, 결제일, 그리고 팔 때 빠져나가는 세금을 한 거래로 따라간다." },
-  { id: "common-2", part: "common", status: "ready", title: "주문의 종류와 체결 순서", dek: "지정가와 시장가, 가격 우선과 시간 우선, 단일가매매와 접속매매." },
+  { id: "common-2", part: "common", status: "ready", title: "주문의 종류와 체결 순서", dek: "지정가와 시장가, 가격 우선과 시간 우선, 단일가매매와 접속매매. 시간외 종가매매와 프리·애프터마켓." },
   { id: "common-3", part: "common", status: "ready", title: "수수료와 세금을 빼고 남는 돈", dek: "거래 비용이 수익률을 얼마나 깎는지, 자주 사고팔 때 어떻게 쌓이는지." },
   { id: "common-4", part: "common", status: "ready", title: "보호가 미치는 곳과 미치지 않는 곳", dek: "예금보험, 투자자예탁금 보호, 설명 의무와 적합성 원칙. 원금을 지켜 주는 것과 아닌 것." },
   { id: "common-5", part: "common", status: "ready", title: "한 해 세금 모아 보기", dek: "이자, 배당, 매매차익, 연금이 한 사람에게 모일 때. 금융소득 종합과세 기준, 5월 신고, 건강보험료와 피부양자 자격." },

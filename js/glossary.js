@@ -123,6 +123,38 @@ window.GLOSSARY = [
   "one": "개별 종목의 가격이 갑자기 크게 움직이면 2분 동안 단일가매매로 바꾸어 열기를 식히는 장치이다."
  },
  {
+  "id": "offhours-close",
+  "chapter": "common-2",
+  "title": "시간외 종가매매",
+  "hanja": "時間外 終價賣買",
+  "en": "after-hours closing price trading",
+  "one": "정규시장 밖의 시간에 그날(장 시작 전에는 전날)의 마감 가격으로만 사고파는 거래이다. 먼저 낸 주문부터 체결한다."
+ },
+ {
+  "id": "aftermarket",
+  "chapter": "common-2",
+  "title": "애프터마켓",
+  "hanja": "",
+  "en": "after-market",
+  "one": "정규시장이 끝난 뒤 주문이 들어오는 대로 체결하는 저녁 시간대이다. 한국거래소와 넥스트레이드에 있다."
+ },
+ {
+  "id": "premarket",
+  "chapter": "common-2",
+  "title": "프리마켓",
+  "hanja": "",
+  "en": "pre-market",
+  "one": "정규시장 시작 전에 주문이 들어오는 대로 체결하는 아침 시간대이다. 우리나라에서는 넥스트레이드에 있다."
+ },
+ {
+  "id": "best-execution",
+  "chapter": "common-2",
+  "title": "최선집행",
+  "hanja": "最善執行",
+  "en": "best execution",
+  "one": "증권회사가 정해 둔 기준에 따라 고객 주문을 주문 시점에 가장 좋은 조건으로 처리해야 하는 의무이다."
+ },
+ {
   "id": "ioc",
   "chapter": "common-2",
   "title": "IOC/FOK 조건",

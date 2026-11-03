@@ -206,8 +206,12 @@ window.RULES = {
     "effective": "2026-09-14",
     "checked": "2026-10-31",
     "level": "official",
-    "note": "2026년 9월 14일 시작하며 기존 시간외 단일가매매를 대신한다. 오전 프리마켓(07:00~07:50 계획)은 2027년 말로 미뤄졌다.",
+    "note": "2026년 9월 14일 시작해 기존 시간외 단일가매매를 대신했다. 오전 프리마켓(07:00~07:50 계획)은 2027년 말로 미뤄졌다.",
     "sources": [
+      {
+        "name": "한경MONEY, 2026.9.9",
+        "url": "https://magazine.hankyung.com/money/article/202609094438c"
+      },
       {
         "name": "경북매일, 2026.9.9",
         "url": "https://www.kbmaeil.com/article/20260909500701"
@@ -235,7 +239,7 @@ window.RULES = {
     "effective": "2025-03-04",
     "checked": "2026-10-31",
     "level": "official",
-    "note": "정규시장 시간에는 한국거래소와 함께 거래한다. 시작·마감 단일가매매 시간에는 넥스트레이드 거래가 멈춘다. 출범 때 보도는 애프터마켓 시작을 15:30으로 적었다.",
+    "note": "정규시장 시간에는 한국거래소와 함께 거래한다. 시작·마감 단일가매매 시간에는 넥스트레이드 거래가 멈춘다. 애프터마켓은 15:30~15:40에 받은 주문으로 첫 가격을 단일가로 정한 뒤 15:40부터 체결한다. 출범 때 보도가 시작을 15:30으로 적은 것은 이 호가 접수 시작을 가리킨다.",
     "sources": [
       {
         "name": "한국경제, 2026.4.17",
@@ -252,6 +256,242 @@ window.RULES = {
       {
         "name": "넥스트레이드, 거래제도 - 매매거래일 및 매매거래시간, 2026.10 확인",
         "url": "https://www.nextrade.co.kr/html/policy-2.html"
+      }
+    ]
+  },
+  "kr-offhours-close": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "시간외 종가매매 (한국거래소)",
+    "value": "장 전 08:30~08:40, 장 후 15:40~16:00 · 종가로 시간 우선 체결",
+    "short": "장 시작 전 8시 30분~8시 40분과 마감 뒤 오후 3시 40분~4시",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "장 후 주문은 15:30부터 받는다. 체결 가격은 장 후에는 당일 종가, 장 전에는 전일 종가이다. 주권, ETF, ETN, 외국주식예탁증권이 대상이고 그날 거래가 없던 종목은 빠진다. 가격은 고칠 수 없고 체결 전 수량 정정과 취소는 된다.",
+    "sources": [
+      {
+        "name": "한국거래소 규정/제도, 시간외종가/애프터마켓, 2026.11 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010301/RGL03010301.jsp"
+      },
+      {
+        "name": "한국거래소 규정/제도, 유가증권시장 매매거래시간 표, 2026.11 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp"
+      }
+    ]
+  },
+  "kr-nxt-closing": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "넥스트레이드 종가매매",
+    "value": "주문 15:00~16:00, 체결 15:30~16:00 · 한국거래소 종가로 시간 우선 체결",
+    "short": "오후 3시 30분부터 4시까지 한국거래소 마감 가격으로",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "지정가 호가로 내고 IOC·FOK 조건은 붙일 수 없다. 체결 전 수량 취소는 되고 가격 정정은 안 된다. 그날 한국거래소 정규시장에서 거래가 없던 종목은 체결되지 않는다.",
+    "sources": [
+      {
+        "name": "넥스트레이드, 거래제도 - 시장구조, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-1.html"
+      }
+    ]
+  },
+  "kr-after-rule": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "한국거래소 애프터마켓의 체결과 주문",
+    "value": "접속매매 · 당일 기준가 ±30% · 지정가, 최우선지정가, 최유리지정가",
+    "short": "주문이 들어오는 대로 체결하고, 값의 범위는 당일 기준가(전날 종가)의 위아래 30%이며, 주문은 지정가, 최우선지정가, 최유리지정가만 낼 수 있다",
+    "effective": "2026-09-14",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "시장가 주문은 받지 않는다. 호가 접수와 매매 시간이 16:00~20:00으로 같아서 그 전에 미리 주문을 쌓아 둘 수 없다. 매매수량단위는 1주이다.",
+    "sources": [
+      {
+        "name": "한국거래소 규정/제도, 시간외종가/애프터마켓, 2026.11 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010301/RGL03010301.jsp"
+      },
+      {
+        "name": "경향신문, 2026.9.9",
+        "url": "https://www.khan.co.kr/article/202609092043005"
+      }
+    ]
+  },
+  "kr-after-scope": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "한국거래소 애프터마켓의 대상 종목",
+    "value": "주권, 외국주권, 주식예탁증권, 리츠 등 · ETF·ETN 제외",
+    "short": "상장 주식과 주식예탁증서 등이고 ETF와 ETN은 거래되지 않는다",
+    "effective": "2026-09-14",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "그날 정규시장에서 거래가 없던 종목, 정규시장 마감 때 거래가 멈춰 있던 종목, 투자경고·투자위험·투자주의환기·투자유의 종목, 관리종목, 30분 단위매매 종목 등은 빠진다.",
+    "sources": [
+      {
+        "name": "한국거래소 규정/제도, 시간외종가/애프터마켓, 2026.11 확인",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010301/RGL03010301.jsp"
+      },
+      {
+        "name": "경향신문, 2026.9.9",
+        "url": "https://www.khan.co.kr/article/202609092043005"
+      },
+      {
+        "name": "한경MONEY, 2026.9.9",
+        "url": "https://magazine.hankyung.com/money/article/202609094438c"
+      }
+    ]
+  },
+  "kr-after-safeguards": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "한국거래소 애프터마켓의 안전장치",
+    "value": "변동성완화장치 적용 · 서킷브레이커·사이드카 미적용",
+    "short": "변동성완화장치는 걸리지만 서킷브레이커와 사이드카는 걸리지 않는다",
+    "effective": "2026-09-14",
+    "checked": "2026-11-03",
+    "level": "press",
+    "note": "거래소 규정 원문 대신 보도로 확인했다. 개정안에는 사이드카 발동 시간을 정규장으로 한정하는 내용이 담겼다고 보도되었다.",
+    "sources": [
+      {
+        "name": "경향신문, 2026.9.9",
+        "url": "https://www.khan.co.kr/article/202609092043005"
+      },
+      {
+        "name": "SBS Biz, 2026.6.30",
+        "url": "https://v.daum.net/v/20260630110611750"
+      },
+      {
+        "name": "한경MONEY, 2026.9.9",
+        "url": "https://magazine.hankyung.com/money/article/202609094438c"
+      }
+    ]
+  },
+  "kr-after-short": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "한국거래소 애프터마켓의 공매도",
+    "value": "차입공매도 허용, 규제는 정규장과 같음",
+    "short": "빌린 주식을 파는 공매도가 허용되고 규제는 정규시장과 같다",
+    "effective": "2026-09-14",
+    "checked": "2026-11-03",
+    "level": "press",
+    "note": "거래소 규정 원문 대신 보도로 확인했다.",
+    "sources": [
+      {
+        "name": "파이낸셜뉴스, 2026.9.9",
+        "url": "https://fnnews.com/news/202609091526314083"
+      },
+      {
+        "name": "헤럴드경제, 2026.3.16",
+        "url": "https://www.heraldk.com/article/2026031620222334296"
+      }
+    ]
+  },
+  "kr-nxt-orders": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "넥스트레이드 프리·애프터마켓 주문 유형",
+    "value": "지정가, 최유리지정가, 최우선지정가 · 시장가, 스톱지정가, 중간가 불가",
+    "short": "지정가, 최유리지정가, 최우선지정가만 낼 수 있고 시장가, 스톱지정가, 중간가는 쓸 수 없다",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "애프터마켓의 첫 가격을 정하는 단일가매매 호가 접수 시간(15:30~15:40)에는 지정가만 받는다.",
+    "sources": [
+      {
+        "name": "넥스트레이드, 거래제도 - 호가유형, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-4.html"
+      },
+      {
+        "name": "넥스트레이드, 거래제도 - 시장구조, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-1.html"
+      }
+    ]
+  },
+  "kr-nxt-scope": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "넥스트레이드 거래 대상 종목",
+    "value": "코스피200·코스닥150 구성 종목과 시가총액·거래대금 등으로 고른 종목",
+    "short": "코스피200과 코스닥150 구성 종목에 시가총액과 거래대금 등으로 고른 종목을 더한 일부 종목",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "분기마다 다시 고른다. 외국주권, 리츠 등 투자회사 주권, 스팩, 의결권 없는 주권, 관리종목은 제외한다. 단기과열·투자경고·투자위험·이상급등 종목은 해당 기간 체결을 제한한다.",
+    "sources": [
+      {
+        "name": "넥스트레이드, 거래제도 - 매매체결대상종목, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-3.html"
+      }
+    ]
+  },
+  "kr-nxt-short": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "넥스트레이드의 차입공매도 가능 시간",
+    "value": "메인마켓·애프터마켓·종가매매 가능, 프리마켓 불가",
+    "short": "메인마켓과 애프터마켓에서는 낼 수 있고 프리마켓에서는 낼 수 없다",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "대량·바스켓매매시장에서도 허용된다. 직전가격 이하로 호가할 수 없다는 가격 제한은 넥스트레이드에서 형성된 직전가격을 기준으로 판단한다.",
+    "sources": [
+      {
+        "name": "넥스트레이드, 거래제도 - 시장관리, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-5.html"
+      }
+    ]
+  },
+  "kr-order-carry": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "정규시장 미체결 주문의 이월",
+    "value": "한국거래소 정규시장 주문은 애프터마켓으로 넘어가지 않음 · 넥스트레이드 주문은 애프터마켓 종료까지 유효 · 두 시장 주문은 서로 옮겨지지 않음",
+    "short": "한국거래소 정규시장 주문은 그 시장이 끝나면 사라지고, 넥스트레이드 주문은 취소하지 않으면 애프터마켓이 끝날 때까지 남는다",
+    "checked": "2026-11-03",
+    "level": "press",
+    "note": "넥스트레이드 쪽은 자기 안내로 확인했고, 한국거래소 쪽은 증권회사 안내로 확인했다. 넥스트레이드의 스톱지정가와 중간가 호가는 메인마켓 종료 때 취소된다. 프리마켓에서만 유효한 주문(GTP)도 있다.",
+    "sources": [
+      {
+        "name": "유안타증권, 국내주식 거래시장 안내, 2026.11 확인",
+        "url": "https://www.myasset.com/myasset/static/trading/TR_1608001_T1.jsp"
+      },
+      {
+        "name": "넥스트레이드, 거래제도 - 시장구조, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-1.html"
+      },
+      {
+        "name": "넥스트레이드, 거래제도 - 호가유형, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-4.html"
+      }
+    ]
+  },
+  "kr-nxt-after-open": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "넥스트레이드 애프터마켓의 첫 가격",
+    "value": "주문 접수 15:30부터, 15:40에 단일가로 첫 가격 결정",
+    "short": "오후 3시 30분부터 10분간 받은 주문으로 첫 가격을 정한 뒤",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "호가 접수 시간은 15:30~20:00, 매매 시간은 15:40~20:00이다.",
+    "sources": [
+      {
+        "name": "넥스트레이드, 거래제도 - 시장구조, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-1.html"
+      }
+    ]
+  },
+  "kr-nxt-pause": {
+    "topic": "hours",
+    "market": "KR",
+    "label": "넥스트레이드 정규시장의 쉬는 시간",
+    "value": "08:50~09:00:30, 15:20~15:30 (취소 호가만 접수)",
+    "short": "오전 8시 50분부터 9시 0분 30초까지, 오후 3시 20분부터 3시 30분까지",
+    "checked": "2026-11-03",
+    "level": "official",
+    "note": "한국거래소가 시가와 종가를 단일가매매로 정하는 동안 호가를 한곳으로 모으려는 것이다. 종가매매시장의 주문 접수와는 별개이다.",
+    "sources": [
+      {
+        "name": "넥스트레이드, 거래제도 - 시장구조, 2026.11 확인",
+        "url": "https://www.nextrade.co.kr/html/policy-1.html"
       }
     ]
   },
