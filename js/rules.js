@@ -4493,6 +4493,54 @@ window.RULES = {
       }
     ]
   },
+  "us-cme-ng-unit": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "헨리허브 천연가스 선물 1계약의 크기 (NYMEX)",
+    "value": "10,000MMBtu",
+    "short": "10,000MMBtu로, 값은 MMBtu당 달러로 부른다",
+    "checked": "2026-11-04",
+    "level": "official",
+    "note": "실물 인도로 결제하는 계약이다. 규정은 NYMEX Rulebook 220장이다.",
+    "sources": [
+      {
+        "name": "CME Group, Henry Hub Natural Gas Futures Contract Specs (2026.11.4 열람)",
+        "url": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html"
+      }
+    ]
+  },
+  "us-cme-ng-tick": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "헨리허브 천연가스 선물 최소 가격 단위",
+    "value": "MMBtu당 0.001달러 (1계약 10달러)",
+    "short": "MMBtu당 0.001달러, 1계약으로는 10달러",
+    "checked": "2026-11-04",
+    "level": "official",
+    "note": "단일 월물 거래 기준이다. 월물 사이 스프레드 거래의 단위는 더 작다.",
+    "sources": [
+      {
+        "name": "CME Group, Henry Hub Natural Gas Futures Contract Specs (2026.11.4 열람)",
+        "url": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html"
+      }
+    ]
+  },
+  "us-fut-ng-last-trade": {
+    "topic": "commodity",
+    "market": "US",
+    "label": "헨리허브 천연가스 선물 최종거래일",
+    "value": "인도 월 전달의 끝에서 세 번째 영업일",
+    "short": "인도 월 전달의 끝에서 세 번째 영업일에",
+    "checked": "2026-11-04",
+    "level": "official",
+    "sources": [
+      {
+        "name": "CME Group, Henry Hub Natural Gas Futures Contract Specs (2026.11.4 열람)",
+        "url": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html"
+      }
+    ],
+    "note": "CME 상품 명세의 거래 종료 조항으로 확인했다."
+  },
   "us-idx-gsci-roll": {
     "topic": "commodity",
     "market": "US",

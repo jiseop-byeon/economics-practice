@@ -1,2 +1,2 @@
 // 커밋할 때 .git/hooks/pre-commit 이 다시 쓴다. 손으로 고치지 않는다.
-window.SITE_UPDATED = "2026-11-04T04:01";
+window.SITE_UPDATED = "2026-11-05T13:05";
